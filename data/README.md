@@ -1,12 +1,5 @@
-# Data
+# Data folder
 
-`wisconsin_breast_cancer_diagnostic.csv` is a workshop-ready CSV exported from scikit-learn's bundled copy of the Breast Cancer Wisconsin (Diagnostic) dataset.
+The source UCI data are downloaded at runtime by the Day 1 notebook so the repository does not need to store the 18+ MB source CSV. The notebook creates `diabetes_day1.csv` as a small, teaching-friendly subset.
 
-- 569 observations
-- 30 numeric measurements plus a readable `diagnosis` column
-- `diagnosis`: benign or malignant
-- no missing values in the bundled dataset
-
-Original source: UCI Machine Learning Repository, Breast Cancer Wisconsin (Diagnostic). DOI: 10.24432/C5DW2B.
-
-For Day 1, focus on a small set of intuitive columns such as `mean radius`, `mean texture`, `mean perimeter`, `mean area`, and `diagnosis`. The full set remains available so participants can explore independently.
+The teaching file is derived from the UCI Diabetes 130-US Hospitals dataset; it is not synthetic. See the root README for the official citation and license.

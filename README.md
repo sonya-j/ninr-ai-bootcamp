@@ -1,50 +1,63 @@
-# NINR AI Bootcamp — Day 1: Python + Real Clinical Data
+# NINR AI Bootcamp — Day 1: Python, Notebooks, and Real Clinical Data
 
-This starter repository is designed for nursing scientists who are new to Python and Jupyter notebooks. Day 1 is about becoming comfortable with code and exploring a **real-world clinical dataset**. There is **no machine learning required** in this module.
+This repository contains the Day 1 beginner exercises for the NINR AI Bootcamp. The goal is to get participants comfortable with Python, Jupyter notebooks, pandas, and asking simple questions of a real health dataset — **before introducing machine learning**.
 
 ## Dataset
 
-We use the **Breast Cancer Wisconsin (Diagnostic)** dataset, originally from the University of Wisconsin and distributed through the UCI Machine Learning Repository. It contains 569 observations and measurements computed from digitized images of fine needle aspirates of breast masses. The outcome is benign vs. malignant.
+The notebook uses the **Diabetes 130-US Hospitals for Years 1999–2008** dataset from the UCI Machine Learning Repository. It contains 101,766 inpatient encounters involving patients diagnosed with diabetes across 130 U.S. hospitals and integrated delivery networks. The original research problem concerns early readmission within 30 days of discharge.
 
-The copy in `data/` is exported from scikit-learn's bundled copy of the UCI dataset so the workshop works without internet access.
+Source: Clore, J., Cios, K., DeShazo, J., & Strack, B. (2014). *Diabetes 130-US Hospitals for Years 1999-2008*. UCI Machine Learning Repository. DOI: https://doi.org/10.24432/C5230J
 
-**Important:** This is an educational public dataset, not NIH patient data. Do not interpret the exercises as clinical guidance.
+License: CC BY 4.0. See the source page for the full dataset documentation and attribution requirements.
 
-Source: UCI Machine Learning Repository, Breast Cancer Wisconsin (Diagnostic), DOI: 10.24432/C5DW2B.
+UCI dataset page: https://archive.ics.uci.edu/dataset/296/diabetes-130-us-hospitals-for-years-1999-2008
 
-## Day 1 goals
+## What participants do on Day 1
 
-By the end of the session, participants should be able to:
+1. Learn how a Jupyter notebook works.
+2. Run and modify basic Python code.
+3. Learn about variables, strings, numbers, lists, and dictionaries.
+4. Import pandas and load a real clinical dataset.
+5. Understand rows, columns, data types, and missing values.
+6. Filter data and calculate basic summaries.
+7. Make a few simple plots.
+8. Investigate one small research question.
 
-- explain what a Jupyter notebook is
-- run and edit a code cell
-- recognize strings, numbers, lists, and variables
-- import a Python library
-- load a CSV with pandas
-- inspect rows, columns, and data types
-- select a column and filter rows
-- calculate simple summaries
-- create a basic visualization
-- translate a scientific question into a few lines of exploratory code
+There is **no machine learning on Day 1**. The final activity is intentionally exploratory so participants can build confidence before moving to prediction/modeling in a later session.
+
+## Setup
+
+### Easiest option: Google Colab
+
+1. Upload this repository to GitHub or download the ZIP.
+2. Open `notebooks/01_day1_python_and_clinical_data.ipynb` in Google Colab.
+3. Run the installation cell near the top of the notebook.
+4. Run the data-download cell. It will retrieve the UCI dataset and create a small teaching file locally.
+
+### Local Jupyter
+
+```bash
+pip install -r requirements.txt
+jupyter notebook
+```
+
+Then open the notebook in `notebooks/`.
 
 ## Repository structure
 
 ```text
-ninr-day1-real-world-data/
+ninr-day1-diabetes-repo/
 ├── README.md
 ├── requirements.txt
 ├── data/
-│   ├── README.md
-│   └── wisconsin_breast_cancer_diagnostic.csv
+│   └── README.md
+├── docs/
+│   └── day1_data_dictionary.md
 └── notebooks/
-    ├── 01_day1_python_real_clinical_data.ipynb
-    └── 01_day1_python_real_clinical_data_SOLUTIONS.ipynb
+    ├── 01_day1_python_and_clinical_data.ipynb
+    └── 01_day1_python_and_clinical_data_SOLUTIONS.ipynb
 ```
 
-## Getting started
+## Teaching note
 
-Open `notebooks/01_day1_python_real_clinical_data.ipynb` in Jupyter or upload it to Google Colab. If using Colab, also upload the CSV from the `data` folder and adjust the path in the data-loading cell if needed.
-
-## Teaching philosophy
-
-Participants should type, change, break, rerun, and discuss code. The notebook uses **Try it**, **Explore**, and **Think like a scientist** prompts rather than long lectures.
+The notebook intentionally uses plain-language prompts and short exercises. Participants should be able to complete it without prior Python experience. The same dataset can later support Day 2 machine-learning activities around readmission prediction, model evaluation, and responsible AI.
