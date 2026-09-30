@@ -1,0 +1,16 @@
+{
+  "participant_rows": 5000,
+  "participant_columns": 26,
+  "outcome_definition": {
+    "official_readmitted": "<30 = inpatient readmission in less than 30 days; >30 = inpatient readmission after 30 days; NO = no recorded readmission.",
+    "derived_readmitted_30d": "1 when readmitted is <30; otherwise 0.",
+    "source": "UCI dataset 296 metadata"
+  },
+  "outcome_counts": {
+    "NO": 2686,
+    ">30": 1753,
+    "<30": 561
+  },
+  "early_readmission_rate": 0.1122,
+  "weighting_variables": []
+}

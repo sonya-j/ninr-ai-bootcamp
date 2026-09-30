@@ -1,0 +1,101 @@
+{
+  "validated_at": "2026-09-30T19:20:03.905786+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "name": "raw row count",
+      "passed": true,
+      "detail": "observed 101766"
+    },
+    {
+      "name": "raw column count",
+      "passed": true,
+      "detail": "observed 50"
+    },
+    {
+      "name": "raw headers match official metadata",
+      "passed": true,
+      "detail": "ordered headers agree with UCI API record"
+    },
+    {
+      "name": "raw encounter ID unique",
+      "passed": true,
+      "detail": "encounter_id must identify encounters"
+    },
+    {
+      "name": "official target values",
+      "passed": true,
+      "detail": "['<30', '>30', 'NO']"
+    },
+    {
+      "name": "time in hospital range",
+      "passed": true,
+      "detail": "official inclusion range is 1-14 days"
+    },
+    {
+      "name": "participant row count",
+      "passed": true,
+      "detail": "observed 5000"
+    },
+    {
+      "name": "participant columns",
+      "passed": true,
+      "detail": "ordered columns match manifest"
+    },
+    {
+      "name": "participant variable count",
+      "passed": true,
+      "detail": "observed 26"
+    },
+    {
+      "name": "participant encounter ID unique",
+      "passed": true,
+      "detail": "no duplicate encounter IDs"
+    },
+    {
+      "name": "deterministic sample membership",
+      "passed": true,
+      "detail": "participant IDs are the lowest configured SHA-256 ranks"
+    },
+    {
+      "name": "no raw missing code",
+      "passed": true,
+      "detail": "participant CSV uses blank/NA"
+    },
+    {
+      "name": "binary outcome derivation",
+      "passed": true,
+      "detail": "1 iff readmitted is <30"
+    },
+    {
+      "name": "all outcome classes retained",
+      "passed": true,
+      "detail": "{'NO': 2686, '>30': 1753, '<30': 561}"
+    },
+    {
+      "name": "decoded admission type complete",
+      "passed": true,
+      "detail": "all IDs mapped"
+    },
+    {
+      "name": "decoded discharge complete",
+      "passed": true,
+      "detail": "all IDs mapped"
+    },
+    {
+      "name": "decoded admission source complete",
+      "passed": true,
+      "detail": "all IDs mapped"
+    },
+    {
+      "name": "dictionary covers participant",
+      "passed": true,
+      "detail": "all participant variables documented"
+    },
+    {
+      "name": "participant checksum matches provenance",
+      "passed": true,
+      "detail": "derived artifact hash agrees with provenance.json"
+    }
+  ]
+}

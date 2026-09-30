@@ -1,5 +1,7 @@
-# Data folder
+# Data directory
 
-The source UCI data are downloaded at runtime by the Day 1 notebook so the repository does not need to store the 18+ MB source CSV. The notebook creates `diabetes_day1.csv` as a small, teaching-friendly subset.
+`raw/uci_diabetes_296/` contains the checksum-pinned official UCI ZIP, the two files extracted byte-for-byte from it, the UCI API metadata record, and the original article’s full-text XML from NIH PubMed Central. Preparation never edits these files.
 
-The teaching file is derived from the UCI Diabetes 130-US Hospitals dataset; it is not synthetic. See the root README for the official citation and license.
+`processed/diabetes_130_hospitals_participant.csv` is the reproducible 5,000-row, 26-variable participant derivative. It is rebuilt by `python pipeline.py prepare` and checked by `python pipeline.py validate`.
+
+See `metadata/provenance.json` for URLs, access date, version, hashes, transformations, dependencies, and weighting status. See `metadata/missing_values.csv` for raw missing/unavailable codes and `metadata/data_dictionary.csv` for definitions.

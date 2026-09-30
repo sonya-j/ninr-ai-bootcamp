@@ -1,0 +1,18 @@
+variable,risk,note
+encounter_id,leakage,Identifier; exclude from model predictors.
+patient_nbr,leakage,Patient identifier; repeated patients can cross validation folds. Excluded from participant file.
+race,proxy_discrimination|confounding,Sensitive demographic attribute. Audit subgroup performance and avoid causal interpretation without design justification.
+gender,proxy_discrimination|confounding,Sensitive demographic attribute with an Unknown/Invalid category in the source.
+age,proxy_discrimination|confounding,Demographic attribute and strong clinical risk factor; may also proxy protected status.
+discharge_disposition_id,post_outcome_measurement|leakage,"Known at discharge, not at admission; includes death/hospice destinations. Prediction-time availability must be explicit."
+time_in_hospital,post_outcome_measurement,Complete length of stay is known only at discharge.
+num_lab_procedures,post_outcome_measurement|confounding,Accumulates during the encounter and may reflect illness severity and care intensity.
+num_procedures,post_outcome_measurement|confounding,Accumulates during the encounter and may reflect illness severity and care intensity.
+num_medications,post_outcome_measurement|confounding,Encounter-level treatment intensity may reflect severity and care decisions.
+A1Cresult,post_outcome_measurement|confounding,Measured during the encounter; testing is a care-process decision and None means not measured.
+max_glu_serum,post_outcome_measurement|confounding,Measured during the encounter; None means the test was not taken.
+insulin,post_outcome_measurement|confounding,Treatment status/change during the encounter is affected by clinical severity and clinician decisions.
+change,post_outcome_measurement|confounding,Diabetes medication change occurs during the encounter and is not an admission-time predictor.
+diabetesMed,post_outcome_measurement|confounding,Prescription during the encounter may be affected by severity and clinician decisions.
+readmitted,outcome|leakage,Official target; never include as a predictor of readmitted_30d.
+readmitted_30d,outcome|leakage,Derived binary outcome; never include as a predictor.

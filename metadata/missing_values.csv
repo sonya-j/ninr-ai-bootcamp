@@ -1,0 +1,21 @@
+variable,raw_code,raw_count,participant_representation,source
+race,?,2273,blank/NA,UCI metadata marks variable as missing; count verified in original file
+weight,?,98569,blank/NA,UCI metadata marks variable as missing; count verified in original file
+payer_code,?,40256,blank/NA,UCI metadata marks variable as missing; count verified in original file
+medical_specialty,?,49949,blank/NA,UCI metadata marks variable as missing; count verified in original file
+diag_1,?,21,blank/NA,UCI metadata marks variable as missing; count verified in original file
+diag_2,?,358,blank/NA,UCI metadata marks variable as missing; count verified in original file
+diag_3,?,1423,blank/NA,UCI metadata marks variable as missing; count verified in original file
+max_glu_serum,None,0,None (retained category),UCI description: test was not taken
+A1Cresult,None,0,None (retained category),UCI description: test was not taken
+admission_type_id,5,4785,Not Available (retained source-defined category),UCI IDS_mapping.csv
+admission_type_id,6,5291,NULL (retained source-defined category),UCI IDS_mapping.csv
+admission_type_id,8,320,Not Mapped (retained source-defined category),UCI IDS_mapping.csv
+discharge_disposition_id,18,3691,NULL (retained source-defined category),UCI IDS_mapping.csv
+discharge_disposition_id,25,989,Not Mapped (retained source-defined category),UCI IDS_mapping.csv
+discharge_disposition_id,26,0,Unknown/Invalid (retained source-defined category),UCI IDS_mapping.csv
+admission_source_id,9,125,Not Available (retained source-defined category),UCI IDS_mapping.csv
+admission_source_id,15,0,Not Available (retained source-defined category),UCI IDS_mapping.csv
+admission_source_id,17,6781,NULL (retained source-defined category),UCI IDS_mapping.csv
+admission_source_id,20,161,Not Mapped (retained source-defined category),UCI IDS_mapping.csv
+admission_source_id,21,0,Unknown/Invalid (retained source-defined category),UCI IDS_mapping.csv

@@ -1,0 +1,189 @@
+variable,code,label,source
+race,Caucasian,Caucasian,UCI API metadata for dataset 296
+race,Asian,Asian,UCI API metadata for dataset 296
+race,AfricanAmerican,African American,UCI API metadata for dataset 296
+race,Hispanic,Hispanic,UCI API metadata for dataset 296
+race,Other,other,UCI API metadata for dataset 296
+gender,Male,male,UCI API metadata for dataset 296
+gender,Female,female,UCI API metadata for dataset 296
+gender,Unknown/Invalid,unknown/invalid,UCI API metadata for dataset 296
+age,[0-10),age 0 to less than 10 years,UCI API metadata for dataset 296
+age,[10-20),age 10 to less than 20 years,UCI API metadata for dataset 296
+age,[20-30),age 20 to less than 30 years,UCI API metadata for dataset 296
+age,[30-40),age 30 to less than 40 years,UCI API metadata for dataset 296
+age,[40-50),age 40 to less than 50 years,UCI API metadata for dataset 296
+age,[50-60),age 50 to less than 60 years,UCI API metadata for dataset 296
+age,[60-70),age 60 to less than 70 years,UCI API metadata for dataset 296
+age,[70-80),age 70 to less than 80 years,UCI API metadata for dataset 296
+age,[80-90),age 80 to less than 90 years,UCI API metadata for dataset 296
+age,[90-100),age 90 to less than 100 years,UCI API metadata for dataset 296
+max_glu_serum,None,test was not taken,UCI API metadata for dataset 296
+max_glu_serum,Norm,normal,UCI API metadata for dataset 296
+max_glu_serum,>200,greater than 200,UCI API metadata for dataset 296
+max_glu_serum,>300,greater than 300,UCI API metadata for dataset 296
+A1Cresult,None,test was not taken,UCI API metadata for dataset 296
+A1Cresult,Norm,less than 7%,UCI API metadata for dataset 296
+A1Cresult,>7,greater than 7% and less than 8%,UCI API metadata for dataset 296
+A1Cresult,>8,greater than 8%,UCI API metadata for dataset 296
+change,Ch,change in diabetes medication,UCI API metadata for dataset 296
+change,No,no change in diabetes medication,UCI API metadata for dataset 296
+diabetesMed,Yes,diabetes medication prescribed,UCI API metadata for dataset 296
+diabetesMed,No,no diabetes medication prescribed,UCI API metadata for dataset 296
+readmitted,<30,inpatient readmission in less than 30 days,UCI API metadata for dataset 296
+readmitted,>30,inpatient readmission after 30 days,UCI API metadata for dataset 296
+readmitted,NO,no recorded readmission,UCI API metadata for dataset 296
+metformin,No,drug was not prescribed,UCI API metadata for dataset 296
+metformin,Steady,drug was prescribed and dosage did not change,UCI API metadata for dataset 296
+metformin,Up,dosage was increased during the encounter,UCI API metadata for dataset 296
+metformin,Down,dosage was decreased during the encounter,UCI API metadata for dataset 296
+repaglinide,No,drug was not prescribed,UCI API metadata for dataset 296
+repaglinide,Steady,drug was prescribed and dosage did not change,UCI API metadata for dataset 296
+repaglinide,Up,dosage was increased during the encounter,UCI API metadata for dataset 296
+repaglinide,Down,dosage was decreased during the encounter,UCI API metadata for dataset 296
+nateglinide,No,drug was not prescribed,UCI API metadata for dataset 296
+nateglinide,Steady,drug was prescribed and dosage did not change,UCI API metadata for dataset 296
+nateglinide,Up,dosage was increased during the encounter,UCI API metadata for dataset 296
+nateglinide,Down,dosage was decreased during the encounter,UCI API metadata for dataset 296
+chlorpropamide,No,drug was not prescribed,UCI API metadata for dataset 296
+chlorpropamide,Steady,drug was prescribed and dosage did not change,UCI API metadata for dataset 296
+chlorpropamide,Up,dosage was increased during the encounter,UCI API metadata for dataset 296
+chlorpropamide,Down,dosage was decreased during the encounter,UCI API metadata for dataset 296
+glimepiride,No,drug was not prescribed,UCI API metadata for dataset 296
+glimepiride,Steady,drug was prescribed and dosage did not change,UCI API metadata for dataset 296
+glimepiride,Up,dosage was increased during the encounter,UCI API metadata for dataset 296
+glimepiride,Down,dosage was decreased during the encounter,UCI API metadata for dataset 296
+acetohexamide,No,drug was not prescribed,UCI API metadata for dataset 296
+acetohexamide,Steady,drug was prescribed and dosage did not change,UCI API metadata for dataset 296
+acetohexamide,Up,dosage was increased during the encounter,UCI API metadata for dataset 296
+acetohexamide,Down,dosage was decreased during the encounter,UCI API metadata for dataset 296
+glipizide,No,drug was not prescribed,UCI API metadata for dataset 296
+glipizide,Steady,drug was prescribed and dosage did not change,UCI API metadata for dataset 296
+glipizide,Up,dosage was increased during the encounter,UCI API metadata for dataset 296
+glipizide,Down,dosage was decreased during the encounter,UCI API metadata for dataset 296
+glyburide,No,drug was not prescribed,UCI API metadata for dataset 296
+glyburide,Steady,drug was prescribed and dosage did not change,UCI API metadata for dataset 296
+glyburide,Up,dosage was increased during the encounter,UCI API metadata for dataset 296
+glyburide,Down,dosage was decreased during the encounter,UCI API metadata for dataset 296
+tolbutamide,No,drug was not prescribed,UCI API metadata for dataset 296
+tolbutamide,Steady,drug was prescribed and dosage did not change,UCI API metadata for dataset 296
+tolbutamide,Up,dosage was increased during the encounter,UCI API metadata for dataset 296
+tolbutamide,Down,dosage was decreased during the encounter,UCI API metadata for dataset 296
+pioglitazone,No,drug was not prescribed,UCI API metadata for dataset 296
+pioglitazone,Steady,drug was prescribed and dosage did not change,UCI API metadata for dataset 296
+pioglitazone,Up,dosage was increased during the encounter,UCI API metadata for dataset 296
+pioglitazone,Down,dosage was decreased during the encounter,UCI API metadata for dataset 296
+rosiglitazone,No,drug was not prescribed,UCI API metadata for dataset 296
+rosiglitazone,Steady,drug was prescribed and dosage did not change,UCI API metadata for dataset 296
+rosiglitazone,Up,dosage was increased during the encounter,UCI API metadata for dataset 296
+rosiglitazone,Down,dosage was decreased during the encounter,UCI API metadata for dataset 296
+acarbose,No,drug was not prescribed,UCI API metadata for dataset 296
+acarbose,Steady,drug was prescribed and dosage did not change,UCI API metadata for dataset 296
+acarbose,Up,dosage was increased during the encounter,UCI API metadata for dataset 296
+acarbose,Down,dosage was decreased during the encounter,UCI API metadata for dataset 296
+miglitol,No,drug was not prescribed,UCI API metadata for dataset 296
+miglitol,Steady,drug was prescribed and dosage did not change,UCI API metadata for dataset 296
+miglitol,Up,dosage was increased during the encounter,UCI API metadata for dataset 296
+miglitol,Down,dosage was decreased during the encounter,UCI API metadata for dataset 296
+troglitazone,No,drug was not prescribed,UCI API metadata for dataset 296
+troglitazone,Steady,drug was prescribed and dosage did not change,UCI API metadata for dataset 296
+troglitazone,Up,dosage was increased during the encounter,UCI API metadata for dataset 296
+troglitazone,Down,dosage was decreased during the encounter,UCI API metadata for dataset 296
+tolazamide,No,drug was not prescribed,UCI API metadata for dataset 296
+tolazamide,Steady,drug was prescribed and dosage did not change,UCI API metadata for dataset 296
+tolazamide,Up,dosage was increased during the encounter,UCI API metadata for dataset 296
+tolazamide,Down,dosage was decreased during the encounter,UCI API metadata for dataset 296
+examide,No,drug was not prescribed,UCI API metadata for dataset 296
+examide,Steady,drug was prescribed and dosage did not change,UCI API metadata for dataset 296
+examide,Up,dosage was increased during the encounter,UCI API metadata for dataset 296
+examide,Down,dosage was decreased during the encounter,UCI API metadata for dataset 296
+citoglipton,No,drug was not prescribed,UCI API metadata for dataset 296
+citoglipton,Steady,drug was prescribed and dosage did not change,UCI API metadata for dataset 296
+citoglipton,Up,dosage was increased during the encounter,UCI API metadata for dataset 296
+citoglipton,Down,dosage was decreased during the encounter,UCI API metadata for dataset 296
+insulin,No,drug was not prescribed,UCI API metadata for dataset 296
+insulin,Steady,drug was prescribed and dosage did not change,UCI API metadata for dataset 296
+insulin,Up,dosage was increased during the encounter,UCI API metadata for dataset 296
+insulin,Down,dosage was decreased during the encounter,UCI API metadata for dataset 296
+glyburide-metformin,No,drug was not prescribed,UCI API metadata for dataset 296
+glyburide-metformin,Steady,drug was prescribed and dosage did not change,UCI API metadata for dataset 296
+glyburide-metformin,Up,dosage was increased during the encounter,UCI API metadata for dataset 296
+glyburide-metformin,Down,dosage was decreased during the encounter,UCI API metadata for dataset 296
+glipizide-metformin,No,drug was not prescribed,UCI API metadata for dataset 296
+glipizide-metformin,Steady,drug was prescribed and dosage did not change,UCI API metadata for dataset 296
+glipizide-metformin,Up,dosage was increased during the encounter,UCI API metadata for dataset 296
+glipizide-metformin,Down,dosage was decreased during the encounter,UCI API metadata for dataset 296
+glimepiride-pioglitazone,No,drug was not prescribed,UCI API metadata for dataset 296
+glimepiride-pioglitazone,Steady,drug was prescribed and dosage did not change,UCI API metadata for dataset 296
+glimepiride-pioglitazone,Up,dosage was increased during the encounter,UCI API metadata for dataset 296
+glimepiride-pioglitazone,Down,dosage was decreased during the encounter,UCI API metadata for dataset 296
+metformin-rosiglitazone,No,drug was not prescribed,UCI API metadata for dataset 296
+metformin-rosiglitazone,Steady,drug was prescribed and dosage did not change,UCI API metadata for dataset 296
+metformin-rosiglitazone,Up,dosage was increased during the encounter,UCI API metadata for dataset 296
+metformin-rosiglitazone,Down,dosage was decreased during the encounter,UCI API metadata for dataset 296
+metformin-pioglitazone,No,drug was not prescribed,UCI API metadata for dataset 296
+metformin-pioglitazone,Steady,drug was prescribed and dosage did not change,UCI API metadata for dataset 296
+metformin-pioglitazone,Up,dosage was increased during the encounter,UCI API metadata for dataset 296
+metformin-pioglitazone,Down,dosage was decreased during the encounter,UCI API metadata for dataset 296
+admission_type_id,1,Emergency,UCI IDS_mapping.csv
+admission_type_id,2,Urgent,UCI IDS_mapping.csv
+admission_type_id,3,Elective,UCI IDS_mapping.csv
+admission_type_id,4,Newborn,UCI IDS_mapping.csv
+admission_type_id,5,Not Available,UCI IDS_mapping.csv
+admission_type_id,6,NULL,UCI IDS_mapping.csv
+admission_type_id,7,Trauma Center,UCI IDS_mapping.csv
+admission_type_id,8,Not Mapped,UCI IDS_mapping.csv
+discharge_disposition_id,1,Discharged to home,UCI IDS_mapping.csv
+discharge_disposition_id,2,Discharged/transferred to another short term hospital,UCI IDS_mapping.csv
+discharge_disposition_id,3,Discharged/transferred to SNF,UCI IDS_mapping.csv
+discharge_disposition_id,4,Discharged/transferred to ICF,UCI IDS_mapping.csv
+discharge_disposition_id,5,Discharged/transferred to another type of inpatient care institution,UCI IDS_mapping.csv
+discharge_disposition_id,6,Discharged/transferred to home with home health service,UCI IDS_mapping.csv
+discharge_disposition_id,7,Left AMA,UCI IDS_mapping.csv
+discharge_disposition_id,8,Discharged/transferred to home under care of Home IV provider,UCI IDS_mapping.csv
+discharge_disposition_id,9,Admitted as an inpatient to this hospital,UCI IDS_mapping.csv
+discharge_disposition_id,10,Neonate discharged to another hospital for neonatal aftercare,UCI IDS_mapping.csv
+discharge_disposition_id,11,Expired,UCI IDS_mapping.csv
+discharge_disposition_id,12,Still patient or expected to return for outpatient services,UCI IDS_mapping.csv
+discharge_disposition_id,13,Hospice / home,UCI IDS_mapping.csv
+discharge_disposition_id,14,Hospice / medical facility,UCI IDS_mapping.csv
+discharge_disposition_id,15,Discharged/transferred within this institution to Medicare approved swing bed,UCI IDS_mapping.csv
+discharge_disposition_id,16,Discharged/transferred/referred another institution for outpatient services,UCI IDS_mapping.csv
+discharge_disposition_id,17,Discharged/transferred/referred to this institution for outpatient services,UCI IDS_mapping.csv
+discharge_disposition_id,18,NULL,UCI IDS_mapping.csv
+discharge_disposition_id,19,"Expired at home. Medicaid only, hospice.",UCI IDS_mapping.csv
+discharge_disposition_id,20,"Expired in a medical facility. Medicaid only, hospice.",UCI IDS_mapping.csv
+discharge_disposition_id,21,"Expired, place unknown. Medicaid only, hospice.",UCI IDS_mapping.csv
+discharge_disposition_id,22,Discharged/transferred to another rehab fac including rehab units of a hospital .,UCI IDS_mapping.csv
+discharge_disposition_id,23,Discharged/transferred to a long term care hospital.,UCI IDS_mapping.csv
+discharge_disposition_id,24,Discharged/transferred to a nursing facility certified under Medicaid but not certified under Medicare.,UCI IDS_mapping.csv
+discharge_disposition_id,25,Not Mapped,UCI IDS_mapping.csv
+discharge_disposition_id,26,Unknown/Invalid,UCI IDS_mapping.csv
+discharge_disposition_id,30,Discharged/transferred to another Type of Health Care Institution not Defined Elsewhere,UCI IDS_mapping.csv
+discharge_disposition_id,27,Discharged/transferred to a federal health care facility.,UCI IDS_mapping.csv
+discharge_disposition_id,28,Discharged/transferred/referred to a psychiatric hospital of psychiatric distinct part unit of a hospital,UCI IDS_mapping.csv
+discharge_disposition_id,29,Discharged/transferred to a Critical Access Hospital (CAH).,UCI IDS_mapping.csv
+admission_source_id,1,Physician Referral,UCI IDS_mapping.csv
+admission_source_id,2,Clinic Referral,UCI IDS_mapping.csv
+admission_source_id,3,HMO Referral,UCI IDS_mapping.csv
+admission_source_id,4,Transfer from a hospital,UCI IDS_mapping.csv
+admission_source_id,5,Transfer from a Skilled Nursing Facility (SNF),UCI IDS_mapping.csv
+admission_source_id,6,Transfer from another health care facility,UCI IDS_mapping.csv
+admission_source_id,7,Emergency Room,UCI IDS_mapping.csv
+admission_source_id,8,Court/Law Enforcement,UCI IDS_mapping.csv
+admission_source_id,9,Not Available,UCI IDS_mapping.csv
+admission_source_id,10,Transfer from critial access hospital,UCI IDS_mapping.csv
+admission_source_id,11,Normal Delivery,UCI IDS_mapping.csv
+admission_source_id,12,Premature Delivery,UCI IDS_mapping.csv
+admission_source_id,13,Sick Baby,UCI IDS_mapping.csv
+admission_source_id,14,Extramural Birth,UCI IDS_mapping.csv
+admission_source_id,15,Not Available,UCI IDS_mapping.csv
+admission_source_id,17,NULL,UCI IDS_mapping.csv
+admission_source_id,18,Transfer From Another Home Health Agency,UCI IDS_mapping.csv
+admission_source_id,19,Readmission to Same Home Health Agency,UCI IDS_mapping.csv
+admission_source_id,20,Not Mapped,UCI IDS_mapping.csv
+admission_source_id,21,Unknown/Invalid,UCI IDS_mapping.csv
+admission_source_id,22,Transfer from hospital inpt/same fac reslt in a sep claim,UCI IDS_mapping.csv
+admission_source_id,23,Born inside this hospital,UCI IDS_mapping.csv
+admission_source_id,24,Born outside this hospital,UCI IDS_mapping.csv
+admission_source_id,25,Transfer from Ambulatory Surgery Center,UCI IDS_mapping.csv
+admission_source_id,26,Transfer from Hospice,UCI IDS_mapping.csv

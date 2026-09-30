@@ -1,63 +1,99 @@
-# NINR AI Bootcamp — Day 1: Python, Notebooks, and Real Clinical Data
+# NINR AI Summer Research Intensive — reproducible health-data pipeline
 
-This repository contains the Day 1 beginner exercises for the NINR AI Bootcamp. The goal is to get participants comfortable with Python, Jupyter notebooks, pandas, and asking simple questions of a real health dataset — **before introducing machine learning**.
+This repository acquires, preserves, prepares, documents, and validates a participant-ready clinical dataset. The pipeline uses only the official UCI Machine Learning Repository record, its original archive, and the original article archived by NIH PubMed Central. It does not use Kaggle or another mirror.
 
-## Dataset
+## Included dataset and current version
 
-The notebook uses the **Diabetes 130-US Hospitals for Years 1999–2008** dataset from the UCI Machine Learning Repository. It contains 101,766 inpatient encounters involving patients diagnosed with diabetes across 130 U.S. hospitals and integrated delivery networks. The original research problem concerns early readmission within 30 days of discharge.
+**Diabetes 130-US Hospitals for Years 1999–2008** contains 101,766 inpatient diabetes encounters from 130 U.S. hospitals and integrated delivery networks.
 
-Source: Clore, J., Cios, K., DeShazo, J., & Strack, B. (2014). *Diabetes 130-US Hospitals for Years 1999-2008*. UCI Machine Learning Repository. DOI: https://doi.org/10.24432/C5230J
+- Official source: [UCI dataset record](https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999-2008)
+- Dataset DOI: [10.24432/C5230J](https://doi.org/10.24432/C5230J)
+- Dataset years: 1999–2008
+- UCI record version: last updated September 24, 2024
+- Pipeline access date: September 30, 2026
+- UCI files: `diabetic_data.csv` and `IDS_mapping.csv`
+- Original article: Strack et al. (2014), [DOI 10.1155/2014/781670](https://doi.org/10.1155/2014/781670), [NIH record](https://pubmed.ncbi.nlm.nih.gov/24804245/)
+- License: CC BY 4.0
 
-License: CC BY 4.0. See the source page for the full dataset documentation and attribution requirements.
+The exact official ZIP and source files are pinned with SHA-256 checksums in `config/datasets.json`. The original files under `data/raw/` are never rewritten by the preparation step.
 
-UCI dataset page: https://archive.ics.uci.edu/dataset/296/diabetes-130-us-hospitals-for-years-1999-2008
+## Reproduce the pipeline
 
-## What participants do on Day 1
-
-1. Learn how a Jupyter notebook works.
-2. Run and modify basic Python code.
-3. Learn about variables, strings, numbers, lists, and dictionaries.
-4. Import pandas and load a real clinical dataset.
-5. Understand rows, columns, data types, and missing values.
-6. Filter data and calculate basic summaries.
-7. Make a few simple plots.
-8. Investigate one small research question.
-
-There is **no machine learning on Day 1**. The final activity is intentionally exploratory so participants can build confidence before moving to prediction/modeling in a later session.
-
-## Setup
-
-### Easiest option: Google Colab
-
-1. Upload this repository to GitHub or download the ZIP.
-2. Open `notebooks/01_day1_python_and_clinical_data.ipynb` in Google Colab.
-3. Run the installation cell near the top of the notebook.
-4. Run the data-download cell. It will retrieve the UCI dataset and create a small teaching file locally.
-
-### Local Jupyter
+Python 3.10 or newer is recommended.
 
 ```bash
-pip install -r requirements.txt
-jupyter notebook
+python -m venv .venv
+# Windows: .venv\Scripts\activate
+# macOS/Linux: source .venv/bin/activate
+python -m pip install -r requirements-pipeline.txt
+python pipeline.py all
+python -m unittest discover -s tests -v
 ```
 
-Then open the notebook in `notebooks/`.
+Commands can also be run separately:
+
+```bash
+python pipeline.py acquire   # download/verify official originals and documentation
+python pipeline.py prepare   # rebuild all derived files
+python pipeline.py validate  # run automated integrity and content checks
+```
+
+Use `python pipeline.py acquire --force` only when intentionally refreshing the downloaded copies. A changed UCI archive will fail the pinned checksum until its new version is reviewed and the manifest is deliberately updated.
+
+## Participant dataset
+
+The pipeline deterministically selects 5,000 encounters by SHA-256 ranking of `seed:encounter_id`; this avoids dependence on dataframe row order or a library-specific random sampler. The output contains 26 variables relevant to demographics, health services use, encounter intensity, glycemic testing, treatment, and readmission:
+
+`data/processed/diabetes_130_hospitals_participant.csv`
+
+The official three-category outcome is retained:
+
+- `<30`: inpatient readmission in less than 30 days;
+- `>30`: inpatient readmission after 30 days;
+- `NO`: no recorded readmission.
+
+The pipeline also derives `readmitted_30d`, equal to 1 only for `<30` and 0 otherwise. The participant sample contains 561 `<30`, 1,753 `>30`, and 2,686 `NO` encounters (11.22% early readmission).
+
+Raw `?` missing-value codes are converted to blank/NA only in the derived participant CSV. `None` for `A1Cresult` and `max_glu_serum` means the test was not taken and is retained as a category. Official `NULL`, `Not Available`, `Not Mapped`, and `Unknown/Invalid` ID-mapping labels are retained and documented rather than silently recoded.
+
+When loading the participant CSV with pandas, preserve the official literal `NULL` label while treating blank fields as missing:
+
+```python
+import pandas as pd
+
+data = pd.read_csv(path, keep_default_na=False, na_values=[""])
+```
+
+The source provides no survey or analytic weighting variable. It is a clinical database, not a documented probability sample; participant analyses should not be presented as nationally representative.
+
+## Documentation and audit artifacts
+
+- `metadata/data_dictionary.csv` and `.json`: official definitions plus derived-field lineage, missing codes, selection status, and risk flags.
+- `metadata/value_labels.csv`: official categorical labels, including the bundled ID mappings.
+- `metadata/missing_values.csv`: missing/unavailable codes and observed raw counts.
+- `metadata/risk_flags.csv`: leakage, timing, confounding, and proxy-discrimination flags.
+- `metadata/provenance.json`: URLs, access date, version, checksums, transformations, output hash, and software environment.
+- `metadata/dataset_summary.json`: outcome definition, counts, dimensions, and weighting status.
+- `metadata/validation_report.json`: machine-readable results of 19 automated checks.
+- `docs/research_questions_and_risks.md`: five possible research questions and analytic cautions.
+- `data/raw/uci_diabetes_296/documentation/`: the official UCI API record and the original article’s full-text XML from NIH.
+
+Variable meanings are taken from the official UCI metadata, `IDS_mapping.csv`, and the original article. Where the source does not provide a label set (for example, a full payer-code crosswalk), the project does not invent one.
+
+## Teaching notebooks
+
+The notebooks in `notebooks/` load the validated participant CSV and then select a smaller set of introductory variables for Day 1 exercises. The full 26-variable derivative supports later work on readmission, responsible modeling, health-service utilization, and subgroup assessment.
 
 ## Repository structure
 
 ```text
-ninr-day1-diabetes-repo/
-├── README.md
-├── requirements.txt
-├── data/
-│   └── README.md
-├── docs/
-│   └── day1_data_dictionary.md
-└── notebooks/
-    ├── 01_day1_python_and_clinical_data.ipynb
-    └── 01_day1_python_and_clinical_data_SOLUTIONS.ipynb
+config/datasets.json                 pinned source manifest
+pipeline.py                          acquisition, preparation, and validation CLI
+data/raw/                            unchanged official archive/files/docs
+data/processed/                      participant-ready CSV
+metadata/                            dictionaries, provenance, labels, and reports
+docs/                                research questions and teaching documentation
+notebooks/                           participant and solution notebooks
+tests/                               automated artifact tests
+requirements-pipeline.txt            pinned pipeline dependency
 ```
-
-## Teaching note
-
-The notebook intentionally uses plain-language prompts and short exercises. Participants should be able to complete it without prior Python experience. The same dataset can later support Day 2 machine-learning activities around readmission prediction, model evaluation, and responsible AI.

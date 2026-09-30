@@ -1,0 +1,104 @@
+{
+  "dataset": {
+    "id": "uci_diabetes_296",
+    "title": "Diabetes 130-US Hospitals for Years 1999-2008",
+    "official_source": "UCI Machine Learning Repository",
+    "uci_id": 296,
+    "dataset_doi": "10.24432/C5230J",
+    "dataset_years": "1999-2008",
+    "record_version": "UCI record last updated 2024-09-24",
+    "access_date": "2026-09-30",
+    "license": "CC BY 4.0",
+    "repository_url": "https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999-2008",
+    "archive_url": "https://archive.ics.uci.edu/static/public/296/diabetes+130-us+hospitals+for+years+1999-2008.zip",
+    "archive_sha256": "f82ac129da2ddd2299391ff6fbae3a6a58b3edcf59ac9d7bd480c00fe453112a",
+    "metadata_url": "https://archive.ics.uci.edu/api/dataset?id=296",
+    "article_doi": "10.1155/2014/781670",
+    "article_pmcid": "PMC3996476",
+    "article_fulltext_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3996476&retmode=xml",
+    "original_files": {
+      "diabetic_data.csv": "0689e7ec031237dc63031b938805c48377748761a3b26acab621567afa24df97",
+      "IDS_mapping.csv": "f1bb82b471cb34649352597572c9b1fb00bd27f77b9f5a22a03dc3eb1039749e"
+    },
+    "expected_rows": 101766,
+    "expected_columns": 50,
+    "sample_size": 5000,
+    "sample_seed": "ninr-ai-summer-research-intensive-v1",
+    "participant_columns": [
+      "encounter_id",
+      "race",
+      "gender",
+      "age",
+      "admission_type_id",
+      "admission_type",
+      "discharge_disposition_id",
+      "discharge_disposition",
+      "admission_source_id",
+      "admission_source",
+      "time_in_hospital",
+      "medical_specialty",
+      "num_lab_procedures",
+      "num_procedures",
+      "num_medications",
+      "number_outpatient",
+      "number_emergency",
+      "number_inpatient",
+      "number_diagnoses",
+      "max_glu_serum",
+      "A1Cresult",
+      "insulin",
+      "change",
+      "diabetesMed",
+      "readmitted",
+      "readmitted_30d"
+    ]
+  },
+  "observed_at_build": "2026-09-30T19:19:16.107859+00:00",
+  "raw_files": {
+    "data\\raw\\uci_diabetes_296\\uci_diabetes_296.zip": {
+      "sha256": "f82ac129da2ddd2299391ff6fbae3a6a58b3edcf59ac9d7bd480c00fe453112a",
+      "bytes": 3170254
+    },
+    "data\\raw\\uci_diabetes_296\\original\\diabetic_data.csv": {
+      "sha256": "0689e7ec031237dc63031b938805c48377748761a3b26acab621567afa24df97",
+      "bytes": 19159383
+    },
+    "data\\raw\\uci_diabetes_296\\original\\IDS_mapping.csv": {
+      "sha256": "f1bb82b471cb34649352597572c9b1fb00bd27f77b9f5a22a03dc3eb1039749e",
+      "bytes": 2547
+    },
+    "data\\raw\\uci_diabetes_296\\documentation\\uci_dataset_296_metadata.json": {
+      "sha256": "6e6e0934d175afe24f54f2199f9895eab21844205fe46be7970c106a104725e9",
+      "bytes": 19603
+    },
+    "data\\raw\\uci_diabetes_296\\documentation\\strack_2014_pmc_fulltext.xml": {
+      "sha256": "4746a51c2b60cd2dee6f1d743a49533a05ed02d29fdd22fa46a691bf5cd782e0",
+      "bytes": 108547
+    }
+  },
+  "transformations": [
+    "Verified the official ZIP and both bundled files against pinned SHA-256 checksums.",
+    "Loaded diabetic_data.csv without modifying the original file.",
+    "Replaced the raw '?' missing-value code with blank/NA only in the participant derivative.",
+    "Decoded three integer ID fields with the bundled official IDS_mapping.csv.",
+    "Derived readmitted_30d as 1 for readmitted='<30' and 0 for '>30' or 'NO'.",
+    "Selected 5,000 encounters using the lowest SHA-256 ranks of sample_seed:encounter_id.",
+    "Sorted the participant derivative by encounter_id and wrote UTF-8 CSV with LF line endings."
+  ],
+  "weighting": {
+    "weighting_variables": [],
+    "note": "The official UCI metadata and source files provide no survey or analytic weighting variable."
+  },
+  "output": {
+    "path": "data\\processed\\diabetes_130_hospitals_participant.csv",
+    "sha256": "a94277bb784c5808259d214f21bee9df24ae688c6c91b627ab01d5b9d618b27a",
+    "rows": 5000,
+    "columns": 26
+  },
+  "software": {
+    "python": "3.14.7",
+    "python_implementation": "CPython",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "pandas": "2.3.3"
+  }
+}

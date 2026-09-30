@@ -1,22 +1,22 @@
-# Day 1 Data Dictionary
+# Day 1 data dictionary
 
-These are the variables emphasized in the beginner notebook. Names follow the UCI dataset.
+The notebooks use an introductory selection from the validated participant file. Definitions below are abbreviated from the official UCI metadata; the authoritative machine-readable dictionary for all raw, selected, and derived variables is in `metadata/data_dictionary.csv` and `metadata/data_dictionary.json`.
 
-| Variable | What it represents | Type | Why we use it on Day 1 |
-|---|---|---|---|
-| `encounter_id` | Unique hospital encounter identifier | ID | Practice inspecting identifiers |
-| `race` | Recorded race category | Categorical | Grouping/counts and discussion of context |
-| `gender` | Recorded gender | Categorical | Grouping/counts |
-| `age` | Age group (10-year categories) | Categorical | Basic distribution |
-| `time_in_hospital` | Days in hospital | Integer | Summary statistics and visualization |
-| `num_lab_procedures` | Number of laboratory procedures during encounter | Integer | Distribution |
-| `num_procedures` | Number of non-laboratory procedures | Integer | Distribution/comparison |
-| `num_medications` | Number of medications administered | Integer | Distribution/comparison |
-| `number_outpatient` | Outpatient visits in prior year | Integer | Healthcare utilization |
-| `number_emergency` | Emergency visits in prior year | Integer | Healthcare utilization |
-| `number_inpatient` | Inpatient visits in prior year | Integer | Healthcare utilization |
-| `A1Cresult` | HbA1c test result category | Categorical | Missingness and simple counts |
-| `diabetesMed` | Whether diabetes medication was prescribed | Categorical | Counts/grouping |
-| `readmitted` | Readmission category (<30 days, >30 days, or no record) | Outcome/categorical | End-of-day exploratory question |
+| Variable | Official meaning | Type |
+|---|---|---|
+| `encounter_id` | Unique encounter identifier | ID |
+| `race` | Recorded race category | Categorical |
+| `gender` | Recorded gender category | Categorical |
+| `age` | Age grouped in 10-year intervals | Categorical |
+| `time_in_hospital` | Integer days between admission and discharge | Integer |
+| `num_lab_procedures` | Laboratory tests performed during the encounter | Integer |
+| `num_procedures` | Non-laboratory procedures performed during the encounter | Integer |
+| `num_medications` | Distinct generic medication names administered during the encounter | Integer |
+| `number_outpatient` | Outpatient visits in the year preceding the encounter | Integer |
+| `number_emergency` | Emergency visits in the year preceding the encounter | Integer |
+| `number_inpatient` | Inpatient visits in the year preceding the encounter | Integer |
+| `A1Cresult` | HbA1c result category; `None` means not measured | Categorical |
+| `diabetesMed` | Whether a diabetes medication was prescribed | Categorical |
+| `readmitted` | `<30`, `>30`, or `NO` recorded inpatient readmission | Outcome |
 
-**Important:** The `readmitted` field is used on Day 1 only for simple description/group comparison. No predictive modeling is performed.
+`readmitted` is used for description and group comparison in the introductory notebook. It must not be used as a predictor of the derived `readmitted_30d` outcome.
