@@ -489,18 +489,115 @@ def write_catalog_csv(summaries: list[dict[str, Any]]) -> None:
 
 def write_catalog(summaries: list[dict[str, Any]]) -> None:
     config = load_config()
+    by_slug = {item["spec"]["slug"]: item for item in summaries}
+    pathways = [
+        (
+            "Clinical care and outcomes",
+            "Hospital care, prognosis, complications, trials, and infectious disease",
+            [
+                "diabetes_readmission",
+                "support2_serious_illness",
+                "myocardial_infarction_complications",
+                "aids_clinical_trial_175",
+                "hepatitis_c_treatment",
+            ],
+        ),
+        (
+            "Symptoms, screening, and monitoring",
+            "Physiologic signals, symptom severity, diagnostic support, and measurement",
+            [
+                "cardiotocography",
+                "parkinsons_telemonitoring",
+                "diabetic_retinopathy",
+                "infrared_thermography_temperature",
+                "eeg_eye_state",
+            ],
+        ),
+        (
+            "Health behavior, SDOH, and workforce",
+            "Behavior, substance use, work, education, income, and community conditions",
+            [
+                "obesity_lifestyle",
+                "drug_consumption",
+                "workplace_absenteeism",
+                "student_dropout_sdoh",
+                "adult_income_sdoh",
+                "communities_crime_sdoh",
+            ],
+        ),
+        (
+            "Environment and sensors",
+            "Air quality, indoor environments, sensing, and physical-activity settings",
+            [
+                "air_quality_sensors",
+                "beijing_pm25",
+                "room_occupancy_environment",
+                "bike_sharing_environment",
+            ],
+        ),
+    ]
     lines = [
-        "# NINR dataset options and research-question catalog",
+        "# Dataset Explorer",
         "",
-        "This page compares the 20 reproducible teaching datasets included in the repository. Every raw extract and definition comes from the official UCI Machine Learning Repository record supplied by the original dataset contributor; no Kaggle or third-party mirror is used. Versions were checked on " + config["access_date"] + ".",
+        "### Choose a workshop dataset by question, not by algorithm",
+        "",
+        "> **20 documented options · 4 research pathways · official sources · participant-ready files**",
+        "",
+        "This page helps NINR AI Summer Research Intensive participants move from an area of interest to a manageable dataset and research question. Every definition comes from the official UCI Machine Learning Repository record supplied by the original contributor; no Kaggle or third-party mirror is used. Versions were checked on " + config["access_date"] + ".",
         "",
         "Participant files contain approximately 1,000–5,000 observations and 10–30 source variables, plus `portfolio_row_id`. The occupational absenteeism source contains only 740 records, so its participant file retains all 740 and is the documented size exception.",
         "",
-        "## Quick comparison",
+        "[How to use the files](participant_quickstart.md) · [Return to the workshop home](../README.md)",
         "",
-        "| Dataset | Theme | Participant shape | Weight | Best for |",
-        "|---|---|---:|---|---|",
+        "## Good first choices",
+        "",
+        "| If you want to practice… | Start with… | A question you could ask |",
+        "|---|---|---|",
+        "| Classification with a clear clinical outcome | [Diabetes readmission](#diabetes-readmission) | Which pre-admission utilization measures are associated with early readmission? |",
+        "| Regression with repeated observations | [Parkinson telemonitoring](#parkinsons-telemonitoring) | Which voice features track symptom severity? |",
+        "| Health behavior and a multiclass outcome | [Obesity and lifestyle](#obesity-lifestyle) | How are activity and eating patterns associated with obesity category? |",
+        "| Fairness and social determinants | [Adult income](#adult-income-sdoh) | How do model errors differ across demographic groups? |",
+        "| Sensor-based classification | [Room occupancy](#room-occupancy-environment) | Which indoor sensors best distinguish occupancy levels? |",
+        "| A small, approachable workforce dataset | [Workplace absenteeism](#workplace-absenteeism) | Which work and health factors relate to absence duration? |",
+        "",
+        "These are starting points, not rankings. Choose the dataset whose population, timing, and limitations best fit your question.",
+        "",
+        "## Browse by research area",
+        "",
     ]
+    for pathway, description, slugs in pathways:
+        lines.extend([
+            f"### {pathway}",
+            "",
+            description + ".",
+            "",
+            "| Dataset | Participant file | Outcome | Best for |",
+            "|---|---:|---|---|",
+        ])
+        for slug in slugs:
+            item = by_slug[slug]
+            spec = item["spec"]
+            metadata = item["metadata"]
+            provenance = item["provenance"]
+            outcomes = provenance["outcomes"]
+            if len(outcomes) > 3:
+                outcome_text = f"{len(outcomes)} documented targets"
+            else:
+                outcome_text = (
+                    ", ".join(f"`{value['variable']}`" for value in outcomes)
+                    or "Choose based on question"
+                )
+            lines.append(
+                f"| [{clean_text(metadata['name'])}](#{slug.replace('_', '-')}) | "
+                f"{provenance['participant_rows']:,} × {provenance['participant_columns'] - 1} | {outcome_text} | {spec['fit']} |"
+            )
+        lines.append("")
+    lines.extend([
+        "## Compare all 20",
+        "",
+        "| Dataset | Research area | Shape | Weight |",
+        "|---|---|---:|---|",
+    ])
     for item in summaries:
         spec = item["spec"]
         metadata = item["metadata"]
@@ -508,11 +605,13 @@ def write_catalog(summaries: list[dict[str, Any]]) -> None:
         weight = ", ".join(provenance["weighting_variables"]) or "None supplied"
         lines.append(
             f"| [{clean_text(metadata['name'])}](#{spec['slug'].replace('_', '-')}) | {spec['category']} | "
-            f"{provenance['participant_rows']:,} × {provenance['participant_columns'] - 1} | {weight} | {spec['fit']} |"
+            f"{provenance['participant_rows']:,} × {provenance['participant_columns'] - 1} | {weight} |"
         )
     lines.extend([
         "",
-        "## Choosing responsibly",
+        "## Pause before modeling",
+        "",
+        "> A high-performing model can still answer the wrong question, use information unavailable at decision time, or reproduce inequity.",
         "",
         "- UCI-hosted clinical and sensor datasets are generally convenience samples, not nationally representative surveys. Only use weights when the source explicitly provides one.",
         "- Define the prediction time before selecting variables. Measurements collected after admission, treatment, or outcome determination can create leakage.",
@@ -521,7 +620,9 @@ def write_catalog(summaries: list[dict[str, Any]]) -> None:
         "- The obesity dataset includes synthetic records according to its official documentation; it is useful for teaching but not population inference.",
         "- Dataset age, geography, and collection context limit transportability to current clinical practice or other populations.",
         "",
-        "## Dataset details",
+        "## Full dataset cards",
+        "",
+        "Open a card to see the official source, version, selected variables, research questions, and audit files.",
         "",
     ])
     for item in summaries:
@@ -534,7 +635,8 @@ def write_catalog(summaries: list[dict[str, Any]]) -> None:
         lines.extend([
             f"<a id=\"{spec['slug'].replace('_', '-')}\"></a>",
             "",
-            f"### {clean_text(metadata['name'])}",
+            "<details>",
+            f"<summary><strong>{clean_text(metadata['name'])}</strong> — {spec['fit']}</summary>",
             "",
             f"- **Theme:** {spec['category']}",
             f"- **Why choose it:** {spec['fit']}",
@@ -556,6 +658,8 @@ def write_catalog(summaries: list[dict[str, Any]]) -> None:
             f"[`provenance`](../metadata/portfolio/{spec['slug']}/provenance.json) · "
             f"[`risk flags`](../metadata/portfolio/{spec['slug']}/risk_flags.csv) · "
             f"[`validation`](../metadata/portfolio/{spec['slug']}/validation_report.json)",
+            "",
+            "</details>",
             "",
         ])
     CATALOG_PATH.parent.mkdir(parents=True, exist_ok=True)

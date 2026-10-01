@@ -1,47 +1,63 @@
-# NINR AI Summer Research Intensive — reproducible health-data pipeline
+# NINR AI Summer Research Intensive
 
-This repository acquires, preserves, prepares, documents, and validates a portfolio of 20 participant-ready health and health-adjacent datasets. The pipelines use official UCI Machine Learning Repository records supplied by the original dataset contributors, plus the original article archived by NIH PubMed Central for the diabetes readmission dataset. They do not use Kaggle or another third-party mirror.
+### Participant-ready health data for learning responsible AI
 
-## Explore the 20 dataset options
+> **20 documented datasets · beginner-friendly CSV files · official sources only · reproducible preparation**
 
-Start with the [dataset options and research-question catalog](docs/dataset_catalog.md). It compares all 20 datasets by theme, participant size, outcomes, weighting, selected variables, analytic cautions, and three potential research questions per dataset.
+This repository supports hands-on learning for nursing scientists at the **NINR Artificial Intelligence Summer Research Intensive**. It turns original public datasets into approachable workshop files while preserving the documentation, provenance, and analytic cautions needed for responsible health research.
 
-The portfolio spans:
+No prior Python or machine-learning experience is required to begin.
 
-- clinical outcomes, readmission, acute care, serious illness, and clinical trials;
-- maternal/fetal monitoring, Parkinson symptoms, diabetic retinopathy, and temperature screening;
-- obesity, substance use, occupational health, and health-related workforce questions;
-- income, education, and community social determinants;
-- outdoor air quality, indoor environment, and bike-sharing/built-environment data.
+## Start here
 
-Build or refresh the complete portfolio with:
+| I want to… | Go to… |
+|---|---|
+| Complete the guided Day 1 activity | [`01_day1_python_and_clinical_data.ipynb`](notebooks/01_day1_python_and_clinical_data.ipynb) |
+| Choose a dataset for a team or capstone | [Dataset Explorer](docs/dataset_catalog.md) |
+| Learn how the files fit together | [Participant Quick Start](docs/participant_quickstart.md) |
+| See the Day 1 variable definitions | [Day 1 data dictionary](docs/day1_data_dictionary.md) |
+| Reproduce or audit the data preparation | [Reproducibility guide](#reproduce-and-verify) |
 
-```bash
-python -m pip install -r requirements-pipeline.txt
-python portfolio_pipeline.py acquire
-python portfolio_pipeline.py verify-lock
-python portfolio_pipeline.py prepare
-python -m unittest discover -s tests -v
+### The shortest path for participants
+
+1. Open the [guided notebook](notebooks/01_day1_python_and_clinical_data.ipynb) in Google Colab.
+2. Upload [`diabetes_130_hospitals_participant.csv`](data/processed/diabetes_130_hospitals_participant.csv).
+3. Run the notebook from top to bottom, changing one question, variable, or plot as you go.
+
+For a project beyond the guided lab, use the [Dataset Explorer](docs/dataset_catalog.md) to compare 20 options by research area, outcome, size, and analytic caution.
+
+## What is included
+
+The collection spans four workshop-friendly pathways:
+
+| Pathway | Example topics | Suggested starting point |
+|---|---|---|
+| **Clinical care and outcomes** | readmission, serious illness, acute care, clinical trials | [Diabetes readmission](docs/dataset_catalog.md#diabetes-readmission) |
+| **Symptoms, screening, and monitoring** | Parkinson symptoms, fetal monitoring, EEG, temperature screening | [Parkinson telemonitoring](docs/dataset_catalog.md#parkinsons-telemonitoring) |
+| **Health behavior, SDOH, and workforce** | obesity, substance use, education, income, absenteeism | [Workplace absenteeism](docs/dataset_catalog.md#workplace-absenteeism) |
+| **Environment and sensors** | air quality, indoor sensing, physical activity environments | [Room occupancy](docs/dataset_catalog.md#room-occupancy-environment) |
+
+Each portfolio dataset includes:
+
+- a participant-ready CSV;
+- a machine-readable data dictionary;
+- documented missing-value codes and categorical labels;
+- outcome and weighting-variable documentation;
+- potential research questions;
+- leakage, confounding, timing, and proxy-discrimination flags;
+- provenance and an automated validation report.
+
+## A responsible-AI learning path
+
+```text
+Research question → Understand the data → Explore quality and bias
+                  → Build a simple model → Evaluate across groups
+                  → Explain limitations and next steps
 ```
 
-Raw portfolio downloads are preserved unchanged under `data/raw/portfolio/` and intentionally excluded from Git because the committed source lock records their official URLs, versions, and SHA-256 hashes. The 20 participant files and their metadata are committed under `data/processed/portfolio/` and `metadata/portfolio/`.
+The datasets are teaching resources, not plug-and-play clinical tools. Most are convenience samples and should not be described as nationally representative. Define the prediction time before selecting predictors, check whether repeated observations come from the same person, and review the supplied risk flags before modeling.
 
-## Detailed diabetes dataset and current version
-
-**Diabetes 130-US Hospitals for Years 1999–2008** contains 101,766 inpatient diabetes encounters from 130 U.S. hospitals and integrated delivery networks.
-
-- Official source: [UCI dataset record](https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999-2008)
-- Dataset DOI: [10.24432/C5230J](https://doi.org/10.24432/C5230J)
-- Dataset years: 1999–2008
-- UCI record version: last updated September 24, 2024
-- Pipeline access date: September 30, 2026
-- UCI files: `diabetic_data.csv` and `IDS_mapping.csv`
-- Original article: Strack et al. (2014), [DOI 10.1155/2014/781670](https://doi.org/10.1155/2014/781670), [NIH record](https://pubmed.ncbi.nlm.nih.gov/24804245/)
-- License: CC BY 4.0
-
-The exact official ZIP and source files are pinned with SHA-256 checksums in `config/datasets.json`. The original files under `data/raw/` are never rewritten by the preparation step.
-
-## Reproduce the pipeline
+## Reproduce and verify
 
 Python 3.10 or newer is recommended.
 
@@ -50,78 +66,55 @@ python -m venv .venv
 # Windows: .venv\Scripts\activate
 # macOS/Linux: source .venv/bin/activate
 python -m pip install -r requirements-pipeline.txt
-python pipeline.py all
+
+python portfolio_pipeline.py acquire
+python portfolio_pipeline.py verify-lock
+python portfolio_pipeline.py prepare
 python -m unittest discover -s tests -v
 ```
 
-Commands can also be run separately:
+The raw portfolio downloads are preserved unchanged under `data/raw/portfolio/` and excluded from Git because they can be rebuilt. Their official URLs, versions, and SHA-256 hashes are pinned in [`portfolio_sources.lock.json`](config/portfolio_sources.lock.json). Participant files and metadata are committed under `data/processed/portfolio/` and `metadata/portfolio/`.
+
+The detailed diabetes pipeline can be rebuilt separately:
 
 ```bash
-python pipeline.py acquire   # download/verify official originals and documentation
-python pipeline.py prepare   # rebuild all derived files
-python pipeline.py validate  # run automated integrity and content checks
+python pipeline.py all
 ```
 
-Use `python pipeline.py acquire --force` only when intentionally refreshing the downloaded copies. A changed UCI archive will fail the pinned checksum until its new version is reviewed and the manifest is deliberately updated.
+Use `python pipeline.py acquire --force` only when intentionally refreshing the source. A changed archive fails checksum verification until the new version has been reviewed and deliberately accepted.
 
-## Participant dataset
+## Data standards
 
-The pipeline deterministically selects 5,000 encounters by SHA-256 ranking of `seed:encounter_id`; this avoids dependence on dataframe row order or a library-specific random sampler. The output contains 26 variables relevant to demographics, health services use, encounter intensity, glycemic testing, treatment, and readmission:
+- **Official sources:** UCI Machine Learning Repository records supplied by the original contributors, plus the original diabetes study article archived by NIH PubMed Central.
+- **No mirrors:** no Kaggle or third-party dataset copies when an original source is available.
+- **Originals preserved:** preparation never rewrites the downloaded source files.
+- **Deterministic samples:** participant subsets can be reproduced from the same source and configuration.
+- **Definitions traceable:** variable meanings come from official codebooks and source documentation; undocumented meanings are not invented.
+- **Audit-friendly:** every transformation, checksum, dependency, and validation result is recorded.
 
-`data/processed/diabetes_130_hospitals_participant.csv`
-
-The official three-category outcome is retained:
-
-- `<30`: inpatient readmission in less than 30 days;
-- `>30`: inpatient readmission after 30 days;
-- `NO`: no recorded readmission.
-
-The pipeline also derives `readmitted_30d`, equal to 1 only for `<30` and 0 otherwise. The participant sample contains 561 `<30`, 1,753 `>30`, and 2,686 `NO` encounters (11.22% early readmission).
-
-Raw `?` missing-value codes are converted to blank/NA only in the derived participant CSV. `None` for `A1Cresult` and `max_glu_serum` means the test was not taken and is retained as a category. Official `NULL`, `Not Available`, `Not Mapped`, and `Unknown/Invalid` ID-mapping labels are retained and documented rather than silently recoded.
-
-When loading the participant CSV with pandas, preserve the official literal `NULL` label while treating blank fields as missing:
-
-```python
-import pandas as pd
-
-data = pd.read_csv(path, keep_default_na=False, na_values=[""])
-```
-
-The source provides no survey or analytic weighting variable. It is a clinical database, not a documented probability sample; participant analyses should not be presented as nationally representative.
-
-## Documentation and audit artifacts
-
-- `metadata/data_dictionary.csv` and `.json`: official definitions plus derived-field lineage, missing codes, selection status, and risk flags.
-- `metadata/value_labels.csv`: official categorical labels, including the bundled ID mappings.
-- `metadata/missing_values.csv`: missing/unavailable codes and observed raw counts.
-- `metadata/risk_flags.csv`: leakage, timing, confounding, and proxy-discrimination flags.
-- `metadata/provenance.json`: URLs, access date, version, checksums, transformations, output hash, and software environment.
-- `metadata/dataset_summary.json`: outcome definition, counts, dimensions, and weighting status.
-- `metadata/validation_report.json`: machine-readable results of 19 automated checks.
-- `docs/research_questions_and_risks.md`: five possible research questions and analytic cautions.
-- `data/raw/uci_diabetes_296/documentation/`: the official UCI API record and the original article’s full-text XML from NIH.
-
-Variable meanings are taken from the official UCI metadata, `IDS_mapping.csv`, and the original article. Where the source does not provide a label set (for example, a full payer-code crosswalk), the project does not invent one.
-
-## Teaching notebooks
-
-The notebooks in `notebooks/` load the validated participant CSV and then select a smaller set of introductory variables for Day 1 exercises. The full 26-variable derivative supports later work on readmission, responsible modeling, health-service utilization, and subgroup assessment.
-
-## Repository structure
+## Repository map
 
 ```text
-config/datasets.json                 pinned source manifest
-config/portfolio.json                20-dataset reviewed manifest
-config/portfolio_sources.lock.json   official source versions and checksums
-pipeline.py                          acquisition, preparation, and validation CLI
-portfolio_pipeline.py                20-dataset portfolio CLI
-data/raw/                            unchanged official archive/files/docs
-data/processed/                      participant-ready CSV
-metadata/                            dictionaries, provenance, labels, and reports
-docs/dataset_catalog.md              dataset options and research questions
-docs/                                additional teaching documentation
-notebooks/                           participant and solution notebooks
-tests/                               automated artifact tests
-requirements-pipeline.txt            pinned pipeline dependency
+notebooks/                         guided participant and solution notebooks
+docs/dataset_catalog.md            visual dataset explorer and research questions
+docs/participant_quickstart.md     plain-language orientation for participants
+data/processed/portfolio/          20 participant-ready CSV files
+metadata/portfolio/                dictionaries, labels, risks, provenance, validation
+config/portfolio.json              reviewed dataset and variable selections
+config/portfolio_sources.lock.json official source versions and checksums
+portfolio_pipeline.py              portfolio acquisition, preparation, and validation
+pipeline.py                        detailed diabetes pipeline
+tests/                             automated artifact checks
 ```
+
+## Detailed diabetes teaching dataset
+
+The guided Day 1 notebook uses **Diabetes 130-US Hospitals for Years 1999–2008**, an official UCI dataset with 101,766 inpatient encounters. The reproducible participant file contains 5,000 encounters and 26 variables related to demographics, health-services use, encounter intensity, glycemic testing, treatment, and readmission.
+
+- [Official UCI record](https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999-2008)
+- [Dataset DOI: 10.24432/C5230J](https://doi.org/10.24432/C5230J)
+- [Original study article](https://pubmed.ncbi.nlm.nih.gov/24804245/)
+- Dataset years: 1999–2008
+- License: CC BY 4.0
+
+The official readmission outcome is retained as `<30`, `>30`, or `NO`, and the derived `readmitted_30d` field is documented in the data dictionary. See [research questions and analytic risks](docs/research_questions_and_risks.md) for appropriate ways to use it.

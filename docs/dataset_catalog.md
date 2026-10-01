@@ -1,35 +1,106 @@
-# NINR dataset options and research-question catalog
+# Dataset Explorer
 
-This page compares the 20 reproducible teaching datasets included in the repository. Every raw extract and definition comes from the official UCI Machine Learning Repository record supplied by the original dataset contributor; no Kaggle or third-party mirror is used. Versions were checked on 2026-10-01.
+### Choose a workshop dataset by question, not by algorithm
+
+> **20 documented options · 4 research pathways · official sources · participant-ready files**
+
+This page helps NINR AI Summer Research Intensive participants move from an area of interest to a manageable dataset and research question. Every definition comes from the official UCI Machine Learning Repository record supplied by the original contributor; no Kaggle or third-party mirror is used. Versions were checked on 2026-10-01.
 
 Participant files contain approximately 1,000–5,000 observations and 10–30 source variables, plus `portfolio_row_id`. The occupational absenteeism source contains only 740 records, so its participant file retains all 740 and is the documented size exception.
 
-## Quick comparison
+[How to use the files](participant_quickstart.md) · [Return to the workshop home](../README.md)
 
-| Dataset | Theme | Participant shape | Weight | Best for |
-|---|---|---:|---|---|
-| [Diabetes 130-US Hospitals for Years 1999-2008](#diabetes-readmission) | Clinical outcomes and health services | 5,000 × 30 | None supplied | Inpatient diabetes care, utilization, treatment, and 30-day readmission. |
-| [SUPPORT2](#support2-serious-illness) | Clinical outcomes and serious illness | 5,000 × 30 | None supplied | Prognosis, mortality, physiology, function, and care decisions among seriously ill hospitalized adults. |
-| [Myocardial infarction complications](#myocardial-infarction-complications) | Clinical outcomes and acute care | 1,700 × 30 | None supplied | Pre-admission history, acute measurements, treatment, and complications after myocardial infarction. |
-| [AIDS Clinical Trials Group Study 175](#aids-clinical-trial-175) | Clinical trials and infectious disease | 2,139 × 25 | None supplied | Randomized HIV treatment, immune markers, symptoms, and clinical progression. |
-| [Hepatitis C Virus (HCV) for Egyptian patients](#hepatitis-c-treatment) | Clinical outcomes and infectious disease | 1,385 × 29 | None supplied | Symptoms, blood tests, viral RNA over time, and baseline liver histology among patients treated for HCV. |
-| [Cardiotocography](#cardiotocography) | Maternal and fetal health | 2,126 × 23 | None supplied | Fetal heart-rate and uterine-contraction measurements with expert fetal-state classifications. |
-| [Parkinsons Telemonitoring](#parkinsons-telemonitoring) | Symptoms and remote monitoring | 5,000 × 22 | None supplied | Repeated voice measurements and Parkinson disease symptom-severity scores. |
-| [Diabetic Retinopathy Debrecen](#diabetic-retinopathy) | Screening and diagnostic support | 1,151 × 20 | None supplied | Retinal image-derived features for diabetic retinopathy screening. |
-| [Infrared Thermography Temperature](#infrared-thermography-temperature) | Screening and measurement science | 1,020 × 30 | None supplied | Infrared facial temperatures, oral temperature, environment, and participant characteristics. |
-| [EEG Eye State](#eeg-eye-state) | Neurophysiology and monitoring | 5,000 × 15 | None supplied | EEG channel measurements paired with open-versus-closed eye state. |
-| [Estimation of Obesity Levels Based On Eating Habits and Physical Condition](#obesity-lifestyle) | Health behavior and chronic disease | 2,111 × 17 | None supplied | Eating habits, physical activity, transportation, anthropometrics, and obesity category. |
-| [Drug Consumption (Quantified)](#drug-consumption) | Health behavior and substance use | 1,885 × 30 | None supplied | Demographics, personality measures, sensation seeking, and self-reported substance-use categories. |
-| [Absenteeism at work](#workplace-absenteeism) | Occupational health and workforce | 740 × 21 | None supplied | Worker characteristics, health behaviors, work context, reasons for absence, and absence duration. |
-| [Predict Students' Dropout and Academic Success](#student-dropout-sdoh) | Education and social determinants | 4,424 × 30 | None supplied | Educational, financial, demographic, and macroeconomic factors associated with dropout and graduation. |
-| [Adult](#adult-income-sdoh) | Economic social determinants | 5,000 × 15 | fnlwgt | Employment, education, work hours, demographics, and income category as an SDOH teaching dataset. |
-| [Communities and Crime](#communities-crime-sdoh) | Community social determinants | 1,994 × 30 | None supplied | Community-level demographic, economic, housing, mobility, and public-safety measures. |
-| [Air Quality](#air-quality-sensors) | Environmental health | 5,000 × 15 | None supplied | Hourly air-pollutant reference measurements, sensor responses, temperature, and humidity. |
-| [Beijing PM2.5](#beijing-pm25) | Environmental health | 5,000 × 13 | None supplied | Hourly PM2.5, weather, wind direction, and precipitation measurements. |
-| [Room Occupancy Estimation](#room-occupancy-environment) | Built environment and sensing | 5,000 × 19 | None supplied | Indoor temperature, light, sound, CO2, motion, and room occupancy. |
-| [Bike Sharing](#bike-sharing-environment) | Built environment and physical activity | 5,000 × 17 | None supplied | Hourly bike-rental demand with season, weather, workday, and calendar measures. |
+## Good first choices
 
-## Choosing responsibly
+| If you want to practice… | Start with… | A question you could ask |
+|---|---|---|
+| Classification with a clear clinical outcome | [Diabetes readmission](#diabetes-readmission) | Which pre-admission utilization measures are associated with early readmission? |
+| Regression with repeated observations | [Parkinson telemonitoring](#parkinsons-telemonitoring) | Which voice features track symptom severity? |
+| Health behavior and a multiclass outcome | [Obesity and lifestyle](#obesity-lifestyle) | How are activity and eating patterns associated with obesity category? |
+| Fairness and social determinants | [Adult income](#adult-income-sdoh) | How do model errors differ across demographic groups? |
+| Sensor-based classification | [Room occupancy](#room-occupancy-environment) | Which indoor sensors best distinguish occupancy levels? |
+| A small, approachable workforce dataset | [Workplace absenteeism](#workplace-absenteeism) | Which work and health factors relate to absence duration? |
+
+These are starting points, not rankings. Choose the dataset whose population, timing, and limitations best fit your question.
+
+## Browse by research area
+
+### Clinical care and outcomes
+
+Hospital care, prognosis, complications, trials, and infectious disease.
+
+| Dataset | Participant file | Outcome | Best for |
+|---|---:|---|---|
+| [Diabetes 130-US Hospitals for Years 1999-2008](#diabetes-readmission) | 5,000 × 30 | `readmitted` | Inpatient diabetes care, utilization, treatment, and 30-day readmission. |
+| [SUPPORT2](#support2-serious-illness) | 5,000 × 30 | `hospdead`, `death`, `sfdm2` | Prognosis, mortality, physiology, function, and care decisions among seriously ill hospitalized adults. |
+| [Myocardial infarction complications](#myocardial-infarction-complications) | 1,700 × 30 | 8 documented targets | Pre-admission history, acute measurements, treatment, and complications after myocardial infarction. |
+| [AIDS Clinical Trials Group Study 175](#aids-clinical-trial-175) | 2,139 × 25 | `cid` | Randomized HIV treatment, immune markers, symptoms, and clinical progression. |
+| [Hepatitis C Virus (HCV) for Egyptian patients](#hepatitis-c-treatment) | 1,385 × 29 | `Baselinehistological staging` | Symptoms, blood tests, viral RNA over time, and baseline liver histology among patients treated for HCV. |
+
+### Symptoms, screening, and monitoring
+
+Physiologic signals, symptom severity, diagnostic support, and measurement.
+
+| Dataset | Participant file | Outcome | Best for |
+|---|---:|---|---|
+| [Cardiotocography](#cardiotocography) | 2,126 × 23 | `CLASS`, `NSP` | Fetal heart-rate and uterine-contraction measurements with expert fetal-state classifications. |
+| [Parkinsons Telemonitoring](#parkinsons-telemonitoring) | 5,000 × 22 | `motor_UPDRS`, `total_UPDRS` | Repeated voice measurements and Parkinson disease symptom-severity scores. |
+| [Diabetic Retinopathy Debrecen](#diabetic-retinopathy) | 1,151 × 20 | `Class` | Retinal image-derived features for diabetic retinopathy screening. |
+| [Infrared Thermography Temperature](#infrared-thermography-temperature) | 1,020 × 30 | `aveOralF`, `aveOralM` | Infrared facial temperatures, oral temperature, environment, and participant characteristics. |
+| [EEG Eye State](#eeg-eye-state) | 5,000 × 15 | `eyeDetection` | EEG channel measurements paired with open-versus-closed eye state. |
+
+### Health behavior, SDOH, and workforce
+
+Behavior, substance use, work, education, income, and community conditions.
+
+| Dataset | Participant file | Outcome | Best for |
+|---|---:|---|---|
+| [Estimation of Obesity Levels Based On Eating Habits and Physical Condition](#obesity-lifestyle) | 2,111 × 17 | `NObeyesdad` | Eating habits, physical activity, transportation, anthropometrics, and obesity category. |
+| [Drug Consumption (Quantified)](#drug-consumption) | 1,885 × 30 | 17 documented targets | Demographics, personality measures, sensation seeking, and self-reported substance-use categories. |
+| [Absenteeism at work](#workplace-absenteeism) | 740 × 21 | `Absenteeism time in hours` | Worker characteristics, health behaviors, work context, reasons for absence, and absence duration. |
+| [Predict Students' Dropout and Academic Success](#student-dropout-sdoh) | 4,424 × 30 | `Target` | Educational, financial, demographic, and macroeconomic factors associated with dropout and graduation. |
+| [Adult](#adult-income-sdoh) | 5,000 × 15 | `income` | Employment, education, work hours, demographics, and income category as an SDOH teaching dataset. |
+| [Communities and Crime](#communities-crime-sdoh) | 1,994 × 30 | `ViolentCrimesPerPop` | Community-level demographic, economic, housing, mobility, and public-safety measures. |
+
+### Environment and sensors
+
+Air quality, indoor environments, sensing, and physical-activity settings.
+
+| Dataset | Participant file | Outcome | Best for |
+|---|---:|---|---|
+| [Air Quality](#air-quality-sensors) | 5,000 × 15 | Choose based on question | Hourly air-pollutant reference measurements, sensor responses, temperature, and humidity. |
+| [Beijing PM2.5](#beijing-pm25) | 5,000 × 13 | `pm2.5` | Hourly PM2.5, weather, wind direction, and precipitation measurements. |
+| [Room Occupancy Estimation](#room-occupancy-environment) | 5,000 × 19 | `Room_Occupancy_Count` | Indoor temperature, light, sound, CO2, motion, and room occupancy. |
+| [Bike Sharing](#bike-sharing-environment) | 5,000 × 17 | `cnt` | Hourly bike-rental demand with season, weather, workday, and calendar measures. |
+
+## Compare all 20
+
+| Dataset | Research area | Shape | Weight |
+|---|---|---:|---|
+| [Diabetes 130-US Hospitals for Years 1999-2008](#diabetes-readmission) | Clinical outcomes and health services | 5,000 × 30 | None supplied |
+| [SUPPORT2](#support2-serious-illness) | Clinical outcomes and serious illness | 5,000 × 30 | None supplied |
+| [Myocardial infarction complications](#myocardial-infarction-complications) | Clinical outcomes and acute care | 1,700 × 30 | None supplied |
+| [AIDS Clinical Trials Group Study 175](#aids-clinical-trial-175) | Clinical trials and infectious disease | 2,139 × 25 | None supplied |
+| [Hepatitis C Virus (HCV) for Egyptian patients](#hepatitis-c-treatment) | Clinical outcomes and infectious disease | 1,385 × 29 | None supplied |
+| [Cardiotocography](#cardiotocography) | Maternal and fetal health | 2,126 × 23 | None supplied |
+| [Parkinsons Telemonitoring](#parkinsons-telemonitoring) | Symptoms and remote monitoring | 5,000 × 22 | None supplied |
+| [Diabetic Retinopathy Debrecen](#diabetic-retinopathy) | Screening and diagnostic support | 1,151 × 20 | None supplied |
+| [Infrared Thermography Temperature](#infrared-thermography-temperature) | Screening and measurement science | 1,020 × 30 | None supplied |
+| [EEG Eye State](#eeg-eye-state) | Neurophysiology and monitoring | 5,000 × 15 | None supplied |
+| [Estimation of Obesity Levels Based On Eating Habits and Physical Condition](#obesity-lifestyle) | Health behavior and chronic disease | 2,111 × 17 | None supplied |
+| [Drug Consumption (Quantified)](#drug-consumption) | Health behavior and substance use | 1,885 × 30 | None supplied |
+| [Absenteeism at work](#workplace-absenteeism) | Occupational health and workforce | 740 × 21 | None supplied |
+| [Predict Students' Dropout and Academic Success](#student-dropout-sdoh) | Education and social determinants | 4,424 × 30 | None supplied |
+| [Adult](#adult-income-sdoh) | Economic social determinants | 5,000 × 15 | fnlwgt |
+| [Communities and Crime](#communities-crime-sdoh) | Community social determinants | 1,994 × 30 | None supplied |
+| [Air Quality](#air-quality-sensors) | Environmental health | 5,000 × 15 | None supplied |
+| [Beijing PM2.5](#beijing-pm25) | Environmental health | 5,000 × 13 | None supplied |
+| [Room Occupancy Estimation](#room-occupancy-environment) | Built environment and sensing | 5,000 × 19 | None supplied |
+| [Bike Sharing](#bike-sharing-environment) | Built environment and physical activity | 5,000 × 17 | None supplied |
+
+## Pause before modeling
+
+> A high-performing model can still answer the wrong question, use information unavailable at decision time, or reproduce inequity.
 
 - UCI-hosted clinical and sensor datasets are generally convenience samples, not nationally representative surveys. Only use weights when the source explicitly provides one.
 - Define the prediction time before selecting variables. Measurements collected after admission, treatment, or outcome determination can create leakage.
@@ -38,11 +109,14 @@ Participant files contain approximately 1,000–5,000 observations and 10–30 s
 - The obesity dataset includes synthetic records according to its official documentation; it is useful for teaching but not population inference.
 - Dataset age, geography, and collection context limit transportability to current clinical practice or other populations.
 
-## Dataset details
+## Full dataset cards
+
+Open a card to see the official source, version, selected variables, research questions, and audit files.
 
 <a id="diabetes-readmission"></a>
 
-### Diabetes 130-US Hospitals for Years 1999-2008
+<details>
+<summary><strong>Diabetes 130-US Hospitals for Years 1999-2008</strong> — Inpatient diabetes care, utilization, treatment, and 30-day readmission.</summary>
 
 - **Theme:** Clinical outcomes and health services
 - **Why choose it:** Inpatient diabetes care, utilization, treatment, and 30-day readmission.
@@ -60,9 +134,12 @@ Participant files contain approximately 1,000–5,000 observations and 10–30 s
 
 Artifacts: [`participant.csv`](../data/processed/portfolio/diabetes_readmission/participant.csv) · [`data dictionary`](../metadata/portfolio/diabetes_readmission/data_dictionary.csv) · [`provenance`](../metadata/portfolio/diabetes_readmission/provenance.json) · [`risk flags`](../metadata/portfolio/diabetes_readmission/risk_flags.csv) · [`validation`](../metadata/portfolio/diabetes_readmission/validation_report.json)
 
+</details>
+
 <a id="support2-serious-illness"></a>
 
-### SUPPORT2
+<details>
+<summary><strong>SUPPORT2</strong> — Prognosis, mortality, physiology, function, and care decisions among seriously ill hospitalized adults.</summary>
 
 - **Theme:** Clinical outcomes and serious illness
 - **Why choose it:** Prognosis, mortality, physiology, function, and care decisions among seriously ill hospitalized adults.
@@ -80,9 +157,12 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/diabetes_readmission/
 
 Artifacts: [`participant.csv`](../data/processed/portfolio/support2_serious_illness/participant.csv) · [`data dictionary`](../metadata/portfolio/support2_serious_illness/data_dictionary.csv) · [`provenance`](../metadata/portfolio/support2_serious_illness/provenance.json) · [`risk flags`](../metadata/portfolio/support2_serious_illness/risk_flags.csv) · [`validation`](../metadata/portfolio/support2_serious_illness/validation_report.json)
 
+</details>
+
 <a id="myocardial-infarction-complications"></a>
 
-### Myocardial infarction complications
+<details>
+<summary><strong>Myocardial infarction complications</strong> — Pre-admission history, acute measurements, treatment, and complications after myocardial infarction.</summary>
 
 - **Theme:** Clinical outcomes and acute care
 - **Why choose it:** Pre-admission history, acute measurements, treatment, and complications after myocardial infarction.
@@ -100,9 +180,12 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/support2_serious_illn
 
 Artifacts: [`participant.csv`](../data/processed/portfolio/myocardial_infarction_complications/participant.csv) · [`data dictionary`](../metadata/portfolio/myocardial_infarction_complications/data_dictionary.csv) · [`provenance`](../metadata/portfolio/myocardial_infarction_complications/provenance.json) · [`risk flags`](../metadata/portfolio/myocardial_infarction_complications/risk_flags.csv) · [`validation`](../metadata/portfolio/myocardial_infarction_complications/validation_report.json)
 
+</details>
+
 <a id="aids-clinical-trial-175"></a>
 
-### AIDS Clinical Trials Group Study 175
+<details>
+<summary><strong>AIDS Clinical Trials Group Study 175</strong> — Randomized HIV treatment, immune markers, symptoms, and clinical progression.</summary>
 
 - **Theme:** Clinical trials and infectious disease
 - **Why choose it:** Randomized HIV treatment, immune markers, symptoms, and clinical progression.
@@ -120,9 +203,12 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/myocardial_infarction
 
 Artifacts: [`participant.csv`](../data/processed/portfolio/aids_clinical_trial_175/participant.csv) · [`data dictionary`](../metadata/portfolio/aids_clinical_trial_175/data_dictionary.csv) · [`provenance`](../metadata/portfolio/aids_clinical_trial_175/provenance.json) · [`risk flags`](../metadata/portfolio/aids_clinical_trial_175/risk_flags.csv) · [`validation`](../metadata/portfolio/aids_clinical_trial_175/validation_report.json)
 
+</details>
+
 <a id="hepatitis-c-treatment"></a>
 
-### Hepatitis C Virus (HCV) for Egyptian patients
+<details>
+<summary><strong>Hepatitis C Virus (HCV) for Egyptian patients</strong> — Symptoms, blood tests, viral RNA over time, and baseline liver histology among patients treated for HCV.</summary>
 
 - **Theme:** Clinical outcomes and infectious disease
 - **Why choose it:** Symptoms, blood tests, viral RNA over time, and baseline liver histology among patients treated for HCV.
@@ -140,9 +226,12 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/aids_clinical_trial_1
 
 Artifacts: [`participant.csv`](../data/processed/portfolio/hepatitis_c_treatment/participant.csv) · [`data dictionary`](../metadata/portfolio/hepatitis_c_treatment/data_dictionary.csv) · [`provenance`](../metadata/portfolio/hepatitis_c_treatment/provenance.json) · [`risk flags`](../metadata/portfolio/hepatitis_c_treatment/risk_flags.csv) · [`validation`](../metadata/portfolio/hepatitis_c_treatment/validation_report.json)
 
+</details>
+
 <a id="cardiotocography"></a>
 
-### Cardiotocography
+<details>
+<summary><strong>Cardiotocography</strong> — Fetal heart-rate and uterine-contraction measurements with expert fetal-state classifications.</summary>
 
 - **Theme:** Maternal and fetal health
 - **Why choose it:** Fetal heart-rate and uterine-contraction measurements with expert fetal-state classifications.
@@ -160,9 +249,12 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/hepatitis_c_treatment
 
 Artifacts: [`participant.csv`](../data/processed/portfolio/cardiotocography/participant.csv) · [`data dictionary`](../metadata/portfolio/cardiotocography/data_dictionary.csv) · [`provenance`](../metadata/portfolio/cardiotocography/provenance.json) · [`risk flags`](../metadata/portfolio/cardiotocography/risk_flags.csv) · [`validation`](../metadata/portfolio/cardiotocography/validation_report.json)
 
+</details>
+
 <a id="parkinsons-telemonitoring"></a>
 
-### Parkinsons Telemonitoring
+<details>
+<summary><strong>Parkinsons Telemonitoring</strong> — Repeated voice measurements and Parkinson disease symptom-severity scores.</summary>
 
 - **Theme:** Symptoms and remote monitoring
 - **Why choose it:** Repeated voice measurements and Parkinson disease symptom-severity scores.
@@ -180,9 +272,12 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/cardiotocography/part
 
 Artifacts: [`participant.csv`](../data/processed/portfolio/parkinsons_telemonitoring/participant.csv) · [`data dictionary`](../metadata/portfolio/parkinsons_telemonitoring/data_dictionary.csv) · [`provenance`](../metadata/portfolio/parkinsons_telemonitoring/provenance.json) · [`risk flags`](../metadata/portfolio/parkinsons_telemonitoring/risk_flags.csv) · [`validation`](../metadata/portfolio/parkinsons_telemonitoring/validation_report.json)
 
+</details>
+
 <a id="diabetic-retinopathy"></a>
 
-### Diabetic Retinopathy Debrecen
+<details>
+<summary><strong>Diabetic Retinopathy Debrecen</strong> — Retinal image-derived features for diabetic retinopathy screening.</summary>
 
 - **Theme:** Screening and diagnostic support
 - **Why choose it:** Retinal image-derived features for diabetic retinopathy screening.
@@ -200,9 +295,12 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/parkinsons_telemonito
 
 Artifacts: [`participant.csv`](../data/processed/portfolio/diabetic_retinopathy/participant.csv) · [`data dictionary`](../metadata/portfolio/diabetic_retinopathy/data_dictionary.csv) · [`provenance`](../metadata/portfolio/diabetic_retinopathy/provenance.json) · [`risk flags`](../metadata/portfolio/diabetic_retinopathy/risk_flags.csv) · [`validation`](../metadata/portfolio/diabetic_retinopathy/validation_report.json)
 
+</details>
+
 <a id="infrared-thermography-temperature"></a>
 
-### Infrared Thermography Temperature
+<details>
+<summary><strong>Infrared Thermography Temperature</strong> — Infrared facial temperatures, oral temperature, environment, and participant characteristics.</summary>
 
 - **Theme:** Screening and measurement science
 - **Why choose it:** Infrared facial temperatures, oral temperature, environment, and participant characteristics.
@@ -220,9 +318,12 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/diabetic_retinopathy/
 
 Artifacts: [`participant.csv`](../data/processed/portfolio/infrared_thermography_temperature/participant.csv) · [`data dictionary`](../metadata/portfolio/infrared_thermography_temperature/data_dictionary.csv) · [`provenance`](../metadata/portfolio/infrared_thermography_temperature/provenance.json) · [`risk flags`](../metadata/portfolio/infrared_thermography_temperature/risk_flags.csv) · [`validation`](../metadata/portfolio/infrared_thermography_temperature/validation_report.json)
 
+</details>
+
 <a id="eeg-eye-state"></a>
 
-### EEG Eye State
+<details>
+<summary><strong>EEG Eye State</strong> — EEG channel measurements paired with open-versus-closed eye state.</summary>
 
 - **Theme:** Neurophysiology and monitoring
 - **Why choose it:** EEG channel measurements paired with open-versus-closed eye state.
@@ -240,9 +341,12 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/infrared_thermography
 
 Artifacts: [`participant.csv`](../data/processed/portfolio/eeg_eye_state/participant.csv) · [`data dictionary`](../metadata/portfolio/eeg_eye_state/data_dictionary.csv) · [`provenance`](../metadata/portfolio/eeg_eye_state/provenance.json) · [`risk flags`](../metadata/portfolio/eeg_eye_state/risk_flags.csv) · [`validation`](../metadata/portfolio/eeg_eye_state/validation_report.json)
 
+</details>
+
 <a id="obesity-lifestyle"></a>
 
-### Estimation of Obesity Levels Based On Eating Habits and Physical Condition
+<details>
+<summary><strong>Estimation of Obesity Levels Based On Eating Habits and Physical Condition</strong> — Eating habits, physical activity, transportation, anthropometrics, and obesity category.</summary>
 
 - **Theme:** Health behavior and chronic disease
 - **Why choose it:** Eating habits, physical activity, transportation, anthropometrics, and obesity category.
@@ -260,9 +364,12 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/eeg_eye_state/partici
 
 Artifacts: [`participant.csv`](../data/processed/portfolio/obesity_lifestyle/participant.csv) · [`data dictionary`](../metadata/portfolio/obesity_lifestyle/data_dictionary.csv) · [`provenance`](../metadata/portfolio/obesity_lifestyle/provenance.json) · [`risk flags`](../metadata/portfolio/obesity_lifestyle/risk_flags.csv) · [`validation`](../metadata/portfolio/obesity_lifestyle/validation_report.json)
 
+</details>
+
 <a id="drug-consumption"></a>
 
-### Drug Consumption (Quantified)
+<details>
+<summary><strong>Drug Consumption (Quantified)</strong> — Demographics, personality measures, sensation seeking, and self-reported substance-use categories.</summary>
 
 - **Theme:** Health behavior and substance use
 - **Why choose it:** Demographics, personality measures, sensation seeking, and self-reported substance-use categories.
@@ -280,9 +387,12 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/obesity_lifestyle/par
 
 Artifacts: [`participant.csv`](../data/processed/portfolio/drug_consumption/participant.csv) · [`data dictionary`](../metadata/portfolio/drug_consumption/data_dictionary.csv) · [`provenance`](../metadata/portfolio/drug_consumption/provenance.json) · [`risk flags`](../metadata/portfolio/drug_consumption/risk_flags.csv) · [`validation`](../metadata/portfolio/drug_consumption/validation_report.json)
 
+</details>
+
 <a id="workplace-absenteeism"></a>
 
-### Absenteeism at work
+<details>
+<summary><strong>Absenteeism at work</strong> — Worker characteristics, health behaviors, work context, reasons for absence, and absence duration.</summary>
 
 - **Theme:** Occupational health and workforce
 - **Why choose it:** Worker characteristics, health behaviors, work context, reasons for absence, and absence duration.
@@ -300,9 +410,12 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/drug_consumption/part
 
 Artifacts: [`participant.csv`](../data/processed/portfolio/workplace_absenteeism/participant.csv) · [`data dictionary`](../metadata/portfolio/workplace_absenteeism/data_dictionary.csv) · [`provenance`](../metadata/portfolio/workplace_absenteeism/provenance.json) · [`risk flags`](../metadata/portfolio/workplace_absenteeism/risk_flags.csv) · [`validation`](../metadata/portfolio/workplace_absenteeism/validation_report.json)
 
+</details>
+
 <a id="student-dropout-sdoh"></a>
 
-### Predict Students' Dropout and Academic Success
+<details>
+<summary><strong>Predict Students' Dropout and Academic Success</strong> — Educational, financial, demographic, and macroeconomic factors associated with dropout and graduation.</summary>
 
 - **Theme:** Education and social determinants
 - **Why choose it:** Educational, financial, demographic, and macroeconomic factors associated with dropout and graduation.
@@ -320,9 +433,12 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/workplace_absenteeism
 
 Artifacts: [`participant.csv`](../data/processed/portfolio/student_dropout_sdoh/participant.csv) · [`data dictionary`](../metadata/portfolio/student_dropout_sdoh/data_dictionary.csv) · [`provenance`](../metadata/portfolio/student_dropout_sdoh/provenance.json) · [`risk flags`](../metadata/portfolio/student_dropout_sdoh/risk_flags.csv) · [`validation`](../metadata/portfolio/student_dropout_sdoh/validation_report.json)
 
+</details>
+
 <a id="adult-income-sdoh"></a>
 
-### Adult
+<details>
+<summary><strong>Adult</strong> — Employment, education, work hours, demographics, and income category as an SDOH teaching dataset.</summary>
 
 - **Theme:** Economic social determinants
 - **Why choose it:** Employment, education, work hours, demographics, and income category as an SDOH teaching dataset.
@@ -340,9 +456,12 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/student_dropout_sdoh/
 
 Artifacts: [`participant.csv`](../data/processed/portfolio/adult_income_sdoh/participant.csv) · [`data dictionary`](../metadata/portfolio/adult_income_sdoh/data_dictionary.csv) · [`provenance`](../metadata/portfolio/adult_income_sdoh/provenance.json) · [`risk flags`](../metadata/portfolio/adult_income_sdoh/risk_flags.csv) · [`validation`](../metadata/portfolio/adult_income_sdoh/validation_report.json)
 
+</details>
+
 <a id="communities-crime-sdoh"></a>
 
-### Communities and Crime
+<details>
+<summary><strong>Communities and Crime</strong> — Community-level demographic, economic, housing, mobility, and public-safety measures.</summary>
 
 - **Theme:** Community social determinants
 - **Why choose it:** Community-level demographic, economic, housing, mobility, and public-safety measures.
@@ -360,9 +479,12 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/adult_income_sdoh/par
 
 Artifacts: [`participant.csv`](../data/processed/portfolio/communities_crime_sdoh/participant.csv) · [`data dictionary`](../metadata/portfolio/communities_crime_sdoh/data_dictionary.csv) · [`provenance`](../metadata/portfolio/communities_crime_sdoh/provenance.json) · [`risk flags`](../metadata/portfolio/communities_crime_sdoh/risk_flags.csv) · [`validation`](../metadata/portfolio/communities_crime_sdoh/validation_report.json)
 
+</details>
+
 <a id="air-quality-sensors"></a>
 
-### Air Quality
+<details>
+<summary><strong>Air Quality</strong> — Hourly air-pollutant reference measurements, sensor responses, temperature, and humidity.</summary>
 
 - **Theme:** Environmental health
 - **Why choose it:** Hourly air-pollutant reference measurements, sensor responses, temperature, and humidity.
@@ -381,9 +503,12 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/communities_crime_sdo
 
 Artifacts: [`participant.csv`](../data/processed/portfolio/air_quality_sensors/participant.csv) · [`data dictionary`](../metadata/portfolio/air_quality_sensors/data_dictionary.csv) · [`provenance`](../metadata/portfolio/air_quality_sensors/provenance.json) · [`risk flags`](../metadata/portfolio/air_quality_sensors/risk_flags.csv) · [`validation`](../metadata/portfolio/air_quality_sensors/validation_report.json)
 
+</details>
+
 <a id="beijing-pm25"></a>
 
-### Beijing PM2.5
+<details>
+<summary><strong>Beijing PM2.5</strong> — Hourly PM2.5, weather, wind direction, and precipitation measurements.</summary>
 
 - **Theme:** Environmental health
 - **Why choose it:** Hourly PM2.5, weather, wind direction, and precipitation measurements.
@@ -401,9 +526,12 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/air_quality_sensors/p
 
 Artifacts: [`participant.csv`](../data/processed/portfolio/beijing_pm25/participant.csv) · [`data dictionary`](../metadata/portfolio/beijing_pm25/data_dictionary.csv) · [`provenance`](../metadata/portfolio/beijing_pm25/provenance.json) · [`risk flags`](../metadata/portfolio/beijing_pm25/risk_flags.csv) · [`validation`](../metadata/portfolio/beijing_pm25/validation_report.json)
 
+</details>
+
 <a id="room-occupancy-environment"></a>
 
-### Room Occupancy Estimation
+<details>
+<summary><strong>Room Occupancy Estimation</strong> — Indoor temperature, light, sound, CO2, motion, and room occupancy.</summary>
 
 - **Theme:** Built environment and sensing
 - **Why choose it:** Indoor temperature, light, sound, CO2, motion, and room occupancy.
@@ -421,9 +549,12 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/beijing_pm25/particip
 
 Artifacts: [`participant.csv`](../data/processed/portfolio/room_occupancy_environment/participant.csv) · [`data dictionary`](../metadata/portfolio/room_occupancy_environment/data_dictionary.csv) · [`provenance`](../metadata/portfolio/room_occupancy_environment/provenance.json) · [`risk flags`](../metadata/portfolio/room_occupancy_environment/risk_flags.csv) · [`validation`](../metadata/portfolio/room_occupancy_environment/validation_report.json)
 
+</details>
+
 <a id="bike-sharing-environment"></a>
 
-### Bike Sharing
+<details>
+<summary><strong>Bike Sharing</strong> — Hourly bike-rental demand with season, weather, workday, and calendar measures.</summary>
 
 - **Theme:** Built environment and physical activity
 - **Why choose it:** Hourly bike-rental demand with season, weather, workday, and calendar measures.
@@ -441,3 +572,5 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/room_occupancy_enviro
   3. Why would using casual and registered counts to predict total count create leakage?
 
 Artifacts: [`participant.csv`](../data/processed/portfolio/bike_sharing_environment/participant.csv) · [`data dictionary`](../metadata/portfolio/bike_sharing_environment/data_dictionary.csv) · [`provenance`](../metadata/portfolio/bike_sharing_environment/provenance.json) · [`risk flags`](../metadata/portfolio/bike_sharing_environment/risk_flags.csv) · [`validation`](../metadata/portfolio/bike_sharing_environment/validation_report.json)
+
+</details>
