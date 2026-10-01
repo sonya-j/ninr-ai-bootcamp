@@ -1,4 +1,4 @@
-"""Build the 20-dataset NINR teaching portfolio from official UCI sources."""
+"""Build the 20-dataset NINR teaching portfolio from official/original sources."""
 
 from __future__ import annotations
 
@@ -34,6 +34,10 @@ def load_config() -> dict[str, Any]:
     return config
 
 
+def source_identifier(spec: dict[str, Any]) -> str | int:
+    return spec.get("source_id", spec.get("uci_id"))
+
+
 def sha256(path: Path) -> str:
     digest = hashlib.sha256()
     with path.open("rb") as handle:
@@ -61,6 +65,7 @@ def dataset_paths(spec: dict[str, Any]) -> dict[str, Path]:
         "raw_dir": raw_dir,
         "metadata": raw_dir / "official_metadata.json",
         "data": raw_dir / "official_data.csv",
+        "documentation": raw_dir / "official_documentation.pdf",
         "processed_dir": processed_dir,
         "participant": processed_dir / "participant.csv",
         "metadata_dir": metadata_dir,
@@ -69,6 +74,18 @@ def dataset_paths(spec: dict[str, Any]) -> dict[str, Path]:
 
 def acquire_dataset(spec: dict[str, Any], force: bool = False) -> dict[str, Any]:
     paths = dataset_paths(spec)
+    if spec.get("source_type") == "cms":
+        metadata_url = spec["metadata_url"]
+        if force or not paths["metadata"].exists():
+            download(metadata_url, paths["metadata"])
+        raw_metadata = json.loads(paths["metadata"].read_text(encoding="utf-8-sig"))
+        distribution = raw_metadata["distribution"][0]
+        if force or not paths["data"].exists():
+            download(distribution["downloadURL"], paths["data"])
+        if force or not paths["documentation"].exists():
+            download(distribution["describedBy"], paths["documentation"])
+        return normalized_metadata(spec, paths)
+
     metadata_url = API_URL.format(uci_id=spec["uci_id"])
     if force or not paths["metadata"].exists():
         download(metadata_url, paths["metadata"])
@@ -86,9 +103,54 @@ def acquire_dataset(spec: dict[str, Any], force: bool = False) -> dict[str, Any]
     return metadata
 
 
+def normalized_metadata(spec: dict[str, Any], paths: dict[str, Path]) -> dict[str, Any]:
+    raw_metadata = json.loads(paths["metadata"].read_text(encoding="utf-8-sig"))
+    if spec.get("source_type") != "cms":
+        metadata = raw_metadata["data"]
+        target_names = set(spec.get("target_variables", []))
+        target_definitions = spec.get("target_definitions", {})
+        for variable in metadata.get("variables") or []:
+            if variable.get("name") in target_names:
+                variable["role"] = "Target"
+                if target_definitions.get(variable["name"]):
+                    variable["description"] = target_definitions[variable["name"]]
+        return metadata
+
+    distribution = raw_metadata["distribution"][0]
+    variables = []
+    for item in spec["variables"]:
+        variables.append({
+            "name": item["name"],
+            "role": item.get("role", "Feature"),
+            "type": item.get("type", ""),
+            "demographic": item.get("demographic", ""),
+            "description": item.get("description", ""),
+            "units": item.get("units", ""),
+            "missing_values": item.get("missing_values", ""),
+        })
+    return {
+        "uci_id": None,
+        "source_id": source_identifier(spec),
+        "name": raw_metadata["title"],
+        "repository_url": raw_metadata["landingPage"],
+        "data_url": distribution["downloadURL"],
+        "documentation_url": distribution["describedBy"],
+        "dataset_doi": None,
+        "year_of_dataset_creation": str(raw_metadata["released"])[:4],
+        "last_updated": raw_metadata["modified"],
+        "license": raw_metadata.get("accessLevel", "public"),
+        "publisher": raw_metadata["publisher"]["name"],
+        "num_instances": None,
+        "num_features": len(variables),
+        "missing_values_symbol": "",
+        "variables": variables,
+    }
+
+
 def acquire(force: bool = False) -> None:
     for spec in load_config()["datasets"]:
-        print(f"Acquiring {spec['slug']} (UCI {spec['uci_id']})")
+        source = "CMS" if spec.get("source_type") == "cms" else "UCI"
+        print(f"Acquiring {spec['slug']} ({source} {source_identifier(spec)})")
         acquire_dataset(spec, force=force)
 
 
@@ -217,8 +279,7 @@ def risk_for_variable(variable: str, official: dict[str, Any], spec: dict[str, A
 
 def prepare_dataset(spec: dict[str, Any], config: dict[str, Any]) -> dict[str, Any]:
     paths = dataset_paths(spec)
-    payload = json.loads(paths["metadata"].read_text(encoding="utf-8-sig"))
-    metadata = payload["data"]
+    metadata = normalized_metadata(spec, paths)
     raw = pd.read_csv(paths["data"], keep_default_na=False, low_memory=False)
     raw.columns = [str(column) for column in raw.columns]
     selected = choose_columns(raw, metadata, spec)
@@ -277,7 +338,10 @@ def prepare_dataset(spec: dict[str, Any], config: dict[str, Any]) -> dict[str, A
             "weighting_variable": column in spec.get("weight_variables", []),
             "risk_flags": risk_flags,
             "risk_note": risk_note,
-            "definition_source": f"UCI API metadata, dataset {spec['uci_id']}",
+            "definition_source": (
+                metadata.get("documentation_url")
+                or f"UCI API metadata, dataset {spec['uci_id']}"
+            ),
         })
         if risk_flags:
             risk_rows.append({"variable": column, "risk_flags": risk_flags, "note": risk_note})
@@ -346,9 +410,11 @@ def prepare_dataset(spec: dict[str, Any], config: dict[str, Any]) -> dict[str, A
         if str(official_by_name.get(column, {}).get("role") or "") == "Target"
     ]
     provenance = {
-        "uci_id": spec["uci_id"],
+        "source_type": spec.get("source_type", "uci"),
+        "source_id": source_identifier(spec),
+        "uci_id": spec.get("uci_id"),
         "title": clean_text(metadata["name"]),
-        "official_source": config["official_repository"],
+        "official_source": metadata.get("publisher", config["official_repository"]),
         "repository_url": metadata["repository_url"],
         "data_url": metadata["data_url"],
         "dataset_doi": metadata.get("dataset_doi"),
@@ -358,6 +424,12 @@ def prepare_dataset(spec: dict[str, Any], config: dict[str, Any]) -> dict[str, A
         "license": metadata.get("license"),
         "raw_data_sha256": sha256(paths["data"]),
         "official_metadata_sha256": sha256(paths["metadata"]),
+        "official_documentation_url": metadata.get("documentation_url"),
+        "official_documentation_sha256": (
+            sha256(paths["documentation"])
+            if paths["documentation"].exists()
+            else None
+        ),
         "raw_rows": len(raw),
         "raw_columns": len(raw.columns),
         "participant_rows": len(participant),
@@ -368,7 +440,7 @@ def prepare_dataset(spec: dict[str, Any], config: dict[str, Any]) -> dict[str, A
         "weighting_variables": spec.get("weight_variables", []),
         "outcomes": targets,
         "transformations": [
-            "Downloaded the official UCI normalized CSV and API metadata without modifying the raw files.",
+            "Downloaded the official/original CSV and source metadata without modifying the raw files.",
             "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
             "Converted documented source missing symbols to blank/NA only in the participant derivative.",
             f"Selected {sample_n} rows by deterministic SHA-256 rank using the portfolio seed.",
@@ -388,8 +460,7 @@ def prepare_dataset(spec: dict[str, Any], config: dict[str, Any]) -> dict[str, A
 
 def validate_dataset(spec: dict[str, Any], prepared: dict[str, Any] | None = None) -> dict[str, Any]:
     paths = dataset_paths(spec)
-    payload = json.loads(paths["metadata"].read_text(encoding="utf-8-sig"))
-    metadata = payload["data"]
+    metadata = normalized_metadata(spec, paths)
     raw = pd.read_csv(paths["data"], keep_default_na=False, low_memory=False)
     participant = pd.read_csv(paths["participant"], keep_default_na=False)
     dictionary = pd.read_csv(paths["metadata_dir"] / "data_dictionary.csv", keep_default_na=False)
@@ -471,7 +542,9 @@ def write_catalog_csv(summaries: list[dict[str, Any]]) -> None:
         provenance = item["provenance"]
         rows.append({
             "slug": item["spec"]["slug"],
-            "uci_id": item["spec"]["uci_id"],
+            "source_type": item["spec"].get("source_type", "uci"),
+            "source_id": source_identifier(item["spec"]),
+            "uci_id": item["spec"].get("uci_id", ""),
             "title": clean_text(metadata["name"]),
             "category": item["spec"]["category"],
             "raw_rows": provenance["raw_rows"],
@@ -500,6 +573,7 @@ def write_catalog(summaries: list[dict[str, Any]]) -> None:
                 "myocardial_infarction_complications",
                 "aids_clinical_trial_175",
                 "hepatitis_c_treatment",
+                "pediatric_appendicitis",
             ],
         ),
         (
@@ -511,28 +585,27 @@ def write_catalog(summaries: list[dict[str, Any]]) -> None:
                 "diabetic_retinopathy",
                 "infrared_thermography_temperature",
                 "eeg_eye_state",
+                "cervical_cancer_screening",
+                "glioma_grading",
             ],
         ),
         (
-            "Health behavior, SDOH, and workforce",
-            "Behavior, substance use, work, education, income, and community conditions",
+            "Health behavior, aging, and workforce",
+            "Behavior, substance use, occupational health, sleep, aging, and health-service use",
             [
                 "obesity_lifestyle",
                 "drug_consumption",
                 "workplace_absenteeism",
-                "student_dropout_sdoh",
-                "adult_income_sdoh",
-                "communities_crime_sdoh",
+                "healthy_aging_poll",
             ],
         ),
         (
-            "Environment and sensors",
-            "Air quality, indoor environments, sensing, and physical-activity settings",
+            "Environment and care quality",
+            "Environmental exposures, patient experience, and health-care quality",
             [
                 "air_quality_sensors",
                 "beijing_pm25",
-                "room_occupancy_environment",
-                "bike_sharing_environment",
+                "hospital_patient_experience",
             ],
         ),
     ]
@@ -543,9 +616,9 @@ def write_catalog(summaries: list[dict[str, Any]]) -> None:
         "",
         "> **20 documented options · 4 research pathways · official sources · participant-ready files**",
         "",
-        "This page helps NINR AI Summer Research Intensive participants move from an area of interest to a manageable dataset and research question. Every definition comes from the official UCI Machine Learning Repository record supplied by the original contributor; no Kaggle or third-party mirror is used. Versions were checked on " + config["access_date"] + ".",
+        "This page helps NINR AI Summer Research Intensive participants move from an area of interest to a manageable dataset and research question. Definitions come from official government documentation or the original dataset record; no Kaggle or unofficial mirror is used. Versions were checked on " + config["access_date"] + ".",
         "",
-        "Participant files contain approximately 1,000–5,000 observations and 10–30 source variables, plus `portfolio_row_id`. The occupational absenteeism source contains only 740 records, so its participant file retains all 740 and is the documented size exception.",
+        "Participant files contain 714–5,000 observations and 10–30 source variables, plus `portfolio_row_id`. Four focused clinical or survey sources contain fewer than 1,000 records; those participant files retain every available observation rather than fabricating additional data.",
         "",
         "[How to use the files](participant_quickstart.md) · [Return to the workshop home](../README.md)",
         "",
@@ -556,9 +629,10 @@ def write_catalog(summaries: list[dict[str, Any]]) -> None:
         "| Classification with a clear clinical outcome | [Diabetes readmission](#diabetes-readmission) | Which pre-admission utilization measures are associated with early readmission? |",
         "| Regression with repeated observations | [Parkinson telemonitoring](#parkinsons-telemonitoring) | Which voice features track symptom severity? |",
         "| Health behavior and a multiclass outcome | [Obesity and lifestyle](#obesity-lifestyle) | How are activity and eating patterns associated with obesity category? |",
-        "| Fairness and social determinants | [Adult income](#adult-income-sdoh) | How do model errors differ across demographic groups? |",
-        "| Sensor-based classification | [Room occupancy](#room-occupancy-environment) | Which indoor sensors best distinguish occupancy levels? |",
+        "| Older-adult health and service use | [National Poll on Healthy Aging](#healthy-aging-poll) | Which health and sleep factors relate to doctor visits? |",
+        "| Pediatric assessment and clinical decisions | [Pediatric appendicitis](#pediatric-appendicitis) | Which early findings are associated with diagnosis or management? |",
         "| A small, approachable workforce dataset | [Workplace absenteeism](#workplace-absenteeism) | Which work and health factors relate to absence duration? |",
+        "| Patient experience and nursing quality | [Hospital HCAHPS](#hospital-patient-experience) | How do nurse-communication ratings vary across hospitals? |",
         "",
         "These are starting points, not rankings. Choose the dataset whose population, timing, and limitations best fit your question.",
         "",
@@ -613,7 +687,7 @@ def write_catalog(summaries: list[dict[str, Any]]) -> None:
         "",
         "> A high-performing model can still answer the wrong question, use information unavailable at decision time, or reproduce inequity.",
         "",
-        "- UCI-hosted clinical and sensor datasets are generally convenience samples, not nationally representative surveys. Only use weights when the source explicitly provides one.",
+        "- Many clinical and sensor datasets are convenience samples, not nationally representative surveys. Only use weights when the source explicitly provides one.",
         "- Define the prediction time before selecting variables. Measurements collected after admission, treatment, or outcome determination can create leakage.",
         "- Demographic and geographic variables can encode structural inequity and proxy protected characteristics. Audit missingness, representation, and subgroup errors.",
         "- Community-level associations do not establish individual-level relationships; avoid ecological fallacy.",
@@ -630,6 +704,7 @@ def write_catalog(summaries: list[dict[str, Any]]) -> None:
         metadata = item["metadata"]
         provenance = item["provenance"]
         outcomes = provenance["outcomes"]
+        official_label = metadata.get("publisher") or f"UCI dataset {spec['uci_id']}"
         outcome_text = ", ".join(f"`{value['variable']}`" for value in outcomes) or "No official target designated"
         selected = ", ".join(f"`{name}`" for name in provenance["selected_variables"] if name != "portfolio_row_id")
         lines.extend([
@@ -639,8 +714,8 @@ def write_catalog(summaries: list[dict[str, Any]]) -> None:
             f"<summary><strong>{clean_text(metadata['name'])}</strong> — {spec['fit']}</summary>",
             "",
             f"- **Theme:** {spec['category']}",
-            f"- **Why choose it:** {spec['fit']}",
-            f"- **Official source:** [UCI dataset {spec['uci_id']}]({metadata['repository_url']})",
+            f"- **Nursing science connection:** {spec['fit']}",
+            f"- **Official source:** [{official_label}]({metadata['repository_url']})",
             f"- **Version:** dataset year {metadata.get('year_of_dataset_creation')}; record last updated {metadata.get('last_updated')}",
             f"- **Source/participant size:** {provenance['raw_rows']:,} source rows; {provenance['participant_rows']:,} participant rows; {provenance['participant_columns'] - 1} source variables",
             *( [f"- **Source count caveat:** {spec['source_count_note']}"] if spec.get("source_count_note") else [] ),
@@ -671,10 +746,12 @@ def write_lock() -> None:
     datasets = []
     for spec in config["datasets"]:
         paths = dataset_paths(spec)
-        payload = json.loads(paths["metadata"].read_text(encoding="utf-8-sig"))["data"]
+        payload = normalized_metadata(spec, paths)
         datasets.append({
             "slug": spec["slug"],
-            "uci_id": spec["uci_id"],
+            "source_type": spec.get("source_type", "uci"),
+            "source_id": source_identifier(spec),
+            "uci_id": spec.get("uci_id"),
             "name": payload["name"],
             "data_url": payload["data_url"],
             "repository_url": payload["repository_url"],
@@ -682,6 +759,11 @@ def write_lock() -> None:
             "last_updated": payload.get("last_updated"),
             "data_sha256": sha256(paths["data"]),
             "metadata_sha256": sha256(paths["metadata"]),
+            "documentation_sha256": (
+                sha256(paths["documentation"])
+                if paths["documentation"].exists()
+                else None
+            ),
         })
     LOCK_PATH.write_text(
         json.dumps({"access_date": config["access_date"], "datasets": datasets}, indent=2),
@@ -698,6 +780,11 @@ def verify_lock() -> None:
         spec = next(spec for spec in load_config()["datasets"] if spec["slug"] == item["slug"])
         paths = dataset_paths(spec)
         if sha256(paths["data"]) != item["data_sha256"] or sha256(paths["metadata"]) != item["metadata_sha256"]:
+            failures.append(item["slug"])
+        elif item.get("documentation_sha256") and (
+            not paths["documentation"].exists()
+            or sha256(paths["documentation"]) != item["documentation_sha256"]
+        ):
             failures.append(item["slug"])
     if failures:
         raise ValueError(f"Source-lock checksum mismatch: {', '.join(failures)}")
@@ -723,7 +810,7 @@ def main() -> None:
             paths = dataset_paths(spec)
             summaries.append({
                 "spec": spec,
-                "metadata": json.loads(paths["metadata"].read_text(encoding="utf-8-sig"))["data"],
+                "metadata": normalized_metadata(spec, paths),
                 "provenance": json.loads((paths["metadata_dir"] / "provenance.json").read_text(encoding="utf-8")),
                 "report": json.loads((paths["metadata_dir"] / "validation_report.json").read_text(encoding="utf-8")),
             })

@@ -4,9 +4,9 @@
 
 > **20 documented options · 4 research pathways · official sources · participant-ready files**
 
-This page helps NINR AI Summer Research Intensive participants move from an area of interest to a manageable dataset and research question. Every definition comes from the official UCI Machine Learning Repository record supplied by the original contributor; no Kaggle or third-party mirror is used. Versions were checked on 2026-10-01.
+This page helps NINR AI Summer Research Intensive participants move from an area of interest to a manageable dataset and research question. Definitions come from official government documentation or the original dataset record; no Kaggle or unofficial mirror is used. Versions were checked on 2026-10-01.
 
-Participant files contain approximately 1,000–5,000 observations and 10–30 source variables, plus `portfolio_row_id`. The occupational absenteeism source contains only 740 records, so its participant file retains all 740 and is the documented size exception.
+Participant files contain 714–5,000 observations and 10–30 source variables, plus `portfolio_row_id`. Four focused clinical or survey sources contain fewer than 1,000 records; those participant files retain every available observation rather than fabricating additional data.
 
 [How to use the files](participant_quickstart.md) · [Return to the workshop home](../README.md)
 
@@ -17,9 +17,10 @@ Participant files contain approximately 1,000–5,000 observations and 10–30 s
 | Classification with a clear clinical outcome | [Diabetes readmission](#diabetes-readmission) | Which pre-admission utilization measures are associated with early readmission? |
 | Regression with repeated observations | [Parkinson telemonitoring](#parkinsons-telemonitoring) | Which voice features track symptom severity? |
 | Health behavior and a multiclass outcome | [Obesity and lifestyle](#obesity-lifestyle) | How are activity and eating patterns associated with obesity category? |
-| Fairness and social determinants | [Adult income](#adult-income-sdoh) | How do model errors differ across demographic groups? |
-| Sensor-based classification | [Room occupancy](#room-occupancy-environment) | Which indoor sensors best distinguish occupancy levels? |
+| Older-adult health and service use | [National Poll on Healthy Aging](#healthy-aging-poll) | Which health and sleep factors relate to doctor visits? |
+| Pediatric assessment and clinical decisions | [Pediatric appendicitis](#pediatric-appendicitis) | Which early findings are associated with diagnosis or management? |
 | A small, approachable workforce dataset | [Workplace absenteeism](#workplace-absenteeism) | Which work and health factors relate to absence duration? |
+| Patient experience and nursing quality | [Hospital HCAHPS](#hospital-patient-experience) | How do nurse-communication ratings vary across hospitals? |
 
 These are starting points, not rankings. Choose the dataset whose population, timing, and limitations best fit your question.
 
@@ -36,6 +37,7 @@ Hospital care, prognosis, complications, trials, and infectious disease.
 | [Myocardial infarction complications](#myocardial-infarction-complications) | 1,700 × 30 | 8 documented targets | Pre-admission history, acute measurements, treatment, and complications after myocardial infarction. |
 | [AIDS Clinical Trials Group Study 175](#aids-clinical-trial-175) | 2,139 × 25 | `cid` | Randomized HIV treatment, immune markers, symptoms, and clinical progression. |
 | [Hepatitis C Virus (HCV) for Egyptian patients](#hepatitis-c-treatment) | 1,385 × 29 | `Baselinehistological staging` | Symptoms, blood tests, viral RNA over time, and baseline liver histology among patients treated for HCV. |
+| [Regensburg Pediatric Appendicitis](#pediatric-appendicitis) | 782 × 30 | `Management`, `Severity`, `Diagnosis` | Symptoms, physical examination, laboratory tests, ultrasound findings, diagnosis, management, and severity in children with abdominal pain. |
 
 ### Symptoms, screening, and monitoring
 
@@ -48,30 +50,29 @@ Physiologic signals, symptom severity, diagnostic support, and measurement.
 | [Diabetic Retinopathy Debrecen](#diabetic-retinopathy) | 1,151 × 20 | `Class` | Retinal image-derived features for diabetic retinopathy screening. |
 | [Infrared Thermography Temperature](#infrared-thermography-temperature) | 1,020 × 30 | `aveOralF`, `aveOralM` | Infrared facial temperatures, oral temperature, environment, and participant characteristics. |
 | [EEG Eye State](#eeg-eye-state) | 5,000 × 15 | `eyeDetection` | EEG channel measurements paired with open-versus-closed eye state. |
+| [Cervical Cancer (Risk Factors)](#cervical-cancer-screening) | 858 × 30 | 4 documented targets | Demographics, reproductive and sexual health history, smoking, contraception, sexually transmitted infections, and cervical screening results. |
+| [Glioma Grading Clinical and Mutation Features](#glioma-grading) | 839 × 25 | `Grade` | Clinical and molecular features associated with lower-grade versus glioblastoma tumor classification. |
 
-### Health behavior, SDOH, and workforce
+### Health behavior, aging, and workforce
 
-Behavior, substance use, work, education, income, and community conditions.
+Behavior, substance use, occupational health, sleep, aging, and health-service use.
 
 | Dataset | Participant file | Outcome | Best for |
 |---|---:|---|---|
 | [Estimation of Obesity Levels Based On Eating Habits and Physical Condition](#obesity-lifestyle) | 2,111 × 17 | `NObeyesdad` | Eating habits, physical activity, transportation, anthropometrics, and obesity category. |
 | [Drug Consumption (Quantified)](#drug-consumption) | 1,885 × 30 | 17 documented targets | Demographics, personality measures, sensation seeking, and self-reported substance-use categories. |
 | [Absenteeism at work](#workplace-absenteeism) | 740 × 21 | `Absenteeism time in hours` | Worker characteristics, health behaviors, work context, reasons for absence, and absence duration. |
-| [Predict Students' Dropout and Academic Success](#student-dropout-sdoh) | 4,424 × 30 | `Target` | Educational, financial, demographic, and macroeconomic factors associated with dropout and graduation. |
-| [Adult](#adult-income-sdoh) | 5,000 × 15 | `income` | Employment, education, work hours, demographics, and income category as an SDOH teaching dataset. |
-| [Communities and Crime](#communities-crime-sdoh) | 1,994 × 30 | `ViolentCrimesPerPop` | Community-level demographic, economic, housing, mobility, and public-safety measures. |
+| [National Poll on Healthy Aging (NPHA)](#healthy-aging-poll) | 714 × 15 | `Number_of_Doctors_Visited` | Health, sleep, caregiving, insurance, medication, dental care, and health-service use among adults age 50 and older. |
 
-### Environment and sensors
+### Environment and care quality
 
-Air quality, indoor environments, sensing, and physical-activity settings.
+Environmental exposures, patient experience, and health-care quality.
 
 | Dataset | Participant file | Outcome | Best for |
 |---|---:|---|---|
 | [Air Quality](#air-quality-sensors) | 5,000 × 15 | Choose based on question | Hourly air-pollutant reference measurements, sensor responses, temperature, and humidity. |
 | [Beijing PM2.5](#beijing-pm25) | 5,000 × 13 | `pm2.5` | Hourly PM2.5, weather, wind direction, and precipitation measurements. |
-| [Room Occupancy Estimation](#room-occupancy-environment) | 5,000 × 19 | `Room_Occupancy_Count` | Indoor temperature, light, sound, CO2, motion, and room occupancy. |
-| [Bike Sharing](#bike-sharing-environment) | 5,000 × 17 | `cnt` | Hourly bike-rental demand with season, weather, workday, and calendar measures. |
+| [Patient survey (HCAHPS) - Hospital](#hospital-patient-experience) | 5,000 × 22 | Choose based on question | Hospital-level HCAHPS measures of nurse communication, discharge information, care transitions, environment, ratings, and willingness to recommend. |
 
 ## Compare all 20
 
@@ -90,19 +91,19 @@ Air quality, indoor environments, sensing, and physical-activity settings.
 | [Estimation of Obesity Levels Based On Eating Habits and Physical Condition](#obesity-lifestyle) | Health behavior and chronic disease | 2,111 × 17 | None supplied |
 | [Drug Consumption (Quantified)](#drug-consumption) | Health behavior and substance use | 1,885 × 30 | None supplied |
 | [Absenteeism at work](#workplace-absenteeism) | Occupational health and workforce | 740 × 21 | None supplied |
-| [Predict Students' Dropout and Academic Success](#student-dropout-sdoh) | Education and social determinants | 4,424 × 30 | None supplied |
-| [Adult](#adult-income-sdoh) | Economic social determinants | 5,000 × 15 | fnlwgt |
-| [Communities and Crime](#communities-crime-sdoh) | Community social determinants | 1,994 × 30 | None supplied |
+| [Regensburg Pediatric Appendicitis](#pediatric-appendicitis) | Pediatric acute care | 782 × 30 | None supplied |
+| [National Poll on Healthy Aging (NPHA)](#healthy-aging-poll) | Older-adult health and health services | 714 × 15 | None supplied |
+| [Cervical Cancer (Risk Factors)](#cervical-cancer-screening) | Women's health and cancer screening | 858 × 30 | None supplied |
 | [Air Quality](#air-quality-sensors) | Environmental health | 5,000 × 15 | None supplied |
 | [Beijing PM2.5](#beijing-pm25) | Environmental health | 5,000 × 13 | None supplied |
-| [Room Occupancy Estimation](#room-occupancy-environment) | Built environment and sensing | 5,000 × 19 | None supplied |
-| [Bike Sharing](#bike-sharing-environment) | Built environment and physical activity | 5,000 × 17 | None supplied |
+| [Glioma Grading Clinical and Mutation Features](#glioma-grading) | Cancer care and precision health | 839 × 25 | None supplied |
+| [Patient survey (HCAHPS) - Hospital](#hospital-patient-experience) | Patient experience and care quality | 5,000 × 22 | None supplied |
 
 ## Pause before modeling
 
 > A high-performing model can still answer the wrong question, use information unavailable at decision time, or reproduce inequity.
 
-- UCI-hosted clinical and sensor datasets are generally convenience samples, not nationally representative surveys. Only use weights when the source explicitly provides one.
+- Many clinical and sensor datasets are convenience samples, not nationally representative surveys. Only use weights when the source explicitly provides one.
 - Define the prediction time before selecting variables. Measurements collected after admission, treatment, or outcome determination can create leakage.
 - Demographic and geographic variables can encode structural inequity and proxy protected characteristics. Audit missingness, representation, and subgroup errors.
 - Community-level associations do not establish individual-level relationships; avoid ecological fallacy.
@@ -119,7 +120,7 @@ Open a card to see the official source, version, selected variables, research qu
 <summary><strong>Diabetes 130-US Hospitals for Years 1999-2008</strong> — Inpatient diabetes care, utilization, treatment, and 30-day readmission.</summary>
 
 - **Theme:** Clinical outcomes and health services
-- **Why choose it:** Inpatient diabetes care, utilization, treatment, and 30-day readmission.
+- **Nursing science connection:** Inpatient diabetes care, utilization, treatment, and 30-day readmission.
 - **Official source:** [UCI dataset 296](https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999-2008)
 - **Version:** dataset year 2014; record last updated Tue Sep 24 2024
 - **Source/participant size:** 101,766 source rows; 5,000 participant rows; 30 source variables
@@ -142,7 +143,7 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/diabetes_readmission/
 <summary><strong>SUPPORT2</strong> — Prognosis, mortality, physiology, function, and care decisions among seriously ill hospitalized adults.</summary>
 
 - **Theme:** Clinical outcomes and serious illness
-- **Why choose it:** Prognosis, mortality, physiology, function, and care decisions among seriously ill hospitalized adults.
+- **Nursing science connection:** Prognosis, mortality, physiology, function, and care decisions among seriously ill hospitalized adults.
 - **Official source:** [UCI dataset 880](https://archive.ics.uci.edu/dataset/880/support2)
 - **Version:** dataset year 1995; record last updated Mon Sep 09 2024
 - **Source/participant size:** 9,105 source rows; 5,000 participant rows; 30 source variables
@@ -165,7 +166,7 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/support2_serious_illn
 <summary><strong>Myocardial infarction complications</strong> — Pre-admission history, acute measurements, treatment, and complications after myocardial infarction.</summary>
 
 - **Theme:** Clinical outcomes and acute care
-- **Why choose it:** Pre-admission history, acute measurements, treatment, and complications after myocardial infarction.
+- **Nursing science connection:** Pre-admission history, acute measurements, treatment, and complications after myocardial infarction.
 - **Official source:** [UCI dataset 579](https://archive.ics.uci.edu/dataset/579/myocardial+infarction+complications)
 - **Version:** dataset year 2020; record last updated Fri Nov 03 2023
 - **Source/participant size:** 1,700 source rows; 1,700 participant rows; 30 source variables
@@ -188,7 +189,7 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/myocardial_infarction
 <summary><strong>AIDS Clinical Trials Group Study 175</strong> — Randomized HIV treatment, immune markers, symptoms, and clinical progression.</summary>
 
 - **Theme:** Clinical trials and infectious disease
-- **Why choose it:** Randomized HIV treatment, immune markers, symptoms, and clinical progression.
+- **Nursing science connection:** Randomized HIV treatment, immune markers, symptoms, and clinical progression.
 - **Official source:** [UCI dataset 890](https://archive.ics.uci.edu/dataset/890/aids+clinical+trials+group+study+175)
 - **Version:** dataset year 1996; record last updated Fri Nov 03 2023
 - **Source/participant size:** 2,139 source rows; 2,139 participant rows; 25 source variables
@@ -211,7 +212,7 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/aids_clinical_trial_1
 <summary><strong>Hepatitis C Virus (HCV) for Egyptian patients</strong> — Symptoms, blood tests, viral RNA over time, and baseline liver histology among patients treated for HCV.</summary>
 
 - **Theme:** Clinical outcomes and infectious disease
-- **Why choose it:** Symptoms, blood tests, viral RNA over time, and baseline liver histology among patients treated for HCV.
+- **Nursing science connection:** Symptoms, blood tests, viral RNA over time, and baseline liver histology among patients treated for HCV.
 - **Official source:** [UCI dataset 503](https://archive.ics.uci.edu/dataset/503/hepatitis+c+virus+hcv+for+egyptian+patients)
 - **Version:** dataset year 2017; record last updated Tue Apr 09 2024
 - **Source/participant size:** 1,385 source rows; 1,385 participant rows; 29 source variables
@@ -234,7 +235,7 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/hepatitis_c_treatment
 <summary><strong>Cardiotocography</strong> — Fetal heart-rate and uterine-contraction measurements with expert fetal-state classifications.</summary>
 
 - **Theme:** Maternal and fetal health
-- **Why choose it:** Fetal heart-rate and uterine-contraction measurements with expert fetal-state classifications.
+- **Nursing science connection:** Fetal heart-rate and uterine-contraction measurements with expert fetal-state classifications.
 - **Official source:** [UCI dataset 193](https://archive.ics.uci.edu/dataset/193/cardiotocography)
 - **Version:** dataset year 2000; record last updated Fri Mar 15 2024
 - **Source/participant size:** 2,126 source rows; 2,126 participant rows; 23 source variables
@@ -257,7 +258,7 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/cardiotocography/part
 <summary><strong>Parkinsons Telemonitoring</strong> — Repeated voice measurements and Parkinson disease symptom-severity scores.</summary>
 
 - **Theme:** Symptoms and remote monitoring
-- **Why choose it:** Repeated voice measurements and Parkinson disease symptom-severity scores.
+- **Nursing science connection:** Repeated voice measurements and Parkinson disease symptom-severity scores.
 - **Official source:** [UCI dataset 189](https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring)
 - **Version:** dataset year 2009; record last updated Fri Nov 03 2023
 - **Source/participant size:** 5,875 source rows; 5,000 participant rows; 22 source variables
@@ -280,7 +281,7 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/parkinsons_telemonito
 <summary><strong>Diabetic Retinopathy Debrecen</strong> — Retinal image-derived features for diabetic retinopathy screening.</summary>
 
 - **Theme:** Screening and diagnostic support
-- **Why choose it:** Retinal image-derived features for diabetic retinopathy screening.
+- **Nursing science connection:** Retinal image-derived features for diabetic retinopathy screening.
 - **Official source:** [UCI dataset 329](https://archive.ics.uci.edu/dataset/329/diabetic+retinopathy+debrecen)
 - **Version:** dataset year 2014; record last updated Fri Nov 03 2023
 - **Source/participant size:** 1,151 source rows; 1,151 participant rows; 20 source variables
@@ -303,7 +304,7 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/diabetic_retinopathy/
 <summary><strong>Infrared Thermography Temperature</strong> — Infrared facial temperatures, oral temperature, environment, and participant characteristics.</summary>
 
 - **Theme:** Screening and measurement science
-- **Why choose it:** Infrared facial temperatures, oral temperature, environment, and participant characteristics.
+- **Nursing science connection:** Infrared facial temperatures, oral temperature, environment, and participant characteristics.
 - **Official source:** [UCI dataset 925](https://archive.ics.uci.edu/dataset/925/infrared+thermography+temperature+dataset)
 - **Version:** dataset year 2021; record last updated Tue Dec 12 2023
 - **Source/participant size:** 1,020 source rows; 1,020 participant rows; 30 source variables
@@ -326,7 +327,7 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/infrared_thermography
 <summary><strong>EEG Eye State</strong> — EEG channel measurements paired with open-versus-closed eye state.</summary>
 
 - **Theme:** Neurophysiology and monitoring
-- **Why choose it:** EEG channel measurements paired with open-versus-closed eye state.
+- **Nursing science connection:** EEG channel measurements paired with open-versus-closed eye state.
 - **Official source:** [UCI dataset 264](https://archive.ics.uci.edu/dataset/264/eeg+eye+state)
 - **Version:** dataset year 2013; record last updated Thu Mar 21 2024
 - **Source/participant size:** 14,980 source rows; 5,000 participant rows; 15 source variables
@@ -349,7 +350,7 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/eeg_eye_state/partici
 <summary><strong>Estimation of Obesity Levels Based On Eating Habits and Physical Condition</strong> — Eating habits, physical activity, transportation, anthropometrics, and obesity category.</summary>
 
 - **Theme:** Health behavior and chronic disease
-- **Why choose it:** Eating habits, physical activity, transportation, anthropometrics, and obesity category.
+- **Nursing science connection:** Eating habits, physical activity, transportation, anthropometrics, and obesity category.
 - **Official source:** [UCI dataset 544](https://archive.ics.uci.edu/dataset/544/estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition)
 - **Version:** dataset year 2019; record last updated Tue Sep 10 2024
 - **Source/participant size:** 2,111 source rows; 2,111 participant rows; 17 source variables
@@ -372,7 +373,7 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/obesity_lifestyle/par
 <summary><strong>Drug Consumption (Quantified)</strong> — Demographics, personality measures, sensation seeking, and self-reported substance-use categories.</summary>
 
 - **Theme:** Health behavior and substance use
-- **Why choose it:** Demographics, personality measures, sensation seeking, and self-reported substance-use categories.
+- **Nursing science connection:** Demographics, personality measures, sensation seeking, and self-reported substance-use categories.
 - **Official source:** [UCI dataset 373](https://archive.ics.uci.edu/dataset/373/drug+consumption+quantified)
 - **Version:** dataset year 2015; record last updated Fri Mar 08 2024
 - **Source/participant size:** 1,885 source rows; 1,885 participant rows; 30 source variables
@@ -395,7 +396,7 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/drug_consumption/part
 <summary><strong>Absenteeism at work</strong> — Worker characteristics, health behaviors, work context, reasons for absence, and absence duration.</summary>
 
 - **Theme:** Occupational health and workforce
-- **Why choose it:** Worker characteristics, health behaviors, work context, reasons for absence, and absence duration.
+- **Nursing science connection:** Worker characteristics, health behaviors, work context, reasons for absence, and absence duration.
 - **Official source:** [UCI dataset 445](https://archive.ics.uci.edu/dataset/445/absenteeism+at+work)
 - **Version:** dataset year 2012; record last updated Fri Mar 08 2024
 - **Source/participant size:** 740 source rows; 740 participant rows; 21 source variables
@@ -412,72 +413,72 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/workplace_absenteeism
 
 </details>
 
-<a id="student-dropout-sdoh"></a>
+<a id="pediatric-appendicitis"></a>
 
 <details>
-<summary><strong>Predict Students' Dropout and Academic Success</strong> — Educational, financial, demographic, and macroeconomic factors associated with dropout and graduation.</summary>
+<summary><strong>Regensburg Pediatric Appendicitis</strong> — Symptoms, physical examination, laboratory tests, ultrasound findings, diagnosis, management, and severity in children with abdominal pain.</summary>
 
-- **Theme:** Education and social determinants
-- **Why choose it:** Educational, financial, demographic, and macroeconomic factors associated with dropout and graduation.
-- **Official source:** [UCI dataset 697](https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success)
-- **Version:** dataset year 2021; record last updated Mon Feb 26 2024
-- **Source/participant size:** 4,424 source rows; 4,424 participant rows; 30 source variables
-- **Official target(s):** `Target`
+- **Theme:** Pediatric acute care
+- **Nursing science connection:** Symptoms, physical examination, laboratory tests, ultrasound findings, diagnosis, management, and severity in children with abdominal pain.
+- **Official source:** [UCI dataset 938](https://archive.ics.uci.edu/dataset/938/regensburg+pediatric+appendicitis)
+- **Version:** dataset year 2023; record last updated Tue Feb 06 2024
+- **Source/participant size:** 782 source rows; 782 participant rows; 30 source variables
+- **Official target(s):** `Management`, `Severity`, `Diagnosis`
 - **Weighting:** No weighting variable supplied
-- **Selected variables:** `Marital Status`, `Application mode`, `Course`, `Daytime/evening attendance`, `Previous qualification`, `Previous qualification (grade)`, `Mother's qualification`, `Father's qualification`, `Mother's occupation`, `Father's occupation`, `Admission grade`, `Displaced`, `Educational special needs`, `Debtor`, `Tuition fees up to date`, `Gender`, `Scholarship holder`, `Age at enrollment`, `International`, `Curricular units 1st sem (enrolled)`, `Curricular units 1st sem (approved)`, `Curricular units 1st sem (grade)`, `Curricular units 2nd sem (enrolled)`, `Curricular units 2nd sem (approved)`, `Curricular units 2nd sem (grade)`, `Unemployment rate`, `Inflation rate`, `GDP`, `Target`, `Nacionality`
+- **Selected variables:** `Age`, `Sex`, `Management`, `Severity`, `Diagnosis`, `BMI`, `Height`, `Weight`, `Length_of_Stay`, `Alvarado_Score`, `Paedriatic_Appendicitis_Score`, `Appendix_on_US`, `Appendix_Diameter`, `Migratory_Pain`, `Lower_Right_Abd_Pain`, `Contralateral_Rebound_Tenderness`, `Coughing_Pain`, `Nausea`, `Loss_of_Appetite`, `Body_Temperature`, `WBC_Count`, `Neutrophil_Percentage`, `Segmented_Neutrophils`, `Neutrophilia`, `RBC_Count`, `Hemoglobin`, `RDW`, `Thrombocyte_Count`, `Ketones_in_Urine`, `RBC_in_Urine`
 - **Potential research questions:**
 
-  1. How are tuition status, debt, and scholarship support associated with dropout?
-  2. How much do first-semester versus second-semester measures change predictive performance?
-  3. Do prediction errors differ for displaced, international, older, or special-needs students?
+  1. Which presenting symptoms, examination findings, and laboratory values are associated with appendicitis diagnosis?
+  2. How do clinical scores compare with individual nursing assessment and laboratory measures?
+  3. Which early findings are associated with surgical management or complicated appendicitis?
 
-Artifacts: [`participant.csv`](../data/processed/portfolio/student_dropout_sdoh/participant.csv) · [`data dictionary`](../metadata/portfolio/student_dropout_sdoh/data_dictionary.csv) · [`provenance`](../metadata/portfolio/student_dropout_sdoh/provenance.json) · [`risk flags`](../metadata/portfolio/student_dropout_sdoh/risk_flags.csv) · [`validation`](../metadata/portfolio/student_dropout_sdoh/validation_report.json)
+Artifacts: [`participant.csv`](../data/processed/portfolio/pediatric_appendicitis/participant.csv) · [`data dictionary`](../metadata/portfolio/pediatric_appendicitis/data_dictionary.csv) · [`provenance`](../metadata/portfolio/pediatric_appendicitis/provenance.json) · [`risk flags`](../metadata/portfolio/pediatric_appendicitis/risk_flags.csv) · [`validation`](../metadata/portfolio/pediatric_appendicitis/validation_report.json)
 
 </details>
 
-<a id="adult-income-sdoh"></a>
+<a id="healthy-aging-poll"></a>
 
 <details>
-<summary><strong>Adult</strong> — Employment, education, work hours, demographics, and income category as an SDOH teaching dataset.</summary>
+<summary><strong>National Poll on Healthy Aging (NPHA)</strong> — Health, sleep, caregiving, insurance, medication, dental care, and health-service use among adults age 50 and older.</summary>
 
-- **Theme:** Economic social determinants
-- **Why choose it:** Employment, education, work hours, demographics, and income category as an SDOH teaching dataset.
-- **Official source:** [UCI dataset 2](https://archive.ics.uci.edu/dataset/2/adult)
-- **Version:** dataset year 1996; record last updated Tue Sep 24 2024
-- **Source/participant size:** 48,842 source rows; 5,000 participant rows; 15 source variables
-- **Official target(s):** `income`
-- **Weighting:** fnlwgt
-- **Selected variables:** `age`, `workclass`, `education`, `education-num`, `marital-status`, `occupation`, `relationship`, `race`, `sex`, `native-country`, `income`, `fnlwgt`, `capital-gain`, `capital-loss`, `hours-per-week`
+- **Theme:** Older-adult health and health services
+- **Nursing science connection:** Health, sleep, caregiving, insurance, medication, dental care, and health-service use among adults age 50 and older.
+- **Official source:** [UCI dataset 936](https://archive.ics.uci.edu/dataset/936/national+poll+on+healthy+aging+(npha))
+- **Version:** dataset year 2017; record last updated Mon Dec 11 2023
+- **Source/participant size:** 714 source rows; 714 participant rows; 15 source variables
+- **Official target(s):** `Number_of_Doctors_Visited`
+- **Weighting:** No weighting variable supplied
+- **Selected variables:** `Age`, `Race`, `Gender`, `Number_of_Doctors_Visited`, `Physical_Health`, `Mental_Health`, `Dental_Health`, `Employment`, `Stress_Keeps_Patient_from_Sleeping`, `Medication_Keeps_Patient_from_Sleeping`, `Pain_Keeps_Patient_from_Sleeping`, `Bathroom_Needs_Keeps_Patient_from_Sleeping`, `Uknown_Keeps_Patient_from_Sleeping`, `Trouble_Sleeping`, `Prescription_Sleep_Medication`
 - **Potential research questions:**
 
-  1. How are education, occupation, and weekly work hours associated with income category?
-  2. How do weighted and unweighted descriptions differ when using the provided final weight?
-  3. How do model errors and predicted income differ across race and sex groups?
+  1. How are sleep and self-rated health associated with the number of doctors an older adult visits?
+  2. Which health, medication, dental-care, or caregiving factors identify higher health-service use?
+  3. Do patterns of health-service use differ across age, gender, or race and ethnicity groups?
 
-Artifacts: [`participant.csv`](../data/processed/portfolio/adult_income_sdoh/participant.csv) · [`data dictionary`](../metadata/portfolio/adult_income_sdoh/data_dictionary.csv) · [`provenance`](../metadata/portfolio/adult_income_sdoh/provenance.json) · [`risk flags`](../metadata/portfolio/adult_income_sdoh/risk_flags.csv) · [`validation`](../metadata/portfolio/adult_income_sdoh/validation_report.json)
+Artifacts: [`participant.csv`](../data/processed/portfolio/healthy_aging_poll/participant.csv) · [`data dictionary`](../metadata/portfolio/healthy_aging_poll/data_dictionary.csv) · [`provenance`](../metadata/portfolio/healthy_aging_poll/provenance.json) · [`risk flags`](../metadata/portfolio/healthy_aging_poll/risk_flags.csv) · [`validation`](../metadata/portfolio/healthy_aging_poll/validation_report.json)
 
 </details>
 
-<a id="communities-crime-sdoh"></a>
+<a id="cervical-cancer-screening"></a>
 
 <details>
-<summary><strong>Communities and Crime</strong> — Community-level demographic, economic, housing, mobility, and public-safety measures.</summary>
+<summary><strong>Cervical Cancer (Risk Factors)</strong> — Demographics, reproductive and sexual health history, smoking, contraception, sexually transmitted infections, and cervical screening results.</summary>
 
-- **Theme:** Community social determinants
-- **Why choose it:** Community-level demographic, economic, housing, mobility, and public-safety measures.
-- **Official source:** [UCI dataset 183](https://archive.ics.uci.edu/dataset/183/communities+and+crime)
-- **Version:** dataset year 2002; record last updated Mon Mar 04 2024
-- **Source/participant size:** 1,994 source rows; 1,994 participant rows; 30 source variables
-- **Official target(s):** `ViolentCrimesPerPop`
+- **Theme:** Women's health and cancer screening
+- **Nursing science connection:** Demographics, reproductive and sexual health history, smoking, contraception, sexually transmitted infections, and cervical screening results.
+- **Official source:** [UCI dataset 383](https://archive.ics.uci.edu/dataset/383/cervical+cancer+risk+factors)
+- **Version:** dataset year 2017; record last updated Sun Mar 10 2024
+- **Source/participant size:** 858 source rows; 858 participant rows; 30 source variables
+- **Official target(s):** `Hinselmann`, `Schiller`, `Citology`, `Biopsy`
 - **Weighting:** No weighting variable supplied
-- **Selected variables:** `state`, `county`, `community`, `communityname`, `population`, `householdsize`, `racepctblack`, `racePctWhite`, `racePctAsian`, `racePctHisp`, `agePct65up`, `pctUrban`, `medIncome`, `pctWPubAsst`, `perCapInc`, `PctPopUnderPov`, `PctNotHSGrad`, `PctUnemployed`, `PctEmploy`, `PctFam2Par`, `PctNotSpeakEnglWell`, `PctPersDenseHous`, `PctHousNoPhone`, `PctWOFullPlumb`, `NumInShelters`, `NumStreet`, `PctForeignBorn`, `PopDens`, `PctUsePubTrans`, `ViolentCrimesPerPop`
+- **Selected variables:** `Age`, `Number of sexual partners`, `Hinselmann`, `Schiller`, `Citology`, `Biopsy`, `First sexual intercourse`, `Num of pregnancies`, `Smokes`, `Smokes (years)`, `Smokes (packs/year)`, `Hormonal Contraceptives`, `Hormonal Contraceptives (years)`, `IUD`, `IUD (years)`, `STDs`, `STDs (number)`, `STDs:condylomatosis`, `STDs:cervical condylomatosis`, `STDs:vaginal condylomatosis`, `STDs:vulvo-perineal condylomatosis`, `STDs:syphilis`, `STDs:pelvic inflammatory disease`, `STDs:genital herpes`, `STDs:molluscum contagiosum`, `STDs:AIDS`, `STDs:HIV`, `STDs:Hepatitis B`, `STDs:HPV`, `STDs: Number of diagnosis`
 - **Potential research questions:**
 
-  1. How are poverty, unemployment, and educational attainment associated with community violent-crime rates?
-  2. How do housing conditions, density, and public transportation relate to community outcomes?
-  3. How can ecological fallacy and racial proxy discrimination distort interpretations of community-level models?
+  1. Which documented history and exposure variables are associated with biopsy-confirmed cervical disease?
+  2. How do the Hinselmann, Schiller, cytology, and biopsy screening results agree or differ?
+  3. How does item nonresponse affect apparent screening-risk patterns?
 
-Artifacts: [`participant.csv`](../data/processed/portfolio/communities_crime_sdoh/participant.csv) · [`data dictionary`](../metadata/portfolio/communities_crime_sdoh/data_dictionary.csv) · [`provenance`](../metadata/portfolio/communities_crime_sdoh/provenance.json) · [`risk flags`](../metadata/portfolio/communities_crime_sdoh/risk_flags.csv) · [`validation`](../metadata/portfolio/communities_crime_sdoh/validation_report.json)
+Artifacts: [`participant.csv`](../data/processed/portfolio/cervical_cancer_screening/participant.csv) · [`data dictionary`](../metadata/portfolio/cervical_cancer_screening/data_dictionary.csv) · [`provenance`](../metadata/portfolio/cervical_cancer_screening/provenance.json) · [`risk flags`](../metadata/portfolio/cervical_cancer_screening/risk_flags.csv) · [`validation`](../metadata/portfolio/cervical_cancer_screening/validation_report.json)
 
 </details>
 
@@ -487,7 +488,7 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/communities_crime_sdo
 <summary><strong>Air Quality</strong> — Hourly air-pollutant reference measurements, sensor responses, temperature, and humidity.</summary>
 
 - **Theme:** Environmental health
-- **Why choose it:** Hourly air-pollutant reference measurements, sensor responses, temperature, and humidity.
+- **Nursing science connection:** Hourly air-pollutant reference measurements, sensor responses, temperature, and humidity.
 - **Official source:** [UCI dataset 360](https://archive.ics.uci.edu/dataset/360/air+quality)
 - **Version:** dataset year 2008; record last updated Sun Mar 10 2024
 - **Source/participant size:** 9,357 source rows; 5,000 participant rows; 15 source variables
@@ -511,7 +512,7 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/air_quality_sensors/p
 <summary><strong>Beijing PM2.5</strong> — Hourly PM2.5, weather, wind direction, and precipitation measurements.</summary>
 
 - **Theme:** Environmental health
-- **Why choose it:** Hourly PM2.5, weather, wind direction, and precipitation measurements.
+- **Nursing science connection:** Hourly PM2.5, weather, wind direction, and precipitation measurements.
 - **Official source:** [UCI dataset 381](https://archive.ics.uci.edu/dataset/381/beijing+pm2+5+data)
 - **Version:** dataset year 2015; record last updated Sat Mar 16 2024
 - **Source/participant size:** 43,824 source rows; 5,000 participant rows; 13 source variables
@@ -528,49 +529,48 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/beijing_pm25/particip
 
 </details>
 
-<a id="room-occupancy-environment"></a>
+<a id="glioma-grading"></a>
 
 <details>
-<summary><strong>Room Occupancy Estimation</strong> — Indoor temperature, light, sound, CO2, motion, and room occupancy.</summary>
+<summary><strong>Glioma Grading Clinical and Mutation Features</strong> — Clinical and molecular features associated with lower-grade versus glioblastoma tumor classification.</summary>
 
-- **Theme:** Built environment and sensing
-- **Why choose it:** Indoor temperature, light, sound, CO2, motion, and room occupancy.
-- **Official source:** [UCI dataset 864](https://archive.ics.uci.edu/dataset/864/room+occupancy+estimation)
-- **Version:** dataset year 2018; record last updated Wed Aug 16 2023
-- **Source/participant size:** 10,129 source rows; 5,000 participant rows; 19 source variables
-- **Official target(s):** `Room_Occupancy_Count`
+- **Theme:** Cancer care and precision health
+- **Nursing science connection:** Clinical and molecular features associated with lower-grade versus glioblastoma tumor classification.
+- **Official source:** [UCI dataset 759](https://archive.ics.uci.edu/dataset/759/glioma+grading+clinical+and+mutation+features+dataset)
+- **Version:** dataset year 2022; record last updated Fri Nov 03 2023
+- **Source/participant size:** 839 source rows; 839 participant rows; 25 source variables
+- **Official target(s):** `Grade`
 - **Weighting:** No weighting variable supplied
-- **Selected variables:** `Room_Occupancy_Count`, `Date`, `Time`, `S1_Temp`, `S2_Temp`, `S3_Temp`, `S4_Temp`, `S1_Light`, `S2_Light`, `S3_Light`, `S4_Light`, `S1_Sound`, `S2_Sound`, `S3_Sound`, `S4_Sound`, `S5_CO2`, `S5_CO2_Slope`, `S6_PIR`, `S7_PIR`
+- **Selected variables:** `Gender`, `Age_at_diagnosis`, `Race`, `Grade`, `IDH1`, `TP53`, `ATRX`, `PTEN`, `EGFR`, `CIC`, `MUC16`, `PIK3CA`, `NF1`, `PIK3R1`, `FUBP1`, `RB1`, `NOTCH1`, `BCOR`, `CSMD3`, `SMARCA4`, `GRIN2A`, `IDH2`, `FAT4`, `PDGFRA`, `Case_ID`
 - **Potential research questions:**
 
-  1. Which indoor environmental sensors best distinguish room occupancy levels?
-  2. How quickly does CO2 respond to changes in occupancy?
-  3. Does model performance remain stable across different dates and times?
+  1. Which clinical and molecular features are associated with glioma grade?
+  2. How does classification performance differ across demographic groups?
+  3. What limitations arise when translating molecular tumor classification to nursing assessment or care planning?
 
-Artifacts: [`participant.csv`](../data/processed/portfolio/room_occupancy_environment/participant.csv) · [`data dictionary`](../metadata/portfolio/room_occupancy_environment/data_dictionary.csv) · [`provenance`](../metadata/portfolio/room_occupancy_environment/provenance.json) · [`risk flags`](../metadata/portfolio/room_occupancy_environment/risk_flags.csv) · [`validation`](../metadata/portfolio/room_occupancy_environment/validation_report.json)
+Artifacts: [`participant.csv`](../data/processed/portfolio/glioma_grading/participant.csv) · [`data dictionary`](../metadata/portfolio/glioma_grading/data_dictionary.csv) · [`provenance`](../metadata/portfolio/glioma_grading/provenance.json) · [`risk flags`](../metadata/portfolio/glioma_grading/risk_flags.csv) · [`validation`](../metadata/portfolio/glioma_grading/validation_report.json)
 
 </details>
 
-<a id="bike-sharing-environment"></a>
+<a id="hospital-patient-experience"></a>
 
 <details>
-<summary><strong>Bike Sharing</strong> — Hourly bike-rental demand with season, weather, workday, and calendar measures.</summary>
+<summary><strong>Patient survey (HCAHPS) - Hospital</strong> — Hospital-level HCAHPS measures of nurse communication, discharge information, care transitions, environment, ratings, and willingness to recommend.</summary>
 
-- **Theme:** Built environment and physical activity
-- **Why choose it:** Hourly bike-rental demand with season, weather, workday, and calendar measures.
-- **Official source:** [UCI dataset 275](https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset)
-- **Version:** dataset year 2013; record last updated Sun Mar 10 2024
-- **Source/participant size:** 17,379 source rows; 5,000 participant rows; 17 source variables
-- **Source count caveat:** The UCI record reports 17,389 instances; the official normalized data.csv contains 17,379 rows.
-- **Official target(s):** `cnt`
+- **Theme:** Patient experience and care quality
+- **Nursing science connection:** Hospital-level HCAHPS measures of nurse communication, discharge information, care transitions, environment, ratings, and willingness to recommend.
+- **Official source:** [Centers for Medicare & Medicaid Services (CMS)](https://data.cms.gov/provider-data/dataset/dgck-syfz)
+- **Version:** dataset year 2026; record last updated 2026-07-22
+- **Source/participant size:** 325,720 source rows; 5,000 participant rows; 22 source variables
+- **Official target(s):** No official target designated
 - **Weighting:** No weighting variable supplied
-- **Selected variables:** `instant`, `cnt`, `dteday`, `season`, `yr`, `mnth`, `hr`, `holiday`, `weekday`, `workingday`, `weathersit`, `temp`, `atemp`, `hum`, `windspeed`, `casual`, `registered`
+- **Selected variables:** `Facility ID`, `Facility Name`, `City/Town`, `State`, `ZIP Code`, `County/Parish`, `HCAHPS Measure ID`, `HCAHPS Question`, `HCAHPS Answer Description`, `Patient Survey Star Rating`, `HCAHPS Answer Percent`, `HCAHPS Linear Mean Value`, `Number of Completed Surveys`, `Survey Response Rate Percent`, `Start Date`, `End Date`, `Address`, `Telephone Number`, `Patient Survey Star Rating Footnote`, `HCAHPS Answer Percent Footnote`, `Number of Completed Surveys Footnote`, `Survey Response Rate Percent Footnote`
 - **Potential research questions:**
 
-  1. How do temperature, humidity, wind, and weather conditions relate to bike demand?
-  2. How do hourly patterns differ between workdays, holidays, and seasons?
-  3. Why would using casual and registered counts to predict total count create leakage?
+  1. How do nurse-communication ratings vary across hospitals and states?
+  2. How are discharge-information and care-transition measures related to overall hospital ratings or willingness to recommend?
+  3. How do survey volume, response rate, and missing or suppressed results affect comparisons between hospitals?
 
-Artifacts: [`participant.csv`](../data/processed/portfolio/bike_sharing_environment/participant.csv) · [`data dictionary`](../metadata/portfolio/bike_sharing_environment/data_dictionary.csv) · [`provenance`](../metadata/portfolio/bike_sharing_environment/provenance.json) · [`risk flags`](../metadata/portfolio/bike_sharing_environment/risk_flags.csv) · [`validation`](../metadata/portfolio/bike_sharing_environment/validation_report.json)
+Artifacts: [`participant.csv`](../data/processed/portfolio/hospital_patient_experience/participant.csv) · [`data dictionary`](../metadata/portfolio/hospital_patient_experience/data_dictionary.csv) · [`provenance`](../metadata/portfolio/hospital_patient_experience/provenance.json) · [`risk flags`](../metadata/portfolio/hospital_patient_experience/risk_flags.csv) · [`validation`](../metadata/portfolio/hospital_patient_experience/validation_report.json)
 
 </details>

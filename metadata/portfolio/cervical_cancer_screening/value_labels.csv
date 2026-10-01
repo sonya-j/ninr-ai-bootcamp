@@ -1,0 +1,136 @@
+variable,code,official_description,label_status
+Number of sexual partners,1.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Number of sexual partners,10.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Number of sexual partners,15.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Number of sexual partners,2.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Number of sexual partners,28.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Number of sexual partners,3.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Number of sexual partners,4.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Number of sexual partners,5.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Number of sexual partners,6.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Number of sexual partners,7.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Number of sexual partners,8.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Number of sexual partners,9.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+First sexual intercourse,10.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+First sexual intercourse,11.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+First sexual intercourse,12.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+First sexual intercourse,13.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+First sexual intercourse,14.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+First sexual intercourse,15.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+First sexual intercourse,16.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+First sexual intercourse,17.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+First sexual intercourse,18.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+First sexual intercourse,19.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+First sexual intercourse,20.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+First sexual intercourse,21.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+First sexual intercourse,22.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+First sexual intercourse,23.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+First sexual intercourse,24.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+First sexual intercourse,25.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+First sexual intercourse,26.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+First sexual intercourse,27.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+First sexual intercourse,28.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+First sexual intercourse,29.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+First sexual intercourse,32.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Num of pregnancies,0.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Num of pregnancies,1.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Num of pregnancies,10.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Num of pregnancies,11.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Num of pregnancies,2.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Num of pregnancies,3.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Num of pregnancies,4.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Num of pregnancies,5.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Num of pregnancies,6.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Num of pregnancies,7.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Num of pregnancies,8.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Smokes,0.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Smokes,1.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Hormonal Contraceptives,0.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Hormonal Contraceptives,1.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+IUD,0.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+IUD,1.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs,0.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs,1.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs (number),0.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs (number),1.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs (number),2.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs (number),3.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs (number),4.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs:condylomatosis,0.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs:condylomatosis,1.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs:cervical condylomatosis,0.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs:vaginal condylomatosis,0.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs:vaginal condylomatosis,1.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs:vulvo-perineal condylomatosis,0.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs:vulvo-perineal condylomatosis,1.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs:syphilis,0.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs:syphilis,1.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs:pelvic inflammatory disease,0.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs:pelvic inflammatory disease,1.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs:genital herpes,0.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs:genital herpes,1.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs:molluscum contagiosum,0.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs:molluscum contagiosum,1.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs:AIDS,0.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs:HIV,0.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs:HIV,1.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs:Hepatitis B,0.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs:Hepatitis B,1.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs:HPV,0.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs:HPV,1.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Number of diagnosis,0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Number of diagnosis,1,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Number of diagnosis,2,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Number of diagnosis,3,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since first diagnosis,1.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since first diagnosis,10.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since first diagnosis,11.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since first diagnosis,12.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since first diagnosis,15.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since first diagnosis,16.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since first diagnosis,18.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since first diagnosis,19.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since first diagnosis,2.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since first diagnosis,21.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since first diagnosis,22.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since first diagnosis,3.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since first diagnosis,4.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since first diagnosis,5.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since first diagnosis,6.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since first diagnosis,7.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since first diagnosis,8.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since first diagnosis,9.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since last diagnosis,1.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since last diagnosis,10.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since last diagnosis,11.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since last diagnosis,12.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since last diagnosis,15.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since last diagnosis,16.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since last diagnosis,18.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since last diagnosis,19.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since last diagnosis,2.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since last diagnosis,21.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since last diagnosis,22.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since last diagnosis,3.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since last diagnosis,4.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since last diagnosis,5.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since last diagnosis,6.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since last diagnosis,7.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since last diagnosis,8.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+STDs: Time since last diagnosis,9.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Dx:Cancer,0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Dx:Cancer,1,,Raw category code observed in official source; use the official description/codebook for meaning.
+Dx:CIN,0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Dx:CIN,1,,Raw category code observed in official source; use the official description/codebook for meaning.
+Dx:HPV,0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Dx:HPV,1,,Raw category code observed in official source; use the official description/codebook for meaning.
+Dx,0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Dx,1,,Raw category code observed in official source; use the official description/codebook for meaning.
+Hinselmann,0,Binary result of the Hinselmann cervical screening test; designated as a target in the official documentation.,Raw category code observed in official source; use the official description/codebook for meaning.
+Hinselmann,1,Binary result of the Hinselmann cervical screening test; designated as a target in the official documentation.,Raw category code observed in official source; use the official description/codebook for meaning.
+Schiller,0,Binary result of the Schiller cervical screening test; designated as a target in the official documentation.,Raw category code observed in official source; use the official description/codebook for meaning.
+Schiller,1,Binary result of the Schiller cervical screening test; designated as a target in the official documentation.,Raw category code observed in official source; use the official description/codebook for meaning.
+Citology,0,Binary cervical cytology result; designated as a target in the official documentation.,Raw category code observed in official source; use the official description/codebook for meaning.
+Citology,1,Binary cervical cytology result; designated as a target in the official documentation.,Raw category code observed in official source; use the official description/codebook for meaning.
+Biopsy,0,Binary cervical biopsy result; designated as a target in the official documentation.,Raw category code observed in official source; use the official description/codebook for meaning.
+Biopsy,1,Binary cervical biopsy result; designated as a target in the official documentation.,Raw category code observed in official source; use the official description/codebook for meaning.

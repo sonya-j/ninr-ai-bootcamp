@@ -26,7 +26,11 @@ class PortfolioArtifactsTest(unittest.TestCase):
     def test_exactly_twenty_unique_datasets(self):
         self.assertEqual(len(self.config["datasets"]), 20)
         self.assertEqual(len({item["slug"] for item in self.config["datasets"]}), 20)
-        self.assertEqual(len({item["uci_id"] for item in self.config["datasets"]}), 20)
+        source_ids = {
+            item.get("source_id", item.get("uci_id"))
+            for item in self.config["datasets"]
+        }
+        self.assertEqual(len(source_ids), 20)
 
     def test_catalog_matches_manifest_and_all_validations_pass(self):
         expected = {item["slug"] for item in self.config["datasets"]}

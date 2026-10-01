@@ -4,7 +4,7 @@
 
 > **20 documented datasets · beginner-friendly CSV files · official sources only · reproducible preparation**
 
-This repository supports hands-on learning for nursing scientists at the **NINR Artificial Intelligence Summer Research Intensive**. It turns original public datasets into approachable workshop files while preserving the documentation, provenance, and analytic cautions needed for responsible health research.
+This repository supports hands-on learning for nursing scientists at the **NINR Artificial Intelligence Summer Research Intensive**. Every dataset now centers a direct nursing-science topic: clinical care, symptoms, patient outcomes, screening, health behavior, caregiving, health services, workforce, patient experience, or population and environmental health. Original public data are turned into approachable workshop files while preserving the documentation, provenance, and analytic cautions needed for responsible health research.
 
 No prior Python or machine-learning experience is required to begin.
 
@@ -34,8 +34,8 @@ The collection spans four workshop-friendly pathways:
 |---|---|---|
 | **Clinical care and outcomes** | readmission, serious illness, acute care, clinical trials | [Diabetes readmission](docs/dataset_catalog.md#diabetes-readmission) |
 | **Symptoms, screening, and monitoring** | Parkinson symptoms, fetal monitoring, EEG, temperature screening | [Parkinson telemonitoring](docs/dataset_catalog.md#parkinsons-telemonitoring) |
-| **Health behavior, SDOH, and workforce** | obesity, substance use, education, income, absenteeism | [Workplace absenteeism](docs/dataset_catalog.md#workplace-absenteeism) |
-| **Environment and sensors** | air quality, indoor sensing, physical activity environments | [Room occupancy](docs/dataset_catalog.md#room-occupancy-environment) |
+| **Health behavior, aging, and workforce** | obesity, substance use, sleep, caregiving, health-service use, absenteeism | [Healthy aging](docs/dataset_catalog.md#healthy-aging-poll) |
+| **Environment and care quality** | air quality, nurse communication, discharge information, patient experience | [Hospital HCAHPS](docs/dataset_catalog.md#hospital-patient-experience) |
 
 Each portfolio dataset includes:
 
@@ -85,7 +85,7 @@ Use `python pipeline.py acquire --force` only when intentionally refreshing the 
 
 ## Data standards
 
-- **Official sources:** UCI Machine Learning Repository records supplied by the original contributors, plus the original diabetes study article archived by NIH PubMed Central.
+- **Official sources:** original contributor records and official government releases, including CMS patient-experience data, plus the original diabetes study article archived by NIH PubMed Central.
 - **No mirrors:** no Kaggle or third-party dataset copies when an original source is available.
 - **Originals preserved:** preparation never rewrites the downloaded source files.
 - **Deterministic samples:** participant subsets can be reproduced from the same source and configuration.

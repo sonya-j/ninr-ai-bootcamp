@@ -1,0 +1,104 @@
+{
+  "source_type": "uci",
+  "source_id": 938,
+  "uci_id": 938,
+  "title": "Regensburg Pediatric Appendicitis",
+  "official_source": "UCI Machine Learning Repository",
+  "repository_url": "https://archive.ics.uci.edu/dataset/938/regensburg+pediatric+appendicitis",
+  "data_url": "https://archive.ics.uci.edu/static/public/938/data.csv",
+  "dataset_doi": "10.5281/zenodo.7669442",
+  "dataset_year": 2023,
+  "current_record_version": "UCI record last updated Tue Feb 06 2024",
+  "access_date": "2026-10-01",
+  "license": null,
+  "raw_data_sha256": "199553cdbc1eec4f6e59ef48d6a911c979a11fe214280d5582ea3f7cb72fce72",
+  "official_metadata_sha256": "a164f663a47765833a3eded6c095d9c44eba0f2078eb2c0b2bf7c1662f576536",
+  "official_documentation_url": null,
+  "official_documentation_sha256": null,
+  "raw_rows": 782,
+  "raw_columns": 58,
+  "participant_rows": 782,
+  "participant_columns": 31,
+  "participant_sha256": "72aacaca77a0ef0f5c7e2031f6df21b615c6b11c7dbc762ee9f02259ca4a1790",
+  "selected_variables": [
+    "portfolio_row_id",
+    "Age",
+    "Sex",
+    "Management",
+    "Severity",
+    "Diagnosis",
+    "BMI",
+    "Height",
+    "Weight",
+    "Length_of_Stay",
+    "Alvarado_Score",
+    "Paedriatic_Appendicitis_Score",
+    "Appendix_on_US",
+    "Appendix_Diameter",
+    "Migratory_Pain",
+    "Lower_Right_Abd_Pain",
+    "Contralateral_Rebound_Tenderness",
+    "Coughing_Pain",
+    "Nausea",
+    "Loss_of_Appetite",
+    "Body_Temperature",
+    "WBC_Count",
+    "Neutrophil_Percentage",
+    "Segmented_Neutrophils",
+    "Neutrophilia",
+    "RBC_Count",
+    "Hemoglobin",
+    "RDW",
+    "Thrombocyte_Count",
+    "Ketones_in_Urine",
+    "RBC_in_Urine"
+  ],
+  "missing_value_codes": [
+    "",
+    "NaN"
+  ],
+  "weighting_variables": [],
+  "outcomes": [
+    {
+      "variable": "Management",
+      "description": "(conservative, primary surgical, secondary surgical, simultaneous appendectomy) Management of the patient assigned by a senior pediatric surgeon: operative (appendectomy: laparoscopic, open or conversion) or conservative (without antibiotics). In case of the secondary surgery after prior stay, the patient was labelled as operatively managed.",
+      "observed_values": [
+        "NaN",
+        "conservative",
+        "primary surgical",
+        "secondary surgical",
+        "simultaneous appendectomy"
+      ]
+    },
+    {
+      "variable": "Severity",
+      "description": "(uncomplicated, complicated) Severity of appendicitis: uncomplicated: subacute/ catharral, fibrosis; phlegmonous or complicated: gangrenous, perforated, abscessed",
+      "observed_values": [
+        "NaN",
+        "complicated",
+        "uncomplicated"
+      ]
+    },
+    {
+      "variable": "Diagnosis",
+      "description": "Patient's diagnosis, histologically confirmed for operated patients. Conservatively managed patients were labelled as having appendicitis if they had an AS or PAS of ≥ 4 and an appendix diameter of ≥ 6 mm",
+      "observed_values": [
+        "NaN",
+        "appendicitis",
+        "no appendicitis"
+      ]
+    }
+  ],
+  "transformations": [
+    "Downloaded the official/original CSV and source metadata without modifying the raw files.",
+    "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
+    "Converted documented source missing symbols to blank/NA only in the participant derivative.",
+    "Selected 782 rows by deterministic SHA-256 rank using the portfolio seed.",
+    "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
+  ],
+  "software": {
+    "python": "3.12.14",
+    "pandas": "3.0.1",
+    "platform": "Windows-11-10.0.26100-SP0"
+  }
+}

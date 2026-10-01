@@ -1,4 +1,6 @@
 {
+  "source_type": "uci",
+  "source_id": 264,
   "uci_id": 264,
   "title": "EEG Eye State",
   "official_source": "UCI Machine Learning Repository",
@@ -11,6 +13,8 @@
   "license": null,
   "raw_data_sha256": "42ade6611f0fadbc8c15e48bb04e5f20813c9939de21aa5f8204293f623c912a",
   "official_metadata_sha256": "70a3f2198fb4eed96f9eb8e46be4e286d7dd8ccaf6914a395edd956cacda8f6f",
+  "official_documentation_url": null,
+  "official_documentation_sha256": null,
   "raw_rows": 14980,
   "raw_columns": 15,
   "participant_rows": 5000,
@@ -49,15 +53,15 @@
     }
   ],
   "transformations": [
-    "Downloaded the official UCI normalized CSV and API metadata without modifying the raw files.",
+    "Downloaded the official/original CSV and source metadata without modifying the raw files.",
     "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
     "Converted documented source missing symbols to blank/NA only in the participant derivative.",
     "Selected 5000 rows by deterministic SHA-256 rank using the portfolio seed.",
     "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
   ],
   "software": {
-    "python": "3.14.7",
-    "pandas": "2.3.3",
+    "python": "3.12.14",
+    "pandas": "3.0.1",
     "platform": "Windows-11-10.0.26100-SP0"
   }
 }

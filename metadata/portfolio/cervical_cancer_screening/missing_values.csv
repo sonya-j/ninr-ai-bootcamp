@@ -1,0 +1,27 @@
+variable,raw_missing_symbols,raw_missing_count,participant_representation
+Number of sexual partners,"["""", ""NaN"", ""?""]",26,blank/NA
+First sexual intercourse,"["""", ""NaN"", ""?""]",7,blank/NA
+Num of pregnancies,"["""", ""NaN"", ""?""]",56,blank/NA
+Smokes,"["""", ""NaN"", ""?""]",13,blank/NA
+Smokes (years),"["""", ""NaN"", ""?""]",13,blank/NA
+Smokes (packs/year),"["""", ""NaN"", ""?""]",13,blank/NA
+Hormonal Contraceptives,"["""", ""NaN"", ""?""]",108,blank/NA
+Hormonal Contraceptives (years),"["""", ""NaN"", ""?""]",108,blank/NA
+IUD,"["""", ""NaN"", ""?""]",117,blank/NA
+IUD (years),"["""", ""NaN"", ""?""]",117,blank/NA
+STDs,"["""", ""NaN"", ""?""]",105,blank/NA
+STDs (number),"["""", ""NaN"", ""?""]",105,blank/NA
+STDs:condylomatosis,"["""", ""NaN"", ""?""]",105,blank/NA
+STDs:cervical condylomatosis,"["""", ""NaN"", ""?""]",105,blank/NA
+STDs:vaginal condylomatosis,"["""", ""NaN"", ""?""]",105,blank/NA
+STDs:vulvo-perineal condylomatosis,"["""", ""NaN"", ""?""]",105,blank/NA
+STDs:syphilis,"["""", ""NaN"", ""?""]",105,blank/NA
+STDs:pelvic inflammatory disease,"["""", ""NaN"", ""?""]",105,blank/NA
+STDs:genital herpes,"["""", ""NaN"", ""?""]",105,blank/NA
+STDs:molluscum contagiosum,"["""", ""NaN"", ""?""]",105,blank/NA
+STDs:AIDS,"["""", ""NaN"", ""?""]",105,blank/NA
+STDs:HIV,"["""", ""NaN"", ""?""]",105,blank/NA
+STDs:Hepatitis B,"["""", ""NaN"", ""?""]",105,blank/NA
+STDs:HPV,"["""", ""NaN"", ""?""]",105,blank/NA
+STDs: Time since first diagnosis,"["""", ""NaN"", ""?""]",787,blank/NA
+STDs: Time since last diagnosis,"["""", ""NaN"", ""?""]",787,blank/NA

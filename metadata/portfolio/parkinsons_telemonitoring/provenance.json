@@ -1,4 +1,6 @@
 {
+  "source_type": "uci",
+  "source_id": 189,
   "uci_id": 189,
   "title": "Parkinsons Telemonitoring",
   "official_source": "UCI Machine Learning Repository",
@@ -11,6 +13,8 @@
   "license": null,
   "raw_data_sha256": "689fd221159cd78b07a50087992c9d9472a4eb26527cdc8e896a708a2013ebcf",
   "official_metadata_sha256": "f729e3a13f60e64fc00ff0af32bd258dee8a3156885d48fde8f606d65fe7d449",
+  "official_documentation_url": null,
+  "official_documentation_sha256": null,
   "raw_rows": 5875,
   "raw_columns": 22,
   "participant_rows": 5000,
@@ -58,15 +62,15 @@
     }
   ],
   "transformations": [
-    "Downloaded the official UCI normalized CSV and API metadata without modifying the raw files.",
+    "Downloaded the official/original CSV and source metadata without modifying the raw files.",
     "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
     "Converted documented source missing symbols to blank/NA only in the participant derivative.",
     "Selected 5000 rows by deterministic SHA-256 rank using the portfolio seed.",
     "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
   ],
   "software": {
-    "python": "3.14.7",
-    "pandas": "2.3.3",
+    "python": "3.12.14",
+    "pandas": "3.0.1",
     "platform": "Windows-11-10.0.26100-SP0"
   }
 }

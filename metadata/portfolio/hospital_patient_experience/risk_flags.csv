@@ -1,0 +1,8 @@
+variable,risk_flags,note
+Facility ID,identifier_leakage,Identifier; do not use as a model predictor.
+State,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+ZIP Code,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+County/Parish,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+Patient Survey Star Rating,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+HCAHPS Answer Percent,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+HCAHPS Linear Mean Value,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.

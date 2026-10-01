@@ -1,4 +1,6 @@
 {
+  "source_type": "uci",
+  "source_id": 381,
   "uci_id": 381,
   "title": "Beijing PM2.5",
   "official_source": "UCI Machine Learning Repository",
@@ -11,6 +13,8 @@
   "license": null,
   "raw_data_sha256": "670a47f8c76eb5de5936354a4c5de70ce5d5da76e2483c9df3884030aded8016",
   "official_metadata_sha256": "1c7309e4570cae70dc19797c511d10ed3c87121d50861b5f386b95d3cebdefad",
+  "official_documentation_url": null,
+  "official_documentation_sha256": null,
   "raw_rows": 43824,
   "raw_columns": 13,
   "participant_rows": 5000,
@@ -45,15 +49,15 @@
     }
   ],
   "transformations": [
-    "Downloaded the official UCI normalized CSV and API metadata without modifying the raw files.",
+    "Downloaded the official/original CSV and source metadata without modifying the raw files.",
     "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
     "Converted documented source missing symbols to blank/NA only in the participant derivative.",
     "Selected 5000 rows by deterministic SHA-256 rank using the portfolio seed.",
     "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
   ],
   "software": {
-    "python": "3.14.7",
-    "pandas": "2.3.3",
+    "python": "3.12.14",
+    "pandas": "3.0.1",
     "platform": "Windows-11-10.0.26100-SP0"
   }
 }

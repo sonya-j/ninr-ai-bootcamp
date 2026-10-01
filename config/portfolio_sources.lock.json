@@ -3,6 +3,8 @@
   "datasets": [
     {
       "slug": "diabetes_readmission",
+      "source_type": "uci",
+      "source_id": 296,
       "uci_id": 296,
       "name": "Diabetes 130-US Hospitals for Years 1999-2008",
       "data_url": "https://archive.ics.uci.edu/static/public/296/data.csv",
@@ -10,10 +12,13 @@
       "dataset_year": 2014,
       "last_updated": "Tue Sep 24 2024",
       "data_sha256": "f792c388d9b470aac4fbf21c39b176534d55a116e7626881c30bbe7ab0341422",
-      "metadata_sha256": "6e6e0934d175afe24f54f2199f9895eab21844205fe46be7970c106a104725e9"
+      "metadata_sha256": "6e6e0934d175afe24f54f2199f9895eab21844205fe46be7970c106a104725e9",
+      "documentation_sha256": null
     },
     {
       "slug": "support2_serious_illness",
+      "source_type": "uci",
+      "source_id": 880,
       "uci_id": 880,
       "name": "SUPPORT2",
       "data_url": "https://archive.ics.uci.edu/static/public/880/data.csv",
@@ -21,10 +26,13 @@
       "dataset_year": 1995,
       "last_updated": "Mon Sep 09 2024",
       "data_sha256": "9da794bbd5c3a6a816e677cc17535e58c122d9ef4cbefd404489330a9f9cd2de",
-      "metadata_sha256": "254355bcbce418924c864aa22a7189900d932e6e3cecd1b497c8d91cfa6a9e1a"
+      "metadata_sha256": "254355bcbce418924c864aa22a7189900d932e6e3cecd1b497c8d91cfa6a9e1a",
+      "documentation_sha256": null
     },
     {
       "slug": "myocardial_infarction_complications",
+      "source_type": "uci",
+      "source_id": 579,
       "uci_id": 579,
       "name": "Myocardial infarction complications",
       "data_url": "https://archive.ics.uci.edu/static/public/579/data.csv",
@@ -32,10 +40,13 @@
       "dataset_year": 2020,
       "last_updated": "Fri Nov 03 2023",
       "data_sha256": "335805edbe66e47f0dc322c0d9c010da64384830ad68d80030b705f964ce95ac",
-      "metadata_sha256": "00d46092f6208a6d56aff8bbc302adb191a62089c522b28663be10ad11fdde0b"
+      "metadata_sha256": "00d46092f6208a6d56aff8bbc302adb191a62089c522b28663be10ad11fdde0b",
+      "documentation_sha256": null
     },
     {
       "slug": "aids_clinical_trial_175",
+      "source_type": "uci",
+      "source_id": 890,
       "uci_id": 890,
       "name": "AIDS Clinical Trials Group Study 175",
       "data_url": "https://archive.ics.uci.edu/static/public/890/data.csv",
@@ -43,10 +54,13 @@
       "dataset_year": 1996,
       "last_updated": "Fri Nov 03 2023",
       "data_sha256": "cf58638c7687764ccb32d037938142518293d505eec349ccec406d4d42ba9532",
-      "metadata_sha256": "45dec83113d590e8a74415fee5e934b7d28ec81861bb20fa3717f70da952a6f5"
+      "metadata_sha256": "45dec83113d590e8a74415fee5e934b7d28ec81861bb20fa3717f70da952a6f5",
+      "documentation_sha256": null
     },
     {
       "slug": "hepatitis_c_treatment",
+      "source_type": "uci",
+      "source_id": 503,
       "uci_id": 503,
       "name": "Hepatitis C Virus (HCV) for Egyptian patients",
       "data_url": "https://archive.ics.uci.edu/static/public/503/data.csv",
@@ -54,10 +68,13 @@
       "dataset_year": 2017,
       "last_updated": "Tue Apr 09 2024",
       "data_sha256": "6a9ca49f4ce8b7bb73acb413dcbad71a299c6c006c6df0511a216542ddd0e401",
-      "metadata_sha256": "4d3e96f53ea5e6edac2da4f35f2c154d715332345995829296c255efef43e5a5"
+      "metadata_sha256": "4d3e96f53ea5e6edac2da4f35f2c154d715332345995829296c255efef43e5a5",
+      "documentation_sha256": null
     },
     {
       "slug": "cardiotocography",
+      "source_type": "uci",
+      "source_id": 193,
       "uci_id": 193,
       "name": "Cardiotocography",
       "data_url": "https://archive.ics.uci.edu/static/public/193/data.csv",
@@ -65,10 +82,13 @@
       "dataset_year": 2000,
       "last_updated": "Fri Mar 15 2024",
       "data_sha256": "4648b5bf338d18f0c7e030a5d2cfb2018c831695cdb90129912cf00367c7d751",
-      "metadata_sha256": "78962df4253f7be806016fe732205ea34e17241280fb96936eeb7385b337320b"
+      "metadata_sha256": "78962df4253f7be806016fe732205ea34e17241280fb96936eeb7385b337320b",
+      "documentation_sha256": null
     },
     {
       "slug": "parkinsons_telemonitoring",
+      "source_type": "uci",
+      "source_id": 189,
       "uci_id": 189,
       "name": "Parkinsons Telemonitoring",
       "data_url": "https://archive.ics.uci.edu/static/public/189/data.csv",
@@ -76,10 +96,13 @@
       "dataset_year": 2009,
       "last_updated": "Fri Nov 03 2023",
       "data_sha256": "689fd221159cd78b07a50087992c9d9472a4eb26527cdc8e896a708a2013ebcf",
-      "metadata_sha256": "f729e3a13f60e64fc00ff0af32bd258dee8a3156885d48fde8f606d65fe7d449"
+      "metadata_sha256": "f729e3a13f60e64fc00ff0af32bd258dee8a3156885d48fde8f606d65fe7d449",
+      "documentation_sha256": null
     },
     {
       "slug": "diabetic_retinopathy",
+      "source_type": "uci",
+      "source_id": 329,
       "uci_id": 329,
       "name": "Diabetic Retinopathy Debrecen",
       "data_url": "https://archive.ics.uci.edu/static/public/329/data.csv",
@@ -87,10 +110,13 @@
       "dataset_year": 2014,
       "last_updated": "Fri Nov 03 2023",
       "data_sha256": "2636b73e6830e9d5f5967a286766b5d39f48a7bf40761e9621bcd5d79a2aa527",
-      "metadata_sha256": "24b9b2e6a01d58cdffee8d2f4c2b9621042f48e0df606d5564a94ee8a406e495"
+      "metadata_sha256": "24b9b2e6a01d58cdffee8d2f4c2b9621042f48e0df606d5564a94ee8a406e495",
+      "documentation_sha256": null
     },
     {
       "slug": "infrared_thermography_temperature",
+      "source_type": "uci",
+      "source_id": 925,
       "uci_id": 925,
       "name": "Infrared Thermography Temperature",
       "data_url": "https://archive.ics.uci.edu/static/public/925/data.csv",
@@ -98,10 +124,13 @@
       "dataset_year": 2021,
       "last_updated": "Tue Dec 12 2023",
       "data_sha256": "b25616c9f67e3a60b853fdce8532cab926ca7cb649c6b89bc9e1f1255d0f0a14",
-      "metadata_sha256": "e4f80bdf53f7b1824c9bf49943f5960ee00b910f4223ffd1967ae90067152c26"
+      "metadata_sha256": "e4f80bdf53f7b1824c9bf49943f5960ee00b910f4223ffd1967ae90067152c26",
+      "documentation_sha256": null
     },
     {
       "slug": "eeg_eye_state",
+      "source_type": "uci",
+      "source_id": 264,
       "uci_id": 264,
       "name": "EEG Eye State",
       "data_url": "https://archive.ics.uci.edu/static/public/264/data.csv",
@@ -109,10 +138,13 @@
       "dataset_year": 2013,
       "last_updated": "Thu Mar 21 2024",
       "data_sha256": "42ade6611f0fadbc8c15e48bb04e5f20813c9939de21aa5f8204293f623c912a",
-      "metadata_sha256": "70a3f2198fb4eed96f9eb8e46be4e286d7dd8ccaf6914a395edd956cacda8f6f"
+      "metadata_sha256": "70a3f2198fb4eed96f9eb8e46be4e286d7dd8ccaf6914a395edd956cacda8f6f",
+      "documentation_sha256": null
     },
     {
       "slug": "obesity_lifestyle",
+      "source_type": "uci",
+      "source_id": 544,
       "uci_id": 544,
       "name": "Estimation of Obesity Levels Based On Eating Habits and Physical Condition ",
       "data_url": "https://archive.ics.uci.edu/static/public/544/data.csv",
@@ -120,10 +152,13 @@
       "dataset_year": 2019,
       "last_updated": "Tue Sep 10 2024",
       "data_sha256": "28b6991062855d3d15642e38b1aa9d1b32fb7abbb5abf5b096f1868cd706154b",
-      "metadata_sha256": "6501cb090ffed681a95f019c2013ad3e4b5b2193cb2fea428a27a66e26f5e3c3"
+      "metadata_sha256": "6501cb090ffed681a95f019c2013ad3e4b5b2193cb2fea428a27a66e26f5e3c3",
+      "documentation_sha256": null
     },
     {
       "slug": "drug_consumption",
+      "source_type": "uci",
+      "source_id": 373,
       "uci_id": 373,
       "name": "Drug Consumption (Quantified)",
       "data_url": "https://archive.ics.uci.edu/static/public/373/data.csv",
@@ -131,10 +166,13 @@
       "dataset_year": 2015,
       "last_updated": "Fri Mar 08 2024",
       "data_sha256": "145a0af23d90744950c77d3283ba02a44494cfd839d503eb2ae000f6986cd9e5",
-      "metadata_sha256": "f969924b97dde9b1c1fe88dcef52c2c210d8a970e8d3c45f8ccf0e27d36dd6b7"
+      "metadata_sha256": "f969924b97dde9b1c1fe88dcef52c2c210d8a970e8d3c45f8ccf0e27d36dd6b7",
+      "documentation_sha256": null
     },
     {
       "slug": "workplace_absenteeism",
+      "source_type": "uci",
+      "source_id": 445,
       "uci_id": 445,
       "name": "Absenteeism at work",
       "data_url": "https://archive.ics.uci.edu/static/public/445/data.csv",
@@ -142,43 +180,55 @@
       "dataset_year": 2012,
       "last_updated": "Fri Mar 08 2024",
       "data_sha256": "a9db81e36063ea227cb321b7dfc41644f05de496a006dbe5256a4c41da43f619",
-      "metadata_sha256": "13b57252365d8cbfdfd2f267419e97ed20cb6d92b11504676b605b6f408de219"
+      "metadata_sha256": "13b57252365d8cbfdfd2f267419e97ed20cb6d92b11504676b605b6f408de219",
+      "documentation_sha256": null
     },
     {
-      "slug": "student_dropout_sdoh",
-      "uci_id": 697,
-      "name": "Predict Students' Dropout and Academic Success",
-      "data_url": "https://archive.ics.uci.edu/static/public/697/data.csv",
-      "repository_url": "https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success",
-      "dataset_year": 2021,
-      "last_updated": "Mon Feb 26 2024",
-      "data_sha256": "a1b1a6531bbb93a5c7fdf0093b47172776652a4ffb12342fb79655c85b74801b",
-      "metadata_sha256": "c48a8f6303ccf2a5ade930fe6e85c53df209c2933f39910344c56a53a8641d5e"
+      "slug": "pediatric_appendicitis",
+      "source_type": "uci",
+      "source_id": 938,
+      "uci_id": 938,
+      "name": "Regensburg Pediatric Appendicitis",
+      "data_url": "https://archive.ics.uci.edu/static/public/938/data.csv",
+      "repository_url": "https://archive.ics.uci.edu/dataset/938/regensburg+pediatric+appendicitis",
+      "dataset_year": 2023,
+      "last_updated": "Tue Feb 06 2024",
+      "data_sha256": "199553cdbc1eec4f6e59ef48d6a911c979a11fe214280d5582ea3f7cb72fce72",
+      "metadata_sha256": "a164f663a47765833a3eded6c095d9c44eba0f2078eb2c0b2bf7c1662f576536",
+      "documentation_sha256": null
     },
     {
-      "slug": "adult_income_sdoh",
-      "uci_id": 2,
-      "name": "Adult",
-      "data_url": "https://archive.ics.uci.edu/static/public/2/data.csv",
-      "repository_url": "https://archive.ics.uci.edu/dataset/2/adult",
-      "dataset_year": 1996,
-      "last_updated": "Tue Sep 24 2024",
-      "data_sha256": "26b38f8623766396e2ba0d1a235a283db8ed993cc32bf32fc8aab09708c3bdf2",
-      "metadata_sha256": "8f619327b01636beca9a711e3a81e9cce7fcf8871601f1b84dc6f14e7c5a1cf8"
+      "slug": "healthy_aging_poll",
+      "source_type": "uci",
+      "source_id": 936,
+      "uci_id": 936,
+      "name": "National Poll on Healthy Aging (NPHA)",
+      "data_url": "https://archive.ics.uci.edu/static/public/936/data.csv",
+      "repository_url": "https://archive.ics.uci.edu/dataset/936/national+poll+on+healthy+aging+(npha)",
+      "dataset_year": 2017,
+      "last_updated": "Mon Dec 11 2023",
+      "data_sha256": "cfb2663734619366c85634a8c8356521f6efc29291c2bff0fab2d6e460d3cc58",
+      "metadata_sha256": "41b0f5785a4b16144dfa6ddf3f9a93621a865418e0a0ec7e3a01da41bb68fd24",
+      "documentation_sha256": null
     },
     {
-      "slug": "communities_crime_sdoh",
-      "uci_id": 183,
-      "name": "Communities and Crime",
-      "data_url": "https://archive.ics.uci.edu/static/public/183/data.csv",
-      "repository_url": "https://archive.ics.uci.edu/dataset/183/communities+and+crime",
-      "dataset_year": 2002,
-      "last_updated": "Mon Mar 04 2024",
-      "data_sha256": "7984874910c8f9ddcf5db06abe416850c55d880d225167112c612dd58ea54b40",
-      "metadata_sha256": "1bdb484e17f38af829a7c0d71a4246f4c97094398321d2f08d24ca031853fc6b"
+      "slug": "cervical_cancer_screening",
+      "source_type": "uci",
+      "source_id": 383,
+      "uci_id": 383,
+      "name": "Cervical Cancer (Risk Factors)",
+      "data_url": "https://archive.ics.uci.edu/static/public/383/data.csv",
+      "repository_url": "https://archive.ics.uci.edu/dataset/383/cervical+cancer+risk+factors",
+      "dataset_year": 2017,
+      "last_updated": "Sun Mar 10 2024",
+      "data_sha256": "f71865358287ba3e87192ccc833fb8924efaec7b060f277771305559035ea7d4",
+      "metadata_sha256": "671bd1776fa36e108f480b8784615338198aa53f1f5d8a9f31c76e00cf1abbf0",
+      "documentation_sha256": null
     },
     {
       "slug": "air_quality_sensors",
+      "source_type": "uci",
+      "source_id": 360,
       "uci_id": 360,
       "name": "Air Quality",
       "data_url": "https://archive.ics.uci.edu/static/public/360/data.csv",
@@ -186,10 +236,13 @@
       "dataset_year": 2008,
       "last_updated": "Sun Mar 10 2024",
       "data_sha256": "4c42e4729e876dfdecf3bfb0ed658f2bdfb2b3007da496440d303260a97733e5",
-      "metadata_sha256": "0a835f07d62fbc84b2253d6330f4f628a626b87680b40069558a72ee0b4c92ea"
+      "metadata_sha256": "0a835f07d62fbc84b2253d6330f4f628a626b87680b40069558a72ee0b4c92ea",
+      "documentation_sha256": null
     },
     {
       "slug": "beijing_pm25",
+      "source_type": "uci",
+      "source_id": 381,
       "uci_id": 381,
       "name": "Beijing PM2.5",
       "data_url": "https://archive.ics.uci.edu/static/public/381/data.csv",
@@ -197,29 +250,36 @@
       "dataset_year": 2015,
       "last_updated": "Sat Mar 16 2024",
       "data_sha256": "670a47f8c76eb5de5936354a4c5de70ce5d5da76e2483c9df3884030aded8016",
-      "metadata_sha256": "1c7309e4570cae70dc19797c511d10ed3c87121d50861b5f386b95d3cebdefad"
+      "metadata_sha256": "1c7309e4570cae70dc19797c511d10ed3c87121d50861b5f386b95d3cebdefad",
+      "documentation_sha256": null
     },
     {
-      "slug": "room_occupancy_environment",
-      "uci_id": 864,
-      "name": "Room Occupancy Estimation",
-      "data_url": "https://archive.ics.uci.edu/static/public/864/data.csv",
-      "repository_url": "https://archive.ics.uci.edu/dataset/864/room+occupancy+estimation",
-      "dataset_year": 2018,
-      "last_updated": "Wed Aug 16 2023",
-      "data_sha256": "c090ee5c94b61762bfec9d22767864490b51030f98cca030f02822468db25d9c",
-      "metadata_sha256": "37e9a878af84c8639011e11a0b26ff50304b967dea14cc8a1dbbe745c4f7f44e"
+      "slug": "glioma_grading",
+      "source_type": "uci",
+      "source_id": 759,
+      "uci_id": 759,
+      "name": "Glioma Grading Clinical and Mutation Features",
+      "data_url": "https://archive.ics.uci.edu/static/public/759/data.csv",
+      "repository_url": "https://archive.ics.uci.edu/dataset/759/glioma+grading+clinical+and+mutation+features+dataset",
+      "dataset_year": 2022,
+      "last_updated": "Fri Nov 03 2023",
+      "data_sha256": "5d1ebd8485790b691744e756774bd00f810b545d0c754bfa42996c5e56d0ad25",
+      "metadata_sha256": "f02114a043116574acafc595bfc44c094954d22aab3d060a63cf548756ec13a8",
+      "documentation_sha256": null
     },
     {
-      "slug": "bike_sharing_environment",
-      "uci_id": 275,
-      "name": "Bike Sharing",
-      "data_url": "https://archive.ics.uci.edu/static/public/275/data.csv",
-      "repository_url": "https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset",
-      "dataset_year": 2013,
-      "last_updated": "Sun Mar 10 2024",
-      "data_sha256": "e03de4ee4ef4dc376ac6e04bf829673c6269e8eba5c60fa121640fa2f829504f",
-      "metadata_sha256": "ddae1c6bc628001a5c48ea53892f62e30dbbd6c4931ba00915adfdc520f9227b"
+      "slug": "hospital_patient_experience",
+      "source_type": "cms",
+      "source_id": "dgck-syfz",
+      "uci_id": null,
+      "name": "Patient survey (HCAHPS) - Hospital",
+      "data_url": "https://data.cms.gov/provider-data/sites/default/files/resources/78a50346fbe828ea0ce2837847af6a7c_1785189950/HCAHPS-Hospital.csv",
+      "repository_url": "https://data.cms.gov/provider-data/dataset/dgck-syfz",
+      "dataset_year": "2026",
+      "last_updated": "2026-07-22",
+      "data_sha256": "b70e598f29552df302e30ed649d178abd1b3d3c868ae97cf8e55453dd33898fc",
+      "metadata_sha256": "070a02b7e2fcff0cef07a3ffd5d099f6f27fd3b0050139723cdbc9ecd220b042",
+      "documentation_sha256": "a304420163abc6c677afc248a93f38108009b17697aa1c681da8a18d18d8a04d"
     }
   ]
 }

@@ -1,0 +1,5 @@
+variable,risk_flags,note
+Gender,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+Age_at_diagnosis,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+Race,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+Grade,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.

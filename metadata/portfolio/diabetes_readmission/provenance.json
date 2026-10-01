@@ -1,4 +1,6 @@
 {
+  "source_type": "uci",
+  "source_id": 296,
   "uci_id": 296,
   "title": "Diabetes 130-US Hospitals for Years 1999-2008",
   "official_source": "UCI Machine Learning Repository",
@@ -11,6 +13,8 @@
   "license": null,
   "raw_data_sha256": "f792c388d9b470aac4fbf21c39b176534d55a116e7626881c30bbe7ab0341422",
   "official_metadata_sha256": "6e6e0934d175afe24f54f2199f9895eab21844205fe46be7970c106a104725e9",
+  "official_documentation_url": null,
+  "official_documentation_sha256": null,
   "raw_rows": 101766,
   "raw_columns": 50,
   "participant_rows": 5000,
@@ -66,15 +70,15 @@
     }
   ],
   "transformations": [
-    "Downloaded the official UCI normalized CSV and API metadata without modifying the raw files.",
+    "Downloaded the official/original CSV and source metadata without modifying the raw files.",
     "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
     "Converted documented source missing symbols to blank/NA only in the participant derivative.",
     "Selected 5000 rows by deterministic SHA-256 rank using the portfolio seed.",
     "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
   ],
   "software": {
-    "python": "3.14.7",
-    "pandas": "2.3.3",
+    "python": "3.12.14",
+    "pandas": "3.0.1",
     "platform": "Windows-11-10.0.26100-SP0"
   }
 }

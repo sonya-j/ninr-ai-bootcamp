@@ -1,0 +1,77 @@
+{
+  "source_type": "uci",
+  "source_id": 759,
+  "uci_id": 759,
+  "title": "Glioma Grading Clinical and Mutation Features",
+  "official_source": "UCI Machine Learning Repository",
+  "repository_url": "https://archive.ics.uci.edu/dataset/759/glioma+grading+clinical+and+mutation+features+dataset",
+  "data_url": "https://archive.ics.uci.edu/static/public/759/data.csv",
+  "dataset_doi": "10.24432/C5R62J",
+  "dataset_year": 2022,
+  "current_record_version": "UCI record last updated Fri Nov 03 2023",
+  "access_date": "2026-10-01",
+  "license": null,
+  "raw_data_sha256": "5d1ebd8485790b691744e756774bd00f810b545d0c754bfa42996c5e56d0ad25",
+  "official_metadata_sha256": "f02114a043116574acafc595bfc44c094954d22aab3d060a63cf548756ec13a8",
+  "official_documentation_url": null,
+  "official_documentation_sha256": null,
+  "raw_rows": 839,
+  "raw_columns": 25,
+  "participant_rows": 839,
+  "participant_columns": 26,
+  "participant_sha256": "113d271d43c66263c69e2e39896dbb986753c0b20a6cca56c404247f31784213",
+  "selected_variables": [
+    "portfolio_row_id",
+    "Gender",
+    "Age_at_diagnosis",
+    "Race",
+    "Grade",
+    "IDH1",
+    "TP53",
+    "ATRX",
+    "PTEN",
+    "EGFR",
+    "CIC",
+    "MUC16",
+    "PIK3CA",
+    "NF1",
+    "PIK3R1",
+    "FUBP1",
+    "RB1",
+    "NOTCH1",
+    "BCOR",
+    "CSMD3",
+    "SMARCA4",
+    "GRIN2A",
+    "IDH2",
+    "FAT4",
+    "PDGFRA",
+    "Case_ID"
+  ],
+  "missing_value_codes": [
+    ""
+  ],
+  "weighting_variables": [],
+  "outcomes": [
+    {
+      "variable": "Grade",
+      "description": "Glioma grade class information (0 = \"LGG\"; 1 = \"GBM\")",
+      "observed_values": [
+        "0",
+        "1"
+      ]
+    }
+  ],
+  "transformations": [
+    "Downloaded the official/original CSV and source metadata without modifying the raw files.",
+    "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
+    "Converted documented source missing symbols to blank/NA only in the participant derivative.",
+    "Selected 839 rows by deterministic SHA-256 rank using the portfolio seed.",
+    "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
+  ],
+  "software": {
+    "python": "3.12.14",
+    "pandas": "3.0.1",
+    "platform": "Windows-11-10.0.26100-SP0"
+  }
+}

@@ -1,4 +1,6 @@
 {
+  "source_type": "uci",
+  "source_id": 360,
   "uci_id": 360,
   "title": "Air Quality",
   "official_source": "UCI Machine Learning Repository",
@@ -11,6 +13,8 @@
   "license": null,
   "raw_data_sha256": "4c42e4729e876dfdecf3bfb0ed658f2bdfb2b3007da496440d303260a97733e5",
   "official_metadata_sha256": "0a835f07d62fbc84b2253d6330f4f628a626b87680b40069558a72ee0b4c92ea",
+  "official_documentation_url": null,
+  "official_documentation_sha256": null,
   "raw_rows": 9357,
   "raw_columns": 15,
   "participant_rows": 5000,
@@ -41,15 +45,15 @@
   "weighting_variables": [],
   "outcomes": [],
   "transformations": [
-    "Downloaded the official UCI normalized CSV and API metadata without modifying the raw files.",
+    "Downloaded the official/original CSV and source metadata without modifying the raw files.",
     "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
     "Converted documented source missing symbols to blank/NA only in the participant derivative.",
     "Selected 5000 rows by deterministic SHA-256 rank using the portfolio seed.",
     "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
   ],
   "software": {
-    "python": "3.14.7",
-    "pandas": "2.3.3",
+    "python": "3.12.14",
+    "pandas": "3.0.1",
     "platform": "Windows-11-10.0.26100-SP0"
   }
 }

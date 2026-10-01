@@ -1,4 +1,6 @@
 {
+  "source_type": "uci",
+  "source_id": 373,
   "uci_id": 373,
   "title": "Drug Consumption (Quantified)",
   "official_source": "UCI Machine Learning Repository",
@@ -11,6 +13,8 @@
   "license": null,
   "raw_data_sha256": "145a0af23d90744950c77d3283ba02a44494cfd839d503eb2ae000f6986cd9e5",
   "official_metadata_sha256": "f969924b97dde9b1c1fe88dcef52c2c210d8a970e8d3c45f8ccf0e27d36dd6b7",
+  "official_documentation_url": null,
+  "official_documentation_sha256": null,
   "raw_rows": 1885,
   "raw_columns": 32,
   "participant_rows": 1885,
@@ -275,15 +279,15 @@
     }
   ],
   "transformations": [
-    "Downloaded the official UCI normalized CSV and API metadata without modifying the raw files.",
+    "Downloaded the official/original CSV and source metadata without modifying the raw files.",
     "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
     "Converted documented source missing symbols to blank/NA only in the participant derivative.",
     "Selected 1885 rows by deterministic SHA-256 rank using the portfolio seed.",
     "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
   ],
   "software": {
-    "python": "3.14.7",
-    "pandas": "2.3.3",
+    "python": "3.12.14",
+    "pandas": "3.0.1",
     "platform": "Windows-11-10.0.26100-SP0"
   }
 }

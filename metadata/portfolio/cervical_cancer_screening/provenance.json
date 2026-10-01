@@ -1,0 +1,108 @@
+{
+  "source_type": "uci",
+  "source_id": 383,
+  "uci_id": 383,
+  "title": "Cervical Cancer (Risk Factors)",
+  "official_source": "UCI Machine Learning Repository",
+  "repository_url": "https://archive.ics.uci.edu/dataset/383/cervical+cancer+risk+factors",
+  "data_url": "https://archive.ics.uci.edu/static/public/383/data.csv",
+  "dataset_doi": "10.24432/C5Z310",
+  "dataset_year": 2017,
+  "current_record_version": "UCI record last updated Sun Mar 10 2024",
+  "access_date": "2026-10-01",
+  "license": null,
+  "raw_data_sha256": "f71865358287ba3e87192ccc833fb8924efaec7b060f277771305559035ea7d4",
+  "official_metadata_sha256": "671bd1776fa36e108f480b8784615338198aa53f1f5d8a9f31c76e00cf1abbf0",
+  "official_documentation_url": null,
+  "official_documentation_sha256": null,
+  "raw_rows": 858,
+  "raw_columns": 36,
+  "participant_rows": 858,
+  "participant_columns": 31,
+  "participant_sha256": "eaa865b345099526cae88adde338aabaae4edf73ff25c1046ceef3648a4be93f",
+  "selected_variables": [
+    "portfolio_row_id",
+    "Age",
+    "Number of sexual partners",
+    "Hinselmann",
+    "Schiller",
+    "Citology",
+    "Biopsy",
+    "First sexual intercourse",
+    "Num of pregnancies",
+    "Smokes",
+    "Smokes (years)",
+    "Smokes (packs/year)",
+    "Hormonal Contraceptives",
+    "Hormonal Contraceptives (years)",
+    "IUD",
+    "IUD (years)",
+    "STDs",
+    "STDs (number)",
+    "STDs:condylomatosis",
+    "STDs:cervical condylomatosis",
+    "STDs:vaginal condylomatosis",
+    "STDs:vulvo-perineal condylomatosis",
+    "STDs:syphilis",
+    "STDs:pelvic inflammatory disease",
+    "STDs:genital herpes",
+    "STDs:molluscum contagiosum",
+    "STDs:AIDS",
+    "STDs:HIV",
+    "STDs:Hepatitis B",
+    "STDs:HPV",
+    "STDs: Number of diagnosis"
+  ],
+  "missing_value_codes": [
+    "",
+    "NaN",
+    "?"
+  ],
+  "weighting_variables": [],
+  "outcomes": [
+    {
+      "variable": "Hinselmann",
+      "description": "Binary result of the Hinselmann cervical screening test; designated as a target in the official documentation.",
+      "observed_values": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "variable": "Schiller",
+      "description": "Binary result of the Schiller cervical screening test; designated as a target in the official documentation.",
+      "observed_values": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "variable": "Citology",
+      "description": "Binary cervical cytology result; designated as a target in the official documentation.",
+      "observed_values": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "variable": "Biopsy",
+      "description": "Binary cervical biopsy result; designated as a target in the official documentation.",
+      "observed_values": [
+        "0",
+        "1"
+      ]
+    }
+  ],
+  "transformations": [
+    "Downloaded the official/original CSV and source metadata without modifying the raw files.",
+    "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
+    "Converted documented source missing symbols to blank/NA only in the participant derivative.",
+    "Selected 858 rows by deterministic SHA-256 rank using the portfolio seed.",
+    "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
+  ],
+  "software": {
+    "python": "3.12.14",
+    "pandas": "3.0.1",
+    "platform": "Windows-11-10.0.26100-SP0"
+  }
+}

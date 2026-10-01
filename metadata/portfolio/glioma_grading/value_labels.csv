@@ -1,0 +1,49 @@
+variable,code,official_description,label_status
+Gender,0,"Gender (0 = ""male""; 1 = ""female"")",Raw category code observed in official source; use the official description/codebook for meaning.
+Gender,1,"Gender (0 = ""male""; 1 = ""female"")",Raw category code observed in official source; use the official description/codebook for meaning.
+Race,american indian or alaska native,"Race  (0 = ""white"";  1 = ""black or african American"";  2 = ""asian"";  3 = ""american indian or alaska native"")",Raw category code observed in official source; use the official description/codebook for meaning.
+Race,asian,"Race  (0 = ""white"";  1 = ""black or african American"";  2 = ""asian"";  3 = ""american indian or alaska native"")",Raw category code observed in official source; use the official description/codebook for meaning.
+Race,black or african american,"Race  (0 = ""white"";  1 = ""black or african American"";  2 = ""asian"";  3 = ""american indian or alaska native"")",Raw category code observed in official source; use the official description/codebook for meaning.
+Race,white,"Race  (0 = ""white"";  1 = ""black or african American"";  2 = ""asian"";  3 = ""american indian or alaska native"")",Raw category code observed in official source; use the official description/codebook for meaning.
+IDH1,0,isocitrate dehydrogenase (NADP(+))1 (0 = NOT_MUTATED; 1= MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+IDH1,1,isocitrate dehydrogenase (NADP(+))1 (0 = NOT_MUTATED; 1= MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+TP53,0,tumor protein p53 (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+TP53,1,tumor protein p53 (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+ATRX,0,ATRX chromatin remodeler (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+ATRX,1,ATRX chromatin remodeler (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+PTEN,0,phosphatase and tensin homolog (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+PTEN,1,phosphatase and tensin homolog (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+EGFR,0,epidermal growth factor receptor (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+EGFR,1,epidermal growth factor receptor (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+CIC,0,capicua transcriptional repressor (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+CIC,1,capicua transcriptional repressor (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+MUC16,0,"mucin 16, cell surface associated (0 = NOT_MUTATED; 1 = MUTATED)",Raw category code observed in official source; use the official description/codebook for meaning.
+MUC16,1,"mucin 16, cell surface associated (0 = NOT_MUTATED; 1 = MUTATED)",Raw category code observed in official source; use the official description/codebook for meaning.
+PIK3CA,0,"phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha (0 = NOT_MUTATED; 1 = MUTATED)",Raw category code observed in official source; use the official description/codebook for meaning.
+PIK3CA,1,"phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha (0 = NOT_MUTATED; 1 = MUTATED)",Raw category code observed in official source; use the official description/codebook for meaning.
+NF1,0,neurofibromin 1 (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+NF1,1,neurofibromin 1 (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+PIK3R1,0,phosphoinositide-3-kinase regulatory subunit 1 (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+PIK3R1,1,phosphoinositide-3-kinase regulatory subunit 1 (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+FUBP1,0,far upstream element binding protein 1 (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+FUBP1,1,far upstream element binding protein 1 (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+RB1,0,RB transcriptional corepressor 1 (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+RB1,1,RB transcriptional corepressor 1 (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+NOTCH1,0,notch receptor 1 (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+NOTCH1,1,notch receptor 1 (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+BCOR,0,BCL6 corepressor (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+BCOR,1,BCL6 corepressor (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+CSMD3,0,CUB and Sushi multiple domains 3 (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+CSMD3,1,CUB and Sushi multiple domains 3 (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+SMARCA4,0,"SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily a, member 4 (0 = NOT_MUTATED; 1 = MUTATED)",Raw category code observed in official source; use the official description/codebook for meaning.
+SMARCA4,1,"SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily a, member 4 (0 = NOT_MUTATED; 1 = MUTATED)",Raw category code observed in official source; use the official description/codebook for meaning.
+GRIN2A,0,glutamate ionotropic receptor NMDA type subunit 2A (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+GRIN2A,1,glutamate ionotropic receptor NMDA type subunit 2A (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+IDH2,0,isocitrate dehydrogenase (NADP(+)) 2 (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+IDH2,1,isocitrate dehydrogenase (NADP(+)) 2 (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+FAT4,0,FAT atypical cadherin 4 (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+FAT4,1,FAT atypical cadherin 4 (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+PDGFRA,0,platelet-derived growth factor receptor alpha (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+PDGFRA,1,platelet-derived growth factor receptor alpha (0 = NOT_MUTATED; 1 = MUTATED),Raw category code observed in official source; use the official description/codebook for meaning.
+Grade,0,"Glioma grade class information (0 = ""LGG""; 1 = ""GBM"")",Raw category code observed in official source; use the official description/codebook for meaning.
+Grade,1,"Glioma grade class information (0 = ""LGG""; 1 = ""GBM"")",Raw category code observed in official source; use the official description/codebook for meaning.

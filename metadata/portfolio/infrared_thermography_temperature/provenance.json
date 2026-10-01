@@ -1,4 +1,6 @@
 {
+  "source_type": "uci",
+  "source_id": 925,
   "uci_id": 925,
   "title": "Infrared Thermography Temperature",
   "official_source": "UCI Machine Learning Repository",
@@ -11,6 +13,8 @@
   "license": null,
   "raw_data_sha256": "b25616c9f67e3a60b853fdce8532cab926ca7cb649c6b89bc9e1f1255d0f0a14",
   "official_metadata_sha256": "e4f80bdf53f7b1824c9bf49943f5960ee00b910f4223ffd1967ae90067152c26",
+  "official_documentation_url": null,
+  "official_documentation_sha256": null,
   "raw_rows": 1020,
   "raw_columns": 36,
   "participant_rows": 1020,
@@ -191,15 +195,15 @@
     }
   ],
   "transformations": [
-    "Downloaded the official UCI normalized CSV and API metadata without modifying the raw files.",
+    "Downloaded the official/original CSV and source metadata without modifying the raw files.",
     "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
     "Converted documented source missing symbols to blank/NA only in the participant derivative.",
     "Selected 1020 rows by deterministic SHA-256 rank using the portfolio seed.",
     "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
   ],
   "software": {
-    "python": "3.14.7",
-    "pandas": "2.3.3",
+    "python": "3.12.14",
+    "pandas": "3.0.1",
     "platform": "Windows-11-10.0.26100-SP0"
   }
 }

@@ -1,0 +1,196 @@
+variable,code,official_description,label_status
+Sex,female,Registered gender,Raw category code observed in official source; use the official description/codebook for meaning.
+Sex,male,Registered gender,Raw category code observed in official source; use the official description/codebook for meaning.
+Length_of_Stay,1,Length of the stay in the hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+Length_of_Stay,10,Length of the stay in the hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+Length_of_Stay,11,Length of the stay in the hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+Length_of_Stay,12,Length of the stay in the hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+Length_of_Stay,13,Length of the stay in the hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+Length_of_Stay,14,Length of the stay in the hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+Length_of_Stay,17,Length of the stay in the hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+Length_of_Stay,19,Length of the stay in the hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+Length_of_Stay,2,Length of the stay in the hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+Length_of_Stay,20,Length of the stay in the hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+Length_of_Stay,21,Length of the stay in the hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+Length_of_Stay,28,Length of the stay in the hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+Length_of_Stay,3,Length of the stay in the hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+Length_of_Stay,4,Length of the stay in the hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+Length_of_Stay,5,Length of the stay in the hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+Length_of_Stay,6,Length of the stay in the hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+Length_of_Stay,7,Length of the stay in the hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+Length_of_Stay,8,Length of the stay in the hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+Length_of_Stay,9,Length of the stay in the hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+Management,conservative,"(conservative, primary surgical, secondary surgical, simultaneous appendectomy) Management of the patient assigned by a senior pediatric surgeon: operative (appendectomy: laparoscopic, open or conversion) or conservative (without antibiotics). In case of the secondary surgery after prior stay, the patient was labelled as operatively managed.",Raw category code observed in official source; use the official description/codebook for meaning.
+Management,primary surgical,"(conservative, primary surgical, secondary surgical, simultaneous appendectomy) Management of the patient assigned by a senior pediatric surgeon: operative (appendectomy: laparoscopic, open or conversion) or conservative (without antibiotics). In case of the secondary surgery after prior stay, the patient was labelled as operatively managed.",Raw category code observed in official source; use the official description/codebook for meaning.
+Management,secondary surgical,"(conservative, primary surgical, secondary surgical, simultaneous appendectomy) Management of the patient assigned by a senior pediatric surgeon: operative (appendectomy: laparoscopic, open or conversion) or conservative (without antibiotics). In case of the secondary surgery after prior stay, the patient was labelled as operatively managed.",Raw category code observed in official source; use the official description/codebook for meaning.
+Management,simultaneous appendectomy,"(conservative, primary surgical, secondary surgical, simultaneous appendectomy) Management of the patient assigned by a senior pediatric surgeon: operative (appendectomy: laparoscopic, open or conversion) or conservative (without antibiotics). In case of the secondary surgery after prior stay, the patient was labelled as operatively managed.",Raw category code observed in official source; use the official description/codebook for meaning.
+Severity,complicated,"(uncomplicated, complicated) Severity of appendicitis: uncomplicated: subacute/ catharral, fibrosis; phlegmonous or complicated: gangrenous, perforated, abscessed",Raw category code observed in official source; use the official description/codebook for meaning.
+Severity,uncomplicated,"(uncomplicated, complicated) Severity of appendicitis: uncomplicated: subacute/ catharral, fibrosis; phlegmonous or complicated: gangrenous, perforated, abscessed",Raw category code observed in official source; use the official description/codebook for meaning.
+Diagnosis_Presumptive,Adhäsionen des Colon ascendens,Patient's suspected diagnosis,Raw category code observed in official source; use the official description/codebook for meaning.
+Diagnosis_Presumptive,"Appendizitis, Lymphadenitis mesenterialis",Patient's suspected diagnosis,Raw category code observed in official source; use the official description/codebook for meaning.
+Diagnosis_Presumptive,Appendizitis/ Lymphadenitis mesenterialis,Patient's suspected diagnosis,Raw category code observed in official source; use the official description/codebook for meaning.
+Diagnosis_Presumptive,Bridenileus,Patient's suspected diagnosis,Raw category code observed in official source; use the official description/codebook for meaning.
+Diagnosis_Presumptive,Gastroenteritis,Patient's suspected diagnosis,Raw category code observed in official source; use the official description/codebook for meaning.
+Diagnosis_Presumptive,Ovarialtorsion,Patient's suspected diagnosis,Raw category code observed in official source; use the official description/codebook for meaning.
+Diagnosis_Presumptive,Sepsis mit Begleitappendizitis,Patient's suspected diagnosis,Raw category code observed in official source; use the official description/codebook for meaning.
+Diagnosis_Presumptive,Torsion der Adnexe,Patient's suspected diagnosis,Raw category code observed in official source; use the official description/codebook for meaning.
+Diagnosis_Presumptive,"abdominelle Adhäsionen, chron. Unterbauchbeschwerden mit Subileussymptomatik",Patient's suspected diagnosis,Raw category code observed in official source; use the official description/codebook for meaning.
+Diagnosis_Presumptive,appendicitis,Patient's suspected diagnosis,Raw category code observed in official source; use the official description/codebook for meaning.
+Diagnosis_Presumptive,chronische Appendizitis,Patient's suspected diagnosis,Raw category code observed in official source; use the official description/codebook for meaning.
+Diagnosis_Presumptive,chronische Bauchschmerzen,Patient's suspected diagnosis,Raw category code observed in official source; use the official description/codebook for meaning.
+Diagnosis_Presumptive,"diabetische Ketoazidose, Myokarditis",Patient's suspected diagnosis,Raw category code observed in official source; use the official description/codebook for meaning.
+Diagnosis_Presumptive,gedeckt perforierte Appendizitis,Patient's suspected diagnosis,Raw category code observed in official source; use the official description/codebook for meaning.
+Diagnosis_Presumptive,no appendicitis,Patient's suspected diagnosis,Raw category code observed in official source; use the official description/codebook for meaning.
+Diagnosis_Presumptive,prolongierte Gastroenteritis,Patient's suspected diagnosis,Raw category code observed in official source; use the official description/codebook for meaning.
+Diagnosis,appendicitis,"Patient's diagnosis, histologically confirmed for operated patients. Conservatively managed patients were labelled as having appendicitis if they had an AS or PAS of ≥ 4 and an appendix diameter of ≥ 6 mm",Raw category code observed in official source; use the official description/codebook for meaning.
+Diagnosis,no appendicitis,"Patient's diagnosis, histologically confirmed for operated patients. Conservatively managed patients were labelled as having appendicitis if they had an AS or PAS of ≥ 4 and an appendix diameter of ≥ 6 mm",Raw category code observed in official source; use the official description/codebook for meaning.
+Alvarado_Score,0,Patient's score according to the scoring system,Raw category code observed in official source; use the official description/codebook for meaning.
+Alvarado_Score,1,Patient's score according to the scoring system,Raw category code observed in official source; use the official description/codebook for meaning.
+Alvarado_Score,10,Patient's score according to the scoring system,Raw category code observed in official source; use the official description/codebook for meaning.
+Alvarado_Score,2,Patient's score according to the scoring system,Raw category code observed in official source; use the official description/codebook for meaning.
+Alvarado_Score,3,Patient's score according to the scoring system,Raw category code observed in official source; use the official description/codebook for meaning.
+Alvarado_Score,4,Patient's score according to the scoring system,Raw category code observed in official source; use the official description/codebook for meaning.
+Alvarado_Score,5,Patient's score according to the scoring system,Raw category code observed in official source; use the official description/codebook for meaning.
+Alvarado_Score,6,Patient's score according to the scoring system,Raw category code observed in official source; use the official description/codebook for meaning.
+Alvarado_Score,7,Patient's score according to the scoring system,Raw category code observed in official source; use the official description/codebook for meaning.
+Alvarado_Score,8,Patient's score according to the scoring system,Raw category code observed in official source; use the official description/codebook for meaning.
+Alvarado_Score,9,Patient's score according to the scoring system,Raw category code observed in official source; use the official description/codebook for meaning.
+Paedriatic_Appendicitis_Score,0,Patient's score according to the scoring system,Raw category code observed in official source; use the official description/codebook for meaning.
+Paedriatic_Appendicitis_Score,1,Patient's score according to the scoring system,Raw category code observed in official source; use the official description/codebook for meaning.
+Paedriatic_Appendicitis_Score,10,Patient's score according to the scoring system,Raw category code observed in official source; use the official description/codebook for meaning.
+Paedriatic_Appendicitis_Score,2,Patient's score according to the scoring system,Raw category code observed in official source; use the official description/codebook for meaning.
+Paedriatic_Appendicitis_Score,3,Patient's score according to the scoring system,Raw category code observed in official source; use the official description/codebook for meaning.
+Paedriatic_Appendicitis_Score,4,Patient's score according to the scoring system,Raw category code observed in official source; use the official description/codebook for meaning.
+Paedriatic_Appendicitis_Score,5,Patient's score according to the scoring system,Raw category code observed in official source; use the official description/codebook for meaning.
+Paedriatic_Appendicitis_Score,6,Patient's score according to the scoring system,Raw category code observed in official source; use the official description/codebook for meaning.
+Paedriatic_Appendicitis_Score,7,Patient's score according to the scoring system,Raw category code observed in official source; use the official description/codebook for meaning.
+Paedriatic_Appendicitis_Score,8,Patient's score according to the scoring system,Raw category code observed in official source; use the official description/codebook for meaning.
+Paedriatic_Appendicitis_Score,9,Patient's score according to the scoring system,Raw category code observed in official source; use the official description/codebook for meaning.
+Appendix_on_US,no,Detectability of the vermiform appendix during sonographic examination,Raw category code observed in official source; use the official description/codebook for meaning.
+Appendix_on_US,yes,Detectability of the vermiform appendix during sonographic examination,Raw category code observed in official source; use the official description/codebook for meaning.
+Migratory_Pain,no,Abdominal pain; usually starts in epigastrium and moves to the right lower quadrant,Raw category code observed in official source; use the official description/codebook for meaning.
+Migratory_Pain,yes,Abdominal pain; usually starts in epigastrium and moves to the right lower quadrant,Raw category code observed in official source; use the official description/codebook for meaning.
+Lower_Right_Abd_Pain,no,Right iliac fossa pain detected on palpation,Raw category code observed in official source; use the official description/codebook for meaning.
+Lower_Right_Abd_Pain,yes,Right iliac fossa pain detected on palpation,Raw category code observed in official source; use the official description/codebook for meaning.
+Contralateral_Rebound_Tenderness,no,"A state in which pain of the contralateral side (usually, the right lower quadrant) is felt on the release of pressure (usually, in the left lower quadrant) over the abdomen",Raw category code observed in official source; use the official description/codebook for meaning.
+Contralateral_Rebound_Tenderness,yes,"A state in which pain of the contralateral side (usually, the right lower quadrant) is felt on the release of pressure (usually, in the left lower quadrant) over the abdomen",Raw category code observed in official source; use the official description/codebook for meaning.
+Coughing_Pain,no,Abdominal pain by forced cough,Raw category code observed in official source; use the official description/codebook for meaning.
+Coughing_Pain,yes,Abdominal pain by forced cough,Raw category code observed in official source; use the official description/codebook for meaning.
+Nausea,no,Feeling of sickness/ejection of contents from stomach through the mouth,Raw category code observed in official source; use the official description/codebook for meaning.
+Nausea,yes,Feeling of sickness/ejection of contents from stomach through the mouth,Raw category code observed in official source; use the official description/codebook for meaning.
+Loss_of_Appetite,no,,Raw category code observed in official source; use the official description/codebook for meaning.
+Loss_of_Appetite,yes,,Raw category code observed in official source; use the official description/codebook for meaning.
+Neutrophilia,no,"Relative neutrophilic leucocytosis, often a result of a bacterial infection",Raw category code observed in official source; use the official description/codebook for meaning.
+Neutrophilia,yes,"Relative neutrophilic leucocytosis, often a result of a bacterial infection",Raw category code observed in official source; use the official description/codebook for meaning.
+Ketones_in_Urine,+,"Presence of ketone bodies in urine, e.g. in case of anorexia",Raw category code observed in official source; use the official description/codebook for meaning.
+Ketones_in_Urine,++,"Presence of ketone bodies in urine, e.g. in case of anorexia",Raw category code observed in official source; use the official description/codebook for meaning.
+Ketones_in_Urine,+++,"Presence of ketone bodies in urine, e.g. in case of anorexia",Raw category code observed in official source; use the official description/codebook for meaning.
+Ketones_in_Urine,no,"Presence of ketone bodies in urine, e.g. in case of anorexia",Raw category code observed in official source; use the official description/codebook for meaning.
+RBC_in_Urine,+,Blood in urine,Raw category code observed in official source; use the official description/codebook for meaning.
+RBC_in_Urine,++,Blood in urine,Raw category code observed in official source; use the official description/codebook for meaning.
+RBC_in_Urine,+++,Blood in urine,Raw category code observed in official source; use the official description/codebook for meaning.
+RBC_in_Urine,no,Blood in urine,Raw category code observed in official source; use the official description/codebook for meaning.
+WBC_in_Urine,+,"Leucocytes in urine, e.g., in case of infection",Raw category code observed in official source; use the official description/codebook for meaning.
+WBC_in_Urine,++,"Leucocytes in urine, e.g., in case of infection",Raw category code observed in official source; use the official description/codebook for meaning.
+WBC_in_Urine,+++,"Leucocytes in urine, e.g., in case of infection",Raw category code observed in official source; use the official description/codebook for meaning.
+WBC_in_Urine,no,"Leucocytes in urine, e.g., in case of infection",Raw category code observed in official source; use the official description/codebook for meaning.
+Dysuria,no,Pain or other difficulty during urination,Raw category code observed in official source; use the official description/codebook for meaning.
+Dysuria,yes,Pain or other difficulty during urination,Raw category code observed in official source; use the official description/codebook for meaning.
+Stool,constipation,Characteristics of bowel movements,Raw category code observed in official source; use the official description/codebook for meaning.
+Stool,"constipation, diarrhea",Characteristics of bowel movements,Raw category code observed in official source; use the official description/codebook for meaning.
+Stool,diarrhea,Characteristics of bowel movements,Raw category code observed in official source; use the official description/codebook for meaning.
+Stool,normal,Characteristics of bowel movements,Raw category code observed in official source; use the official description/codebook for meaning.
+Peritonitis,generalized,"Spasm of abdominal wall muscles detected on palpation, usually a result of inflammation",Raw category code observed in official source; use the official description/codebook for meaning.
+Peritonitis,local,"Spasm of abdominal wall muscles detected on palpation, usually a result of inflammation",Raw category code observed in official source; use the official description/codebook for meaning.
+Peritonitis,no,"Spasm of abdominal wall muscles detected on palpation, usually a result of inflammation",Raw category code observed in official source; use the official description/codebook for meaning.
+Psoas_Sign,no,Abdominal pain produced by extension of the hip,Raw category code observed in official source; use the official description/codebook for meaning.
+Psoas_Sign,yes,Abdominal pain produced by extension of the hip,Raw category code observed in official source; use the official description/codebook for meaning.
+Ipsilateral_Rebound_Tenderness,no,A state in which pain of the ipsilateral side is felt on the release of pressure over the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Ipsilateral_Rebound_Tenderness,yes,A state in which pain of the ipsilateral side is felt on the release of pressure over the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+US_Performed,no,If an abdominal ultrasonography was performed or not,Raw category code observed in official source; use the official description/codebook for meaning.
+US_Performed,yes,If an abdominal ultrasonography was performed or not,Raw category code observed in official source; use the official description/codebook for meaning.
+Free_Fluids,no,Free fluids inside the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Free_Fluids,yes,Free fluids inside the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Appendix_Wall_Layers,intact,"Distribution and characteristics of appendix layers, e.g., irregular in case of an increasing inflammation",Raw category code observed in official source; use the official description/codebook for meaning.
+Appendix_Wall_Layers,partially raised,"Distribution and characteristics of appendix layers, e.g., irregular in case of an increasing inflammation",Raw category code observed in official source; use the official description/codebook for meaning.
+Appendix_Wall_Layers,raised,"Distribution and characteristics of appendix layers, e.g., irregular in case of an increasing inflammation",Raw category code observed in official source; use the official description/codebook for meaning.
+Appendix_Wall_Layers,upset,"Distribution and characteristics of appendix layers, e.g., irregular in case of an increasing inflammation",Raw category code observed in official source; use the official description/codebook for meaning.
+Target_Sign,no,Axial image of appendix with a fluid-filled center surrounded by echogenic mucosa and submucosa and hypoechoic muscularis,Raw category code observed in official source; use the official description/codebook for meaning.
+Target_Sign,yes,Axial image of appendix with a fluid-filled center surrounded by echogenic mucosa and submucosa and hypoechoic muscularis,Raw category code observed in official source; use the official description/codebook for meaning.
+Appendicolith,no,"Presence of fecalith in the appendix, e.g. acoustic shadow",Raw category code observed in official source; use the official description/codebook for meaning.
+Appendicolith,suspected,"Presence of fecalith in the appendix, e.g. acoustic shadow",Raw category code observed in official source; use the official description/codebook for meaning.
+Appendicolith,yes,"Presence of fecalith in the appendix, e.g. acoustic shadow",Raw category code observed in official source; use the official description/codebook for meaning.
+Perfusion,hyperperfused,Blood flow to the appendix wall,Raw category code observed in official source; use the official description/codebook for meaning.
+Perfusion,hypoperfused,Blood flow to the appendix wall,Raw category code observed in official source; use the official description/codebook for meaning.
+Perfusion,no,Blood flow to the appendix wall,Raw category code observed in official source; use the official description/codebook for meaning.
+Perfusion,present,Blood flow to the appendix wall,Raw category code observed in official source; use the official description/codebook for meaning.
+Perforation,no,Signs of appendix perforation in US,Raw category code observed in official source; use the official description/codebook for meaning.
+Perforation,not excluded,Signs of appendix perforation in US,Raw category code observed in official source; use the official description/codebook for meaning.
+Perforation,suspected,Signs of appendix perforation in US,Raw category code observed in official source; use the official description/codebook for meaning.
+Perforation,yes,Signs of appendix perforation in US,Raw category code observed in official source; use the official description/codebook for meaning.
+Surrounding_Tissue_Reaction,no,Inflammation signs in tissue (i.a. in omentum/fat tissue) surrounding appendix,Raw category code observed in official source; use the official description/codebook for meaning.
+Surrounding_Tissue_Reaction,yes,Inflammation signs in tissue (i.a. in omentum/fat tissue) surrounding appendix,Raw category code observed in official source; use the official description/codebook for meaning.
+Appendicular_Abscess,no,Appendiceal mass,Raw category code observed in official source; use the official description/codebook for meaning.
+Appendicular_Abscess,suspected,Appendiceal mass,Raw category code observed in official source; use the official description/codebook for meaning.
+Appendicular_Abscess,yes,Appendiceal mass,Raw category code observed in official source; use the official description/codebook for meaning.
+Abscess_Location,Douglas,Location of the abcess intraperitoneal,Raw category code observed in official source; use the official description/codebook for meaning.
+Abscess_Location,an den M. psoas rechts,Location of the abcess intraperitoneal,Raw category code observed in official source; use the official description/codebook for meaning.
+Abscess_Location,perityphlitisch,Location of the abcess intraperitoneal,Raw category code observed in official source; use the official description/codebook for meaning.
+Abscess_Location,re Mittelbauch,Location of the abcess intraperitoneal,Raw category code observed in official source; use the official description/codebook for meaning.
+Abscess_Location,rechter Mittelbauch,Location of the abcess intraperitoneal,Raw category code observed in official source; use the official description/codebook for meaning.
+Abscess_Location,rechter Unterbauch,Location of the abcess intraperitoneal,Raw category code observed in official source; use the official description/codebook for meaning.
+Abscess_Location,retrovesikal,Location of the abcess intraperitoneal,Raw category code observed in official source; use the official description/codebook for meaning.
+Pathological_Lymph_Nodes,no,Enlarged and inflamed intra-abdominal lymph nodes,Raw category code observed in official source; use the official description/codebook for meaning.
+Pathological_Lymph_Nodes,yes,Enlarged and inflamed intra-abdominal lymph nodes,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,Ileozökal,The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,Lymphadenopathie,The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,MB,The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,"Mesenterial, links inguinal",The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,Ovarialzysten,The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,UB,The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,ileocoecal,The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,ileocoekal,The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,ileocöcal,The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,inguinal,The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,lokal um die Appendix,The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,mesenterial,The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,"mesenterial, re UB",The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,multiple Lokalisationen,The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,periappendikulär ,The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,periumbilikal,The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,re MB,The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,re UB,The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,re UB ,The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,re UB  ,The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,"re UB, ileocoecal",The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,"re UB, periumbilikal",The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,"re UB, re MB",The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,reUB,The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,rechter Unter- und Mittelbauch,The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Lymph_Nodes_Location,rechter Unterbauch,The location of pathological lymph nodes in the abdomen,Raw category code observed in official source; use the official description/codebook for meaning.
+Bowel_Wall_Thickening,no,"Edema of the intestinal wall, > 2-3 mm for small bowel wall thickening",Raw category code observed in official source; use the official description/codebook for meaning.
+Bowel_Wall_Thickening,yes,"Edema of the intestinal wall, > 2-3 mm for small bowel wall thickening",Raw category code observed in official source; use the official description/codebook for meaning.
+Conglomerate_of_Bowel_Loops,no,Small intestine conglomerate as sign of intraperitoneal inflammation,Raw category code observed in official source; use the official description/codebook for meaning.
+Conglomerate_of_Bowel_Loops,yes,Small intestine conglomerate as sign of intraperitoneal inflammation,Raw category code observed in official source; use the official description/codebook for meaning.
+Ileus,no,"Sonographic signs of paralytic ileus (e.g., dilated intestinal loops, pendulum peristalsis or absence of peristalsis)",Raw category code observed in official source; use the official description/codebook for meaning.
+Ileus,yes,"Sonographic signs of paralytic ileus (e.g., dilated intestinal loops, pendulum peristalsis or absence of peristalsis)",Raw category code observed in official source; use the official description/codebook for meaning.
+Coprostasis,no,Fecal impaction in the colon,Raw category code observed in official source; use the official description/codebook for meaning.
+Coprostasis,yes,Fecal impaction in the colon,Raw category code observed in official source; use the official description/codebook for meaning.
+Meteorism,no,Accumulation of gas in the intestine,Raw category code observed in official source; use the official description/codebook for meaning.
+Meteorism,yes,Accumulation of gas in the intestine,Raw category code observed in official source; use the official description/codebook for meaning.
+Enteritis,no,"Sonographic features of gastroenteritis, e.g. wall thickening of ileum, increased peristalsis",Raw category code observed in official source; use the official description/codebook for meaning.
+Enteritis,yes,"Sonographic features of gastroenteritis, e.g. wall thickening of ileum, increased peristalsis",Raw category code observed in official source; use the official description/codebook for meaning.
+Gynecological_Findings,Ausschluss gyn. Ursache der Beschwerden,"Gynaecological abnormalities, e.g. cysts, ovarial torsion",Raw category code observed in official source; use the official description/codebook for meaning.
+Gynecological_Findings,Ausschluss pathologischer Ovarialbefund,"Gynaecological abnormalities, e.g. cysts, ovarial torsion",Raw category code observed in official source; use the official description/codebook for meaning.
+Gynecological_Findings,"In beiden Ovarien Zysten darstellbar, links Ovar mit regelrechter Perfusion, rechts etwas vergrößert, keine eindeutige Perfusion nachweisbar. Retrovesikal freie Flüssigkeit mit Binnenecho","Gynaecological abnormalities, e.g. cysts, ovarial torsion",Raw category code observed in official source; use the official description/codebook for meaning.
+Gynecological_Findings,Ovarialzyste,"Gynaecological abnormalities, e.g. cysts, ovarial torsion",Raw category code observed in official source; use the official description/codebook for meaning.
+Gynecological_Findings,Ovarialzyste ,"Gynaecological abnormalities, e.g. cysts, ovarial torsion",Raw category code observed in official source; use the official description/codebook for meaning.
+Gynecological_Findings,Ovarialzyste re.,"Gynaecological abnormalities, e.g. cysts, ovarial torsion",Raw category code observed in official source; use the official description/codebook for meaning.
+Gynecological_Findings,Ovarialzysten,"Gynaecological abnormalities, e.g. cysts, ovarial torsion",Raw category code observed in official source; use the official description/codebook for meaning.
+Gynecological_Findings,V. a. Ovarialtorsion,"Gynaecological abnormalities, e.g. cysts, ovarial torsion",Raw category code observed in official source; use the official description/codebook for meaning.
+Gynecological_Findings,Zyste Uterus,"Gynaecological abnormalities, e.g. cysts, ovarial torsion",Raw category code observed in official source; use the official description/codebook for meaning.
+Gynecological_Findings,ja,"Gynaecological abnormalities, e.g. cysts, ovarial torsion",Raw category code observed in official source; use the official description/codebook for meaning.
+Gynecological_Findings,kein Anhalt für eine gynäkologische Ursache der Beschwerden,"Gynaecological abnormalities, e.g. cysts, ovarial torsion",Raw category code observed in official source; use the official description/codebook for meaning.
+Gynecological_Findings,keine,"Gynaecological abnormalities, e.g. cysts, ovarial torsion",Raw category code observed in official source; use the official description/codebook for meaning.
+Gynecological_Findings,kleine Ovarzyste rechts,"Gynaecological abnormalities, e.g. cysts, ovarial torsion",Raw category code observed in official source; use the official description/codebook for meaning.
+Gynecological_Findings,unauffällig,"Gynaecological abnormalities, e.g. cysts, ovarial torsion",Raw category code observed in official source; use the official description/codebook for meaning.

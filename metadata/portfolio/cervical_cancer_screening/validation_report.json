@@ -1,0 +1,62 @@
+{
+  "dataset": "cervical_cancer_screening",
+  "validated_at": "2026-10-01T18:06:06.381992+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "name": "official source has rows",
+      "passed": true,
+      "detail": "observed 858"
+    },
+    {
+      "name": "row count agrees with official metadata",
+      "passed": true,
+      "detail": "metadata=858, expected official CSV=858, observed=858"
+    },
+    {
+      "name": "participant row range",
+      "passed": true,
+      "detail": "observed 858"
+    },
+    {
+      "name": "participant variable range",
+      "passed": true,
+      "detail": "observed 31 including derived ID"
+    },
+    {
+      "name": "derived row ID unique",
+      "passed": true,
+      "detail": "portfolio_row_id is unique"
+    },
+    {
+      "name": "dictionary covers participant",
+      "passed": true,
+      "detail": "all participant variables documented"
+    },
+    {
+      "name": "raw missing codes removed from participant file",
+      "passed": true,
+      "detail": "{'NaN': 0, '?': 0}"
+    },
+    {
+      "name": "participant hash matches provenance",
+      "passed": true,
+      "detail": "checksum verified"
+    },
+    {
+      "name": "raw hash matches provenance",
+      "passed": true,
+      "detail": "checksum verified"
+    },
+    {
+      "name": "official URL recorded",
+      "passed": true,
+      "detail": "https://archive.ics.uci.edu/static/public/383/data.csv"
+    },
+    {
+      "name": "official target retained",
+      "passed": true,
+      "detail": "targets=['biopsy', 'citology', 'hinselmann', 'schiller']"
+    }
+  ]
+}

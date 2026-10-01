@@ -1,0 +1,68 @@
+{
+  "source_type": "uci",
+  "source_id": 936,
+  "uci_id": 936,
+  "title": "National Poll on Healthy Aging (NPHA)",
+  "official_source": "UCI Machine Learning Repository",
+  "repository_url": "https://archive.ics.uci.edu/dataset/936/national+poll+on+healthy+aging+(npha)",
+  "data_url": "https://archive.ics.uci.edu/static/public/936/data.csv",
+  "dataset_doi": "https://doi.org/10.3886/ICPSR37305.v1",
+  "dataset_year": 2017,
+  "current_record_version": "UCI record last updated Mon Dec 11 2023",
+  "access_date": "2026-10-01",
+  "license": null,
+  "raw_data_sha256": "cfb2663734619366c85634a8c8356521f6efc29291c2bff0fab2d6e460d3cc58",
+  "official_metadata_sha256": "41b0f5785a4b16144dfa6ddf3f9a93621a865418e0a0ec7e3a01da41bb68fd24",
+  "official_documentation_url": null,
+  "official_documentation_sha256": null,
+  "raw_rows": 714,
+  "raw_columns": 15,
+  "participant_rows": 714,
+  "participant_columns": 16,
+  "participant_sha256": "bb6fd48f36508a8e09282be2e1798c2db000df86a4cd0182f91896254757fd7d",
+  "selected_variables": [
+    "portfolio_row_id",
+    "Age",
+    "Race",
+    "Gender",
+    "Number_of_Doctors_Visited",
+    "Physical_Health",
+    "Mental_Health",
+    "Dental_Health",
+    "Employment",
+    "Stress_Keeps_Patient_from_Sleeping",
+    "Medication_Keeps_Patient_from_Sleeping",
+    "Pain_Keeps_Patient_from_Sleeping",
+    "Bathroom_Needs_Keeps_Patient_from_Sleeping",
+    "Uknown_Keeps_Patient_from_Sleeping",
+    "Trouble_Sleeping",
+    "Prescription_Sleep_Medication"
+  ],
+  "missing_value_codes": [
+    ""
+  ],
+  "weighting_variables": [],
+  "outcomes": [
+    {
+      "variable": "Number_of_Doctors_Visited",
+      "description": "The total count of different doctors the patient has seen = {\n 1: 0-1 doctors\n 2: 2-3 doctors\n 3: 4 or more doctors\n}",
+      "observed_values": [
+        "1",
+        "2",
+        "3"
+      ]
+    }
+  ],
+  "transformations": [
+    "Downloaded the official/original CSV and source metadata without modifying the raw files.",
+    "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
+    "Converted documented source missing symbols to blank/NA only in the participant derivative.",
+    "Selected 714 rows by deterministic SHA-256 rank using the portfolio seed.",
+    "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
+  ],
+  "software": {
+    "python": "3.12.14",
+    "pandas": "3.0.1",
+    "platform": "Windows-11-10.0.26100-SP0"
+  }
+}

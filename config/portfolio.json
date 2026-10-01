@@ -200,50 +200,56 @@
       ]
     },
     {
-      "uci_id": 697,
-      "slug": "student_dropout_sdoh",
-      "category": "Education and social determinants",
-      "fit": "Educational, financial, demographic, and macroeconomic factors associated with dropout and graduation.",
+      "uci_id": 938,
+      "slug": "pediatric_appendicitis",
+      "category": "Pediatric acute care",
+      "fit": "Symptoms, physical examination, laboratory tests, ultrasound findings, diagnosis, management, and severity in children with abdominal pain.",
       "weight_variables": [],
-      "priority_variables": ["Marital Status", "Application mode", "Course", "Daytime/evening attendance", "Previous qualification", "Previous qualification (grade)", "Mother's qualification", "Father's qualification", "Mother's occupation", "Father's occupation", "Admission grade", "Displaced", "Educational special needs", "Debtor", "Tuition fees up to date", "Gender", "Scholarship holder", "Age at enrollment", "International", "Curricular units 1st sem (enrolled)", "Curricular units 1st sem (approved)", "Curricular units 1st sem (grade)", "Curricular units 2nd sem (enrolled)", "Curricular units 2nd sem (approved)", "Curricular units 2nd sem (grade)", "Unemployment rate", "Inflation rate", "GDP", "Target"],
-      "sensitive_variables": ["Marital Status", "Gender", "Age at enrollment", "International", "Displaced", "Educational special needs"],
-      "post_outcome_variables": ["Curricular units 2nd sem (enrolled)", "Curricular units 2nd sem (approved)", "Curricular units 2nd sem (grade)", "Target"],
-      "questions": [
-        "How are tuition status, debt, and scholarship support associated with dropout?",
-        "How much do first-semester versus second-semester measures change predictive performance?",
-        "Do prediction errors differ for displaced, international, older, or special-needs students?"
-      ]
-    },
-    {
-      "uci_id": 2,
-      "slug": "adult_income_sdoh",
-      "category": "Economic social determinants",
-      "fit": "Employment, education, work hours, demographics, and income category as an SDOH teaching dataset.",
-      "additional_missing_symbols": ["?"],
-      "weight_variables": ["fnlwgt"],
       "priority_variables": [],
-      "sensitive_variables": ["age", "marital-status", "relationship", "race", "sex", "native-country"],
-      "post_outcome_variables": ["income"],
+      "sensitive_variables": ["Age", "Sex", "Height", "Weight", "BMI"],
+      "post_outcome_variables": ["Diagnosis", "Management", "Severity"],
       "questions": [
-        "How are education, occupation, and weekly work hours associated with income category?",
-        "How do weighted and unweighted descriptions differ when using the provided final weight?",
-        "How do model errors and predicted income differ across race and sex groups?"
+        "Which presenting symptoms, examination findings, and laboratory values are associated with appendicitis diagnosis?",
+        "How do clinical scores compare with individual nursing assessment and laboratory measures?",
+        "Which early findings are associated with surgical management or complicated appendicitis?"
       ]
     },
     {
-      "uci_id": 183,
-      "slug": "communities_crime_sdoh",
-      "category": "Community social determinants",
-      "fit": "Community-level demographic, economic, housing, mobility, and public-safety measures.",
+      "uci_id": 936,
+      "slug": "healthy_aging_poll",
+      "category": "Older-adult health and health services",
+      "fit": "Health, sleep, caregiving, insurance, medication, dental care, and health-service use among adults age 50 and older.",
+      "weight_variables": [],
+      "priority_variables": [],
+      "sensitive_variables": ["Age", "Gender", "Race"],
+      "post_outcome_variables": ["Number_of_Doctors_Visited"],
+      "questions": [
+        "How are sleep and self-rated health associated with the number of doctors an older adult visits?",
+        "Which health, medication, dental-care, or caregiving factors identify higher health-service use?",
+        "Do patterns of health-service use differ across age, gender, or race and ethnicity groups?"
+      ]
+    },
+    {
+      "uci_id": 383,
+      "slug": "cervical_cancer_screening",
+      "category": "Women's health and cancer screening",
+      "fit": "Demographics, reproductive and sexual health history, smoking, contraception, sexually transmitted infections, and cervical screening results.",
       "additional_missing_symbols": ["?"],
       "weight_variables": [],
-      "priority_variables": ["state", "county", "community", "communityname", "population", "householdsize", "racepctblack", "racePctWhite", "racePctAsian", "racePctHisp", "agePct65up", "pctUrban", "medIncome", "pctWPubAsst", "perCapInc", "PctPopUnderPov", "PctNotHSGrad", "PctUnemployed", "PctEmploy", "PctFam2Par", "PctNotSpeakEnglWell", "PctPersDenseHous", "PctHousNoPhone", "PctWOFullPlumb", "NumInShelters", "NumStreet", "PctForeignBorn", "PopDens", "PctUsePubTrans", "ViolentCrimesPerPop"],
-      "sensitive_variables": ["racepctblack", "racePctWhite", "racePctAsian", "racePctHisp", "PctForeignBorn"],
-      "post_outcome_variables": ["ViolentCrimesPerPop"],
+      "priority_variables": [],
+      "target_variables": ["Hinselmann", "Schiller", "Citology", "Biopsy"],
+      "target_definitions": {
+        "Hinselmann": "Binary result of the Hinselmann cervical screening test; designated as a target in the official documentation.",
+        "Schiller": "Binary result of the Schiller cervical screening test; designated as a target in the official documentation.",
+        "Citology": "Binary cervical cytology result; designated as a target in the official documentation.",
+        "Biopsy": "Binary cervical biopsy result; designated as a target in the official documentation."
+      },
+      "sensitive_variables": ["Age", "Number of sexual partners", "First sexual intercourse", "Num of pregnancies", "STDs:HIV"],
+      "post_outcome_variables": ["Dx:Cancer", "Dx:CIN", "Dx:HPV", "Dx", "Hinselmann", "Schiller", "Citology", "Biopsy"],
       "questions": [
-        "How are poverty, unemployment, and educational attainment associated with community violent-crime rates?",
-        "How do housing conditions, density, and public transportation relate to community outcomes?",
-        "How can ecological fallacy and racial proxy discrimination distort interpretations of community-level models?"
+        "Which documented history and exposure variables are associated with biopsy-confirmed cervical disease?",
+        "How do the Hinselmann, Schiller, cytology, and biopsy screening results agree or differ?",
+        "How does item nonresponse affect apparent screening-risk patterns?"
       ]
     },
     {
@@ -280,35 +286,59 @@
       ]
     },
     {
-      "uci_id": 864,
-      "slug": "room_occupancy_environment",
-      "category": "Built environment and sensing",
-      "fit": "Indoor temperature, light, sound, CO2, motion, and room occupancy.",
+      "uci_id": 759,
+      "slug": "glioma_grading",
+      "category": "Cancer care and precision health",
+      "fit": "Clinical and molecular features associated with lower-grade versus glioblastoma tumor classification.",
       "weight_variables": [],
       "priority_variables": [],
-      "sensitive_variables": [],
-      "post_outcome_variables": ["Room_Occupancy_Count"],
+      "sensitive_variables": ["Age_at_diagnosis", "Gender", "Race"],
+      "post_outcome_variables": ["Grade"],
       "questions": [
-        "Which indoor environmental sensors best distinguish room occupancy levels?",
-        "How quickly does CO2 respond to changes in occupancy?",
-        "Does model performance remain stable across different dates and times?"
+        "Which clinical and molecular features are associated with glioma grade?",
+        "How does classification performance differ across demographic groups?",
+        "What limitations arise when translating molecular tumor classification to nursing assessment or care planning?"
       ]
     },
     {
-      "uci_id": 275,
-      "slug": "bike_sharing_environment",
-      "category": "Built environment and physical activity",
-      "fit": "Hourly bike-rental demand with season, weather, workday, and calendar measures.",
-      "expected_normalized_rows": 17379,
-      "source_count_note": "The UCI record reports 17,389 instances; the official normalized data.csv contains 17,379 rows.",
+      "source_id": "dgck-syfz",
+      "source_type": "cms",
+      "metadata_url": "https://data.cms.gov/provider-data/api/1/metastore/schemas/dataset/items/dgck-syfz",
+      "slug": "hospital_patient_experience",
+      "category": "Patient experience and care quality",
+      "fit": "Hospital-level HCAHPS measures of nurse communication, discharge information, care transitions, environment, ratings, and willingness to recommend.",
       "weight_variables": [],
-      "priority_variables": [],
-      "sensitive_variables": [],
-      "post_outcome_variables": ["casual", "registered", "cnt"],
+      "priority_variables": ["Facility ID", "Facility Name", "City/Town", "State", "ZIP Code", "County/Parish", "HCAHPS Measure ID", "HCAHPS Question", "HCAHPS Answer Description", "Patient Survey Star Rating", "HCAHPS Answer Percent", "HCAHPS Linear Mean Value", "Number of Completed Surveys", "Survey Response Rate Percent", "Start Date", "End Date"],
+      "sensitive_variables": ["State", "ZIP Code", "County/Parish"],
+      "post_outcome_variables": ["Patient Survey Star Rating", "HCAHPS Answer Percent", "HCAHPS Linear Mean Value"],
+      "variables": [
+        {"name": "Facility ID", "role": "ID", "type": "Categorical", "description": "CMS Certification Number identifying the hospital."},
+        {"name": "Facility Name", "role": "Feature", "type": "Categorical", "description": "Hospital name."},
+        {"name": "Address", "role": "Feature", "type": "Categorical", "description": "Hospital street address."},
+        {"name": "City/Town", "role": "Feature", "type": "Categorical", "description": "City or town where the hospital is located."},
+        {"name": "State", "role": "Feature", "type": "Categorical", "description": "Two-letter state or territory abbreviation."},
+        {"name": "ZIP Code", "role": "Feature", "type": "Categorical", "description": "Hospital ZIP Code."},
+        {"name": "County/Parish", "role": "Feature", "type": "Categorical", "description": "County or parish where the hospital is located."},
+        {"name": "Telephone Number", "role": "Feature", "type": "Categorical", "description": "Hospital telephone number."},
+        {"name": "HCAHPS Measure ID", "role": "Feature", "type": "Categorical", "description": "CMS identifier for the reported HCAHPS measure."},
+        {"name": "HCAHPS Question", "role": "Feature", "type": "Categorical", "description": "Publicly reported HCAHPS survey question or measure statement."},
+        {"name": "HCAHPS Answer Description", "role": "Feature", "type": "Categorical", "description": "Description of the response category represented by the reported result."},
+        {"name": "Patient Survey Star Rating", "role": "Feature", "type": "Categorical", "description": "CMS patient survey star rating for the measure, when applicable."},
+        {"name": "Patient Survey Star Rating Footnote", "role": "Feature", "type": "Categorical", "description": "CMS footnote associated with the patient survey star rating."},
+        {"name": "HCAHPS Answer Percent", "role": "Feature", "type": "Categorical", "description": "Percentage reported for the HCAHPS response category, when applicable.", "units": "percent"},
+        {"name": "HCAHPS Answer Percent Footnote", "role": "Feature", "type": "Categorical", "description": "CMS footnote associated with the answer percentage."},
+        {"name": "HCAHPS Linear Mean Value", "role": "Feature", "type": "Categorical", "description": "HCAHPS linear mean value, when applicable."},
+        {"name": "Number of Completed Surveys", "role": "Feature", "type": "Categorical", "description": "Number of completed HCAHPS surveys reported for the hospital."},
+        {"name": "Number of Completed Surveys Footnote", "role": "Feature", "type": "Categorical", "description": "CMS footnote associated with the number of completed surveys."},
+        {"name": "Survey Response Rate Percent", "role": "Feature", "type": "Categorical", "description": "Percentage of eligible sampled patients who completed the survey.", "units": "percent"},
+        {"name": "Survey Response Rate Percent Footnote", "role": "Feature", "type": "Categorical", "description": "CMS footnote associated with the survey response rate."},
+        {"name": "Start Date", "role": "Feature", "type": "Date", "description": "Start date of the public reporting period."},
+        {"name": "End Date", "role": "Feature", "type": "Date", "description": "End date of the public reporting period."}
+      ],
       "questions": [
-        "How do temperature, humidity, wind, and weather conditions relate to bike demand?",
-        "How do hourly patterns differ between workdays, holidays, and seasons?",
-        "Why would using casual and registered counts to predict total count create leakage?"
+        "How do nurse-communication ratings vary across hospitals and states?",
+        "How are discharge-information and care-transition measures related to overall hospital ratings or willingness to recommend?",
+        "How do survey volume, response rate, and missing or suppressed results affect comparisons between hospitals?"
       ]
     }
   ]

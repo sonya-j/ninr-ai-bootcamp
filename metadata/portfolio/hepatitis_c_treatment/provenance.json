@@ -1,4 +1,6 @@
 {
+  "source_type": "uci",
+  "source_id": 503,
   "uci_id": 503,
   "title": "Hepatitis C Virus (HCV) for Egyptian patients",
   "official_source": "UCI Machine Learning Repository",
@@ -11,6 +13,8 @@
   "license": null,
   "raw_data_sha256": "6a9ca49f4ce8b7bb73acb413dcbad71a299c6c006c6df0511a216542ddd0e401",
   "official_metadata_sha256": "4d3e96f53ea5e6edac2da4f35f2c154d715332345995829296c255efef43e5a5",
+  "official_documentation_url": null,
+  "official_documentation_sha256": null,
   "raw_rows": 1385,
   "raw_columns": 29,
   "participant_rows": 1385,
@@ -65,15 +69,15 @@
     }
   ],
   "transformations": [
-    "Downloaded the official UCI normalized CSV and API metadata without modifying the raw files.",
+    "Downloaded the official/original CSV and source metadata without modifying the raw files.",
     "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
     "Converted documented source missing symbols to blank/NA only in the participant derivative.",
     "Selected 1385 rows by deterministic SHA-256 rank using the portfolio seed.",
     "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
   ],
   "software": {
-    "python": "3.14.7",
-    "pandas": "2.3.3",
+    "python": "3.12.14",
+    "pandas": "3.0.1",
     "platform": "Windows-11-10.0.26100-SP0"
   }
 }
