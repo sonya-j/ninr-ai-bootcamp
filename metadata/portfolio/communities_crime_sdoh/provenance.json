@@ -58,7 +58,7 @@
   "outcomes": [
     {
       "variable": "ViolentCrimesPerPop",
-      "description": null,
+      "description": "",
       "observed_values": [
         "0.0",
         "0.01",

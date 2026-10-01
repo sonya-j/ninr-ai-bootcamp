@@ -89,7 +89,7 @@
     },
     {
       "variable": "RAZRIV",
-      "description": "Myocardial rupture ",
+      "description": "Myocardial rupture",
       "observed_values": [
         "0",
         "1"

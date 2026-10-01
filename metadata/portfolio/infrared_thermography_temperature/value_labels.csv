@@ -101,22 +101,14 @@ SubjectID,170208-18,Subject ID,Raw category code observed in official source; us
 SubjectID,170209-01,Subject ID,Raw category code observed in official source; use the official description/codebook for meaning.
 Gender,Female,Male or Female,Raw category code observed in official source; use the official description/codebook for meaning.
 Gender,Male,Male or Female,Raw category code observed in official source; use the official description/codebook for meaning.
-Age,18-20,"Age ranges in categories
-",Raw category code observed in official source; use the official description/codebook for meaning.
-Age,21-25,"Age ranges in categories
-",Raw category code observed in official source; use the official description/codebook for meaning.
-Age,21-30,"Age ranges in categories
-",Raw category code observed in official source; use the official description/codebook for meaning.
-Age,26-30,"Age ranges in categories
-",Raw category code observed in official source; use the official description/codebook for meaning.
-Age,31-40,"Age ranges in categories
-",Raw category code observed in official source; use the official description/codebook for meaning.
-Age,41-50,"Age ranges in categories
-",Raw category code observed in official source; use the official description/codebook for meaning.
-Age,51-60,"Age ranges in categories
-",Raw category code observed in official source; use the official description/codebook for meaning.
-Age,>60,"Age ranges in categories
-",Raw category code observed in official source; use the official description/codebook for meaning.
+Age,18-20,Age ranges in categories,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,21-25,Age ranges in categories,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,21-30,Age ranges in categories,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,26-30,Age ranges in categories,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,31-40,Age ranges in categories,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,41-50,Age ranges in categories,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,51-60,Age ranges in categories,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,>60,Age ranges in categories,Raw category code observed in official source; use the official description/codebook for meaning.
 Ethnicity,American Indian or Alaskan Native,"American Indian or Alaska Native, Asian, Black or African America, Hispanic/Latino, Multiracial, Native Hawaiian or other Pacific Islander, white.",Raw category code observed in official source; use the official description/codebook for meaning.
 Ethnicity,Asian,"American Indian or Alaska Native, Asian, Black or African America, Hispanic/Latino, Multiracial, Native Hawaiian or other Pacific Islander, white.",Raw category code observed in official source; use the official description/codebook for meaning.
 Ethnicity,Black or African-American,"American Indian or Alaska Native, Asian, Black or African America, Hispanic/Latino, Multiracial, Native Hawaiian or other Pacific Islander, white.",Raw category code observed in official source; use the official description/codebook for meaning.

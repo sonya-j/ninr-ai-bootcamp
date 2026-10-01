@@ -1,7 +1,7 @@
 variable,code,official_description,label_status
 SEX,0,"0: female, 1: male",Raw category code observed in official source; use the official description/codebook for meaning.
 SEX,1,"0: female, 1: male",Raw category code observed in official source; use the official description/codebook for meaning.
-INF_ANAM,0,"Quantity of myocardial infarctions in the anamnesis. 
+INF_ANAM,0,"Quantity of myocardial infarctions in the anamnesis.
 
 0: zero
 
@@ -10,7 +10,7 @@ INF_ANAM,0,"Quantity of myocardial infarctions in the anamnesis.
 2: two
 
 3: three and more",Raw category code observed in official source; use the official description/codebook for meaning.
-INF_ANAM,1,"Quantity of myocardial infarctions in the anamnesis. 
+INF_ANAM,1,"Quantity of myocardial infarctions in the anamnesis.
 
 0: zero
 
@@ -19,7 +19,7 @@ INF_ANAM,1,"Quantity of myocardial infarctions in the anamnesis.
 2: two
 
 3: three and more",Raw category code observed in official source; use the official description/codebook for meaning.
-INF_ANAM,2,"Quantity of myocardial infarctions in the anamnesis. 
+INF_ANAM,2,"Quantity of myocardial infarctions in the anamnesis.
 
 0: zero
 
@@ -28,7 +28,7 @@ INF_ANAM,2,"Quantity of myocardial infarctions in the anamnesis.
 2: two
 
 3: three and more",Raw category code observed in official source; use the official description/codebook for meaning.
-INF_ANAM,3,"Quantity of myocardial infarctions in the anamnesis. 
+INF_ANAM,3,"Quantity of myocardial infarctions in the anamnesis.
 
 0: zero
 
@@ -37,11 +37,11 @@ INF_ANAM,3,"Quantity of myocardial infarctions in the anamnesis.
 2: two
 
 3: three and more",Raw category code observed in official source; use the official description/codebook for meaning.
-STENOK_AN,0,"Exertional angina pectoris in the anamnesis. 
+STENOK_AN,0,"Exertional angina pectoris in the anamnesis.
 
 0: never
 
-1: during the last year 
+1: during the last year
 
 2: one year ago
 
@@ -50,11 +50,11 @@ STENOK_AN,0,"Exertional angina pectoris in the anamnesis.
 4: three years ago
 
 5: 4-5 years ago",Raw category code observed in official source; use the official description/codebook for meaning.
-STENOK_AN,1,"Exertional angina pectoris in the anamnesis. 
+STENOK_AN,1,"Exertional angina pectoris in the anamnesis.
 
 0: never
 
-1: during the last year 
+1: during the last year
 
 2: one year ago
 
@@ -63,11 +63,11 @@ STENOK_AN,1,"Exertional angina pectoris in the anamnesis.
 4: three years ago
 
 5: 4-5 years ago",Raw category code observed in official source; use the official description/codebook for meaning.
-STENOK_AN,2,"Exertional angina pectoris in the anamnesis. 
+STENOK_AN,2,"Exertional angina pectoris in the anamnesis.
 
 0: never
 
-1: during the last year 
+1: during the last year
 
 2: one year ago
 
@@ -76,11 +76,11 @@ STENOK_AN,2,"Exertional angina pectoris in the anamnesis.
 4: three years ago
 
 5: 4-5 years ago",Raw category code observed in official source; use the official description/codebook for meaning.
-STENOK_AN,3,"Exertional angina pectoris in the anamnesis. 
+STENOK_AN,3,"Exertional angina pectoris in the anamnesis.
 
 0: never
 
-1: during the last year 
+1: during the last year
 
 2: one year ago
 
@@ -89,11 +89,11 @@ STENOK_AN,3,"Exertional angina pectoris in the anamnesis.
 4: three years ago
 
 5: 4-5 years ago",Raw category code observed in official source; use the official description/codebook for meaning.
-STENOK_AN,4,"Exertional angina pectoris in the anamnesis. 
+STENOK_AN,4,"Exertional angina pectoris in the anamnesis.
 
 0: never
 
-1: during the last year 
+1: during the last year
 
 2: one year ago
 
@@ -102,11 +102,11 @@ STENOK_AN,4,"Exertional angina pectoris in the anamnesis.
 4: three years ago
 
 5: 4-5 years ago",Raw category code observed in official source; use the official description/codebook for meaning.
-STENOK_AN,5,"Exertional angina pectoris in the anamnesis. 
+STENOK_AN,5,"Exertional angina pectoris in the anamnesis.
 
 0: never
 
-1: during the last year 
+1: during the last year
 
 2: one year ago
 
@@ -115,11 +115,11 @@ STENOK_AN,5,"Exertional angina pectoris in the anamnesis.
 4: three years ago
 
 5: 4-5 years ago",Raw category code observed in official source; use the official description/codebook for meaning.
-STENOK_AN,6,"Exertional angina pectoris in the anamnesis. 
+STENOK_AN,6,"Exertional angina pectoris in the anamnesis.
 
 0: never
 
-1: during the last year 
+1: during the last year
 
 2: one year ago
 
@@ -128,7 +128,7 @@ STENOK_AN,6,"Exertional angina pectoris in the anamnesis.
 4: three years ago
 
 5: 4-5 years ago",Raw category code observed in official source; use the official description/codebook for meaning.
-FK_STENOK,0,"Functional class (FC) of angina pectoris in the last year. 
+FK_STENOK,0,"Functional class (FC) of angina pectoris in the last year.
 
 0: there is no angina pectoris
 
@@ -139,7 +139,7 @@ FK_STENOK,0,"Functional class (FC) of angina pectoris in the last year.
 3: III FC
 
 4: IV FC",Raw category code observed in official source; use the official description/codebook for meaning.
-FK_STENOK,1,"Functional class (FC) of angina pectoris in the last year. 
+FK_STENOK,1,"Functional class (FC) of angina pectoris in the last year.
 
 0: there is no angina pectoris
 
@@ -150,7 +150,7 @@ FK_STENOK,1,"Functional class (FC) of angina pectoris in the last year.
 3: III FC
 
 4: IV FC",Raw category code observed in official source; use the official description/codebook for meaning.
-FK_STENOK,2,"Functional class (FC) of angina pectoris in the last year. 
+FK_STENOK,2,"Functional class (FC) of angina pectoris in the last year.
 
 0: there is no angina pectoris
 
@@ -161,7 +161,7 @@ FK_STENOK,2,"Functional class (FC) of angina pectoris in the last year.
 3: III FC
 
 4: IV FC",Raw category code observed in official source; use the official description/codebook for meaning.
-FK_STENOK,3,"Functional class (FC) of angina pectoris in the last year. 
+FK_STENOK,3,"Functional class (FC) of angina pectoris in the last year.
 
 0: there is no angina pectoris
 
@@ -172,7 +172,7 @@ FK_STENOK,3,"Functional class (FC) of angina pectoris in the last year.
 3: III FC
 
 4: IV FC",Raw category code observed in official source; use the official description/codebook for meaning.
-FK_STENOK,4,"Functional class (FC) of angina pectoris in the last year. 
+FK_STENOK,4,"Functional class (FC) of angina pectoris in the last year.
 
 0: there is no angina pectoris
 
@@ -183,21 +183,21 @@ FK_STENOK,4,"Functional class (FC) of angina pectoris in the last year.
 3: III FC
 
 4: IV FC",Raw category code observed in official source; use the official description/codebook for meaning.
-IBS_POST,0,"Coronary heart disease (CHD) in recent weeks, days before admission to hospital 
+IBS_POST,0,"Coronary heart disease (CHD) in recent weeks, days before admission to hospital
 
 0: none
 
 1: exertional angina pectoris
 
 2: unstable angina pectoris",Raw category code observed in official source; use the official description/codebook for meaning.
-IBS_POST,1,"Coronary heart disease (CHD) in recent weeks, days before admission to hospital 
+IBS_POST,1,"Coronary heart disease (CHD) in recent weeks, days before admission to hospital
 
 0: none
 
 1: exertional angina pectoris
 
 2: unstable angina pectoris",Raw category code observed in official source; use the official description/codebook for meaning.
-IBS_POST,2,"Coronary heart disease (CHD) in recent weeks, days before admission to hospital 
+IBS_POST,2,"Coronary heart disease (CHD) in recent weeks, days before admission to hospital
 
 0: none
 
@@ -214,38 +214,38 @@ IBS_NASL,1,"Heredity on CHD
 0: isn't burdened
 
 1: burdened",Raw category code observed in official source; use the official description/codebook for meaning.
-GB,0,"Presence of an essential hypertension 
+GB,0,"Presence of an essential hypertension
 
-0: there is no essential hypertension 
+0: there is no essential hypertension
 
-1: Stage 1 
-
-2: Stage 2
-
-3: Stage 3",Raw category code observed in official source; use the official description/codebook for meaning.
-GB,1,"Presence of an essential hypertension 
-
-0: there is no essential hypertension 
-
-1: Stage 1 
+1: Stage 1
 
 2: Stage 2
 
 3: Stage 3",Raw category code observed in official source; use the official description/codebook for meaning.
-GB,2,"Presence of an essential hypertension 
+GB,1,"Presence of an essential hypertension
 
-0: there is no essential hypertension 
+0: there is no essential hypertension
 
-1: Stage 1 
+1: Stage 1
 
 2: Stage 2
 
 3: Stage 3",Raw category code observed in official source; use the official description/codebook for meaning.
-GB,3,"Presence of an essential hypertension 
+GB,2,"Presence of an essential hypertension
 
-0: there is no essential hypertension 
+0: there is no essential hypertension
 
-1: Stage 1 
+1: Stage 1
+
+2: Stage 2
+
+3: Stage 3",Raw category code observed in official source; use the official description/codebook for meaning.
+GB,3,"Presence of an essential hypertension
+
+0: there is no essential hypertension
+
+1: Stage 1
 
 2: Stage 2
 
@@ -386,11 +386,11 @@ State 4 means simultaneous states 2 and 3
 
 1: I stage
 
-2: II stage (heart failure due to right 
+2: II stage (heart failure due to right
 
 ventricular systolic dysfunction)
 
-3: II stage (heart failure due to left 
+3: II stage (heart failure due to left
 
 ventricular systolic dysfunction)
 
@@ -411,11 +411,11 @@ State 4 means simultaneous states 2 and 3
 
 1: I stage
 
-2: II stage (heart failure due to right 
+2: II stage (heart failure due to right
 
 ventricular systolic dysfunction)
 
-3: II stage (heart failure due to left 
+3: II stage (heart failure due to left
 
 ventricular systolic dysfunction)
 
@@ -436,11 +436,11 @@ State 4 means simultaneous states 2 and 3
 
 1: I stage
 
-2: II stage (heart failure due to right 
+2: II stage (heart failure due to right
 
 ventricular systolic dysfunction)
 
-3: II stage (heart failure due to left 
+3: II stage (heart failure due to left
 
 ventricular systolic dysfunction)
 
@@ -461,11 +461,11 @@ State 4 means simultaneous states 2 and 3
 
 1: I stage
 
-2: II stage (heart failure due to right 
+2: II stage (heart failure due to right
 
 ventricular systolic dysfunction)
 
-3: II stage (heart failure due to left 
+3: II stage (heart failure due to left
 
 ventricular systolic dysfunction)
 
@@ -486,11 +486,11 @@ State 4 means simultaneous states 2 and 3
 
 1: I stage
 
-2: II stage (heart failure due to right 
+2: II stage (heart failure due to right
 
 ventricular systolic dysfunction)
 
-3: II stage (heart failure due to left 
+3: II stage (heart failure due to left
 
 ventricular systolic dysfunction)
 
@@ -519,8 +519,8 @@ np_05,0,LBBB (anterior branch) in the anamnesis,Raw category code observed in of
 np_05,1,LBBB (anterior branch) in the anamnesis,Raw category code observed in official source; use the official description/codebook for meaning.
 np_07,0,Incomplete LBBB in the anamnesis,Raw category code observed in official source; use the official description/codebook for meaning.
 np_07,1,Incomplete LBBB in the anamnesis,Raw category code observed in official source; use the official description/codebook for meaning.
-np_08,0,Complete LBBB in the anamnesis ,Raw category code observed in official source; use the official description/codebook for meaning.
-np_08,1,Complete LBBB in the anamnesis ,Raw category code observed in official source; use the official description/codebook for meaning.
+np_08,0,Complete LBBB in the anamnesis,Raw category code observed in official source; use the official description/codebook for meaning.
+np_08,1,Complete LBBB in the anamnesis,Raw category code observed in official source; use the official description/codebook for meaning.
 np_09,0,Incomplete RBBB in the anamnesis,Raw category code observed in official source; use the official description/codebook for meaning.
 np_09,1,Incomplete RBBB in the anamnesis,Raw category code observed in official source; use the official description/codebook for meaning.
 np_10,0,Complete RBBB in the anamnesis,Raw category code observed in official source; use the official description/codebook for meaning.
@@ -535,8 +535,8 @@ zab_leg_01,0,Chronic bronchitis in the anamnesis,Raw category code observed in o
 zab_leg_01,1,Chronic bronchitis in the anamnesis,Raw category code observed in official source; use the official description/codebook for meaning.
 zab_leg_02,0,Obstructive chronic bronchitis in the anamnesis,Raw category code observed in official source; use the official description/codebook for meaning.
 zab_leg_02,1,Obstructive chronic bronchitis in the anamnesis,Raw category code observed in official source; use the official description/codebook for meaning.
-zab_leg_03,0,Bronchial asthma in the anamnesis ,Raw category code observed in official source; use the official description/codebook for meaning.
-zab_leg_03,1,Bronchial asthma in the anamnesis ,Raw category code observed in official source; use the official description/codebook for meaning.
+zab_leg_03,0,Bronchial asthma in the anamnesis,Raw category code observed in official source; use the official description/codebook for meaning.
+zab_leg_03,1,Bronchial asthma in the anamnesis,Raw category code observed in official source; use the official description/codebook for meaning.
 zab_leg_04,0,Chronic pneumonia in the anamnesis,Raw category code observed in official source; use the official description/codebook for meaning.
 zab_leg_04,1,Chronic pneumonia in the anamnesis,Raw category code observed in official source; use the official description/codebook for meaning.
 zab_leg_06,0,Pulmonary tuberculosis in the anamnesis,Raw category code observed in official source; use the official description/codebook for meaning.
@@ -582,10 +582,10 @@ D_AD_ORIT,80,Diastolic blood pressure according to intensive care unit,Raw categ
 D_AD_ORIT,85,Diastolic blood pressure according to intensive care unit,Raw category code observed in official source; use the official description/codebook for meaning.
 D_AD_ORIT,90,Diastolic blood pressure according to intensive care unit,Raw category code observed in official source; use the official description/codebook for meaning.
 D_AD_ORIT,95,Diastolic blood pressure according to intensive care unit,Raw category code observed in official source; use the official description/codebook for meaning.
-O_L_POST,0,Pulmonary edema at the time of admission to intensive care unit ,Raw category code observed in official source; use the official description/codebook for meaning.
-O_L_POST,1,Pulmonary edema at the time of admission to intensive care unit ,Raw category code observed in official source; use the official description/codebook for meaning.
-K_SH_POST,0,Cardiogenic shock at the time of admission to intensive care unit ,Raw category code observed in official source; use the official description/codebook for meaning.
-K_SH_POST,1,Cardiogenic shock at the time of admission to intensive care unit ,Raw category code observed in official source; use the official description/codebook for meaning.
+O_L_POST,0,Pulmonary edema at the time of admission to intensive care unit,Raw category code observed in official source; use the official description/codebook for meaning.
+O_L_POST,1,Pulmonary edema at the time of admission to intensive care unit,Raw category code observed in official source; use the official description/codebook for meaning.
+K_SH_POST,0,Cardiogenic shock at the time of admission to intensive care unit,Raw category code observed in official source; use the official description/codebook for meaning.
+K_SH_POST,1,Cardiogenic shock at the time of admission to intensive care unit,Raw category code observed in official source; use the official description/codebook for meaning.
 MP_TP_POST,0,"Paroxysms of atrial fibrillation at the time of admission to intensive care unit, (or at a pre-hospital stage)",Raw category code observed in official source; use the official description/codebook for meaning.
 MP_TP_POST,1,"Paroxysms of atrial fibrillation at the time of admission to intensive care unit, (or at a pre-hospital stage)",Raw category code observed in official source; use the official description/codebook for meaning.
 SVT_POST,0,"Paroxysms of supraventricular tachycardia at the time of admission to intensive care unit, (or at a pre-hospital stage)",Raw category code observed in official source; use the official description/codebook for meaning.
@@ -594,7 +594,7 @@ GT_POST,0,"Paroxysms of ventricular tachycardia at the time of admission to inte
 GT_POST,1,"Paroxysms of ventricular tachycardia at the time of admission to intensive care unit, (or at a pre-hospital stage)",Raw category code observed in official source; use the official description/codebook for meaning.
 FIB_G_POST,0,"Ventricular fibrillation at the time of admission to intensive care unit, (or at a pre-hospital stage)",Raw category code observed in official source; use the official description/codebook for meaning.
 FIB_G_POST,1,"Ventricular fibrillation at the time of admission to intensive care unit, (or at a pre-hospital stage)",Raw category code observed in official source; use the official description/codebook for meaning.
-ant_im,0,"Presence of an anterior myocardial infarction (left ventricular) (ECG changes in leads V1: V4 ) 
+ant_im,0,"Presence of an anterior myocardial infarction (left ventricular) (ECG changes in leads V1: V4 )
 
 0: there is no infarct in this location
 
@@ -605,7 +605,7 @@ ant_im,0,"Presence of an anterior myocardial infarction (left ventricular) (ECG 
 3: QRS is like Qr-complex
 
 4: QRS is like QS-complex",Raw category code observed in official source; use the official description/codebook for meaning.
-ant_im,1,"Presence of an anterior myocardial infarction (left ventricular) (ECG changes in leads V1: V4 ) 
+ant_im,1,"Presence of an anterior myocardial infarction (left ventricular) (ECG changes in leads V1: V4 )
 
 0: there is no infarct in this location
 
@@ -616,7 +616,7 @@ ant_im,1,"Presence of an anterior myocardial infarction (left ventricular) (ECG 
 3: QRS is like Qr-complex
 
 4: QRS is like QS-complex",Raw category code observed in official source; use the official description/codebook for meaning.
-ant_im,2,"Presence of an anterior myocardial infarction (left ventricular) (ECG changes in leads V1: V4 ) 
+ant_im,2,"Presence of an anterior myocardial infarction (left ventricular) (ECG changes in leads V1: V4 )
 
 0: there is no infarct in this location
 
@@ -627,7 +627,7 @@ ant_im,2,"Presence of an anterior myocardial infarction (left ventricular) (ECG 
 3: QRS is like Qr-complex
 
 4: QRS is like QS-complex",Raw category code observed in official source; use the official description/codebook for meaning.
-ant_im,3,"Presence of an anterior myocardial infarction (left ventricular) (ECG changes in leads V1: V4 ) 
+ant_im,3,"Presence of an anterior myocardial infarction (left ventricular) (ECG changes in leads V1: V4 )
 
 0: there is no infarct in this location
 
@@ -638,7 +638,7 @@ ant_im,3,"Presence of an anterior myocardial infarction (left ventricular) (ECG 
 3: QRS is like Qr-complex
 
 4: QRS is like QS-complex",Raw category code observed in official source; use the official description/codebook for meaning.
-ant_im,4,"Presence of an anterior myocardial infarction (left ventricular) (ECG changes in leads V1: V4 ) 
+ant_im,4,"Presence of an anterior myocardial infarction (left ventricular) (ECG changes in leads V1: V4 )
 
 0: there is no infarct in this location
 
@@ -820,24 +820,24 @@ ritm_ecg_p_01,0,ECG rhythm at the time of admission to hospital: sinus (with a h
 ritm_ecg_p_01,1,ECG rhythm at the time of admission to hospital: sinus (with a heart rate 60-90),Raw category code observed in official source; use the official description/codebook for meaning.
 ritm_ecg_p_02,0,ECG rhythm at the time of admission to hospital: atrial fibrillation,Raw category code observed in official source; use the official description/codebook for meaning.
 ritm_ecg_p_02,1,ECG rhythm at the time of admission to hospital: atrial fibrillation,Raw category code observed in official source; use the official description/codebook for meaning.
-ritm_ecg_p_04,0,ECG rhythm at the time of admission to hospital: atrial ,Raw category code observed in official source; use the official description/codebook for meaning.
-ritm_ecg_p_04,1,ECG rhythm at the time of admission to hospital: atrial ,Raw category code observed in official source; use the official description/codebook for meaning.
+ritm_ecg_p_04,0,ECG rhythm at the time of admission to hospital: atrial,Raw category code observed in official source; use the official description/codebook for meaning.
+ritm_ecg_p_04,1,ECG rhythm at the time of admission to hospital: atrial,Raw category code observed in official source; use the official description/codebook for meaning.
 ritm_ecg_p_06,0,ECG rhythm at the time of admission to hospital: idioventricular,Raw category code observed in official source; use the official description/codebook for meaning.
 ritm_ecg_p_06,1,ECG rhythm at the time of admission to hospital: idioventricular,Raw category code observed in official source; use the official description/codebook for meaning.
-ritm_ecg_p_07,0,ECG rhythm at the time of admission to hospital: sinus with a heart rate above 90 (tachycardia) ,Raw category code observed in official source; use the official description/codebook for meaning.
-ritm_ecg_p_07,1,ECG rhythm at the time of admission to hospital: sinus with a heart rate above 90 (tachycardia) ,Raw category code observed in official source; use the official description/codebook for meaning.
+ritm_ecg_p_07,0,ECG rhythm at the time of admission to hospital: sinus with a heart rate above 90 (tachycardia),Raw category code observed in official source; use the official description/codebook for meaning.
+ritm_ecg_p_07,1,ECG rhythm at the time of admission to hospital: sinus with a heart rate above 90 (tachycardia),Raw category code observed in official source; use the official description/codebook for meaning.
 ritm_ecg_p_08,0,ECG rhythm at the time of admission to hospital: sinus with a heart rate below 60 (bradycardia),Raw category code observed in official source; use the official description/codebook for meaning.
 ritm_ecg_p_08,1,ECG rhythm at the time of admission to hospital: sinus with a heart rate below 60 (bradycardia),Raw category code observed in official source; use the official description/codebook for meaning.
-n_r_ecg_p_01,0,Premature atrial contractions on ECG at the time of admission to hospital ,Raw category code observed in official source; use the official description/codebook for meaning.
-n_r_ecg_p_01,1,Premature atrial contractions on ECG at the time of admission to hospital ,Raw category code observed in official source; use the official description/codebook for meaning.
+n_r_ecg_p_01,0,Premature atrial contractions on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+n_r_ecg_p_01,1,Premature atrial contractions on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
 n_r_ecg_p_02,0,Frequent premature atrial contractions on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
 n_r_ecg_p_02,1,Frequent premature atrial contractions on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
 n_r_ecg_p_03,0,Premature ventricular contractions on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
 n_r_ecg_p_03,1,Premature ventricular contractions on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
 n_r_ecg_p_04,0,Frequent premature ventricular contractions on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
 n_r_ecg_p_04,1,Frequent premature ventricular contractions on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
-n_r_ecg_p_05,0,Paroxysms of atrial fibrillation on ECG at the time of admission to hospital ,Raw category code observed in official source; use the official description/codebook for meaning.
-n_r_ecg_p_05,1,Paroxysms of atrial fibrillation on ECG at the time of admission to hospital ,Raw category code observed in official source; use the official description/codebook for meaning.
+n_r_ecg_p_05,0,Paroxysms of atrial fibrillation on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+n_r_ecg_p_05,1,Paroxysms of atrial fibrillation on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
 n_r_ecg_p_06,0,Persistent form of atrial fibrillation on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
 n_r_ecg_p_06,1,Persistent form of atrial fibrillation on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
 n_r_ecg_p_08,0,Paroxysms of supraventricular tachycardia on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
@@ -848,24 +848,24 @@ n_r_ecg_p_10,0,Ventricular fibrillation on ECG at the time of admission to hospi
 n_r_ecg_p_10,1,Ventricular fibrillation on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
 n_p_ecg_p_01,0,Sinoatrial block on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
 n_p_ecg_p_01,1,Sinoatrial block on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
-n_p_ecg_p_03,0,First-degree AV block on ECG at the time of admission to hospital ,Raw category code observed in official source; use the official description/codebook for meaning.
-n_p_ecg_p_03,1,First-degree AV block on ECG at the time of admission to hospital ,Raw category code observed in official source; use the official description/codebook for meaning.
+n_p_ecg_p_03,0,First-degree AV block on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+n_p_ecg_p_03,1,First-degree AV block on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
 n_p_ecg_p_04,0,Type 1 Second-degree AV block (Mobitz I/Wenckebach) on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
 n_p_ecg_p_04,1,Type 1 Second-degree AV block (Mobitz I/Wenckebach) on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
 n_p_ecg_p_05,0,Type 2 Second-degree AV block (Mobitz II/Hay) on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
 n_p_ecg_p_05,1,Type 2 Second-degree AV block (Mobitz II/Hay) on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
-n_p_ecg_p_06,0,Third-degree AV block on ECG at the time of admission to hospital ,Raw category code observed in official source; use the official description/codebook for meaning.
-n_p_ecg_p_06,1,Third-degree AV block on ECG at the time of admission to hospital ,Raw category code observed in official source; use the official description/codebook for meaning.
-n_p_ecg_p_07,0,LBBB (anterior branch) on ECG at the time of admission to hospital ,Raw category code observed in official source; use the official description/codebook for meaning.
-n_p_ecg_p_07,1,LBBB (anterior branch) on ECG at the time of admission to hospital ,Raw category code observed in official source; use the official description/codebook for meaning.
-n_p_ecg_p_08,0,LBBB (posterior branch) on ECG at the time of admission to hospital ,Raw category code observed in official source; use the official description/codebook for meaning.
-n_p_ecg_p_08,1,LBBB (posterior branch) on ECG at the time of admission to hospital ,Raw category code observed in official source; use the official description/codebook for meaning.
-n_p_ecg_p_09,0,Incomplete LBBB on ECG at the time of admission to hospital ,Raw category code observed in official source; use the official description/codebook for meaning.
-n_p_ecg_p_09,1,Incomplete LBBB on ECG at the time of admission to hospital ,Raw category code observed in official source; use the official description/codebook for meaning.
+n_p_ecg_p_06,0,Third-degree AV block on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+n_p_ecg_p_06,1,Third-degree AV block on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+n_p_ecg_p_07,0,LBBB (anterior branch) on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+n_p_ecg_p_07,1,LBBB (anterior branch) on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+n_p_ecg_p_08,0,LBBB (posterior branch) on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+n_p_ecg_p_08,1,LBBB (posterior branch) on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+n_p_ecg_p_09,0,Incomplete LBBB on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+n_p_ecg_p_09,1,Incomplete LBBB on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
 n_p_ecg_p_10,0,Complete LBBB on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
 n_p_ecg_p_10,1,Complete LBBB on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
-n_p_ecg_p_11,0,Incomplete RBBB on ECG at the time of admission to hospital ,Raw category code observed in official source; use the official description/codebook for meaning.
-n_p_ecg_p_11,1,Incomplete RBBB on ECG at the time of admission to hospital ,Raw category code observed in official source; use the official description/codebook for meaning.
+n_p_ecg_p_11,0,Incomplete RBBB on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+n_p_ecg_p_11,1,Incomplete RBBB on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
 n_p_ecg_p_12,0,Complete RBBB on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
 n_p_ecg_p_12,1,Complete RBBB on ECG at the time of admission to hospital,Raw category code observed in official source; use the official description/codebook for meaning.
 fibr_ter_01,0,Fibrinolytic therapy by Сеliasum 750k,Raw category code observed in official source; use the official description/codebook for meaning.
@@ -1069,7 +1069,7 @@ R_AB_1_n,0,"Relapse of the pain in the first hours of the hospital period
 
 2: 2 times
 
-3: 3 or more times ",Raw category code observed in official source; use the official description/codebook for meaning.
+3: 3 or more times",Raw category code observed in official source; use the official description/codebook for meaning.
 R_AB_1_n,1,"Relapse of the pain in the first hours of the hospital period
 
 0: there is no relapse
@@ -1078,7 +1078,7 @@ R_AB_1_n,1,"Relapse of the pain in the first hours of the hospital period
 
 2: 2 times
 
-3: 3 or more times ",Raw category code observed in official source; use the official description/codebook for meaning.
+3: 3 or more times",Raw category code observed in official source; use the official description/codebook for meaning.
 R_AB_1_n,2,"Relapse of the pain in the first hours of the hospital period
 
 0: there is no relapse
@@ -1087,7 +1087,7 @@ R_AB_1_n,2,"Relapse of the pain in the first hours of the hospital period
 
 2: 2 times
 
-3: 3 or more times ",Raw category code observed in official source; use the official description/codebook for meaning.
+3: 3 or more times",Raw category code observed in official source; use the official description/codebook for meaning.
 R_AB_1_n,3,"Relapse of the pain in the first hours of the hospital period
 
 0: there is no relapse
@@ -1096,7 +1096,7 @@ R_AB_1_n,3,"Relapse of the pain in the first hours of the hospital period
 
 2: 2 times
 
-3: 3 or more times ",Raw category code observed in official source; use the official description/codebook for meaning.
+3: 3 or more times",Raw category code observed in official source; use the official description/codebook for meaning.
 R_AB_2_n,0,"Relapse of the pain in the second day of the hospital period
 
 0: there is no relapse
@@ -1105,7 +1105,7 @@ R_AB_2_n,0,"Relapse of the pain in the second day of the hospital period
 
 2: 2 times
 
-3: 3 or more times ",Raw category code observed in official source; use the official description/codebook for meaning.
+3: 3 or more times",Raw category code observed in official source; use the official description/codebook for meaning.
 R_AB_2_n,1,"Relapse of the pain in the second day of the hospital period
 
 0: there is no relapse
@@ -1114,7 +1114,7 @@ R_AB_2_n,1,"Relapse of the pain in the second day of the hospital period
 
 2: 2 times
 
-3: 3 or more times ",Raw category code observed in official source; use the official description/codebook for meaning.
+3: 3 or more times",Raw category code observed in official source; use the official description/codebook for meaning.
 R_AB_2_n,2,"Relapse of the pain in the second day of the hospital period
 
 0: there is no relapse
@@ -1123,7 +1123,7 @@ R_AB_2_n,2,"Relapse of the pain in the second day of the hospital period
 
 2: 2 times
 
-3: 3 or more times ",Raw category code observed in official source; use the official description/codebook for meaning.
+3: 3 or more times",Raw category code observed in official source; use the official description/codebook for meaning.
 R_AB_2_n,3,"Relapse of the pain in the second day of the hospital period
 
 0: there is no relapse
@@ -1132,7 +1132,7 @@ R_AB_2_n,3,"Relapse of the pain in the second day of the hospital period
 
 2: 2 times
 
-3: 3 or more times ",Raw category code observed in official source; use the official description/codebook for meaning.
+3: 3 or more times",Raw category code observed in official source; use the official description/codebook for meaning.
 R_AB_3_n,0,"Relapse of the pain in the third day of the hospital period
 
 0: there is no relapse
@@ -1141,7 +1141,7 @@ R_AB_3_n,0,"Relapse of the pain in the third day of the hospital period
 
 2: 2 times
 
-3: 3 or more times ",Raw category code observed in official source; use the official description/codebook for meaning.
+3: 3 or more times",Raw category code observed in official source; use the official description/codebook for meaning.
 R_AB_3_n,1,"Relapse of the pain in the third day of the hospital period
 
 0: there is no relapse
@@ -1150,7 +1150,7 @@ R_AB_3_n,1,"Relapse of the pain in the third day of the hospital period
 
 2: 2 times
 
-3: 3 or more times ",Raw category code observed in official source; use the official description/codebook for meaning.
+3: 3 or more times",Raw category code observed in official source; use the official description/codebook for meaning.
 R_AB_3_n,2,"Relapse of the pain in the third day of the hospital period
 
 0: there is no relapse
@@ -1159,7 +1159,7 @@ R_AB_3_n,2,"Relapse of the pain in the third day of the hospital period
 
 2: 2 times
 
-3: 3 or more times ",Raw category code observed in official source; use the official description/codebook for meaning.
+3: 3 or more times",Raw category code observed in official source; use the official description/codebook for meaning.
 R_AB_3_n,3,"Relapse of the pain in the third day of the hospital period
 
 0: there is no relapse
@@ -1168,27 +1168,27 @@ R_AB_3_n,3,"Relapse of the pain in the third day of the hospital period
 
 2: 2 times
 
-3: 3 or more times ",Raw category code observed in official source; use the official description/codebook for meaning.
+3: 3 or more times",Raw category code observed in official source; use the official description/codebook for meaning.
 NA_KB,0,Use of opioid drugs by the Emergency Cardiology Team,Raw category code observed in official source; use the official description/codebook for meaning.
 NA_KB,1,Use of opioid drugs by the Emergency Cardiology Team,Raw category code observed in official source; use the official description/codebook for meaning.
-NOT_NA_KB,0,Use of NSAIDs by the Emergency Cardiology Team ,Raw category code observed in official source; use the official description/codebook for meaning.
-NOT_NA_KB,1,Use of NSAIDs by the Emergency Cardiology Team ,Raw category code observed in official source; use the official description/codebook for meaning.
+NOT_NA_KB,0,Use of NSAIDs by the Emergency Cardiology Team,Raw category code observed in official source; use the official description/codebook for meaning.
+NOT_NA_KB,1,Use of NSAIDs by the Emergency Cardiology Team,Raw category code observed in official source; use the official description/codebook for meaning.
 LID_KB,0,Use of lidocaine by the Emergency Cardiology Team,Raw category code observed in official source; use the official description/codebook for meaning.
 LID_KB,1,Use of lidocaine by the Emergency Cardiology Team,Raw category code observed in official source; use the official description/codebook for meaning.
 NITR_S,0,Use of liquid nitrates in the ICU,Raw category code observed in official source; use the official description/codebook for meaning.
 NITR_S,1,Use of liquid nitrates in the ICU,Raw category code observed in official source; use the official description/codebook for meaning.
-NA_R_1_n,0,Use of opioid drugs in the ICU in the first hours of the hospital period ,Raw category code observed in official source; use the official description/codebook for meaning.
-NA_R_1_n,1,Use of opioid drugs in the ICU in the first hours of the hospital period ,Raw category code observed in official source; use the official description/codebook for meaning.
-NA_R_1_n,2,Use of opioid drugs in the ICU in the first hours of the hospital period ,Raw category code observed in official source; use the official description/codebook for meaning.
-NA_R_1_n,3,Use of opioid drugs in the ICU in the first hours of the hospital period ,Raw category code observed in official source; use the official description/codebook for meaning.
-NA_R_1_n,4,Use of opioid drugs in the ICU in the first hours of the hospital period ,Raw category code observed in official source; use the official description/codebook for meaning.
-NA_R_2_n,0,Use of opioid drugs in the ICU in the second day of the hospital period ,Raw category code observed in official source; use the official description/codebook for meaning.
-NA_R_2_n,1,Use of opioid drugs in the ICU in the second day of the hospital period ,Raw category code observed in official source; use the official description/codebook for meaning.
-NA_R_2_n,2,Use of opioid drugs in the ICU in the second day of the hospital period ,Raw category code observed in official source; use the official description/codebook for meaning.
-NA_R_2_n,3,Use of opioid drugs in the ICU in the second day of the hospital period ,Raw category code observed in official source; use the official description/codebook for meaning.
-NA_R_3_n,0,Use of opioid drugs in the ICU in the third day of the hospital period ,Raw category code observed in official source; use the official description/codebook for meaning.
-NA_R_3_n,1,Use of opioid drugs in the ICU in the third day of the hospital period ,Raw category code observed in official source; use the official description/codebook for meaning.
-NA_R_3_n,2,Use of opioid drugs in the ICU in the third day of the hospital period ,Raw category code observed in official source; use the official description/codebook for meaning.
+NA_R_1_n,0,Use of opioid drugs in the ICU in the first hours of the hospital period,Raw category code observed in official source; use the official description/codebook for meaning.
+NA_R_1_n,1,Use of opioid drugs in the ICU in the first hours of the hospital period,Raw category code observed in official source; use the official description/codebook for meaning.
+NA_R_1_n,2,Use of opioid drugs in the ICU in the first hours of the hospital period,Raw category code observed in official source; use the official description/codebook for meaning.
+NA_R_1_n,3,Use of opioid drugs in the ICU in the first hours of the hospital period,Raw category code observed in official source; use the official description/codebook for meaning.
+NA_R_1_n,4,Use of opioid drugs in the ICU in the first hours of the hospital period,Raw category code observed in official source; use the official description/codebook for meaning.
+NA_R_2_n,0,Use of opioid drugs in the ICU in the second day of the hospital period,Raw category code observed in official source; use the official description/codebook for meaning.
+NA_R_2_n,1,Use of opioid drugs in the ICU in the second day of the hospital period,Raw category code observed in official source; use the official description/codebook for meaning.
+NA_R_2_n,2,Use of opioid drugs in the ICU in the second day of the hospital period,Raw category code observed in official source; use the official description/codebook for meaning.
+NA_R_2_n,3,Use of opioid drugs in the ICU in the second day of the hospital period,Raw category code observed in official source; use the official description/codebook for meaning.
+NA_R_3_n,0,Use of opioid drugs in the ICU in the third day of the hospital period,Raw category code observed in official source; use the official description/codebook for meaning.
+NA_R_3_n,1,Use of opioid drugs in the ICU in the third day of the hospital period,Raw category code observed in official source; use the official description/codebook for meaning.
+NA_R_3_n,2,Use of opioid drugs in the ICU in the third day of the hospital period,Raw category code observed in official source; use the official description/codebook for meaning.
 NOT_NA_1_n,0,"Use of NSAIDs in the ICU in the first hours of the hospital period
 
 0: no
@@ -1244,23 +1244,23 @@ NOT_NA_1_n,4,"Use of NSAIDs in the ICU in the first hours of the hospital period
 3: three times
 
 4: four or more times",Raw category code observed in official source; use the official description/codebook for meaning.
-NOT_NA_2_n,0,Use of NSAIDs in the ICU in the second day of the hospital period ,Raw category code observed in official source; use the official description/codebook for meaning.
-NOT_NA_2_n,1,Use of NSAIDs in the ICU in the second day of the hospital period ,Raw category code observed in official source; use the official description/codebook for meaning.
-NOT_NA_2_n,2,Use of NSAIDs in the ICU in the second day of the hospital period ,Raw category code observed in official source; use the official description/codebook for meaning.
-NOT_NA_2_n,3,Use of NSAIDs in the ICU in the second day of the hospital period ,Raw category code observed in official source; use the official description/codebook for meaning.
-NOT_NA_3_n,0,Use of NSAIDs in the ICU in the third day of the hospital period ,Raw category code observed in official source; use the official description/codebook for meaning.
-NOT_NA_3_n,1,Use of NSAIDs in the ICU in the third day of the hospital period ,Raw category code observed in official source; use the official description/codebook for meaning.
-NOT_NA_3_n,2,Use of NSAIDs in the ICU in the third day of the hospital period ,Raw category code observed in official source; use the official description/codebook for meaning.
-LID_S_n,0,Use of lidocaine in the ICU ,Raw category code observed in official source; use the official description/codebook for meaning.
-LID_S_n,1,Use of lidocaine in the ICU ,Raw category code observed in official source; use the official description/codebook for meaning.
+NOT_NA_2_n,0,Use of NSAIDs in the ICU in the second day of the hospital period,Raw category code observed in official source; use the official description/codebook for meaning.
+NOT_NA_2_n,1,Use of NSAIDs in the ICU in the second day of the hospital period,Raw category code observed in official source; use the official description/codebook for meaning.
+NOT_NA_2_n,2,Use of NSAIDs in the ICU in the second day of the hospital period,Raw category code observed in official source; use the official description/codebook for meaning.
+NOT_NA_2_n,3,Use of NSAIDs in the ICU in the second day of the hospital period,Raw category code observed in official source; use the official description/codebook for meaning.
+NOT_NA_3_n,0,Use of NSAIDs in the ICU in the third day of the hospital period,Raw category code observed in official source; use the official description/codebook for meaning.
+NOT_NA_3_n,1,Use of NSAIDs in the ICU in the third day of the hospital period,Raw category code observed in official source; use the official description/codebook for meaning.
+NOT_NA_3_n,2,Use of NSAIDs in the ICU in the third day of the hospital period,Raw category code observed in official source; use the official description/codebook for meaning.
+LID_S_n,0,Use of lidocaine in the ICU,Raw category code observed in official source; use the official description/codebook for meaning.
+LID_S_n,1,Use of lidocaine in the ICU,Raw category code observed in official source; use the official description/codebook for meaning.
 B_BLOK_S_n,0,Use of beta-blockers in the ICU,Raw category code observed in official source; use the official description/codebook for meaning.
 B_BLOK_S_n,1,Use of beta-blockers in the ICU,Raw category code observed in official source; use the official description/codebook for meaning.
 ANT_CA_S_n,0,Use of calcium channel blockers in the ICU,Raw category code observed in official source; use the official description/codebook for meaning.
 ANT_CA_S_n,1,Use of calcium channel blockers in the ICU,Raw category code observed in official source; use the official description/codebook for meaning.
 GEPAR_S_n,0,Use of а anticoagulants (heparin) in the ICU,Raw category code observed in official source; use the official description/codebook for meaning.
 GEPAR_S_n,1,Use of а anticoagulants (heparin) in the ICU,Raw category code observed in official source; use the official description/codebook for meaning.
-ASP_S_n,0,Use of acetylsalicylic acid in the ICU ,Raw category code observed in official source; use the official description/codebook for meaning.
-ASP_S_n,1,Use of acetylsalicylic acid in the ICU ,Raw category code observed in official source; use the official description/codebook for meaning.
+ASP_S_n,0,Use of acetylsalicylic acid in the ICU,Raw category code observed in official source; use the official description/codebook for meaning.
+ASP_S_n,1,Use of acetylsalicylic acid in the ICU,Raw category code observed in official source; use the official description/codebook for meaning.
 TIKL_S_n,0,Use of Ticlid in the ICU,Raw category code observed in official source; use the official description/codebook for meaning.
 TIKL_S_n,1,Use of Ticlid in the ICU,Raw category code observed in official source; use the official description/codebook for meaning.
 TRENT_S_n,0,Use of Trental in the ICU,Raw category code observed in official source; use the official description/codebook for meaning.
@@ -1277,8 +1277,8 @@ A_V_BLOK,0,Third-degree AV block,Raw category code observed in official source; 
 A_V_BLOK,1,Third-degree AV block,Raw category code observed in official source; use the official description/codebook for meaning.
 OTEK_LANC,0,Pulmonary edema,Raw category code observed in official source; use the official description/codebook for meaning.
 OTEK_LANC,1,Pulmonary edema,Raw category code observed in official source; use the official description/codebook for meaning.
-RAZRIV,0,Myocardial rupture ,Raw category code observed in official source; use the official description/codebook for meaning.
-RAZRIV,1,Myocardial rupture ,Raw category code observed in official source; use the official description/codebook for meaning.
+RAZRIV,0,Myocardial rupture,Raw category code observed in official source; use the official description/codebook for meaning.
+RAZRIV,1,Myocardial rupture,Raw category code observed in official source; use the official description/codebook for meaning.
 DRESSLER,0,Dressler syndrome,Raw category code observed in official source; use the official description/codebook for meaning.
 DRESSLER,1,Dressler syndrome,Raw category code observed in official source; use the official description/codebook for meaning.
 ZSN,0,Chronic heart failure,Raw category code observed in official source; use the official description/codebook for meaning.

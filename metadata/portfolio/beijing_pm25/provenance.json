@@ -40,7 +40,7 @@
   "outcomes": [
     {
       "variable": "pm2.5",
-      "description": null,
+      "description": "",
       "observed_values": []
     }
   ],

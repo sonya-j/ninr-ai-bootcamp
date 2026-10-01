@@ -3,7 +3,7 @@ portfolio_row_id,True,Derived ID,Integer,,Sequential row identifier assigned aft
 ID,True,ID,Integer,,Record ID (ID): Unique identifier. Cannot be related to participant. It can be used for reference only.,,no,"["""", ""NaN""]",[],False,identifier_leakage,Identifier; do not use as a model predictor.,"UCI API metadata, dataset 579"
 AGE,True,Feature,Integer,Age,Age of patient.,,no,"["""", ""NaN""]",[],False,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.,"UCI API metadata, dataset 579"
 SEX,True,Feature,Binary,Sex,"0: female, 1: male",,no,"["""", ""NaN""]","[""0"", ""1""]",False,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.,"UCI API metadata, dataset 579"
-INF_ANAM,True,Feature,Categorical,,"Quantity of myocardial infarctions in the anamnesis. 
+INF_ANAM,True,Feature,Categorical,,"Quantity of myocardial infarctions in the anamnesis.
 
 0: zero
 
@@ -12,11 +12,11 @@ INF_ANAM,True,Feature,Categorical,,"Quantity of myocardial infarctions in the an
 2: two
 
 3: three and more",,yes,"["""", ""NaN""]","[""0"", ""1"", ""2"", ""3"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-STENOK_AN,True,Feature,Categorical,,"Exertional angina pectoris in the anamnesis. 
+STENOK_AN,True,Feature,Categorical,,"Exertional angina pectoris in the anamnesis.
 
 0: never
 
-1: during the last year 
+1: during the last year
 
 2: one year ago
 
@@ -25,7 +25,7 @@ STENOK_AN,True,Feature,Categorical,,"Exertional angina pectoris in the anamnesis
 4: three years ago
 
 5: 4-5 years ago",,yes,"["""", ""NaN""]","[""0"", ""1"", ""2"", ""3"", ""4"", ""5"", ""6"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-FK_STENOK,True,Feature,Categorical,,"Functional class (FC) of angina pectoris in the last year. 
+FK_STENOK,True,Feature,Categorical,,"Functional class (FC) of angina pectoris in the last year.
 
 0: there is no angina pectoris
 
@@ -36,7 +36,7 @@ FK_STENOK,True,Feature,Categorical,,"Functional class (FC) of angina pectoris in
 3: III FC
 
 4: IV FC",,yes,"["""", ""NaN""]","[""0"", ""1"", ""2"", ""3"", ""4"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-IBS_POST,True,Feature,Categorical,,"Coronary heart disease (CHD) in recent weeks, days before admission to hospital 
+IBS_POST,True,Feature,Categorical,,"Coronary heart disease (CHD) in recent weeks, days before admission to hospital
 
 0: none
 
@@ -48,11 +48,11 @@ IBS_NASL,True,Feature,Binary,,"Heredity on CHD
 0: isn't burdened
 
 1: burdened",,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-GB,True,Feature,Categorical,,"Presence of an essential hypertension 
+GB,True,Feature,Categorical,,"Presence of an essential hypertension
 
-0: there is no essential hypertension 
+0: there is no essential hypertension
 
-1: Stage 1 
+1: Stage 1
 
 2: Stage 2
 
@@ -87,11 +87,11 @@ State 4 means simultaneous states 2 and 3
 
 1: I stage
 
-2: II stage (heart failure due to right 
+2: II stage (heart failure due to right
 
 ventricular systolic dysfunction)
 
-3: II stage (heart failure due to left 
+3: II stage (heart failure due to left
 
 ventricular systolic dysfunction)
 
@@ -109,7 +109,7 @@ np_01,False,Feature,Binary,,First-degree AV block in the anamnesis,,yes,"["""", 
 np_04,False,Feature,Binary,,Third-degree AV block in the anamnesis,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 np_05,False,Feature,Binary,,LBBB (anterior branch) in the anamnesis,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 np_07,False,Feature,Binary,,Incomplete LBBB in the anamnesis,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-np_08,False,Feature,Binary,,Complete LBBB in the anamnesis ,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
+np_08,False,Feature,Binary,,Complete LBBB in the anamnesis,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 np_09,False,Feature,Binary,,Incomplete RBBB in the anamnesis,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 np_10,False,Feature,Binary,,Complete RBBB in the anamnesis,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 endocr_01,False,Feature,Binary,,Diabetes mellitus in the anamnesis,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
@@ -117,20 +117,20 @@ endocr_02,False,Feature,Binary,,Obesity in the anamnesis,,yes,"["""", ""NaN""]",
 endocr_03,False,Feature,Binary,,Thyrotoxicosis in the anamnesis,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 zab_leg_01,False,Feature,Binary,,Chronic bronchitis in the anamnesis,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 zab_leg_02,False,Feature,Binary,,Obstructive chronic bronchitis in the anamnesis,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-zab_leg_03,False,Feature,Binary,,Bronchial asthma in the anamnesis ,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
+zab_leg_03,False,Feature,Binary,,Bronchial asthma in the anamnesis,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 zab_leg_04,False,Feature,Binary,,Chronic pneumonia in the anamnesis,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 zab_leg_06,False,Feature,Binary,,Pulmonary tuberculosis in the anamnesis,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-S_AD_KBRIG,True,Feature,Integer,,Systolic blood pressure according to Emergency Cardiology Team ,mmHg,yes,"["""", ""NaN""]",[],False,,,"UCI API metadata, dataset 579"
+S_AD_KBRIG,True,Feature,Integer,,Systolic blood pressure according to Emergency Cardiology Team,mmHg,yes,"["""", ""NaN""]",[],False,,,"UCI API metadata, dataset 579"
 D_AD_KBRIG,True,Feature,Integer,,Diastolic blood pressure according to Emergency Cardiology Team,mmHg,yes,"["""", ""NaN""]","[""0"", ""10"", ""100"", ""110"", ""120"", ""140"", ""160"", ""190"", ""20"", ""30"", ""40"", ""45"", ""50"", ""60"", ""65"", ""70"", ""75"", ""80"", ""85"", ""90"", ""95"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 S_AD_ORIT,False,Feature,Integer,,Systolic blood pressure according to intensive care unit,mmHg,yes,"["""", ""NaN""]",[],False,,,"UCI API metadata, dataset 579"
 D_AD_ORIT,False,Feature,Integer,,Diastolic blood pressure according to intensive care unit,mmHg,yes,"["""", ""NaN""]","[""0"", ""100"", ""105"", ""110"", ""120"", ""130"", ""140"", ""190"", ""20"", ""30"", ""40"", ""50"", ""60"", ""65"", ""70"", ""75"", ""80"", ""85"", ""90"", ""95"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-O_L_POST,False,Feature,Binary,,Pulmonary edema at the time of admission to intensive care unit ,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-K_SH_POST,False,Feature,Binary,,Cardiogenic shock at the time of admission to intensive care unit ,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
+O_L_POST,False,Feature,Binary,,Pulmonary edema at the time of admission to intensive care unit,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
+K_SH_POST,False,Feature,Binary,,Cardiogenic shock at the time of admission to intensive care unit,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 MP_TP_POST,False,Feature,Binary,,"Paroxysms of atrial fibrillation at the time of admission to intensive care unit, (or at a pre-hospital stage)",,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 SVT_POST,False,Feature,Binary,,"Paroxysms of supraventricular tachycardia at the time of admission to intensive care unit, (or at a pre-hospital stage)",,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 GT_POST,False,Feature,Binary,,"Paroxysms of ventricular tachycardia at the time of admission to intensive care unit, (or at a pre-hospital stage)",,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 FIB_G_POST,False,Feature,Binary,,"Ventricular fibrillation at the time of admission to intensive care unit, (or at a pre-hospital stage)",,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-ant_im,False,Feature,Categorical,,"Presence of an anterior myocardial infarction (left ventricular) (ECG changes in leads V1: V4 ) 
+ant_im,False,Feature,Categorical,,"Presence of an anterior myocardial infarction (left ventricular) (ECG changes in leads V1: V4 )
 
 0: there is no infarct in this location
 
@@ -177,29 +177,29 @@ post_im,False,Feature,Categorical,,"Presence of a posterior myocardial infarctio
 IM_PG_P,False,Feature,Binary,,Presence of a right ventricular myocardial infarction,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 ritm_ecg_p_01,False,Feature,Binary,,ECG rhythm at the time of admission to hospital: sinus (with a heart rate 60-90),,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 ritm_ecg_p_02,False,Feature,Binary,,ECG rhythm at the time of admission to hospital: atrial fibrillation,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-ritm_ecg_p_04,False,Feature,Binary,,ECG rhythm at the time of admission to hospital: atrial ,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
+ritm_ecg_p_04,False,Feature,Binary,,ECG rhythm at the time of admission to hospital: atrial,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 ritm_ecg_p_06,False,Feature,Binary,,ECG rhythm at the time of admission to hospital: idioventricular,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-ritm_ecg_p_07,False,Feature,Binary,,ECG rhythm at the time of admission to hospital: sinus with a heart rate above 90 (tachycardia) ,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
+ritm_ecg_p_07,False,Feature,Binary,,ECG rhythm at the time of admission to hospital: sinus with a heart rate above 90 (tachycardia),,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 ritm_ecg_p_08,False,Feature,Binary,,ECG rhythm at the time of admission to hospital: sinus with a heart rate below 60 (bradycardia),,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-n_r_ecg_p_01,False,Feature,Binary,,Premature atrial contractions on ECG at the time of admission to hospital ,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
+n_r_ecg_p_01,False,Feature,Binary,,Premature atrial contractions on ECG at the time of admission to hospital,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 n_r_ecg_p_02,False,Feature,Binary,,Frequent premature atrial contractions on ECG at the time of admission to hospital,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 n_r_ecg_p_03,False,Feature,Binary,,Premature ventricular contractions on ECG at the time of admission to hospital,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 n_r_ecg_p_04,False,Feature,Binary,,Frequent premature ventricular contractions on ECG at the time of admission to hospital,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-n_r_ecg_p_05,False,Feature,Binary,,Paroxysms of atrial fibrillation on ECG at the time of admission to hospital ,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
+n_r_ecg_p_05,False,Feature,Binary,,Paroxysms of atrial fibrillation on ECG at the time of admission to hospital,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 n_r_ecg_p_06,False,Feature,Binary,,Persistent form of atrial fibrillation on ECG at the time of admission to hospital,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 n_r_ecg_p_08,False,Feature,Binary,,Paroxysms of supraventricular tachycardia on ECG at the time of admission to hospital,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 n_r_ecg_p_09,False,Feature,Binary,,Paroxysms of ventricular tachycardia on ECG at the time of admission to hospital,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 n_r_ecg_p_10,False,Feature,Binary,,Ventricular fibrillation on ECG at the time of admission to hospital,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 n_p_ecg_p_01,False,Feature,Binary,,Sinoatrial block on ECG at the time of admission to hospital,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-n_p_ecg_p_03,False,Feature,Binary,,First-degree AV block on ECG at the time of admission to hospital ,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
+n_p_ecg_p_03,False,Feature,Binary,,First-degree AV block on ECG at the time of admission to hospital,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 n_p_ecg_p_04,False,Feature,Binary,,Type 1 Second-degree AV block (Mobitz I/Wenckebach) on ECG at the time of admission to hospital,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 n_p_ecg_p_05,False,Feature,Binary,,Type 2 Second-degree AV block (Mobitz II/Hay) on ECG at the time of admission to hospital,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-n_p_ecg_p_06,False,Feature,Binary,,Third-degree AV block on ECG at the time of admission to hospital ,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-n_p_ecg_p_07,False,Feature,Binary,,LBBB (anterior branch) on ECG at the time of admission to hospital ,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-n_p_ecg_p_08,False,Feature,Binary,,LBBB (posterior branch) on ECG at the time of admission to hospital ,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-n_p_ecg_p_09,False,Feature,Binary,,Incomplete LBBB on ECG at the time of admission to hospital ,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
+n_p_ecg_p_06,False,Feature,Binary,,Third-degree AV block on ECG at the time of admission to hospital,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
+n_p_ecg_p_07,False,Feature,Binary,,LBBB (anterior branch) on ECG at the time of admission to hospital,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
+n_p_ecg_p_08,False,Feature,Binary,,LBBB (posterior branch) on ECG at the time of admission to hospital,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
+n_p_ecg_p_09,False,Feature,Binary,,Incomplete LBBB on ECG at the time of admission to hospital,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 n_p_ecg_p_10,False,Feature,Binary,,Complete LBBB on ECG at the time of admission to hospital,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-n_p_ecg_p_11,False,Feature,Binary,,Incomplete RBBB on ECG at the time of admission to hospital ,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
+n_p_ecg_p_11,False,Feature,Binary,,Incomplete RBBB on ECG at the time of admission to hospital,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 n_p_ecg_p_12,False,Feature,Binary,,Complete RBBB on ECG at the time of admission to hospital,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 fibr_ter_01,False,Feature,Binary,,Fibrinolytic therapy by Сеliasum 750k,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 fibr_ter_02,False,Feature,Binary,,Fibrinolytic therapy by Сеliasum 1m IU,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
@@ -215,7 +215,7 @@ NA_BLOOD,True,Feature,Continuous,,Serum sodium content,mmol/L,yes,"["""", ""NaN"
 ALT_BLOOD,True,Feature,Continuous,,Serum AlAT content (ALT_BLOOD),IU/L,yes,"["""", ""NaN""]",[],False,,,"UCI API metadata, dataset 579"
 AST_BLOOD,True,Feature,Continuous,,Serum AsAT content,IU/L,yes,"["""", ""NaN""]",[],False,,,"UCI API metadata, dataset 579"
 KFK_BLOOD,False,Feature,Continuous,,Serum CPK content,IU/L,yes,"["""", ""NaN""]","[""1.2"", ""1.4"", ""1.8"", ""3.6"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-L_BLOOD,True,Feature,Continuous,,White blood cell count ,billions per liter,yes,"["""", ""NaN""]",[],False,,,"UCI API metadata, dataset 579"
+L_BLOOD,True,Feature,Continuous,,White blood cell count,billions per liter,yes,"["""", ""NaN""]",[],False,,,"UCI API metadata, dataset 579"
 ROE,True,Feature,Continuous,,ESR (Erythrocyte sedimentation rate),мм,yes,"["""", ""NaN""]",[],False,,,"UCI API metadata, dataset 579"
 TIME_B_S,True,Feature,Categorical,,"Time elapsed from the beginning of the attack of CHD to the hospital
 
@@ -244,7 +244,7 @@ R_AB_1_n,False,Feature,Categorical,,"Relapse of the pain in the first hours of t
 
 2: 2 times
 
-3: 3 or more times ",,yes,"["""", ""NaN""]","[""0"", ""1"", ""2"", ""3"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
+3: 3 or more times",,yes,"["""", ""NaN""]","[""0"", ""1"", ""2"", ""3"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 R_AB_2_n,False,Feature,Categorical,,"Relapse of the pain in the second day of the hospital period
 
 0: there is no relapse
@@ -253,7 +253,7 @@ R_AB_2_n,False,Feature,Categorical,,"Relapse of the pain in the second day of th
 
 2: 2 times
 
-3: 3 or more times ",,yes,"["""", ""NaN""]","[""0"", ""1"", ""2"", ""3"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
+3: 3 or more times",,yes,"["""", ""NaN""]","[""0"", ""1"", ""2"", ""3"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 R_AB_3_n,False,Feature,Categorical,,"Relapse of the pain in the third day of the hospital period
 
 0: there is no relapse
@@ -262,14 +262,14 @@ R_AB_3_n,False,Feature,Categorical,,"Relapse of the pain in the third day of the
 
 2: 2 times
 
-3: 3 or more times ",,yes,"["""", ""NaN""]","[""0"", ""1"", ""2"", ""3"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
+3: 3 or more times",,yes,"["""", ""NaN""]","[""0"", ""1"", ""2"", ""3"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 NA_KB,False,Feature,Binary,,Use of opioid drugs by the Emergency Cardiology Team,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-NOT_NA_KB,False,Feature,Binary,,Use of NSAIDs by the Emergency Cardiology Team ,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
+NOT_NA_KB,False,Feature,Binary,,Use of NSAIDs by the Emergency Cardiology Team,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 LID_KB,False,Feature,Binary,,Use of lidocaine by the Emergency Cardiology Team,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 NITR_S,False,Feature,Binary,,Use of liquid nitrates in the ICU,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-NA_R_1_n,False,Feature,Integer,,Use of opioid drugs in the ICU in the first hours of the hospital period ,,yes,"["""", ""NaN""]","[""0"", ""1"", ""2"", ""3"", ""4"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-NA_R_2_n,False,Feature,Integer,,Use of opioid drugs in the ICU in the second day of the hospital period ,,yes,"["""", ""NaN""]","[""0"", ""1"", ""2"", ""3"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-NA_R_3_n,False,Feature,Integer,,Use of opioid drugs in the ICU in the third day of the hospital period ,,yes,"["""", ""NaN""]","[""0"", ""1"", ""2"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
+NA_R_1_n,False,Feature,Integer,,Use of opioid drugs in the ICU in the first hours of the hospital period,,yes,"["""", ""NaN""]","[""0"", ""1"", ""2"", ""3"", ""4"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
+NA_R_2_n,False,Feature,Integer,,Use of opioid drugs in the ICU in the second day of the hospital period,,yes,"["""", ""NaN""]","[""0"", ""1"", ""2"", ""3"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
+NA_R_3_n,False,Feature,Integer,,Use of opioid drugs in the ICU in the third day of the hospital period,,yes,"["""", ""NaN""]","[""0"", ""1"", ""2"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 NOT_NA_1_n,False,Feature,Categorical,,"Use of NSAIDs in the ICU in the first hours of the hospital period
 
 0: no
@@ -281,13 +281,13 @@ NOT_NA_1_n,False,Feature,Categorical,,"Use of NSAIDs in the ICU in the first hou
 3: three times
 
 4: four or more times",,yes,"["""", ""NaN""]","[""0"", ""1"", ""2"", ""3"", ""4"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-NOT_NA_2_n,False,Feature,Integer,,Use of NSAIDs in the ICU in the second day of the hospital period ,,yes,"["""", ""NaN""]","[""0"", ""1"", ""2"", ""3"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-NOT_NA_3_n,False,Feature,Integer,,Use of NSAIDs in the ICU in the third day of the hospital period ,,yes,"["""", ""NaN""]","[""0"", ""1"", ""2"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-LID_S_n,False,Feature,Binary,,Use of lidocaine in the ICU ,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
+NOT_NA_2_n,False,Feature,Integer,,Use of NSAIDs in the ICU in the second day of the hospital period,,yes,"["""", ""NaN""]","[""0"", ""1"", ""2"", ""3"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
+NOT_NA_3_n,False,Feature,Integer,,Use of NSAIDs in the ICU in the third day of the hospital period,,yes,"["""", ""NaN""]","[""0"", ""1"", ""2"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
+LID_S_n,False,Feature,Binary,,Use of lidocaine in the ICU,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 B_BLOK_S_n,False,Feature,Binary,,Use of beta-blockers in the ICU,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 ANT_CA_S_n,False,Feature,Binary,,Use of calcium channel blockers in the ICU,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 GEPAR_S_n,False,Feature,Binary,,Use of а anticoagulants (heparin) in the ICU,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
-ASP_S_n,True,Feature,Binary,,Use of acetylsalicylic acid in the ICU ,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.,"UCI API metadata, dataset 579"
+ASP_S_n,True,Feature,Binary,,Use of acetylsalicylic acid in the ICU,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.,"UCI API metadata, dataset 579"
 TIKL_S_n,False,Feature,Binary,,Use of Ticlid in the ICU,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 TRENT_S_n,False,Feature,Binary,,Use of Trental in the ICU,,yes,"["""", ""NaN""]","[""0"", ""1"", ""NaN""]",False,,,"UCI API metadata, dataset 579"
 FIBR_PREDS,True,Target,Binary,,Atrial fibrillation,,no,"["""", ""NaN""]","[""0"", ""1""]",False,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.,"UCI API metadata, dataset 579"
@@ -296,7 +296,7 @@ JELUD_TAH,False,Target,Binary,,Ventricular tachycardia,,no,"["""", ""NaN""]","["
 FIBR_JELUD,True,Target,Binary,,Ventricular fibrillation,,no,"["""", ""NaN""]","[""0"", ""1""]",False,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.,"UCI API metadata, dataset 579"
 A_V_BLOK,False,Target,Binary,,Third-degree AV block,,no,"["""", ""NaN""]","[""0"", ""1""]",False,outcome|target_leakage,Official target; do not use to predict itself or another directly derived outcome.,"UCI API metadata, dataset 579"
 OTEK_LANC,True,Target,Binary,,Pulmonary edema,,no,"["""", ""NaN""]","[""0"", ""1""]",False,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.,"UCI API metadata, dataset 579"
-RAZRIV,True,Target,Binary,,Myocardial rupture ,,no,"["""", ""NaN""]","[""0"", ""1""]",False,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.,"UCI API metadata, dataset 579"
+RAZRIV,True,Target,Binary,,Myocardial rupture,,no,"["""", ""NaN""]","[""0"", ""1""]",False,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.,"UCI API metadata, dataset 579"
 DRESSLER,False,Target,Binary,,Dressler syndrome,,no,"["""", ""NaN""]","[""0"", ""1""]",False,outcome|target_leakage,Official target; do not use to predict itself or another directly derived outcome.,"UCI API metadata, dataset 579"
 ZSN,True,Target,Binary,,Chronic heart failure,,no,"["""", ""NaN""]","[""0"", ""1""]",False,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.,"UCI API metadata, dataset 579"
 REC_IM,True,Target,Binary,,Relapse of the myocardial infarction,,no,"["""", ""NaN""]","[""0"", ""1""]",False,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.,"UCI API metadata, dataset 579"

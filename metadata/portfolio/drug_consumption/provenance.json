@@ -56,7 +56,7 @@
   "outcomes": [
     {
       "variable": "alcohol",
-      "description": null,
+      "description": "",
       "observed_values": [
         "CL0",
         "CL1",
@@ -69,7 +69,7 @@
     },
     {
       "variable": "amphet",
-      "description": null,
+      "description": "",
       "observed_values": [
         "CL0",
         "CL1",
@@ -82,7 +82,7 @@
     },
     {
       "variable": "benzos",
-      "description": null,
+      "description": "",
       "observed_values": [
         "CL0",
         "CL1",
@@ -95,7 +95,7 @@
     },
     {
       "variable": "caff",
-      "description": null,
+      "description": "",
       "observed_values": [
         "CL0",
         "CL1",
@@ -108,7 +108,7 @@
     },
     {
       "variable": "cannabis",
-      "description": null,
+      "description": "",
       "observed_values": [
         "CL0",
         "CL1",
@@ -121,7 +121,7 @@
     },
     {
       "variable": "coke",
-      "description": null,
+      "description": "",
       "observed_values": [
         "CL0",
         "CL1",
@@ -134,7 +134,7 @@
     },
     {
       "variable": "crack",
-      "description": null,
+      "description": "",
       "observed_values": [
         "CL0",
         "CL1",
@@ -147,7 +147,7 @@
     },
     {
       "variable": "ecstasy",
-      "description": null,
+      "description": "",
       "observed_values": [
         "CL0",
         "CL1",
@@ -160,7 +160,7 @@
     },
     {
       "variable": "heroin",
-      "description": null,
+      "description": "",
       "observed_values": [
         "CL0",
         "CL1",
@@ -173,7 +173,7 @@
     },
     {
       "variable": "ketamine",
-      "description": null,
+      "description": "",
       "observed_values": [
         "CL0",
         "CL1",
@@ -186,7 +186,7 @@
     },
     {
       "variable": "legalh",
-      "description": null,
+      "description": "",
       "observed_values": [
         "CL0",
         "CL1",
@@ -199,7 +199,7 @@
     },
     {
       "variable": "lsd",
-      "description": null,
+      "description": "",
       "observed_values": [
         "CL0",
         "CL1",
@@ -212,7 +212,7 @@
     },
     {
       "variable": "meth",
-      "description": null,
+      "description": "",
       "observed_values": [
         "CL0",
         "CL1",
@@ -225,7 +225,7 @@
     },
     {
       "variable": "mushrooms",
-      "description": null,
+      "description": "",
       "observed_values": [
         "CL0",
         "CL1",
@@ -238,7 +238,7 @@
     },
     {
       "variable": "nicotine",
-      "description": null,
+      "description": "",
       "observed_values": [
         "CL0",
         "CL1",
@@ -251,7 +251,7 @@
     },
     {
       "variable": "semer",
-      "description": null,
+      "description": "",
       "observed_values": [
         "CL0",
         "CL1",
@@ -262,7 +262,7 @@
     },
     {
       "variable": "vsa",
-      "description": null,
+      "description": "",
       "observed_values": [
         "CL0",
         "CL1",

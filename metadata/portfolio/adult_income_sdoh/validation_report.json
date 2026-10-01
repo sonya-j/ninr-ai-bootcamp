@@ -1,6 +1,6 @@
 {
   "dataset": "adult_income_sdoh",
-  "validated_at": "2026-10-01T17:31:12.800126+00:00",
+  "validated_at": "2026-10-01T17:33:34.070407+00:00",
   "passed": true,
   "checks": [
     {

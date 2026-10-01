@@ -49,7 +49,7 @@
   "outcomes": [
     {
       "variable": "CLASS",
-      "description": null,
+      "description": "",
       "observed_values": [
         "1",
         "10",
@@ -65,7 +65,7 @@
     },
     {
       "variable": "NSP",
-      "description": null,
+      "description": "",
       "observed_values": [
         "1",
         "2",

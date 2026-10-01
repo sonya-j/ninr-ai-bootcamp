@@ -55,7 +55,7 @@
   "outcomes": [
     {
       "variable": "Baselinehistological staging",
-      "description": null,
+      "description": "",
       "observed_values": [
         "1",
         "2",

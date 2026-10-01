@@ -18,7 +18,7 @@ Participant files contain approximately 1,000–5,000 observations and 10–30 s
 | [Diabetic Retinopathy Debrecen](#diabetic-retinopathy) | Screening and diagnostic support | 1,151 × 20 | None supplied | Retinal image-derived features for diabetic retinopathy screening. |
 | [Infrared Thermography Temperature](#infrared-thermography-temperature) | Screening and measurement science | 1,020 × 30 | None supplied | Infrared facial temperatures, oral temperature, environment, and participant characteristics. |
 | [EEG Eye State](#eeg-eye-state) | Neurophysiology and monitoring | 5,000 × 15 | None supplied | EEG channel measurements paired with open-versus-closed eye state. |
-| [Estimation of Obesity Levels Based On Eating Habits and Physical Condition ](#obesity-lifestyle) | Health behavior and chronic disease | 2,111 × 17 | None supplied | Eating habits, physical activity, transportation, anthropometrics, and obesity category. |
+| [Estimation of Obesity Levels Based On Eating Habits and Physical Condition](#obesity-lifestyle) | Health behavior and chronic disease | 2,111 × 17 | None supplied | Eating habits, physical activity, transportation, anthropometrics, and obesity category. |
 | [Drug Consumption (Quantified)](#drug-consumption) | Health behavior and substance use | 1,885 × 30 | None supplied | Demographics, personality measures, sensation seeking, and self-reported substance-use categories. |
 | [Absenteeism at work](#workplace-absenteeism) | Occupational health and workforce | 740 × 21 | None supplied | Worker characteristics, health behaviors, work context, reasons for absence, and absence duration. |
 | [Predict Students' Dropout and Academic Success](#student-dropout-sdoh) | Education and social determinants | 4,424 × 30 | None supplied | Educational, financial, demographic, and macroeconomic factors associated with dropout and graduation. |
@@ -242,7 +242,7 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/eeg_eye_state/partici
 
 <a id="obesity-lifestyle"></a>
 
-### Estimation of Obesity Levels Based On Eating Habits and Physical Condition 
+### Estimation of Obesity Levels Based On Eating Habits and Physical Condition
 
 - **Theme:** Health behavior and chronic disease
 - **Why choose it:** Eating habits, physical activity, transportation, anthropometrics, and obesity category.
@@ -441,4 +441,3 @@ Artifacts: [`participant.csv`](../data/processed/portfolio/room_occupancy_enviro
   3. Why would using casual and registered counts to predict total count create leakage?
 
 Artifacts: [`participant.csv`](../data/processed/portfolio/bike_sharing_environment/participant.csv) · [`data dictionary`](../metadata/portfolio/bike_sharing_environment/data_dictionary.csv) · [`provenance`](../metadata/portfolio/bike_sharing_environment/provenance.json) · [`risk flags`](../metadata/portfolio/bike_sharing_environment/risk_flags.csv) · [`validation`](../metadata/portfolio/bike_sharing_environment/validation_report.json)
-

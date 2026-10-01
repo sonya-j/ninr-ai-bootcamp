@@ -47,7 +47,7 @@
   "outcomes": [
     {
       "variable": "Absenteeism time in hours",
-      "description": null,
+      "description": "",
       "observed_values": [
         "0",
         "1",

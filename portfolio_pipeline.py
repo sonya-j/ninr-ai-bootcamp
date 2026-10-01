@@ -102,6 +102,13 @@ def normalize_lookup(columns: list[str]) -> dict[str, str]:
     return lookup
 
 
+def clean_text(value: Any) -> str:
+    """Remove source-formatting whitespace without changing substantive text."""
+    if value is None:
+        return ""
+    return "\n".join(line.rstrip() for line in str(value).strip().splitlines())
+
+
 def resolve_column(name: str, lookup: dict[str, str]) -> str | None:
     return lookup.get(name) or lookup.get(name.strip()) or lookup.get(name.lower()) or lookup.get(name.strip().lower())
 
@@ -262,7 +269,7 @@ def prepare_dataset(spec: dict[str, Any], config: dict[str, Any]) -> dict[str, A
             "role": official.get("role", ""),
             "type": official.get("type", ""),
             "demographic": official.get("demographic", ""),
-            "description": official.get("description", ""),
+            "description": clean_text(official.get("description", "")),
             "units": official.get("units", ""),
             "official_missing_values": official.get("missing_values", ""),
             "official_missing_symbol": json.dumps(missing_symbols),
@@ -331,7 +338,7 @@ def prepare_dataset(spec: dict[str, Any], config: dict[str, Any]) -> dict[str, A
     targets = [
         {
             "variable": column,
-            "description": official_by_name.get(column, {}).get("description", ""),
+            "description": clean_text(official_by_name.get(column, {}).get("description", "")),
             "observed_values": sorted({str(value) for value in raw[column].unique()})[:100]
             if raw[column].nunique(dropna=False) <= 100 else [],
         }
@@ -340,7 +347,7 @@ def prepare_dataset(spec: dict[str, Any], config: dict[str, Any]) -> dict[str, A
     ]
     provenance = {
         "uci_id": spec["uci_id"],
-        "title": metadata["name"],
+        "title": clean_text(metadata["name"]),
         "official_source": config["official_repository"],
         "repository_url": metadata["repository_url"],
         "data_url": metadata["data_url"],
@@ -465,7 +472,7 @@ def write_catalog_csv(summaries: list[dict[str, Any]]) -> None:
         rows.append({
             "slug": item["spec"]["slug"],
             "uci_id": item["spec"]["uci_id"],
-            "title": metadata["name"],
+            "title": clean_text(metadata["name"]),
             "category": item["spec"]["category"],
             "raw_rows": provenance["raw_rows"],
             "participant_rows": provenance["participant_rows"],
@@ -500,7 +507,7 @@ def write_catalog(summaries: list[dict[str, Any]]) -> None:
         provenance = item["provenance"]
         weight = ", ".join(provenance["weighting_variables"]) or "None supplied"
         lines.append(
-            f"| [{metadata['name']}](#{spec['slug'].replace('_', '-')}) | {spec['category']} | "
+            f"| [{clean_text(metadata['name'])}](#{spec['slug'].replace('_', '-')}) | {spec['category']} | "
             f"{provenance['participant_rows']:,} × {provenance['participant_columns'] - 1} | {weight} | {spec['fit']} |"
         )
     lines.extend([
@@ -527,7 +534,7 @@ def write_catalog(summaries: list[dict[str, Any]]) -> None:
         lines.extend([
             f"<a id=\"{spec['slug'].replace('_', '-')}\"></a>",
             "",
-            f"### {metadata['name']}",
+            f"### {clean_text(metadata['name'])}",
             "",
             f"- **Theme:** {spec['category']}",
             f"- **Why choose it:** {spec['fit']}",
@@ -552,7 +559,7 @@ def write_catalog(summaries: list[dict[str, Any]]) -> None:
             "",
         ])
     CATALOG_PATH.parent.mkdir(parents=True, exist_ok=True)
-    CATALOG_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    CATALOG_PATH.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
 
 def write_lock() -> None:

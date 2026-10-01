@@ -41,7 +41,7 @@
   "outcomes": [
     {
       "variable": "eyeDetection",
-      "description": null,
+      "description": "",
       "observed_values": [
         "0",
         "1"
