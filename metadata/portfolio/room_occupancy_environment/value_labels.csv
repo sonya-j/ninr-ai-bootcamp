@@ -1,0 +1,40 @@
+variable,code,official_description,label_status
+Date,2017/12/22,,Raw category code observed in official source; use the official description/codebook for meaning.
+Date,2017/12/23,,Raw category code observed in official source; use the official description/codebook for meaning.
+Date,2017/12/24,,Raw category code observed in official source; use the official description/codebook for meaning.
+Date,2017/12/25,,Raw category code observed in official source; use the official description/codebook for meaning.
+Date,2017/12/26,,Raw category code observed in official source; use the official description/codebook for meaning.
+Date,2018/01/10,,Raw category code observed in official source; use the official description/codebook for meaning.
+Date,2018/01/11,,Raw category code observed in official source; use the official description/codebook for meaning.
+S1_Temp,24.94,,Raw category code observed in official source; use the official description/codebook for meaning.
+S1_Temp,25.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+S1_Temp,25.06,,Raw category code observed in official source; use the official description/codebook for meaning.
+S1_Temp,25.13,,Raw category code observed in official source; use the official description/codebook for meaning.
+S1_Temp,25.19,,Raw category code observed in official source; use the official description/codebook for meaning.
+S1_Temp,25.25,,Raw category code observed in official source; use the official description/codebook for meaning.
+S1_Temp,25.31,,Raw category code observed in official source; use the official description/codebook for meaning.
+S1_Temp,25.38,,Raw category code observed in official source; use the official description/codebook for meaning.
+S1_Temp,25.44,,Raw category code observed in official source; use the official description/codebook for meaning.
+S1_Temp,25.5,,Raw category code observed in official source; use the official description/codebook for meaning.
+S1_Temp,25.56,,Raw category code observed in official source; use the official description/codebook for meaning.
+S1_Temp,25.63,,Raw category code observed in official source; use the official description/codebook for meaning.
+S1_Temp,25.69,,Raw category code observed in official source; use the official description/codebook for meaning.
+S1_Temp,25.75,,Raw category code observed in official source; use the official description/codebook for meaning.
+S1_Temp,25.81,,Raw category code observed in official source; use the official description/codebook for meaning.
+S1_Temp,25.88,,Raw category code observed in official source; use the official description/codebook for meaning.
+S1_Temp,25.94,,Raw category code observed in official source; use the official description/codebook for meaning.
+S1_Temp,26.0,,Raw category code observed in official source; use the official description/codebook for meaning.
+S1_Temp,26.06,,Raw category code observed in official source; use the official description/codebook for meaning.
+S1_Temp,26.13,,Raw category code observed in official source; use the official description/codebook for meaning.
+S1_Temp,26.19,,Raw category code observed in official source; use the official description/codebook for meaning.
+S1_Temp,26.25,,Raw category code observed in official source; use the official description/codebook for meaning.
+S1_Temp,26.31,,Raw category code observed in official source; use the official description/codebook for meaning.
+S1_Temp,26.38,,Raw category code observed in official source; use the official description/codebook for meaning.
+S6_PIR,0,Binary value conveying motion detection,Raw category code observed in official source; use the official description/codebook for meaning.
+S6_PIR,1,Binary value conveying motion detection,Raw category code observed in official source; use the official description/codebook for meaning.
+S7_PIR,0,Binary value conveying motion detection,Raw category code observed in official source; use the official description/codebook for meaning.
+S7_PIR,1,Binary value conveying motion detection,Raw category code observed in official source; use the official description/codebook for meaning.
+Room_Occupancy_Count,0,Ground Truth,Raw category code observed in official source; use the official description/codebook for meaning.
+Room_Occupancy_Count,1,Ground Truth,Raw category code observed in official source; use the official description/codebook for meaning.
+Room_Occupancy_Count,2,Ground Truth,Raw category code observed in official source; use the official description/codebook for meaning.
+Room_Occupancy_Count,3,Ground Truth,Raw category code observed in official source; use the official description/codebook for meaning.

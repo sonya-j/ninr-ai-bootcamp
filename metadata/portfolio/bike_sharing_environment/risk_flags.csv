@@ -1,0 +1,5 @@
+variable,risk_flags,note
+instant,identifier_leakage,Identifier; do not use as a model predictor.
+casual,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+registered,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+cnt,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.

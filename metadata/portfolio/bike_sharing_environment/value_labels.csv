@@ -1,0 +1,58 @@
+variable,code,official_description,label_status
+season,1,"1:winter, 2:spring, 3:summer, 4:fall",Raw category code observed in official source; use the official description/codebook for meaning.
+season,2,"1:winter, 2:spring, 3:summer, 4:fall",Raw category code observed in official source; use the official description/codebook for meaning.
+season,3,"1:winter, 2:spring, 3:summer, 4:fall",Raw category code observed in official source; use the official description/codebook for meaning.
+season,4,"1:winter, 2:spring, 3:summer, 4:fall",Raw category code observed in official source; use the official description/codebook for meaning.
+yr,0,"year (0: 2011, 1: 2012)",Raw category code observed in official source; use the official description/codebook for meaning.
+yr,1,"year (0: 2011, 1: 2012)",Raw category code observed in official source; use the official description/codebook for meaning.
+mnth,1,month (1 to 12),Raw category code observed in official source; use the official description/codebook for meaning.
+mnth,10,month (1 to 12),Raw category code observed in official source; use the official description/codebook for meaning.
+mnth,11,month (1 to 12),Raw category code observed in official source; use the official description/codebook for meaning.
+mnth,12,month (1 to 12),Raw category code observed in official source; use the official description/codebook for meaning.
+mnth,2,month (1 to 12),Raw category code observed in official source; use the official description/codebook for meaning.
+mnth,3,month (1 to 12),Raw category code observed in official source; use the official description/codebook for meaning.
+mnth,4,month (1 to 12),Raw category code observed in official source; use the official description/codebook for meaning.
+mnth,5,month (1 to 12),Raw category code observed in official source; use the official description/codebook for meaning.
+mnth,6,month (1 to 12),Raw category code observed in official source; use the official description/codebook for meaning.
+mnth,7,month (1 to 12),Raw category code observed in official source; use the official description/codebook for meaning.
+mnth,8,month (1 to 12),Raw category code observed in official source; use the official description/codebook for meaning.
+mnth,9,month (1 to 12),Raw category code observed in official source; use the official description/codebook for meaning.
+hr,0,hour (0 to 23),Raw category code observed in official source; use the official description/codebook for meaning.
+hr,1,hour (0 to 23),Raw category code observed in official source; use the official description/codebook for meaning.
+hr,10,hour (0 to 23),Raw category code observed in official source; use the official description/codebook for meaning.
+hr,11,hour (0 to 23),Raw category code observed in official source; use the official description/codebook for meaning.
+hr,12,hour (0 to 23),Raw category code observed in official source; use the official description/codebook for meaning.
+hr,13,hour (0 to 23),Raw category code observed in official source; use the official description/codebook for meaning.
+hr,14,hour (0 to 23),Raw category code observed in official source; use the official description/codebook for meaning.
+hr,15,hour (0 to 23),Raw category code observed in official source; use the official description/codebook for meaning.
+hr,16,hour (0 to 23),Raw category code observed in official source; use the official description/codebook for meaning.
+hr,17,hour (0 to 23),Raw category code observed in official source; use the official description/codebook for meaning.
+hr,18,hour (0 to 23),Raw category code observed in official source; use the official description/codebook for meaning.
+hr,19,hour (0 to 23),Raw category code observed in official source; use the official description/codebook for meaning.
+hr,2,hour (0 to 23),Raw category code observed in official source; use the official description/codebook for meaning.
+hr,20,hour (0 to 23),Raw category code observed in official source; use the official description/codebook for meaning.
+hr,21,hour (0 to 23),Raw category code observed in official source; use the official description/codebook for meaning.
+hr,22,hour (0 to 23),Raw category code observed in official source; use the official description/codebook for meaning.
+hr,23,hour (0 to 23),Raw category code observed in official source; use the official description/codebook for meaning.
+hr,3,hour (0 to 23),Raw category code observed in official source; use the official description/codebook for meaning.
+hr,4,hour (0 to 23),Raw category code observed in official source; use the official description/codebook for meaning.
+hr,5,hour (0 to 23),Raw category code observed in official source; use the official description/codebook for meaning.
+hr,6,hour (0 to 23),Raw category code observed in official source; use the official description/codebook for meaning.
+hr,7,hour (0 to 23),Raw category code observed in official source; use the official description/codebook for meaning.
+hr,8,hour (0 to 23),Raw category code observed in official source; use the official description/codebook for meaning.
+hr,9,hour (0 to 23),Raw category code observed in official source; use the official description/codebook for meaning.
+holiday,0,weather day is holiday or not (extracted from http://dchr.dc.gov/page/holiday-schedule),Raw category code observed in official source; use the official description/codebook for meaning.
+holiday,1,weather day is holiday or not (extracted from http://dchr.dc.gov/page/holiday-schedule),Raw category code observed in official source; use the official description/codebook for meaning.
+weekday,0,day of the week,Raw category code observed in official source; use the official description/codebook for meaning.
+weekday,1,day of the week,Raw category code observed in official source; use the official description/codebook for meaning.
+weekday,2,day of the week,Raw category code observed in official source; use the official description/codebook for meaning.
+weekday,3,day of the week,Raw category code observed in official source; use the official description/codebook for meaning.
+weekday,4,day of the week,Raw category code observed in official source; use the official description/codebook for meaning.
+weekday,5,day of the week,Raw category code observed in official source; use the official description/codebook for meaning.
+weekday,6,day of the week,Raw category code observed in official source; use the official description/codebook for meaning.
+workingday,0,"if day is neither weekend nor holiday is 1, otherwise is 0",Raw category code observed in official source; use the official description/codebook for meaning.
+workingday,1,"if day is neither weekend nor holiday is 1, otherwise is 0",Raw category code observed in official source; use the official description/codebook for meaning.
+weathersit,1,"- 1: Clear, Few clouds, Partly cloudy, Partly cloudy",Raw category code observed in official source; use the official description/codebook for meaning.
+weathersit,2,"- 1: Clear, Few clouds, Partly cloudy, Partly cloudy",Raw category code observed in official source; use the official description/codebook for meaning.
+weathersit,3,"- 1: Clear, Few clouds, Partly cloudy, Partly cloudy",Raw category code observed in official source; use the official description/codebook for meaning.
+weathersit,4,"- 1: Clear, Few clouds, Partly cloudy, Partly cloudy",Raw category code observed in official source; use the official description/codebook for meaning.

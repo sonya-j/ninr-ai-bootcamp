@@ -1,0 +1,3 @@
+variable,risk_flags,note
+CLASS,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.
+NSP,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.

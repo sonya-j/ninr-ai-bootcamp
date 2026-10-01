@@ -1,0 +1,196 @@
+variable,code,official_description,label_status
+Month of absence,0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Month of absence,1,,Raw category code observed in official source; use the official description/codebook for meaning.
+Month of absence,10,,Raw category code observed in official source; use the official description/codebook for meaning.
+Month of absence,11,,Raw category code observed in official source; use the official description/codebook for meaning.
+Month of absence,12,,Raw category code observed in official source; use the official description/codebook for meaning.
+Month of absence,2,,Raw category code observed in official source; use the official description/codebook for meaning.
+Month of absence,3,,Raw category code observed in official source; use the official description/codebook for meaning.
+Month of absence,4,,Raw category code observed in official source; use the official description/codebook for meaning.
+Month of absence,5,,Raw category code observed in official source; use the official description/codebook for meaning.
+Month of absence,6,,Raw category code observed in official source; use the official description/codebook for meaning.
+Month of absence,7,,Raw category code observed in official source; use the official description/codebook for meaning.
+Month of absence,8,,Raw category code observed in official source; use the official description/codebook for meaning.
+Month of absence,9,,Raw category code observed in official source; use the official description/codebook for meaning.
+Day of the week,2,,Raw category code observed in official source; use the official description/codebook for meaning.
+Day of the week,3,,Raw category code observed in official source; use the official description/codebook for meaning.
+Day of the week,4,,Raw category code observed in official source; use the official description/codebook for meaning.
+Day of the week,5,,Raw category code observed in official source; use the official description/codebook for meaning.
+Day of the week,6,,Raw category code observed in official source; use the official description/codebook for meaning.
+Seasons,1,,Raw category code observed in official source; use the official description/codebook for meaning.
+Seasons,2,,Raw category code observed in official source; use the official description/codebook for meaning.
+Seasons,3,,Raw category code observed in official source; use the official description/codebook for meaning.
+Seasons,4,,Raw category code observed in official source; use the official description/codebook for meaning.
+Transportation expense,118,,Raw category code observed in official source; use the official description/codebook for meaning.
+Transportation expense,155,,Raw category code observed in official source; use the official description/codebook for meaning.
+Transportation expense,157,,Raw category code observed in official source; use the official description/codebook for meaning.
+Transportation expense,179,,Raw category code observed in official source; use the official description/codebook for meaning.
+Transportation expense,184,,Raw category code observed in official source; use the official description/codebook for meaning.
+Transportation expense,189,,Raw category code observed in official source; use the official description/codebook for meaning.
+Transportation expense,225,,Raw category code observed in official source; use the official description/codebook for meaning.
+Transportation expense,228,,Raw category code observed in official source; use the official description/codebook for meaning.
+Transportation expense,231,,Raw category code observed in official source; use the official description/codebook for meaning.
+Transportation expense,233,,Raw category code observed in official source; use the official description/codebook for meaning.
+Transportation expense,235,,Raw category code observed in official source; use the official description/codebook for meaning.
+Transportation expense,246,,Raw category code observed in official source; use the official description/codebook for meaning.
+Transportation expense,248,,Raw category code observed in official source; use the official description/codebook for meaning.
+Transportation expense,260,,Raw category code observed in official source; use the official description/codebook for meaning.
+Transportation expense,268,,Raw category code observed in official source; use the official description/codebook for meaning.
+Transportation expense,279,,Raw category code observed in official source; use the official description/codebook for meaning.
+Transportation expense,289,,Raw category code observed in official source; use the official description/codebook for meaning.
+Transportation expense,291,,Raw category code observed in official source; use the official description/codebook for meaning.
+Transportation expense,300,,Raw category code observed in official source; use the official description/codebook for meaning.
+Transportation expense,330,,Raw category code observed in official source; use the official description/codebook for meaning.
+Transportation expense,361,,Raw category code observed in official source; use the official description/codebook for meaning.
+Transportation expense,369,,Raw category code observed in official source; use the official description/codebook for meaning.
+Transportation expense,378,,Raw category code observed in official source; use the official description/codebook for meaning.
+Transportation expense,388,,Raw category code observed in official source; use the official description/codebook for meaning.
+Distance from Residence to Work,10,,Raw category code observed in official source; use the official description/codebook for meaning.
+Distance from Residence to Work,11,,Raw category code observed in official source; use the official description/codebook for meaning.
+Distance from Residence to Work,12,,Raw category code observed in official source; use the official description/codebook for meaning.
+Distance from Residence to Work,13,,Raw category code observed in official source; use the official description/codebook for meaning.
+Distance from Residence to Work,14,,Raw category code observed in official source; use the official description/codebook for meaning.
+Distance from Residence to Work,15,,Raw category code observed in official source; use the official description/codebook for meaning.
+Distance from Residence to Work,16,,Raw category code observed in official source; use the official description/codebook for meaning.
+Distance from Residence to Work,17,,Raw category code observed in official source; use the official description/codebook for meaning.
+Distance from Residence to Work,20,,Raw category code observed in official source; use the official description/codebook for meaning.
+Distance from Residence to Work,22,,Raw category code observed in official source; use the official description/codebook for meaning.
+Distance from Residence to Work,25,,Raw category code observed in official source; use the official description/codebook for meaning.
+Distance from Residence to Work,26,,Raw category code observed in official source; use the official description/codebook for meaning.
+Distance from Residence to Work,27,,Raw category code observed in official source; use the official description/codebook for meaning.
+Distance from Residence to Work,29,,Raw category code observed in official source; use the official description/codebook for meaning.
+Distance from Residence to Work,31,,Raw category code observed in official source; use the official description/codebook for meaning.
+Distance from Residence to Work,35,,Raw category code observed in official source; use the official description/codebook for meaning.
+Distance from Residence to Work,36,,Raw category code observed in official source; use the official description/codebook for meaning.
+Distance from Residence to Work,42,,Raw category code observed in official source; use the official description/codebook for meaning.
+Distance from Residence to Work,45,,Raw category code observed in official source; use the official description/codebook for meaning.
+Distance from Residence to Work,48,,Raw category code observed in official source; use the official description/codebook for meaning.
+Distance from Residence to Work,49,,Raw category code observed in official source; use the official description/codebook for meaning.
+Distance from Residence to Work,5,,Raw category code observed in official source; use the official description/codebook for meaning.
+Distance from Residence to Work,50,,Raw category code observed in official source; use the official description/codebook for meaning.
+Distance from Residence to Work,51,,Raw category code observed in official source; use the official description/codebook for meaning.
+Distance from Residence to Work,52,,Raw category code observed in official source; use the official description/codebook for meaning.
+Service time,1,,Raw category code observed in official source; use the official description/codebook for meaning.
+Service time,10,,Raw category code observed in official source; use the official description/codebook for meaning.
+Service time,11,,Raw category code observed in official source; use the official description/codebook for meaning.
+Service time,12,,Raw category code observed in official source; use the official description/codebook for meaning.
+Service time,13,,Raw category code observed in official source; use the official description/codebook for meaning.
+Service time,14,,Raw category code observed in official source; use the official description/codebook for meaning.
+Service time,15,,Raw category code observed in official source; use the official description/codebook for meaning.
+Service time,16,,Raw category code observed in official source; use the official description/codebook for meaning.
+Service time,17,,Raw category code observed in official source; use the official description/codebook for meaning.
+Service time,18,,Raw category code observed in official source; use the official description/codebook for meaning.
+Service time,24,,Raw category code observed in official source; use the official description/codebook for meaning.
+Service time,29,,Raw category code observed in official source; use the official description/codebook for meaning.
+Service time,3,,Raw category code observed in official source; use the official description/codebook for meaning.
+Service time,4,,Raw category code observed in official source; use the official description/codebook for meaning.
+Service time,6,,Raw category code observed in official source; use the official description/codebook for meaning.
+Service time,7,,Raw category code observed in official source; use the official description/codebook for meaning.
+Service time,8,,Raw category code observed in official source; use the official description/codebook for meaning.
+Service time,9,,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,27,,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,28,,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,29,,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,30,,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,31,,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,32,,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,33,,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,34,,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,36,,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,37,,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,38,,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,39,,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,40,,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,41,,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,43,,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,46,,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,47,,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,48,,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,49,,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,50,,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,53,,Raw category code observed in official source; use the official description/codebook for meaning.
+Age,58,,Raw category code observed in official source; use the official description/codebook for meaning.
+Hit target,100,,Raw category code observed in official source; use the official description/codebook for meaning.
+Hit target,81,,Raw category code observed in official source; use the official description/codebook for meaning.
+Hit target,87,,Raw category code observed in official source; use the official description/codebook for meaning.
+Hit target,88,,Raw category code observed in official source; use the official description/codebook for meaning.
+Hit target,91,,Raw category code observed in official source; use the official description/codebook for meaning.
+Hit target,92,,Raw category code observed in official source; use the official description/codebook for meaning.
+Hit target,93,,Raw category code observed in official source; use the official description/codebook for meaning.
+Hit target,94,,Raw category code observed in official source; use the official description/codebook for meaning.
+Hit target,95,,Raw category code observed in official source; use the official description/codebook for meaning.
+Hit target,96,,Raw category code observed in official source; use the official description/codebook for meaning.
+Hit target,97,,Raw category code observed in official source; use the official description/codebook for meaning.
+Hit target,98,,Raw category code observed in official source; use the official description/codebook for meaning.
+Hit target,99,,Raw category code observed in official source; use the official description/codebook for meaning.
+Disciplinary failure,0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Disciplinary failure,1,,Raw category code observed in official source; use the official description/codebook for meaning.
+Education,1,,Raw category code observed in official source; use the official description/codebook for meaning.
+Education,2,,Raw category code observed in official source; use the official description/codebook for meaning.
+Education,3,,Raw category code observed in official source; use the official description/codebook for meaning.
+Education,4,,Raw category code observed in official source; use the official description/codebook for meaning.
+Son,0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Son,1,,Raw category code observed in official source; use the official description/codebook for meaning.
+Son,2,,Raw category code observed in official source; use the official description/codebook for meaning.
+Son,3,,Raw category code observed in official source; use the official description/codebook for meaning.
+Son,4,,Raw category code observed in official source; use the official description/codebook for meaning.
+Social drinker,0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Social drinker,1,,Raw category code observed in official source; use the official description/codebook for meaning.
+Social smoker,0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Social smoker,1,,Raw category code observed in official source; use the official description/codebook for meaning.
+Pet,0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Pet,1,,Raw category code observed in official source; use the official description/codebook for meaning.
+Pet,2,,Raw category code observed in official source; use the official description/codebook for meaning.
+Pet,4,,Raw category code observed in official source; use the official description/codebook for meaning.
+Pet,5,,Raw category code observed in official source; use the official description/codebook for meaning.
+Pet,8,,Raw category code observed in official source; use the official description/codebook for meaning.
+Height,163,,Raw category code observed in official source; use the official description/codebook for meaning.
+Height,165,,Raw category code observed in official source; use the official description/codebook for meaning.
+Height,167,,Raw category code observed in official source; use the official description/codebook for meaning.
+Height,168,,Raw category code observed in official source; use the official description/codebook for meaning.
+Height,169,,Raw category code observed in official source; use the official description/codebook for meaning.
+Height,170,,Raw category code observed in official source; use the official description/codebook for meaning.
+Height,171,,Raw category code observed in official source; use the official description/codebook for meaning.
+Height,172,,Raw category code observed in official source; use the official description/codebook for meaning.
+Height,174,,Raw category code observed in official source; use the official description/codebook for meaning.
+Height,175,,Raw category code observed in official source; use the official description/codebook for meaning.
+Height,178,,Raw category code observed in official source; use the official description/codebook for meaning.
+Height,182,,Raw category code observed in official source; use the official description/codebook for meaning.
+Height,185,,Raw category code observed in official source; use the official description/codebook for meaning.
+Height,196,,Raw category code observed in official source; use the official description/codebook for meaning.
+Body mass index,19,,Raw category code observed in official source; use the official description/codebook for meaning.
+Body mass index,21,,Raw category code observed in official source; use the official description/codebook for meaning.
+Body mass index,22,,Raw category code observed in official source; use the official description/codebook for meaning.
+Body mass index,23,,Raw category code observed in official source; use the official description/codebook for meaning.
+Body mass index,24,,Raw category code observed in official source; use the official description/codebook for meaning.
+Body mass index,25,,Raw category code observed in official source; use the official description/codebook for meaning.
+Body mass index,27,,Raw category code observed in official source; use the official description/codebook for meaning.
+Body mass index,28,,Raw category code observed in official source; use the official description/codebook for meaning.
+Body mass index,29,,Raw category code observed in official source; use the official description/codebook for meaning.
+Body mass index,30,,Raw category code observed in official source; use the official description/codebook for meaning.
+Body mass index,31,,Raw category code observed in official source; use the official description/codebook for meaning.
+Body mass index,32,,Raw category code observed in official source; use the official description/codebook for meaning.
+Body mass index,33,,Raw category code observed in official source; use the official description/codebook for meaning.
+Body mass index,34,,Raw category code observed in official source; use the official description/codebook for meaning.
+Body mass index,35,,Raw category code observed in official source; use the official description/codebook for meaning.
+Body mass index,36,,Raw category code observed in official source; use the official description/codebook for meaning.
+Body mass index,38,,Raw category code observed in official source; use the official description/codebook for meaning.
+Absenteeism time in hours,0,,Raw category code observed in official source; use the official description/codebook for meaning.
+Absenteeism time in hours,1,,Raw category code observed in official source; use the official description/codebook for meaning.
+Absenteeism time in hours,104,,Raw category code observed in official source; use the official description/codebook for meaning.
+Absenteeism time in hours,112,,Raw category code observed in official source; use the official description/codebook for meaning.
+Absenteeism time in hours,120,,Raw category code observed in official source; use the official description/codebook for meaning.
+Absenteeism time in hours,16,,Raw category code observed in official source; use the official description/codebook for meaning.
+Absenteeism time in hours,2,,Raw category code observed in official source; use the official description/codebook for meaning.
+Absenteeism time in hours,24,,Raw category code observed in official source; use the official description/codebook for meaning.
+Absenteeism time in hours,3,,Raw category code observed in official source; use the official description/codebook for meaning.
+Absenteeism time in hours,32,,Raw category code observed in official source; use the official description/codebook for meaning.
+Absenteeism time in hours,4,,Raw category code observed in official source; use the official description/codebook for meaning.
+Absenteeism time in hours,40,,Raw category code observed in official source; use the official description/codebook for meaning.
+Absenteeism time in hours,48,,Raw category code observed in official source; use the official description/codebook for meaning.
+Absenteeism time in hours,5,,Raw category code observed in official source; use the official description/codebook for meaning.
+Absenteeism time in hours,56,,Raw category code observed in official source; use the official description/codebook for meaning.
+Absenteeism time in hours,64,,Raw category code observed in official source; use the official description/codebook for meaning.
+Absenteeism time in hours,7,,Raw category code observed in official source; use the official description/codebook for meaning.
+Absenteeism time in hours,8,,Raw category code observed in official source; use the official description/codebook for meaning.
+Absenteeism time in hours,80,,Raw category code observed in official source; use the official description/codebook for meaning.

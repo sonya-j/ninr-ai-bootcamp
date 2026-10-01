@@ -1,0 +1,198 @@
+variable,code,official_description,label_status
+death,0,Death at any time up to National Death Index (NDI) data on 31 of December of 1994. Some patients are discharged before the end of the study and are not followed up. The authors looked up the information about death.,Raw category code observed in official source; use the official description/codebook for meaning.
+death,1,Death at any time up to National Death Index (NDI) data on 31 of December of 1994. Some patients are discharged before the end of the study and are not followed up. The authors looked up the information about death.,Raw category code observed in official source; use the official description/codebook for meaning.
+sex,female,"Gender of the patient. Listed values are {male, female}.",Raw category code observed in official source; use the official description/codebook for meaning.
+sex,male,"Gender of the patient. Listed values are {male, female}.",Raw category code observed in official source; use the official description/codebook for meaning.
+hospdead,0,Death in hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+hospdead,1,Death in hospital,Raw category code observed in official source; use the official description/codebook for meaning.
+dzgroup,ARF/MOSF w/Sepsis,"The patient's disease sub category amogst ARF/MOSF w/Sepsis, CHF, COPD, Cirrhosis, Colon Cancer, Coma, Lung Cancer, MOSF w/Malig.",Raw category code observed in official source; use the official description/codebook for meaning.
+dzgroup,CHF,"The patient's disease sub category amogst ARF/MOSF w/Sepsis, CHF, COPD, Cirrhosis, Colon Cancer, Coma, Lung Cancer, MOSF w/Malig.",Raw category code observed in official source; use the official description/codebook for meaning.
+dzgroup,COPD,"The patient's disease sub category amogst ARF/MOSF w/Sepsis, CHF, COPD, Cirrhosis, Colon Cancer, Coma, Lung Cancer, MOSF w/Malig.",Raw category code observed in official source; use the official description/codebook for meaning.
+dzgroup,Cirrhosis,"The patient's disease sub category amogst ARF/MOSF w/Sepsis, CHF, COPD, Cirrhosis, Colon Cancer, Coma, Lung Cancer, MOSF w/Malig.",Raw category code observed in official source; use the official description/codebook for meaning.
+dzgroup,Colon Cancer,"The patient's disease sub category amogst ARF/MOSF w/Sepsis, CHF, COPD, Cirrhosis, Colon Cancer, Coma, Lung Cancer, MOSF w/Malig.",Raw category code observed in official source; use the official description/codebook for meaning.
+dzgroup,Coma,"The patient's disease sub category amogst ARF/MOSF w/Sepsis, CHF, COPD, Cirrhosis, Colon Cancer, Coma, Lung Cancer, MOSF w/Malig.",Raw category code observed in official source; use the official description/codebook for meaning.
+dzgroup,Lung Cancer,"The patient's disease sub category amogst ARF/MOSF w/Sepsis, CHF, COPD, Cirrhosis, Colon Cancer, Coma, Lung Cancer, MOSF w/Malig.",Raw category code observed in official source; use the official description/codebook for meaning.
+dzgroup,MOSF w/Malig,"The patient's disease sub category amogst ARF/MOSF w/Sepsis, CHF, COPD, Cirrhosis, Colon Cancer, Coma, Lung Cancer, MOSF w/Malig.",Raw category code observed in official source; use the official description/codebook for meaning.
+dzclass,ARF/MOSF,"The patient's disease category amongst ""ARF/MOSF"", ""COPD/CHF/Cirrhosis"", ""Cancer"", ""Coma"".",Raw category code observed in official source; use the official description/codebook for meaning.
+dzclass,COPD/CHF/Cirrhosis,"The patient's disease category amongst ""ARF/MOSF"", ""COPD/CHF/Cirrhosis"", ""Cancer"", ""Coma"".",Raw category code observed in official source; use the official description/codebook for meaning.
+dzclass,Cancer,"The patient's disease category amongst ""ARF/MOSF"", ""COPD/CHF/Cirrhosis"", ""Cancer"", ""Coma"".",Raw category code observed in official source; use the official description/codebook for meaning.
+dzclass,Coma,"The patient's disease category amongst ""ARF/MOSF"", ""COPD/CHF/Cirrhosis"", ""Cancer"", ""Coma"".",Raw category code observed in official source; use the official description/codebook for meaning.
+num.co,0,The number of simultaneous diseases (or comorbidities) exhibited by the patient. Values are ordinal with higher values indicating worse condition and chances of survival.,Raw category code observed in official source; use the official description/codebook for meaning.
+num.co,1,The number of simultaneous diseases (or comorbidities) exhibited by the patient. Values are ordinal with higher values indicating worse condition and chances of survival.,Raw category code observed in official source; use the official description/codebook for meaning.
+num.co,2,The number of simultaneous diseases (or comorbidities) exhibited by the patient. Values are ordinal with higher values indicating worse condition and chances of survival.,Raw category code observed in official source; use the official description/codebook for meaning.
+num.co,3,The number of simultaneous diseases (or comorbidities) exhibited by the patient. Values are ordinal with higher values indicating worse condition and chances of survival.,Raw category code observed in official source; use the official description/codebook for meaning.
+num.co,4,The number of simultaneous diseases (or comorbidities) exhibited by the patient. Values are ordinal with higher values indicating worse condition and chances of survival.,Raw category code observed in official source; use the official description/codebook for meaning.
+num.co,5,The number of simultaneous diseases (or comorbidities) exhibited by the patient. Values are ordinal with higher values indicating worse condition and chances of survival.,Raw category code observed in official source; use the official description/codebook for meaning.
+num.co,6,The number of simultaneous diseases (or comorbidities) exhibited by the patient. Values are ordinal with higher values indicating worse condition and chances of survival.,Raw category code observed in official source; use the official description/codebook for meaning.
+num.co,7,The number of simultaneous diseases (or comorbidities) exhibited by the patient. Values are ordinal with higher values indicating worse condition and chances of survival.,Raw category code observed in official source; use the official description/codebook for meaning.
+num.co,8,The number of simultaneous diseases (or comorbidities) exhibited by the patient. Values are ordinal with higher values indicating worse condition and chances of survival.,Raw category code observed in official source; use the official description/codebook for meaning.
+num.co,9,The number of simultaneous diseases (or comorbidities) exhibited by the patient. Values are ordinal with higher values indicating worse condition and chances of survival.,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,0,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,1,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,10,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,11,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,12,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,13,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,14,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,15,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,16,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,17,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,18,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,19,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,2,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,20,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,21,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,22,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,23,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,24,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,25,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,26,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,27,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,28,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,3,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,30,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,31,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,4,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,5,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,6,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,7,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,8,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+edu,9,Years of education,Raw category code observed in official source; use the official description/codebook for meaning.
+income,$11-$25k,"Income of the patient. Listed values are {""$11-$25k"", ""$25-$50k"", "">$50k"", ""under $11k""}.",Raw category code observed in official source; use the official description/codebook for meaning.
+income,$25-$50k,"Income of the patient. Listed values are {""$11-$25k"", ""$25-$50k"", "">$50k"", ""under $11k""}.",Raw category code observed in official source; use the official description/codebook for meaning.
+income,>$50k,"Income of the patient. Listed values are {""$11-$25k"", ""$25-$50k"", "">$50k"", ""under $11k""}.",Raw category code observed in official source; use the official description/codebook for meaning.
+income,under $11k,"Income of the patient. Listed values are {""$11-$25k"", ""$25-$50k"", "">$50k"", ""under $11k""}.",Raw category code observed in official source; use the official description/codebook for meaning.
+scoma,0,SUPPORT day 3 Coma Score based on Glasgow scale (predicted by a model).,Raw category code observed in official source; use the official description/codebook for meaning.
+scoma,100,SUPPORT day 3 Coma Score based on Glasgow scale (predicted by a model).,Raw category code observed in official source; use the official description/codebook for meaning.
+scoma,26,SUPPORT day 3 Coma Score based on Glasgow scale (predicted by a model).,Raw category code observed in official source; use the official description/codebook for meaning.
+scoma,37,SUPPORT day 3 Coma Score based on Glasgow scale (predicted by a model).,Raw category code observed in official source; use the official description/codebook for meaning.
+scoma,41,SUPPORT day 3 Coma Score based on Glasgow scale (predicted by a model).,Raw category code observed in official source; use the official description/codebook for meaning.
+scoma,44,SUPPORT day 3 Coma Score based on Glasgow scale (predicted by a model).,Raw category code observed in official source; use the official description/codebook for meaning.
+scoma,55,SUPPORT day 3 Coma Score based on Glasgow scale (predicted by a model).,Raw category code observed in official source; use the official description/codebook for meaning.
+scoma,61,SUPPORT day 3 Coma Score based on Glasgow scale (predicted by a model).,Raw category code observed in official source; use the official description/codebook for meaning.
+scoma,89,SUPPORT day 3 Coma Score based on Glasgow scale (predicted by a model).,Raw category code observed in official source; use the official description/codebook for meaning.
+scoma,9,SUPPORT day 3 Coma Score based on Glasgow scale (predicted by a model).,Raw category code observed in official source; use the official description/codebook for meaning.
+scoma,94,SUPPORT day 3 Coma Score based on Glasgow scale (predicted by a model).,Raw category code observed in official source; use the official description/codebook for meaning.
+race,asian,"Race of the patient. Listed values are {asian, black, hispanic, missing, other, white}.",Raw category code observed in official source; use the official description/codebook for meaning.
+race,black,"Race of the patient. Listed values are {asian, black, hispanic, missing, other, white}.",Raw category code observed in official source; use the official description/codebook for meaning.
+race,hispanic,"Race of the patient. Listed values are {asian, black, hispanic, missing, other, white}.",Raw category code observed in official source; use the official description/codebook for meaning.
+race,other,"Race of the patient. Listed values are {asian, black, hispanic, missing, other, white}.",Raw category code observed in official source; use the official description/codebook for meaning.
+race,white,"Race of the patient. Listed values are {asian, black, hispanic, missing, other, white}.",Raw category code observed in official source; use the official description/codebook for meaning.
+diabetes,0,"Whether the patient exhibits diabetes (Com 27-28, Dx 73) as a comorbidity (Y) or not (N).",Raw category code observed in official source; use the official description/codebook for meaning.
+diabetes,1,"Whether the patient exhibits diabetes (Com 27-28, Dx 73) as a comorbidity (Y) or not (N).",Raw category code observed in official source; use the official description/codebook for meaning.
+dementia,0,Whether the patient exhibits dementia (Comorbidity 6) as a comorbidity (Y) or not (N).,Raw category code observed in official source; use the official description/codebook for meaning.
+dementia,1,Whether the patient exhibits dementia (Comorbidity 6) as a comorbidity (Y) or not (N).,Raw category code observed in official source; use the official description/codebook for meaning.
+ca,metastatic,"Whether the patient has cancer (yes), whether it has spread out (metastatic), or if it is healthy (no).",Raw category code observed in official source; use the official description/codebook for meaning.
+ca,no,"Whether the patient has cancer (yes), whether it has spread out (metastatic), or if it is healthy (no).",Raw category code observed in official source; use the official description/codebook for meaning.
+ca,yes,"Whether the patient has cancer (yes), whether it has spread out (metastatic), or if it is healthy (no).",Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,0.00E+00,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,1.00E+00,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,1.00E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,1.00E-02,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,1.00E-03,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,1.00E-06,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,1.20E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,1.25E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,1.25E-04,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,1.50E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,1.56E-02,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,1.80E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,1.90E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,2.00E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,2.00E-02,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,2.16E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,2.16E-04,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,2.30E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,2.40E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,2.50E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,2.70E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,2.70E-02,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,2.70E-05,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,2.80E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,3.00E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,3.00E-02,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,3.30E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,3.37E-03,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,3.43E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,3.43E-04,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,3.50E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,3.90E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,4.00E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,4.00E-02,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,4.22E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,4.50E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,4.70E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,4.80E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,4.90E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,5.00E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,5.00E-02,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,5.10E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,5.12E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,5.12E-04,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,5.50E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,5.80E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,6.00E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,6.00E-02,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,6.10E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,6.14E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,6.40E-02,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,6.40E-05,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,6.50E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,6.60E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,6.80E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,7.00E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,7.00E-02,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,7.29E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,7.29E-04,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,7.40E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,7.50E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,7.70E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,7.80E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,8.00E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,8.00E-02,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,8.00E-03,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,8.00E-06,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,8.20E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,8.30E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,8.40E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,8.50E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,8.57E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,8.70E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,8.80E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,8.90E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,9.00E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,9.00E-02,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,9.10E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,9.20E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,9.30E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,9.40E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,9.41E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,9.50E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,9.60E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,9.70E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,9.80E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+prg6m,9.90E-01,Physician’s 6-month survival estimate for patient.,Raw category code observed in official source; use the official description/codebook for meaning.
+dnr,dnr after sadm,"Whether the patient has a do not rescuscitate (DNR) order or not. Possible values are dnr after sadm, dnr before sadm, missing, no dnr.",Raw category code observed in official source; use the official description/codebook for meaning.
+dnr,dnr before sadm,"Whether the patient has a do not rescuscitate (DNR) order or not. Possible values are dnr after sadm, dnr before sadm, missing, no dnr.",Raw category code observed in official source; use the official description/codebook for meaning.
+dnr,no dnr,"Whether the patient has a do not rescuscitate (DNR) order or not. Possible values are dnr after sadm, dnr before sadm, missing, no dnr.",Raw category code observed in official source; use the official description/codebook for meaning.
+adlp,0,"Index of Activities of Daily Living (ADL) of the patient, filled out by the patient. Higher values indicate more chance of survival, measured at day 3.",Raw category code observed in official source; use the official description/codebook for meaning.
+adlp,1,"Index of Activities of Daily Living (ADL) of the patient, filled out by the patient. Higher values indicate more chance of survival, measured at day 3.",Raw category code observed in official source; use the official description/codebook for meaning.
+adlp,2,"Index of Activities of Daily Living (ADL) of the patient, filled out by the patient. Higher values indicate more chance of survival, measured at day 3.",Raw category code observed in official source; use the official description/codebook for meaning.
+adlp,3,"Index of Activities of Daily Living (ADL) of the patient, filled out by the patient. Higher values indicate more chance of survival, measured at day 3.",Raw category code observed in official source; use the official description/codebook for meaning.
+adlp,4,"Index of Activities of Daily Living (ADL) of the patient, filled out by the patient. Higher values indicate more chance of survival, measured at day 3.",Raw category code observed in official source; use the official description/codebook for meaning.
+adlp,5,"Index of Activities of Daily Living (ADL) of the patient, filled out by the patient. Higher values indicate more chance of survival, measured at day 3.",Raw category code observed in official source; use the official description/codebook for meaning.
+adlp,6,"Index of Activities of Daily Living (ADL) of the patient, filled out by the patient. Higher values indicate more chance of survival, measured at day 3.",Raw category code observed in official source; use the official description/codebook for meaning.
+adlp,7,"Index of Activities of Daily Living (ADL) of the patient, filled out by the patient. Higher values indicate more chance of survival, measured at day 3.",Raw category code observed in official source; use the official description/codebook for meaning.
+adls,0,"Index of Activities of Daily Living (ADL) of the patient, filled out by a surrogate (e.g. family member), measured at day 3. Higher values indicate more chance of survival.",Raw category code observed in official source; use the official description/codebook for meaning.
+adls,1,"Index of Activities of Daily Living (ADL) of the patient, filled out by a surrogate (e.g. family member), measured at day 3. Higher values indicate more chance of survival.",Raw category code observed in official source; use the official description/codebook for meaning.
+adls,2,"Index of Activities of Daily Living (ADL) of the patient, filled out by a surrogate (e.g. family member), measured at day 3. Higher values indicate more chance of survival.",Raw category code observed in official source; use the official description/codebook for meaning.
+adls,3,"Index of Activities of Daily Living (ADL) of the patient, filled out by a surrogate (e.g. family member), measured at day 3. Higher values indicate more chance of survival.",Raw category code observed in official source; use the official description/codebook for meaning.
+adls,4,"Index of Activities of Daily Living (ADL) of the patient, filled out by a surrogate (e.g. family member), measured at day 3. Higher values indicate more chance of survival.",Raw category code observed in official source; use the official description/codebook for meaning.
+adls,5,"Index of Activities of Daily Living (ADL) of the patient, filled out by a surrogate (e.g. family member), measured at day 3. Higher values indicate more chance of survival.",Raw category code observed in official source; use the official description/codebook for meaning.
+adls,6,"Index of Activities of Daily Living (ADL) of the patient, filled out by a surrogate (e.g. family member), measured at day 3. Higher values indicate more chance of survival.",Raw category code observed in official source; use the official description/codebook for meaning.
+adls,7,"Index of Activities of Daily Living (ADL) of the patient, filled out by a surrogate (e.g. family member), measured at day 3. Higher values indicate more chance of survival.",Raw category code observed in official source; use the official description/codebook for meaning.
+sfdm2,<2 mo. follow-up,"Level of functional disability of the patient in a 1-5 scale, with 5 being the highest severity. The values were obtained via questionairres to the patient and/or surrogates to determine the Sickness Profile Impact (SIP). Values are correlated with ADLS, ADLP columns. Listed values are: {1: ""no(Month 2 and SIP pres)"", ""adl>=4 (>=5 if sur)"", ""SIP>=30"", ""Coma or Intub"", 5: ""<2 mo. follow-up""}. There are 159 patients surviving 2 months for whom there were no patient or surrogate interviews. These patients have missing sfdm2.",Raw category code observed in official source; use the official description/codebook for meaning.
+sfdm2,Coma or Intub,"Level of functional disability of the patient in a 1-5 scale, with 5 being the highest severity. The values were obtained via questionairres to the patient and/or surrogates to determine the Sickness Profile Impact (SIP). Values are correlated with ADLS, ADLP columns. Listed values are: {1: ""no(Month 2 and SIP pres)"", ""adl>=4 (>=5 if sur)"", ""SIP>=30"", ""Coma or Intub"", 5: ""<2 mo. follow-up""}. There are 159 patients surviving 2 months for whom there were no patient or surrogate interviews. These patients have missing sfdm2.",Raw category code observed in official source; use the official description/codebook for meaning.
+sfdm2,SIP>=30,"Level of functional disability of the patient in a 1-5 scale, with 5 being the highest severity. The values were obtained via questionairres to the patient and/or surrogates to determine the Sickness Profile Impact (SIP). Values are correlated with ADLS, ADLP columns. Listed values are: {1: ""no(Month 2 and SIP pres)"", ""adl>=4 (>=5 if sur)"", ""SIP>=30"", ""Coma or Intub"", 5: ""<2 mo. follow-up""}. There are 159 patients surviving 2 months for whom there were no patient or surrogate interviews. These patients have missing sfdm2.",Raw category code observed in official source; use the official description/codebook for meaning.
+sfdm2,adl>=4 (>=5 if sur),"Level of functional disability of the patient in a 1-5 scale, with 5 being the highest severity. The values were obtained via questionairres to the patient and/or surrogates to determine the Sickness Profile Impact (SIP). Values are correlated with ADLS, ADLP columns. Listed values are: {1: ""no(Month 2 and SIP pres)"", ""adl>=4 (>=5 if sur)"", ""SIP>=30"", ""Coma or Intub"", 5: ""<2 mo. follow-up""}. There are 159 patients surviving 2 months for whom there were no patient or surrogate interviews. These patients have missing sfdm2.",Raw category code observed in official source; use the official description/codebook for meaning.
+sfdm2,no(M2 and SIP pres),"Level of functional disability of the patient in a 1-5 scale, with 5 being the highest severity. The values were obtained via questionairres to the patient and/or surrogates to determine the Sickness Profile Impact (SIP). Values are correlated with ADLS, ADLP columns. Listed values are: {1: ""no(Month 2 and SIP pres)"", ""adl>=4 (>=5 if sur)"", ""SIP>=30"", ""Coma or Intub"", 5: ""<2 mo. follow-up""}. There are 159 patients surviving 2 months for whom there were no patient or surrogate interviews. These patients have missing sfdm2.",Raw category code observed in official source; use the official description/codebook for meaning.

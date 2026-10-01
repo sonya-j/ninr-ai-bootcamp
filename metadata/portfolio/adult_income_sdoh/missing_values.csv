@@ -1,0 +1,4 @@
+variable,raw_missing_symbols,raw_missing_count,participant_representation
+workclass,"["""", ""NaN"", ""?""]",2799,blank/NA
+occupation,"["""", ""NaN"", ""?""]",2809,blank/NA
+native-country,"["""", ""NaN"", ""?""]",857,blank/NA

@@ -1,0 +1,31 @@
+variable,code,official_description,label_status
+Gender,Female,,Raw category code observed in official source; use the official description/codebook for meaning.
+Gender,Male,,Raw category code observed in official source; use the official description/codebook for meaning.
+family_history_with_overweight,no,Has a family member suffered or suffers from overweight?,Raw category code observed in official source; use the official description/codebook for meaning.
+family_history_with_overweight,yes,Has a family member suffered or suffers from overweight?,Raw category code observed in official source; use the official description/codebook for meaning.
+FAVC,no,Do you eat high caloric food frequently?,Raw category code observed in official source; use the official description/codebook for meaning.
+FAVC,yes,Do you eat high caloric food frequently?,Raw category code observed in official source; use the official description/codebook for meaning.
+CAEC,Always,Do you eat any food between meals?,Raw category code observed in official source; use the official description/codebook for meaning.
+CAEC,Frequently,Do you eat any food between meals?,Raw category code observed in official source; use the official description/codebook for meaning.
+CAEC,Sometimes,Do you eat any food between meals?,Raw category code observed in official source; use the official description/codebook for meaning.
+CAEC,no,Do you eat any food between meals?,Raw category code observed in official source; use the official description/codebook for meaning.
+SMOKE,no,Do you smoke?,Raw category code observed in official source; use the official description/codebook for meaning.
+SMOKE,yes,Do you smoke?,Raw category code observed in official source; use the official description/codebook for meaning.
+SCC,no,Do you monitor the calories you eat daily?,Raw category code observed in official source; use the official description/codebook for meaning.
+SCC,yes,Do you monitor the calories you eat daily?,Raw category code observed in official source; use the official description/codebook for meaning.
+CALC,Always,How often do you drink alcohol?,Raw category code observed in official source; use the official description/codebook for meaning.
+CALC,Frequently,How often do you drink alcohol?,Raw category code observed in official source; use the official description/codebook for meaning.
+CALC,Sometimes,How often do you drink alcohol?,Raw category code observed in official source; use the official description/codebook for meaning.
+CALC,no,How often do you drink alcohol?,Raw category code observed in official source; use the official description/codebook for meaning.
+MTRANS,Automobile,Which transportation do you usually use?,Raw category code observed in official source; use the official description/codebook for meaning.
+MTRANS,Bike,Which transportation do you usually use?,Raw category code observed in official source; use the official description/codebook for meaning.
+MTRANS,Motorbike,Which transportation do you usually use?,Raw category code observed in official source; use the official description/codebook for meaning.
+MTRANS,Public_Transportation,Which transportation do you usually use?,Raw category code observed in official source; use the official description/codebook for meaning.
+MTRANS,Walking,Which transportation do you usually use?,Raw category code observed in official source; use the official description/codebook for meaning.
+NObeyesdad,Insufficient_Weight,Obesity level,Raw category code observed in official source; use the official description/codebook for meaning.
+NObeyesdad,Normal_Weight,Obesity level,Raw category code observed in official source; use the official description/codebook for meaning.
+NObeyesdad,Obesity_Type_I,Obesity level,Raw category code observed in official source; use the official description/codebook for meaning.
+NObeyesdad,Obesity_Type_II,Obesity level,Raw category code observed in official source; use the official description/codebook for meaning.
+NObeyesdad,Obesity_Type_III,Obesity level,Raw category code observed in official source; use the official description/codebook for meaning.
+NObeyesdad,Overweight_Level_I,Obesity level,Raw category code observed in official source; use the official description/codebook for meaning.
+NObeyesdad,Overweight_Level_II,Obesity level,Raw category code observed in official source; use the official description/codebook for meaning.

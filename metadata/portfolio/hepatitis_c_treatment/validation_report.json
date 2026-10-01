@@ -1,0 +1,62 @@
+{
+  "dataset": "hepatitis_c_treatment",
+  "validated_at": "2026-10-01T17:31:12.439611+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "name": "official source has rows",
+      "passed": true,
+      "detail": "observed 1385"
+    },
+    {
+      "name": "row count agrees with official metadata",
+      "passed": true,
+      "detail": "metadata=1385, expected official CSV=1385, observed=1385"
+    },
+    {
+      "name": "participant row range",
+      "passed": true,
+      "detail": "observed 1385"
+    },
+    {
+      "name": "participant variable range",
+      "passed": true,
+      "detail": "observed 30 including derived ID"
+    },
+    {
+      "name": "derived row ID unique",
+      "passed": true,
+      "detail": "portfolio_row_id is unique"
+    },
+    {
+      "name": "dictionary covers participant",
+      "passed": true,
+      "detail": "all participant variables documented"
+    },
+    {
+      "name": "raw missing codes removed from participant file",
+      "passed": true,
+      "detail": "{}"
+    },
+    {
+      "name": "participant hash matches provenance",
+      "passed": true,
+      "detail": "checksum verified"
+    },
+    {
+      "name": "raw hash matches provenance",
+      "passed": true,
+      "detail": "checksum verified"
+    },
+    {
+      "name": "official URL recorded",
+      "passed": true,
+      "detail": "https://archive.ics.uci.edu/static/public/503/data.csv"
+    },
+    {
+      "name": "official target retained",
+      "passed": true,
+      "detail": "targets=['baselinehistological staging']"
+    }
+  ]
+}

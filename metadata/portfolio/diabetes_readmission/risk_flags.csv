@@ -1,0 +1,17 @@
+variable,risk_flags,note
+encounter_id,identifier_leakage,Identifier; do not use as a model predictor.
+patient_nbr,identifier_leakage,Identifier; do not use as a model predictor.
+race,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+gender,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+age,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+discharge_disposition_id,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+time_in_hospital,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+num_lab_procedures,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+num_procedures,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+num_medications,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+max_glu_serum,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+A1Cresult,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+insulin,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+change,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+diabetesMed,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+readmitted,outcome|target_leakage,Official target; do not use to predict itself or another directly derived outcome.

@@ -1,0 +1,69 @@
+{
+  "uci_id": 2,
+  "title": "Adult",
+  "official_source": "UCI Machine Learning Repository",
+  "repository_url": "https://archive.ics.uci.edu/dataset/2/adult",
+  "data_url": "https://archive.ics.uci.edu/static/public/2/data.csv",
+  "dataset_doi": "10.24432/C5XW20",
+  "dataset_year": 1996,
+  "current_record_version": "UCI record last updated Tue Sep 24 2024",
+  "access_date": "2026-10-01",
+  "license": null,
+  "raw_data_sha256": "26b38f8623766396e2ba0d1a235a283db8ed993cc32bf32fc8aab09708c3bdf2",
+  "official_metadata_sha256": "8f619327b01636beca9a711e3a81e9cce7fcf8871601f1b84dc6f14e7c5a1cf8",
+  "raw_rows": 48842,
+  "raw_columns": 15,
+  "participant_rows": 5000,
+  "participant_columns": 16,
+  "participant_sha256": "10652a31d13611947e1c34caba6dafc4907377c088d0e499245819569ddf32a0",
+  "selected_variables": [
+    "portfolio_row_id",
+    "age",
+    "workclass",
+    "education",
+    "education-num",
+    "marital-status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native-country",
+    "income",
+    "fnlwgt",
+    "capital-gain",
+    "capital-loss",
+    "hours-per-week"
+  ],
+  "missing_value_codes": [
+    "",
+    "NaN",
+    "?"
+  ],
+  "weighting_variables": [
+    "fnlwgt"
+  ],
+  "outcomes": [
+    {
+      "variable": "income",
+      "description": ">50K, <=50K.",
+      "observed_values": [
+        "<=50K",
+        "<=50K.",
+        ">50K",
+        ">50K."
+      ]
+    }
+  ],
+  "transformations": [
+    "Downloaded the official UCI normalized CSV and API metadata without modifying the raw files.",
+    "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
+    "Converted documented source missing symbols to blank/NA only in the participant derivative.",
+    "Selected 5000 rows by deterministic SHA-256 rank using the portfolio seed.",
+    "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
+  ],
+  "software": {
+    "python": "3.14.7",
+    "pandas": "2.3.3",
+    "platform": "Windows-11-10.0.26100-SP0"
+  }
+}

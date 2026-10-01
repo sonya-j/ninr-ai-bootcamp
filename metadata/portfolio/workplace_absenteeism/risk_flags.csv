@@ -1,0 +1,7 @@
+variable,risk_flags,note
+ID,identifier_leakage,Identifier; do not use as a model predictor.
+Reason for absence,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+Age,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+Education,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+Son,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+Absenteeism time in hours,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.

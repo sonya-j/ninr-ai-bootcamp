@@ -1,0 +1,68 @@
+{
+  "uci_id": 329,
+  "title": "Diabetic Retinopathy Debrecen",
+  "official_source": "UCI Machine Learning Repository",
+  "repository_url": "https://archive.ics.uci.edu/dataset/329/diabetic+retinopathy+debrecen",
+  "data_url": "https://archive.ics.uci.edu/static/public/329/data.csv",
+  "dataset_doi": "10.24432/C5XP4P",
+  "dataset_year": 2014,
+  "current_record_version": "UCI record last updated Fri Nov 03 2023",
+  "access_date": "2026-10-01",
+  "license": null,
+  "raw_data_sha256": "2636b73e6830e9d5f5967a286766b5d39f48a7bf40761e9621bcd5d79a2aa527",
+  "official_metadata_sha256": "24b9b2e6a01d58cdffee8d2f4c2b9621042f48e0df606d5564a94ee8a406e495",
+  "raw_rows": 1151,
+  "raw_columns": 20,
+  "participant_rows": 1151,
+  "participant_columns": 21,
+  "participant_sha256": "212dee501ae55863d8c705a2eb67aea91f728fe23798db4ac5e1c872292f10cd",
+  "selected_variables": [
+    "portfolio_row_id",
+    "Class",
+    "quality",
+    "pre_screening",
+    "ma1",
+    "ma2",
+    "ma3",
+    "ma4",
+    "ma5",
+    "ma6",
+    "exudate1",
+    "exudate2",
+    "exudate3",
+    "exudate5",
+    "exudate6",
+    "exudate7",
+    "exudate8",
+    "macula_opticdisc_distance",
+    "opticdisc_diameter",
+    "am_fm_classification",
+    "exudate3.1"
+  ],
+  "missing_value_codes": [
+    ""
+  ],
+  "weighting_variables": [],
+  "outcomes": [
+    {
+      "variable": "Class",
+      "description": "Class label. 1 = contains signs of DR (Accumulative label for the Messidor classes 1, 2, 3), 0 = no signs of DR.",
+      "observed_values": [
+        "0",
+        "1"
+      ]
+    }
+  ],
+  "transformations": [
+    "Downloaded the official UCI normalized CSV and API metadata without modifying the raw files.",
+    "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
+    "Converted documented source missing symbols to blank/NA only in the participant derivative.",
+    "Selected 1151 rows by deterministic SHA-256 rank using the portfolio seed.",
+    "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
+  ],
+  "software": {
+    "python": "3.14.7",
+    "pandas": "2.3.3",
+    "platform": "Windows-11-10.0.26100-SP0"
+  }
+}

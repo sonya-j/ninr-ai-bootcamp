@@ -1,0 +1,9 @@
+variable,risk_flags,note
+SubjectID,identifier_leakage,Identifier; do not use as a model predictor.
+aveOralF,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.
+aveOralM,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.
+Gender,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+Age,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+Ethnicity,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+T_OR1,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+T_OR_Max1,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.

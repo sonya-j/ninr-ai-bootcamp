@@ -1,0 +1,15 @@
+variable,selected_for_participant,role,type,demographic,description,units,official_missing_values,official_missing_symbol,observed_codes,weighting_variable,risk_flags,risk_note,definition_source
+portfolio_row_id,True,Derived ID,Integer,,Sequential row identifier assigned after deterministic sampling.,,no,[],[],False,identifier_leakage,Derived identifier; do not use as a model predictor.,NINR portfolio deterministic transformation
+No,True,ID,Integer,,,,no,"["""", ""NaN""]",[],False,identifier_leakage,Identifier; do not use as a model predictor.,"UCI API metadata, dataset 381"
+year,True,Feature,Integer,,,,no,"["""", ""NaN""]","[""2010"", ""2011"", ""2012"", ""2013"", ""2014""]",False,,,"UCI API metadata, dataset 381"
+month,True,Feature,Integer,,,,no,"["""", ""NaN""]","[""1"", ""10"", ""11"", ""12"", ""2"", ""3"", ""4"", ""5"", ""6"", ""7"", ""8"", ""9""]",False,,,"UCI API metadata, dataset 381"
+day,True,Feature,Integer,,,,no,"["""", ""NaN""]",[],False,,,"UCI API metadata, dataset 381"
+hour,True,Feature,Integer,,,,no,"["""", ""NaN""]","[""0"", ""1"", ""10"", ""11"", ""12"", ""13"", ""14"", ""15"", ""16"", ""17"", ""18"", ""19"", ""2"", ""20"", ""21"", ""22"", ""23"", ""3"", ""4"", ""5"", ""6"", ""7"", ""8"", ""9""]",False,,,"UCI API metadata, dataset 381"
+pm2.5,True,Target,Integer,,,,yes,"["""", ""NaN""]",[],False,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.,"UCI API metadata, dataset 381"
+DEWP,True,Feature,Integer,,,,no,"["""", ""NaN""]",[],False,,,"UCI API metadata, dataset 381"
+TEMP,True,Feature,Integer,,,,no,"["""", ""NaN""]",[],False,,,"UCI API metadata, dataset 381"
+PRES,True,Feature,Integer,,,,no,"["""", ""NaN""]",[],False,,,"UCI API metadata, dataset 381"
+cbwd,True,Feature,Categorical,,,,no,"["""", ""NaN""]","[""NE"", ""NW"", ""SE"", ""cv""]",False,,,"UCI API metadata, dataset 381"
+Iws,True,Feature,Continuous,,,,no,"["""", ""NaN""]",[],False,,,"UCI API metadata, dataset 381"
+Is,True,Feature,Integer,,,,no,"["""", ""NaN""]",[],False,,,"UCI API metadata, dataset 381"
+Ir,True,Feature,Integer,,,,no,"["""", ""NaN""]",[],False,,,"UCI API metadata, dataset 381"

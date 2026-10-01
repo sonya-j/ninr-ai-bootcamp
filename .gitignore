@@ -3,3 +3,7 @@ __pycache__/
 .venv/
 .ipynb_checkpoints/
 .pytest_cache/
+data/raw/portfolio/
+uci_catalog.json
+uci_health_catalog.json
+candidate_metadata*.json

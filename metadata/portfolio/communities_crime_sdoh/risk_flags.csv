@@ -1,0 +1,21 @@
+variable,risk_flags,note
+racepctblack,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+racePctWhite,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+racePctAsian,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+racePctHisp,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+agePct12t21,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+agePct12t29,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+agePct16t24,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+agePct65up,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+medIncome,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+pctWWage,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+whitePerCap,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+blackPerCap,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+indianPerCap,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+AsianPerCap,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+OtherPerCap,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+HispPerCap,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+PctOccupManu,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+PctOccupMgmtProf,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+PctForeignBorn,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+ViolentCrimesPerPop,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.

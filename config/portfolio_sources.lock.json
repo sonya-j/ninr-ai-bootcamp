@@ -1,0 +1,225 @@
+{
+  "access_date": "2026-10-01",
+  "datasets": [
+    {
+      "slug": "diabetes_readmission",
+      "uci_id": 296,
+      "name": "Diabetes 130-US Hospitals for Years 1999-2008",
+      "data_url": "https://archive.ics.uci.edu/static/public/296/data.csv",
+      "repository_url": "https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999-2008",
+      "dataset_year": 2014,
+      "last_updated": "Tue Sep 24 2024",
+      "data_sha256": "f792c388d9b470aac4fbf21c39b176534d55a116e7626881c30bbe7ab0341422",
+      "metadata_sha256": "6e6e0934d175afe24f54f2199f9895eab21844205fe46be7970c106a104725e9"
+    },
+    {
+      "slug": "support2_serious_illness",
+      "uci_id": 880,
+      "name": "SUPPORT2",
+      "data_url": "https://archive.ics.uci.edu/static/public/880/data.csv",
+      "repository_url": "https://archive.ics.uci.edu/dataset/880/support2",
+      "dataset_year": 1995,
+      "last_updated": "Mon Sep 09 2024",
+      "data_sha256": "9da794bbd5c3a6a816e677cc17535e58c122d9ef4cbefd404489330a9f9cd2de",
+      "metadata_sha256": "254355bcbce418924c864aa22a7189900d932e6e3cecd1b497c8d91cfa6a9e1a"
+    },
+    {
+      "slug": "myocardial_infarction_complications",
+      "uci_id": 579,
+      "name": "Myocardial infarction complications",
+      "data_url": "https://archive.ics.uci.edu/static/public/579/data.csv",
+      "repository_url": "https://archive.ics.uci.edu/dataset/579/myocardial+infarction+complications",
+      "dataset_year": 2020,
+      "last_updated": "Fri Nov 03 2023",
+      "data_sha256": "335805edbe66e47f0dc322c0d9c010da64384830ad68d80030b705f964ce95ac",
+      "metadata_sha256": "00d46092f6208a6d56aff8bbc302adb191a62089c522b28663be10ad11fdde0b"
+    },
+    {
+      "slug": "aids_clinical_trial_175",
+      "uci_id": 890,
+      "name": "AIDS Clinical Trials Group Study 175",
+      "data_url": "https://archive.ics.uci.edu/static/public/890/data.csv",
+      "repository_url": "https://archive.ics.uci.edu/dataset/890/aids+clinical+trials+group+study+175",
+      "dataset_year": 1996,
+      "last_updated": "Fri Nov 03 2023",
+      "data_sha256": "cf58638c7687764ccb32d037938142518293d505eec349ccec406d4d42ba9532",
+      "metadata_sha256": "45dec83113d590e8a74415fee5e934b7d28ec81861bb20fa3717f70da952a6f5"
+    },
+    {
+      "slug": "hepatitis_c_treatment",
+      "uci_id": 503,
+      "name": "Hepatitis C Virus (HCV) for Egyptian patients",
+      "data_url": "https://archive.ics.uci.edu/static/public/503/data.csv",
+      "repository_url": "https://archive.ics.uci.edu/dataset/503/hepatitis+c+virus+hcv+for+egyptian+patients",
+      "dataset_year": 2017,
+      "last_updated": "Tue Apr 09 2024",
+      "data_sha256": "6a9ca49f4ce8b7bb73acb413dcbad71a299c6c006c6df0511a216542ddd0e401",
+      "metadata_sha256": "4d3e96f53ea5e6edac2da4f35f2c154d715332345995829296c255efef43e5a5"
+    },
+    {
+      "slug": "cardiotocography",
+      "uci_id": 193,
+      "name": "Cardiotocography",
+      "data_url": "https://archive.ics.uci.edu/static/public/193/data.csv",
+      "repository_url": "https://archive.ics.uci.edu/dataset/193/cardiotocography",
+      "dataset_year": 2000,
+      "last_updated": "Fri Mar 15 2024",
+      "data_sha256": "4648b5bf338d18f0c7e030a5d2cfb2018c831695cdb90129912cf00367c7d751",
+      "metadata_sha256": "78962df4253f7be806016fe732205ea34e17241280fb96936eeb7385b337320b"
+    },
+    {
+      "slug": "parkinsons_telemonitoring",
+      "uci_id": 189,
+      "name": "Parkinsons Telemonitoring",
+      "data_url": "https://archive.ics.uci.edu/static/public/189/data.csv",
+      "repository_url": "https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring",
+      "dataset_year": 2009,
+      "last_updated": "Fri Nov 03 2023",
+      "data_sha256": "689fd221159cd78b07a50087992c9d9472a4eb26527cdc8e896a708a2013ebcf",
+      "metadata_sha256": "f729e3a13f60e64fc00ff0af32bd258dee8a3156885d48fde8f606d65fe7d449"
+    },
+    {
+      "slug": "diabetic_retinopathy",
+      "uci_id": 329,
+      "name": "Diabetic Retinopathy Debrecen",
+      "data_url": "https://archive.ics.uci.edu/static/public/329/data.csv",
+      "repository_url": "https://archive.ics.uci.edu/dataset/329/diabetic+retinopathy+debrecen",
+      "dataset_year": 2014,
+      "last_updated": "Fri Nov 03 2023",
+      "data_sha256": "2636b73e6830e9d5f5967a286766b5d39f48a7bf40761e9621bcd5d79a2aa527",
+      "metadata_sha256": "24b9b2e6a01d58cdffee8d2f4c2b9621042f48e0df606d5564a94ee8a406e495"
+    },
+    {
+      "slug": "infrared_thermography_temperature",
+      "uci_id": 925,
+      "name": "Infrared Thermography Temperature",
+      "data_url": "https://archive.ics.uci.edu/static/public/925/data.csv",
+      "repository_url": "https://archive.ics.uci.edu/dataset/925/infrared+thermography+temperature+dataset",
+      "dataset_year": 2021,
+      "last_updated": "Tue Dec 12 2023",
+      "data_sha256": "b25616c9f67e3a60b853fdce8532cab926ca7cb649c6b89bc9e1f1255d0f0a14",
+      "metadata_sha256": "e4f80bdf53f7b1824c9bf49943f5960ee00b910f4223ffd1967ae90067152c26"
+    },
+    {
+      "slug": "eeg_eye_state",
+      "uci_id": 264,
+      "name": "EEG Eye State",
+      "data_url": "https://archive.ics.uci.edu/static/public/264/data.csv",
+      "repository_url": "https://archive.ics.uci.edu/dataset/264/eeg+eye+state",
+      "dataset_year": 2013,
+      "last_updated": "Thu Mar 21 2024",
+      "data_sha256": "42ade6611f0fadbc8c15e48bb04e5f20813c9939de21aa5f8204293f623c912a",
+      "metadata_sha256": "70a3f2198fb4eed96f9eb8e46be4e286d7dd8ccaf6914a395edd956cacda8f6f"
+    },
+    {
+      "slug": "obesity_lifestyle",
+      "uci_id": 544,
+      "name": "Estimation of Obesity Levels Based On Eating Habits and Physical Condition ",
+      "data_url": "https://archive.ics.uci.edu/static/public/544/data.csv",
+      "repository_url": "https://archive.ics.uci.edu/dataset/544/estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition",
+      "dataset_year": 2019,
+      "last_updated": "Tue Sep 10 2024",
+      "data_sha256": "28b6991062855d3d15642e38b1aa9d1b32fb7abbb5abf5b096f1868cd706154b",
+      "metadata_sha256": "6501cb090ffed681a95f019c2013ad3e4b5b2193cb2fea428a27a66e26f5e3c3"
+    },
+    {
+      "slug": "drug_consumption",
+      "uci_id": 373,
+      "name": "Drug Consumption (Quantified)",
+      "data_url": "https://archive.ics.uci.edu/static/public/373/data.csv",
+      "repository_url": "https://archive.ics.uci.edu/dataset/373/drug+consumption+quantified",
+      "dataset_year": 2015,
+      "last_updated": "Fri Mar 08 2024",
+      "data_sha256": "145a0af23d90744950c77d3283ba02a44494cfd839d503eb2ae000f6986cd9e5",
+      "metadata_sha256": "f969924b97dde9b1c1fe88dcef52c2c210d8a970e8d3c45f8ccf0e27d36dd6b7"
+    },
+    {
+      "slug": "workplace_absenteeism",
+      "uci_id": 445,
+      "name": "Absenteeism at work",
+      "data_url": "https://archive.ics.uci.edu/static/public/445/data.csv",
+      "repository_url": "https://archive.ics.uci.edu/dataset/445/absenteeism+at+work",
+      "dataset_year": 2012,
+      "last_updated": "Fri Mar 08 2024",
+      "data_sha256": "a9db81e36063ea227cb321b7dfc41644f05de496a006dbe5256a4c41da43f619",
+      "metadata_sha256": "13b57252365d8cbfdfd2f267419e97ed20cb6d92b11504676b605b6f408de219"
+    },
+    {
+      "slug": "student_dropout_sdoh",
+      "uci_id": 697,
+      "name": "Predict Students' Dropout and Academic Success",
+      "data_url": "https://archive.ics.uci.edu/static/public/697/data.csv",
+      "repository_url": "https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success",
+      "dataset_year": 2021,
+      "last_updated": "Mon Feb 26 2024",
+      "data_sha256": "a1b1a6531bbb93a5c7fdf0093b47172776652a4ffb12342fb79655c85b74801b",
+      "metadata_sha256": "c48a8f6303ccf2a5ade930fe6e85c53df209c2933f39910344c56a53a8641d5e"
+    },
+    {
+      "slug": "adult_income_sdoh",
+      "uci_id": 2,
+      "name": "Adult",
+      "data_url": "https://archive.ics.uci.edu/static/public/2/data.csv",
+      "repository_url": "https://archive.ics.uci.edu/dataset/2/adult",
+      "dataset_year": 1996,
+      "last_updated": "Tue Sep 24 2024",
+      "data_sha256": "26b38f8623766396e2ba0d1a235a283db8ed993cc32bf32fc8aab09708c3bdf2",
+      "metadata_sha256": "8f619327b01636beca9a711e3a81e9cce7fcf8871601f1b84dc6f14e7c5a1cf8"
+    },
+    {
+      "slug": "communities_crime_sdoh",
+      "uci_id": 183,
+      "name": "Communities and Crime",
+      "data_url": "https://archive.ics.uci.edu/static/public/183/data.csv",
+      "repository_url": "https://archive.ics.uci.edu/dataset/183/communities+and+crime",
+      "dataset_year": 2002,
+      "last_updated": "Mon Mar 04 2024",
+      "data_sha256": "7984874910c8f9ddcf5db06abe416850c55d880d225167112c612dd58ea54b40",
+      "metadata_sha256": "1bdb484e17f38af829a7c0d71a4246f4c97094398321d2f08d24ca031853fc6b"
+    },
+    {
+      "slug": "air_quality_sensors",
+      "uci_id": 360,
+      "name": "Air Quality",
+      "data_url": "https://archive.ics.uci.edu/static/public/360/data.csv",
+      "repository_url": "https://archive.ics.uci.edu/dataset/360/air+quality",
+      "dataset_year": 2008,
+      "last_updated": "Sun Mar 10 2024",
+      "data_sha256": "4c42e4729e876dfdecf3bfb0ed658f2bdfb2b3007da496440d303260a97733e5",
+      "metadata_sha256": "0a835f07d62fbc84b2253d6330f4f628a626b87680b40069558a72ee0b4c92ea"
+    },
+    {
+      "slug": "beijing_pm25",
+      "uci_id": 381,
+      "name": "Beijing PM2.5",
+      "data_url": "https://archive.ics.uci.edu/static/public/381/data.csv",
+      "repository_url": "https://archive.ics.uci.edu/dataset/381/beijing+pm2+5+data",
+      "dataset_year": 2015,
+      "last_updated": "Sat Mar 16 2024",
+      "data_sha256": "670a47f8c76eb5de5936354a4c5de70ce5d5da76e2483c9df3884030aded8016",
+      "metadata_sha256": "1c7309e4570cae70dc19797c511d10ed3c87121d50861b5f386b95d3cebdefad"
+    },
+    {
+      "slug": "room_occupancy_environment",
+      "uci_id": 864,
+      "name": "Room Occupancy Estimation",
+      "data_url": "https://archive.ics.uci.edu/static/public/864/data.csv",
+      "repository_url": "https://archive.ics.uci.edu/dataset/864/room+occupancy+estimation",
+      "dataset_year": 2018,
+      "last_updated": "Wed Aug 16 2023",
+      "data_sha256": "c090ee5c94b61762bfec9d22767864490b51030f98cca030f02822468db25d9c",
+      "metadata_sha256": "37e9a878af84c8639011e11a0b26ff50304b967dea14cc8a1dbbe745c4f7f44e"
+    },
+    {
+      "slug": "bike_sharing_environment",
+      "uci_id": 275,
+      "name": "Bike Sharing",
+      "data_url": "https://archive.ics.uci.edu/static/public/275/data.csv",
+      "repository_url": "https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset",
+      "dataset_year": 2013,
+      "last_updated": "Sun Mar 10 2024",
+      "data_sha256": "e03de4ee4ef4dc376ac6e04bf829673c6269e8eba5c60fa121640fa2f829504f",
+      "metadata_sha256": "ddae1c6bc628001a5c48ea53892f62e30dbbd6c4931ba00915adfdc520f9227b"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+variable,risk_flags,note
+Age ,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+Gender,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+ALT4,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+ALT 12,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+ALT 24,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+ALT 36,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+ALT 48,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+ALT after 24 w,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+RNA 4,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+RNA 12,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+RNA EOT,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+RNA EF,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+Baselinehistological staging,outcome|target_leakage,Official target; do not use to predict itself or another directly derived outcome.

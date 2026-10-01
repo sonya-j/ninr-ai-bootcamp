@@ -1,0 +1,69 @@
+{
+  "uci_id": 864,
+  "title": "Room Occupancy Estimation",
+  "official_source": "UCI Machine Learning Repository",
+  "repository_url": "https://archive.ics.uci.edu/dataset/864/room+occupancy+estimation",
+  "data_url": "https://archive.ics.uci.edu/static/public/864/data.csv",
+  "dataset_doi": "10.24432/C5P605",
+  "dataset_year": 2018,
+  "current_record_version": "UCI record last updated Wed Aug 16 2023",
+  "access_date": "2026-10-01",
+  "license": null,
+  "raw_data_sha256": "c090ee5c94b61762bfec9d22767864490b51030f98cca030f02822468db25d9c",
+  "official_metadata_sha256": "37e9a878af84c8639011e11a0b26ff50304b967dea14cc8a1dbbe745c4f7f44e",
+  "raw_rows": 10129,
+  "raw_columns": 19,
+  "participant_rows": 5000,
+  "participant_columns": 20,
+  "participant_sha256": "f522cb75a6ece305c0ea98e6de0fe662ec5146353f04af22992e685112f8575a",
+  "selected_variables": [
+    "portfolio_row_id",
+    "Room_Occupancy_Count",
+    "Date",
+    "Time",
+    "S1_Temp",
+    "S2_Temp",
+    "S3_Temp",
+    "S4_Temp",
+    "S1_Light",
+    "S2_Light",
+    "S3_Light",
+    "S4_Light",
+    "S1_Sound",
+    "S2_Sound",
+    "S3_Sound",
+    "S4_Sound",
+    "S5_CO2",
+    "S5_CO2_Slope",
+    "S6_PIR",
+    "S7_PIR"
+  ],
+  "missing_value_codes": [
+    ""
+  ],
+  "weighting_variables": [],
+  "outcomes": [
+    {
+      "variable": "Room_Occupancy_Count",
+      "description": "Ground Truth",
+      "observed_values": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    }
+  ],
+  "transformations": [
+    "Downloaded the official UCI normalized CSV and API metadata without modifying the raw files.",
+    "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
+    "Converted documented source missing symbols to blank/NA only in the participant derivative.",
+    "Selected 5000 rows by deterministic SHA-256 rank using the portfolio seed.",
+    "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
+  ],
+  "software": {
+    "python": "3.14.7",
+    "pandas": "2.3.3",
+    "platform": "Windows-11-10.0.26100-SP0"
+  }
+}

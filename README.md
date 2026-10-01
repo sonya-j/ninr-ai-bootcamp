@@ -1,8 +1,32 @@
 # NINR AI Summer Research Intensive — reproducible health-data pipeline
 
-This repository acquires, preserves, prepares, documents, and validates a participant-ready clinical dataset. The pipeline uses only the official UCI Machine Learning Repository record, its original archive, and the original article archived by NIH PubMed Central. It does not use Kaggle or another mirror.
+This repository acquires, preserves, prepares, documents, and validates a portfolio of 20 participant-ready health and health-adjacent datasets. The pipelines use official UCI Machine Learning Repository records supplied by the original dataset contributors, plus the original article archived by NIH PubMed Central for the diabetes readmission dataset. They do not use Kaggle or another third-party mirror.
 
-## Included dataset and current version
+## Explore the 20 dataset options
+
+Start with the [dataset options and research-question catalog](docs/dataset_catalog.md). It compares all 20 datasets by theme, participant size, outcomes, weighting, selected variables, analytic cautions, and three potential research questions per dataset.
+
+The portfolio spans:
+
+- clinical outcomes, readmission, acute care, serious illness, and clinical trials;
+- maternal/fetal monitoring, Parkinson symptoms, diabetic retinopathy, and temperature screening;
+- obesity, substance use, occupational health, and health-related workforce questions;
+- income, education, and community social determinants;
+- outdoor air quality, indoor environment, and bike-sharing/built-environment data.
+
+Build or refresh the complete portfolio with:
+
+```bash
+python -m pip install -r requirements-pipeline.txt
+python portfolio_pipeline.py acquire
+python portfolio_pipeline.py verify-lock
+python portfolio_pipeline.py prepare
+python -m unittest discover -s tests -v
+```
+
+Raw portfolio downloads are preserved unchanged under `data/raw/portfolio/` and intentionally excluded from Git because the committed source lock records their official URLs, versions, and SHA-256 hashes. The 20 participant files and their metadata are committed under `data/processed/portfolio/` and `metadata/portfolio/`.
+
+## Detailed diabetes dataset and current version
 
 **Diabetes 130-US Hospitals for Years 1999–2008** contains 101,766 inpatient diabetes encounters from 130 U.S. hospitals and integrated delivery networks.
 
@@ -88,11 +112,15 @@ The notebooks in `notebooks/` load the validated participant CSV and then select
 
 ```text
 config/datasets.json                 pinned source manifest
+config/portfolio.json                20-dataset reviewed manifest
+config/portfolio_sources.lock.json   official source versions and checksums
 pipeline.py                          acquisition, preparation, and validation CLI
+portfolio_pipeline.py                20-dataset portfolio CLI
 data/raw/                            unchanged official archive/files/docs
 data/processed/                      participant-ready CSV
 metadata/                            dictionaries, provenance, labels, and reports
-docs/                                research questions and teaching documentation
+docs/dataset_catalog.md              dataset options and research questions
+docs/                                additional teaching documentation
 notebooks/                           participant and solution notebooks
 tests/                               automated artifact tests
 requirements-pipeline.txt            pinned pipeline dependency

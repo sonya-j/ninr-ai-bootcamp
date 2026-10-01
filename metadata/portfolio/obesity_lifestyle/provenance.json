@@ -1,0 +1,70 @@
+{
+  "uci_id": 544,
+  "title": "Estimation of Obesity Levels Based On Eating Habits and Physical Condition ",
+  "official_source": "UCI Machine Learning Repository",
+  "repository_url": "https://archive.ics.uci.edu/dataset/544/estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition",
+  "data_url": "https://archive.ics.uci.edu/static/public/544/data.csv",
+  "dataset_doi": "10.24432/C5H31Z",
+  "dataset_year": 2019,
+  "current_record_version": "UCI record last updated Tue Sep 10 2024",
+  "access_date": "2026-10-01",
+  "license": null,
+  "raw_data_sha256": "28b6991062855d3d15642e38b1aa9d1b32fb7abbb5abf5b096f1868cd706154b",
+  "official_metadata_sha256": "6501cb090ffed681a95f019c2013ad3e4b5b2193cb2fea428a27a66e26f5e3c3",
+  "raw_rows": 2111,
+  "raw_columns": 17,
+  "participant_rows": 2111,
+  "participant_columns": 18,
+  "participant_sha256": "6dcf0b50910127468ee94cad39d8ee5da2993b0c97fa89bebec1a6bbf072df1c",
+  "selected_variables": [
+    "portfolio_row_id",
+    "Gender",
+    "Age",
+    "NObeyesdad",
+    "Height",
+    "Weight",
+    "family_history_with_overweight",
+    "FAVC",
+    "FCVC",
+    "NCP",
+    "CAEC",
+    "SMOKE",
+    "CH2O",
+    "SCC",
+    "FAF",
+    "TUE",
+    "CALC",
+    "MTRANS"
+  ],
+  "missing_value_codes": [
+    ""
+  ],
+  "weighting_variables": [],
+  "outcomes": [
+    {
+      "variable": "NObeyesdad",
+      "description": "Obesity level",
+      "observed_values": [
+        "Insufficient_Weight",
+        "Normal_Weight",
+        "Obesity_Type_I",
+        "Obesity_Type_II",
+        "Obesity_Type_III",
+        "Overweight_Level_I",
+        "Overweight_Level_II"
+      ]
+    }
+  ],
+  "transformations": [
+    "Downloaded the official UCI normalized CSV and API metadata without modifying the raw files.",
+    "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
+    "Converted documented source missing symbols to blank/NA only in the participant derivative.",
+    "Selected 2111 rows by deterministic SHA-256 rank using the portfolio seed.",
+    "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
+  ],
+  "software": {
+    "python": "3.14.7",
+    "pandas": "2.3.3",
+    "platform": "Windows-11-10.0.26100-SP0"
+  }
+}

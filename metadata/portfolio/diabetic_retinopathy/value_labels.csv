@@ -1,0 +1,9 @@
+variable,code,official_description,label_status
+quality,0,The binary result of quality assessment. 0 = bad quality 1 = sufficient quality.,Raw category code observed in official source; use the official description/codebook for meaning.
+quality,1,The binary result of quality assessment. 0 = bad quality 1 = sufficient quality.,Raw category code observed in official source; use the official description/codebook for meaning.
+pre_screening,0,"The binary result of pre-screening, where 1 indicates severe retinal abnormality and 0 its lack.",Raw category code observed in official source; use the official description/codebook for meaning.
+pre_screening,1,"The binary result of pre-screening, where 1 indicates severe retinal abnormality and 0 its lack.",Raw category code observed in official source; use the official description/codebook for meaning.
+am_fm_classification,0,The binary result of the AM/FM-based classification.,Raw category code observed in official source; use the official description/codebook for meaning.
+am_fm_classification,1,The binary result of the AM/FM-based classification.,Raw category code observed in official source; use the official description/codebook for meaning.
+Class,0,"Class label. 1 = contains signs of DR (Accumulative label for the Messidor classes 1, 2, 3), 0 = no signs of DR.",Raw category code observed in official source; use the official description/codebook for meaning.
+Class,1,"Class label. 1 = contains signs of DR (Accumulative label for the Messidor classes 1, 2, 3), 0 = no signs of DR.",Raw category code observed in official source; use the official description/codebook for meaning.

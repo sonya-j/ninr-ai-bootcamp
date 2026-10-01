@@ -1,0 +1,141 @@
+{
+  "uci_id": 579,
+  "title": "Myocardial infarction complications",
+  "official_source": "UCI Machine Learning Repository",
+  "repository_url": "https://archive.ics.uci.edu/dataset/579/myocardial+infarction+complications",
+  "data_url": "https://archive.ics.uci.edu/static/public/579/data.csv",
+  "dataset_doi": "10.24432/C53P5M",
+  "dataset_year": 2020,
+  "current_record_version": "UCI record last updated Fri Nov 03 2023",
+  "access_date": "2026-10-01",
+  "license": null,
+  "raw_data_sha256": "335805edbe66e47f0dc322c0d9c010da64384830ad68d80030b705f964ce95ac",
+  "official_metadata_sha256": "00d46092f6208a6d56aff8bbc302adb191a62089c522b28663be10ad11fdde0b",
+  "raw_rows": 1700,
+  "raw_columns": 124,
+  "participant_rows": 1700,
+  "participant_columns": 31,
+  "participant_sha256": "dcb040f0b998b982b7daff67e176431ce9b66f6471b7e507f99417d9e1658331",
+  "selected_variables": [
+    "portfolio_row_id",
+    "ID",
+    "AGE",
+    "SEX",
+    "INF_ANAM",
+    "STENOK_AN",
+    "FK_STENOK",
+    "IBS_POST",
+    "IBS_NASL",
+    "GB",
+    "SIM_GIPERT",
+    "DLIT_AG",
+    "ZSN_A",
+    "S_AD_KBRIG",
+    "D_AD_KBRIG",
+    "K_BLOOD",
+    "NA_BLOOD",
+    "ALT_BLOOD",
+    "AST_BLOOD",
+    "L_BLOOD",
+    "ROE",
+    "TIME_B_S",
+    "ASP_S_n",
+    "FIBR_PREDS",
+    "PREDS_TAH",
+    "FIBR_JELUD",
+    "OTEK_LANC",
+    "RAZRIV",
+    "ZSN",
+    "REC_IM",
+    "LET_IS"
+  ],
+  "missing_value_codes": [
+    "",
+    "NaN"
+  ],
+  "weighting_variables": [],
+  "outcomes": [
+    {
+      "variable": "FIBR_PREDS",
+      "description": "Atrial fibrillation",
+      "observed_values": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "variable": "PREDS_TAH",
+      "description": "Supraventricular tachycardia",
+      "observed_values": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "variable": "FIBR_JELUD",
+      "description": "Ventricular fibrillation",
+      "observed_values": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "variable": "OTEK_LANC",
+      "description": "Pulmonary edema",
+      "observed_values": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "variable": "RAZRIV",
+      "description": "Myocardial rupture ",
+      "observed_values": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "variable": "ZSN",
+      "description": "Chronic heart failure",
+      "observed_values": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "variable": "REC_IM",
+      "description": "Relapse of the myocardial infarction",
+      "observed_values": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "variable": "LET_IS",
+      "description": "Lethal outcome (cause)\n\n0: unknown (alive)\n\n1: cardiogenic shock\n\n2: pulmonary edema\n\n3: myocardial rupture\n\n4: progress of congestive heart failure\n\n5: thromboembolism\n\n6: asystole\n\n7: ventricular fibrillation",
+      "observed_values": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ]
+    }
+  ],
+  "transformations": [
+    "Downloaded the official UCI normalized CSV and API metadata without modifying the raw files.",
+    "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
+    "Converted documented source missing symbols to blank/NA only in the participant derivative.",
+    "Selected 1700 rows by deterministic SHA-256 rank using the portfolio seed.",
+    "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
+  ],
+  "software": {
+    "python": "3.14.7",
+    "pandas": "2.3.3",
+    "platform": "Windows-11-10.0.26100-SP0"
+  }
+}

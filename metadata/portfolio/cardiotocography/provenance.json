@@ -1,0 +1,88 @@
+{
+  "uci_id": 193,
+  "title": "Cardiotocography",
+  "official_source": "UCI Machine Learning Repository",
+  "repository_url": "https://archive.ics.uci.edu/dataset/193/cardiotocography",
+  "data_url": "https://archive.ics.uci.edu/static/public/193/data.csv",
+  "dataset_doi": "10.24432/C51S4N",
+  "dataset_year": 2000,
+  "current_record_version": "UCI record last updated Fri Mar 15 2024",
+  "access_date": "2026-10-01",
+  "license": null,
+  "raw_data_sha256": "4648b5bf338d18f0c7e030a5d2cfb2018c831695cdb90129912cf00367c7d751",
+  "official_metadata_sha256": "78962df4253f7be806016fe732205ea34e17241280fb96936eeb7385b337320b",
+  "raw_rows": 2126,
+  "raw_columns": 23,
+  "participant_rows": 2126,
+  "participant_columns": 24,
+  "participant_sha256": "ce0e930435886a000a88022d4797029ae066cf661822d0997ad2872927ffaa65",
+  "selected_variables": [
+    "portfolio_row_id",
+    "CLASS",
+    "NSP",
+    "LB",
+    "AC",
+    "FM",
+    "UC",
+    "DL",
+    "DS",
+    "DP",
+    "ASTV",
+    "MSTV",
+    "ALTV",
+    "MLTV",
+    "Width",
+    "Min",
+    "Max",
+    "Nmax",
+    "Nzeros",
+    "Mode",
+    "Mean",
+    "Median",
+    "Variance",
+    "Tendency"
+  ],
+  "missing_value_codes": [
+    ""
+  ],
+  "weighting_variables": [],
+  "outcomes": [
+    {
+      "variable": "CLASS",
+      "description": null,
+      "observed_values": [
+        "1",
+        "10",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "variable": "NSP",
+      "description": null,
+      "observed_values": [
+        "1",
+        "2",
+        "3"
+      ]
+    }
+  ],
+  "transformations": [
+    "Downloaded the official UCI normalized CSV and API metadata without modifying the raw files.",
+    "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
+    "Converted documented source missing symbols to blank/NA only in the participant derivative.",
+    "Selected 2126 rows by deterministic SHA-256 rank using the portfolio seed.",
+    "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
+  ],
+  "software": {
+    "python": "3.14.7",
+    "pandas": "2.3.3",
+    "platform": "Windows-11-10.0.26100-SP0"
+  }
+}

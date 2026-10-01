@@ -1,0 +1,63 @@
+{
+  "uci_id": 264,
+  "title": "EEG Eye State",
+  "official_source": "UCI Machine Learning Repository",
+  "repository_url": "https://archive.ics.uci.edu/dataset/264/eeg+eye+state",
+  "data_url": "https://archive.ics.uci.edu/static/public/264/data.csv",
+  "dataset_doi": "10.24432/C57G7J",
+  "dataset_year": 2013,
+  "current_record_version": "UCI record last updated Thu Mar 21 2024",
+  "access_date": "2026-10-01",
+  "license": null,
+  "raw_data_sha256": "42ade6611f0fadbc8c15e48bb04e5f20813c9939de21aa5f8204293f623c912a",
+  "official_metadata_sha256": "70a3f2198fb4eed96f9eb8e46be4e286d7dd8ccaf6914a395edd956cacda8f6f",
+  "raw_rows": 14980,
+  "raw_columns": 15,
+  "participant_rows": 5000,
+  "participant_columns": 16,
+  "participant_sha256": "7d824786e89c02acdee27433fe2e3617519e5f4b343dd1acf865d22dbb0365e6",
+  "selected_variables": [
+    "portfolio_row_id",
+    "eyeDetection",
+    "AF3",
+    "F7",
+    "F3",
+    "FC5",
+    "T7",
+    "P7",
+    "O1",
+    "O2",
+    "P8",
+    "T8",
+    "FC6",
+    "F4",
+    "F8",
+    "AF4"
+  ],
+  "missing_value_codes": [
+    ""
+  ],
+  "weighting_variables": [],
+  "outcomes": [
+    {
+      "variable": "eyeDetection",
+      "description": null,
+      "observed_values": [
+        "0",
+        "1"
+      ]
+    }
+  ],
+  "transformations": [
+    "Downloaded the official UCI normalized CSV and API metadata without modifying the raw files.",
+    "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
+    "Converted documented source missing symbols to blank/NA only in the participant derivative.",
+    "Selected 5000 rows by deterministic SHA-256 rank using the portfolio seed.",
+    "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
+  ],
+  "software": {
+    "python": "3.14.7",
+    "pandas": "2.3.3",
+    "platform": "Windows-11-10.0.26100-SP0"
+  }
+}

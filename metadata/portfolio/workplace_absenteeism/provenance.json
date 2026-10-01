@@ -1,0 +1,86 @@
+{
+  "uci_id": 445,
+  "title": "Absenteeism at work",
+  "official_source": "UCI Machine Learning Repository",
+  "repository_url": "https://archive.ics.uci.edu/dataset/445/absenteeism+at+work",
+  "data_url": "https://archive.ics.uci.edu/static/public/445/data.csv",
+  "dataset_doi": "10.24432/C5X882",
+  "dataset_year": 2012,
+  "current_record_version": "UCI record last updated Fri Mar 08 2024",
+  "access_date": "2026-10-01",
+  "license": null,
+  "raw_data_sha256": "a9db81e36063ea227cb321b7dfc41644f05de496a006dbe5256a4c41da43f619",
+  "official_metadata_sha256": "13b57252365d8cbfdfd2f267419e97ed20cb6d92b11504676b605b6f408de219",
+  "raw_rows": 740,
+  "raw_columns": 21,
+  "participant_rows": 740,
+  "participant_columns": 22,
+  "participant_sha256": "aad455c895d09857056bde892c9be5c06999669f872de1d9f720157b78f7216c",
+  "selected_variables": [
+    "portfolio_row_id",
+    "ID",
+    "Age",
+    "Education",
+    "Absenteeism time in hours",
+    "Reason for absence",
+    "Month of absence",
+    "Day of the week",
+    "Seasons",
+    "Transportation expense",
+    "Distance from Residence to Work",
+    "Service time",
+    "Work load Average/day ",
+    "Hit target",
+    "Disciplinary failure",
+    "Son",
+    "Social drinker",
+    "Social smoker",
+    "Pet",
+    "Weight",
+    "Height",
+    "Body mass index"
+  ],
+  "missing_value_codes": [
+    ""
+  ],
+  "weighting_variables": [],
+  "outcomes": [
+    {
+      "variable": "Absenteeism time in hours",
+      "description": null,
+      "observed_values": [
+        "0",
+        "1",
+        "104",
+        "112",
+        "120",
+        "16",
+        "2",
+        "24",
+        "3",
+        "32",
+        "4",
+        "40",
+        "48",
+        "5",
+        "56",
+        "64",
+        "7",
+        "8",
+        "80"
+      ]
+    }
+  ],
+  "transformations": [
+    "Downloaded the official UCI normalized CSV and API metadata without modifying the raw files.",
+    "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
+    "Converted documented source missing symbols to blank/NA only in the participant derivative.",
+    "Selected 740 rows by deterministic SHA-256 rank using the portfolio seed.",
+    "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
+  ],
+  "software": {
+    "python": "3.14.7",
+    "pandas": "2.3.3",
+    "platform": "Windows-11-10.0.26100-SP0"
+  }
+}

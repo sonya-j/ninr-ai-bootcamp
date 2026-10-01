@@ -1,0 +1,99 @@
+{
+  "uci_id": 880,
+  "title": "SUPPORT2",
+  "official_source": "UCI Machine Learning Repository",
+  "repository_url": "https://archive.ics.uci.edu/dataset/880/support2",
+  "data_url": "https://archive.ics.uci.edu/static/public/880/data.csv",
+  "dataset_doi": "10.3886/ICPSR02957.v2",
+  "dataset_year": 1995,
+  "current_record_version": "UCI record last updated Mon Sep 09 2024",
+  "access_date": "2026-10-01",
+  "license": null,
+  "raw_data_sha256": "9da794bbd5c3a6a816e677cc17535e58c122d9ef4cbefd404489330a9f9cd2de",
+  "official_metadata_sha256": "254355bcbce418924c864aa22a7189900d932e6e3cecd1b497c8d91cfa6a9e1a",
+  "raw_rows": 9105,
+  "raw_columns": 48,
+  "participant_rows": 5000,
+  "participant_columns": 31,
+  "participant_sha256": "64e3a8865d7999c514e40aac582418544cc254388a0468a8df424337d49f26d5",
+  "selected_variables": [
+    "portfolio_row_id",
+    "id",
+    "age",
+    "sex",
+    "race",
+    "edu",
+    "income",
+    "dzgroup",
+    "dzclass",
+    "num.co",
+    "scoma",
+    "meanbp",
+    "wblc",
+    "hrt",
+    "resp",
+    "temp",
+    "pafi",
+    "alb",
+    "bili",
+    "crea",
+    "sod",
+    "ph",
+    "glucose",
+    "bun",
+    "urine",
+    "adlp",
+    "adls",
+    "dnr",
+    "hospdead",
+    "death",
+    "sfdm2"
+  ],
+  "missing_value_codes": [
+    "",
+    "NaN"
+  ],
+  "weighting_variables": [],
+  "outcomes": [
+    {
+      "variable": "hospdead",
+      "description": "Death in hospital",
+      "observed_values": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "variable": "death",
+      "description": "Death at any time up to National Death Index (NDI) data on 31 of December of 1994. Some patients are discharged before the end of the study and are not followed up. The authors looked up the information about death.",
+      "observed_values": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "variable": "sfdm2",
+      "description": "Level of functional disability of the patient in a 1-5 scale, with 5 being the highest severity. The values were obtained via questionairres to the patient and/or surrogates to determine the Sickness Profile Impact (SIP). Values are correlated with ADLS, ADLP columns. Listed values are: {1: \"no(Month 2 and SIP pres)\", \"adl>=4 (>=5 if sur)\", \"SIP>=30\", \"Coma or Intub\", 5: \"<2 mo. follow-up\"}. There are 159 patients surviving 2 months for whom there were no patient or surrogate interviews. These patients have missing sfdm2.",
+      "observed_values": [
+        "<2 mo. follow-up",
+        "Coma or Intub",
+        "NaN",
+        "SIP>=30",
+        "adl>=4 (>=5 if sur)",
+        "no(M2 and SIP pres)"
+      ]
+    }
+  ],
+  "transformations": [
+    "Downloaded the official UCI normalized CSV and API metadata without modifying the raw files.",
+    "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
+    "Converted documented source missing symbols to blank/NA only in the participant derivative.",
+    "Selected 5000 rows by deterministic SHA-256 rank using the portfolio seed.",
+    "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
+  ],
+  "software": {
+    "python": "3.14.7",
+    "pandas": "2.3.3",
+    "platform": "Windows-11-10.0.26100-SP0"
+  }
+}

@@ -1,0 +1,12 @@
+variable,risk_flags,note
+age,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+workclass,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+education,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+education-num,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+marital-status,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+occupation,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+relationship,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+race,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+sex,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+native-country,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+income,outcome|target_leakage|proxy_discrimination|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Sensitive or demographic attribute; audit subgroup representation and errors. Timing may be at or after the prediction point; define the prediction horizon before use.

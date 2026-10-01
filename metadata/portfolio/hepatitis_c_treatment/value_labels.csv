@@ -1,0 +1,80 @@
+variable,code,official_description,label_status
+Gender,1,"[Male], [Female]",Raw category code observed in official source; use the official description/codebook for meaning.
+Gender,2,"[Male], [Female]",Raw category code observed in official source; use the official description/codebook for meaning.
+BMI,22,Body Mass Index,Raw category code observed in official source; use the official description/codebook for meaning.
+BMI,23,Body Mass Index,Raw category code observed in official source; use the official description/codebook for meaning.
+BMI,24,Body Mass Index,Raw category code observed in official source; use the official description/codebook for meaning.
+BMI,25,Body Mass Index,Raw category code observed in official source; use the official description/codebook for meaning.
+BMI,26,Body Mass Index,Raw category code observed in official source; use the official description/codebook for meaning.
+BMI,27,Body Mass Index,Raw category code observed in official source; use the official description/codebook for meaning.
+BMI,28,Body Mass Index,Raw category code observed in official source; use the official description/codebook for meaning.
+BMI,29,Body Mass Index,Raw category code observed in official source; use the official description/codebook for meaning.
+BMI,30,Body Mass Index,Raw category code observed in official source; use the official description/codebook for meaning.
+BMI,31,Body Mass Index,Raw category code observed in official source; use the official description/codebook for meaning.
+BMI,32,Body Mass Index,Raw category code observed in official source; use the official description/codebook for meaning.
+BMI,33,Body Mass Index,Raw category code observed in official source; use the official description/codebook for meaning.
+BMI,34,Body Mass Index,Raw category code observed in official source; use the official description/codebook for meaning.
+BMI,35,Body Mass Index,Raw category code observed in official source; use the official description/codebook for meaning.
+Fever,1,"[Absent], [Present]",Raw category code observed in official source; use the official description/codebook for meaning.
+Fever,2,"[Absent], [Present]",Raw category code observed in official source; use the official description/codebook for meaning.
+Nausea/Vomting,1,"[Absent], [Present]",Raw category code observed in official source; use the official description/codebook for meaning.
+Nausea/Vomting,2,"[Absent], [Present]",Raw category code observed in official source; use the official description/codebook for meaning.
+Headache ,1,"[Absent], [Present]",Raw category code observed in official source; use the official description/codebook for meaning.
+Headache ,2,"[Absent], [Present]",Raw category code observed in official source; use the official description/codebook for meaning.
+Diarrhea ,1,"[Absent], [Present]",Raw category code observed in official source; use the official description/codebook for meaning.
+Diarrhea ,2,"[Absent], [Present]",Raw category code observed in official source; use the official description/codebook for meaning.
+Fatigue & generalized bone ache ,1,"[Absent], [Present]",Raw category code observed in official source; use the official description/codebook for meaning.
+Fatigue & generalized bone ache ,2,"[Absent], [Present]",Raw category code observed in official source; use the official description/codebook for meaning.
+Jaundice ,1,"[Absent], [Present]",Raw category code observed in official source; use the official description/codebook for meaning.
+Jaundice ,2,"[Absent], [Present]",Raw category code observed in official source; use the official description/codebook for meaning.
+Epigastric pain ,1,"[Absent], [Present]",Raw category code observed in official source; use the official description/codebook for meaning.
+Epigastric pain ,2,"[Absent], [Present]",Raw category code observed in official source; use the official description/codebook for meaning.
+HGB,10,Hemoglobin,Raw category code observed in official source; use the official description/codebook for meaning.
+HGB,11,Hemoglobin,Raw category code observed in official source; use the official description/codebook for meaning.
+HGB,12,Hemoglobin,Raw category code observed in official source; use the official description/codebook for meaning.
+HGB,13,Hemoglobin,Raw category code observed in official source; use the official description/codebook for meaning.
+HGB,14,Hemoglobin,Raw category code observed in official source; use the official description/codebook for meaning.
+HGB,15,Hemoglobin,Raw category code observed in official source; use the official description/codebook for meaning.
+ALT after 24 w,22,after 24 warnings alanine transaminase ratio 24 weeks,Raw category code observed in official source; use the official description/codebook for meaning.
+ALT after 24 w,23,after 24 warnings alanine transaminase ratio 24 weeks,Raw category code observed in official source; use the official description/codebook for meaning.
+ALT after 24 w,24,after 24 warnings alanine transaminase ratio 24 weeks,Raw category code observed in official source; use the official description/codebook for meaning.
+ALT after 24 w,25,after 24 warnings alanine transaminase ratio 24 weeks,Raw category code observed in official source; use the official description/codebook for meaning.
+ALT after 24 w,26,after 24 warnings alanine transaminase ratio 24 weeks,Raw category code observed in official source; use the official description/codebook for meaning.
+ALT after 24 w,27,after 24 warnings alanine transaminase ratio 24 weeks,Raw category code observed in official source; use the official description/codebook for meaning.
+ALT after 24 w,28,after 24 warnings alanine transaminase ratio 24 weeks,Raw category code observed in official source; use the official description/codebook for meaning.
+ALT after 24 w,29,after 24 warnings alanine transaminase ratio 24 weeks,Raw category code observed in official source; use the official description/codebook for meaning.
+ALT after 24 w,30,after 24 warnings alanine transaminase ratio 24 weeks,Raw category code observed in official source; use the official description/codebook for meaning.
+ALT after 24 w,31,after 24 warnings alanine transaminase ratio 24 weeks,Raw category code observed in official source; use the official description/codebook for meaning.
+ALT after 24 w,32,after 24 warnings alanine transaminase ratio 24 weeks,Raw category code observed in official source; use the official description/codebook for meaning.
+ALT after 24 w,33,after 24 warnings alanine transaminase ratio 24 weeks,Raw category code observed in official source; use the official description/codebook for meaning.
+ALT after 24 w,34,after 24 warnings alanine transaminase ratio 24 weeks,Raw category code observed in official source; use the official description/codebook for meaning.
+ALT after 24 w,35,after 24 warnings alanine transaminase ratio 24 weeks,Raw category code observed in official source; use the official description/codebook for meaning.
+ALT after 24 w,36,after 24 warnings alanine transaminase ratio 24 weeks,Raw category code observed in official source; use the official description/codebook for meaning.
+ALT after 24 w,37,after 24 warnings alanine transaminase ratio 24 weeks,Raw category code observed in official source; use the official description/codebook for meaning.
+ALT after 24 w,38,after 24 warnings alanine transaminase ratio 24 weeks,Raw category code observed in official source; use the official description/codebook for meaning.
+ALT after 24 w,39,after 24 warnings alanine transaminase ratio 24 weeks,Raw category code observed in official source; use the official description/codebook for meaning.
+ALT after 24 w,40,after 24 warnings alanine transaminase ratio 24 weeks,Raw category code observed in official source; use the official description/codebook for meaning.
+ALT after 24 w,41,after 24 warnings alanine transaminase ratio 24 weeks,Raw category code observed in official source; use the official description/codebook for meaning.
+ALT after 24 w,42,after 24 warnings alanine transaminase ratio 24 weeks,Raw category code observed in official source; use the official description/codebook for meaning.
+ALT after 24 w,43,after 24 warnings alanine transaminase ratio 24 weeks,Raw category code observed in official source; use the official description/codebook for meaning.
+ALT after 24 w,44,after 24 warnings alanine transaminase ratio 24 weeks,Raw category code observed in official source; use the official description/codebook for meaning.
+ALT after 24 w,45,after 24 warnings alanine transaminase ratio 24 weeks,Raw category code observed in official source; use the official description/codebook for meaning.
+ALT after 24 w,5,after 24 warnings alanine transaminase ratio 24 weeks,Raw category code observed in official source; use the official description/codebook for meaning.
+Baseline histological Grading,10,,Raw category code observed in official source; use the official description/codebook for meaning.
+Baseline histological Grading,11,,Raw category code observed in official source; use the official description/codebook for meaning.
+Baseline histological Grading,12,,Raw category code observed in official source; use the official description/codebook for meaning.
+Baseline histological Grading,13,,Raw category code observed in official source; use the official description/codebook for meaning.
+Baseline histological Grading,14,,Raw category code observed in official source; use the official description/codebook for meaning.
+Baseline histological Grading,15,,Raw category code observed in official source; use the official description/codebook for meaning.
+Baseline histological Grading,16,,Raw category code observed in official source; use the official description/codebook for meaning.
+Baseline histological Grading,3,,Raw category code observed in official source; use the official description/codebook for meaning.
+Baseline histological Grading,4,,Raw category code observed in official source; use the official description/codebook for meaning.
+Baseline histological Grading,5,,Raw category code observed in official source; use the official description/codebook for meaning.
+Baseline histological Grading,6,,Raw category code observed in official source; use the official description/codebook for meaning.
+Baseline histological Grading,7,,Raw category code observed in official source; use the official description/codebook for meaning.
+Baseline histological Grading,8,,Raw category code observed in official source; use the official description/codebook for meaning.
+Baseline histological Grading,9,,Raw category code observed in official source; use the official description/codebook for meaning.
+Baselinehistological staging,1,,Raw category code observed in official source; use the official description/codebook for meaning.
+Baselinehistological staging,2,,Raw category code observed in official source; use the official description/codebook for meaning.
+Baselinehistological staging,3,,Raw category code observed in official source; use the official description/codebook for meaning.
+Baselinehistological staging,4,,Raw category code observed in official source; use the official description/codebook for meaning.

@@ -1,0 +1,79 @@
+{
+  "uci_id": 503,
+  "title": "Hepatitis C Virus (HCV) for Egyptian patients",
+  "official_source": "UCI Machine Learning Repository",
+  "repository_url": "https://archive.ics.uci.edu/dataset/503/hepatitis+c+virus+hcv+for+egyptian+patients",
+  "data_url": "https://archive.ics.uci.edu/static/public/503/data.csv",
+  "dataset_doi": "10.24432/C5989V",
+  "dataset_year": 2017,
+  "current_record_version": "UCI record last updated Tue Apr 09 2024",
+  "access_date": "2026-10-01",
+  "license": null,
+  "raw_data_sha256": "6a9ca49f4ce8b7bb73acb413dcbad71a299c6c006c6df0511a216542ddd0e401",
+  "official_metadata_sha256": "4d3e96f53ea5e6edac2da4f35f2c154d715332345995829296c255efef43e5a5",
+  "raw_rows": 1385,
+  "raw_columns": 29,
+  "participant_rows": 1385,
+  "participant_columns": 30,
+  "participant_sha256": "cbc445a9ade8b07aa0cd55347888492f5e33cf466a996788de950a306089af61",
+  "selected_variables": [
+    "portfolio_row_id",
+    "Age ",
+    "Gender",
+    "Baselinehistological staging",
+    "BMI",
+    "Fever",
+    "Nausea/Vomting",
+    "Headache ",
+    "Diarrhea ",
+    "Fatigue & generalized bone ache ",
+    "Jaundice ",
+    "Epigastric pain ",
+    "WBC",
+    "RBC",
+    "HGB",
+    "Plat",
+    "AST 1",
+    "ALT 1",
+    "ALT4",
+    "ALT 12",
+    "ALT 24",
+    "ALT 36",
+    "ALT 48",
+    "ALT after 24 w",
+    "RNA Base",
+    "RNA 4",
+    "RNA 12",
+    "RNA EOT",
+    "RNA EF",
+    "Baseline histological Grading"
+  ],
+  "missing_value_codes": [
+    ""
+  ],
+  "weighting_variables": [],
+  "outcomes": [
+    {
+      "variable": "Baselinehistological staging",
+      "description": null,
+      "observed_values": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    }
+  ],
+  "transformations": [
+    "Downloaded the official UCI normalized CSV and API metadata without modifying the raw files.",
+    "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
+    "Converted documented source missing symbols to blank/NA only in the participant derivative.",
+    "Selected 1385 rows by deterministic SHA-256 rank using the portfolio seed.",
+    "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
+  ],
+  "software": {
+    "python": "3.14.7",
+    "pandas": "2.3.3",
+    "platform": "Windows-11-10.0.26100-SP0"
+  }
+}

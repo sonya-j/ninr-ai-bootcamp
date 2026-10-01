@@ -1,0 +1,59 @@
+{
+  "uci_id": 381,
+  "title": "Beijing PM2.5",
+  "official_source": "UCI Machine Learning Repository",
+  "repository_url": "https://archive.ics.uci.edu/dataset/381/beijing+pm2+5+data",
+  "data_url": "https://archive.ics.uci.edu/static/public/381/data.csv",
+  "dataset_doi": "10.24432/C5JS49",
+  "dataset_year": 2015,
+  "current_record_version": "UCI record last updated Sat Mar 16 2024",
+  "access_date": "2026-10-01",
+  "license": null,
+  "raw_data_sha256": "670a47f8c76eb5de5936354a4c5de70ce5d5da76e2483c9df3884030aded8016",
+  "official_metadata_sha256": "1c7309e4570cae70dc19797c511d10ed3c87121d50861b5f386b95d3cebdefad",
+  "raw_rows": 43824,
+  "raw_columns": 13,
+  "participant_rows": 5000,
+  "participant_columns": 14,
+  "participant_sha256": "166c715c7986f8be01dfeb37f888fa09e55e2b611546a41859a2857e7a769f90",
+  "selected_variables": [
+    "portfolio_row_id",
+    "No",
+    "pm2.5",
+    "year",
+    "month",
+    "day",
+    "hour",
+    "DEWP",
+    "TEMP",
+    "PRES",
+    "cbwd",
+    "Iws",
+    "Is",
+    "Ir"
+  ],
+  "missing_value_codes": [
+    "",
+    "NaN"
+  ],
+  "weighting_variables": [],
+  "outcomes": [
+    {
+      "variable": "pm2.5",
+      "description": null,
+      "observed_values": []
+    }
+  ],
+  "transformations": [
+    "Downloaded the official UCI normalized CSV and API metadata without modifying the raw files.",
+    "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
+    "Converted documented source missing symbols to blank/NA only in the participant derivative.",
+    "Selected 5000 rows by deterministic SHA-256 rank using the portfolio seed.",
+    "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
+  ],
+  "software": {
+    "python": "3.14.7",
+    "pandas": "2.3.3",
+    "platform": "Windows-11-10.0.26100-SP0"
+  }
+}

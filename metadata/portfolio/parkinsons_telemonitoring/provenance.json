@@ -1,0 +1,72 @@
+{
+  "uci_id": 189,
+  "title": "Parkinsons Telemonitoring",
+  "official_source": "UCI Machine Learning Repository",
+  "repository_url": "https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring",
+  "data_url": "https://archive.ics.uci.edu/static/public/189/data.csv",
+  "dataset_doi": "10.24432/C5ZS3N",
+  "dataset_year": 2009,
+  "current_record_version": "UCI record last updated Fri Nov 03 2023",
+  "access_date": "2026-10-01",
+  "license": null,
+  "raw_data_sha256": "689fd221159cd78b07a50087992c9d9472a4eb26527cdc8e896a708a2013ebcf",
+  "official_metadata_sha256": "f729e3a13f60e64fc00ff0af32bd258dee8a3156885d48fde8f606d65fe7d449",
+  "raw_rows": 5875,
+  "raw_columns": 22,
+  "participant_rows": 5000,
+  "participant_columns": 23,
+  "participant_sha256": "f4f7268c5b4807dc3cafd744ad0c825251e972e20b8855646952a1e04ed4f0a0",
+  "selected_variables": [
+    "portfolio_row_id",
+    "subject#",
+    "age",
+    "sex",
+    "motor_UPDRS",
+    "total_UPDRS",
+    "test_time",
+    "Jitter(%)",
+    "Jitter(Abs)",
+    "Jitter:RAP",
+    "Jitter:PPQ5",
+    "Jitter:DDP",
+    "Shimmer",
+    "Shimmer(dB)",
+    "Shimmer:APQ3",
+    "Shimmer:APQ5",
+    "Shimmer:APQ11",
+    "Shimmer:DDA",
+    "NHR",
+    "HNR",
+    "RPDE",
+    "DFA",
+    "PPE"
+  ],
+  "missing_value_codes": [
+    ""
+  ],
+  "weighting_variables": [],
+  "outcomes": [
+    {
+      "variable": "motor_UPDRS",
+      "description": "Clinician's motor UPDRS score, linearly interpolated",
+      "observed_values": []
+    },
+    {
+      "variable": "total_UPDRS",
+      "description": "Clinician's total UPDRS score, linearly interpolated",
+      "observed_values": []
+    }
+  ],
+  "transformations": [
+    "Downloaded the official UCI normalized CSV and API metadata without modifying the raw files.",
+    "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
+    "Converted documented source missing symbols to blank/NA only in the participant derivative.",
+    "Selected 5000 rows by deterministic SHA-256 rank using the portfolio seed.",
+    "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
+  ],
+  "software": {
+    "python": "3.14.7",
+    "pandas": "2.3.3",
+    "platform": "Windows-11-10.0.26100-SP0"
+  }
+}

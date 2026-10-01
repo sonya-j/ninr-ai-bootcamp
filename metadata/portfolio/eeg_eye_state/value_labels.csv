@@ -1,0 +1,3 @@
+variable,code,official_description,label_status
+eyeDetection,0,,Raw category code observed in official source; use the official description/codebook for meaning.
+eyeDetection,1,,Raw category code observed in official source; use the official description/codebook for meaning.

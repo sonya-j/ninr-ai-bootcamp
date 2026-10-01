@@ -1,0 +1,6 @@
+variable,risk_flags,note
+subject#,identifier_leakage,Identifier; do not use as a model predictor.
+age,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+sex,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+motor_UPDRS,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.
+total_UPDRS,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.

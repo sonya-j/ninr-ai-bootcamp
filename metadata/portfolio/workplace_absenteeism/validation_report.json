@@ -1,0 +1,62 @@
+{
+  "dataset": "workplace_absenteeism",
+  "validated_at": "2026-10-01T17:31:12.639662+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "name": "official source has rows",
+      "passed": true,
+      "detail": "observed 740"
+    },
+    {
+      "name": "row count agrees with official metadata",
+      "passed": true,
+      "detail": "metadata=740, expected official CSV=740, observed=740"
+    },
+    {
+      "name": "participant row range",
+      "passed": true,
+      "detail": "observed 740"
+    },
+    {
+      "name": "participant variable range",
+      "passed": true,
+      "detail": "observed 22 including derived ID"
+    },
+    {
+      "name": "derived row ID unique",
+      "passed": true,
+      "detail": "portfolio_row_id is unique"
+    },
+    {
+      "name": "dictionary covers participant",
+      "passed": true,
+      "detail": "all participant variables documented"
+    },
+    {
+      "name": "raw missing codes removed from participant file",
+      "passed": true,
+      "detail": "{}"
+    },
+    {
+      "name": "participant hash matches provenance",
+      "passed": true,
+      "detail": "checksum verified"
+    },
+    {
+      "name": "raw hash matches provenance",
+      "passed": true,
+      "detail": "checksum verified"
+    },
+    {
+      "name": "official URL recorded",
+      "passed": true,
+      "detail": "https://archive.ics.uci.edu/static/public/445/data.csv"
+    },
+    {
+      "name": "official target retained",
+      "passed": true,
+      "detail": "targets=['absenteeism time in hours']"
+    }
+  ]
+}

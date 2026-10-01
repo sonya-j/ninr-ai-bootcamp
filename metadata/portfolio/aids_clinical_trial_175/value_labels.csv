@@ -1,0 +1,37 @@
+variable,code,official_description,label_status
+cid,0,"censoring indicator (1 = failure, 0 = censoring)",Raw category code observed in official source; use the official description/codebook for meaning.
+cid,1,"censoring indicator (1 = failure, 0 = censoring)",Raw category code observed in official source; use the official description/codebook for meaning.
+trt,0,"treatment indicator (0 = ZDV only; 1 = ZDV + ddI, 2 = ZDV + Zal, 3 = ddI only)",Raw category code observed in official source; use the official description/codebook for meaning.
+trt,1,"treatment indicator (0 = ZDV only; 1 = ZDV + ddI, 2 = ZDV + Zal, 3 = ddI only)",Raw category code observed in official source; use the official description/codebook for meaning.
+trt,2,"treatment indicator (0 = ZDV only; 1 = ZDV + ddI, 2 = ZDV + Zal, 3 = ddI only)",Raw category code observed in official source; use the official description/codebook for meaning.
+trt,3,"treatment indicator (0 = ZDV only; 1 = ZDV + ddI, 2 = ZDV + Zal, 3 = ddI only)",Raw category code observed in official source; use the official description/codebook for meaning.
+hemo,0,"hemophilia (0=no, 1=yes)",Raw category code observed in official source; use the official description/codebook for meaning.
+hemo,1,"hemophilia (0=no, 1=yes)",Raw category code observed in official source; use the official description/codebook for meaning.
+homo,0,"homosexual activity (0=no, 1=yes)",Raw category code observed in official source; use the official description/codebook for meaning.
+homo,1,"homosexual activity (0=no, 1=yes)",Raw category code observed in official source; use the official description/codebook for meaning.
+drugs,0,"history of IV drug use (0=no, 1=yes)",Raw category code observed in official source; use the official description/codebook for meaning.
+drugs,1,"history of IV drug use (0=no, 1=yes)",Raw category code observed in official source; use the official description/codebook for meaning.
+karnof,100,Karnofsky score (on a scale of 0-100),Raw category code observed in official source; use the official description/codebook for meaning.
+karnof,70,Karnofsky score (on a scale of 0-100),Raw category code observed in official source; use the official description/codebook for meaning.
+karnof,80,Karnofsky score (on a scale of 0-100),Raw category code observed in official source; use the official description/codebook for meaning.
+karnof,90,Karnofsky score (on a scale of 0-100),Raw category code observed in official source; use the official description/codebook for meaning.
+oprior,0,"Non-ZDV antiretroviral therapy pre-175 (0=no, 1=yes)",Raw category code observed in official source; use the official description/codebook for meaning.
+oprior,1,"Non-ZDV antiretroviral therapy pre-175 (0=no, 1=yes)",Raw category code observed in official source; use the official description/codebook for meaning.
+z30,0,"ZDV in the 30 days prior to 175 (0=no, 1=yes)",Raw category code observed in official source; use the official description/codebook for meaning.
+z30,1,"ZDV in the 30 days prior to 175 (0=no, 1=yes)",Raw category code observed in official source; use the official description/codebook for meaning.
+zprior,1,"ZDV prior to 175 (0=no, 1=yes)",Raw category code observed in official source; use the official description/codebook for meaning.
+race,0,"race (0=White, 1=non-white)",Raw category code observed in official source; use the official description/codebook for meaning.
+race,1,"race (0=White, 1=non-white)",Raw category code observed in official source; use the official description/codebook for meaning.
+gender,0,"gender (0=F, 1=M)",Raw category code observed in official source; use the official description/codebook for meaning.
+gender,1,"gender (0=F, 1=M)",Raw category code observed in official source; use the official description/codebook for meaning.
+str2,0,"antiretroviral history (0=naive, 1=experienced)",Raw category code observed in official source; use the official description/codebook for meaning.
+str2,1,"antiretroviral history (0=naive, 1=experienced)",Raw category code observed in official source; use the official description/codebook for meaning.
+strat,1,"antiretroviral history stratification (1='Antiretroviral Naive',2='> 1 but <= 52 weeks of prior antiretroviral therapy',3='> 52 weeks)",Raw category code observed in official source; use the official description/codebook for meaning.
+strat,2,"antiretroviral history stratification (1='Antiretroviral Naive',2='> 1 but <= 52 weeks of prior antiretroviral therapy',3='> 52 weeks)",Raw category code observed in official source; use the official description/codebook for meaning.
+strat,3,"antiretroviral history stratification (1='Antiretroviral Naive',2='> 1 but <= 52 weeks of prior antiretroviral therapy',3='> 52 weeks)",Raw category code observed in official source; use the official description/codebook for meaning.
+symptom,0,"symptomatic indicator (0=asymp, 1=symp)",Raw category code observed in official source; use the official description/codebook for meaning.
+symptom,1,"symptomatic indicator (0=asymp, 1=symp)",Raw category code observed in official source; use the official description/codebook for meaning.
+treat,0,"treatment indicator (0=ZDV only, 1=others)",Raw category code observed in official source; use the official description/codebook for meaning.
+treat,1,"treatment indicator (0=ZDV only, 1=others)",Raw category code observed in official source; use the official description/codebook for meaning.
+offtrt,0,"indicator of off-trt before 96+/-5 weeks (0=no,1=yes)",Raw category code observed in official source; use the official description/codebook for meaning.
+offtrt,1,"indicator of off-trt before 96+/-5 weeks (0=no,1=yes)",Raw category code observed in official source; use the official description/codebook for meaning.

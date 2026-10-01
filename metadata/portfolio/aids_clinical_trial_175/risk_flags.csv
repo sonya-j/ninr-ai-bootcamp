@@ -1,0 +1,11 @@
+variable,risk_flags,note
+pidnum,identifier_leakage,Identifier; do not use as a model predictor.
+cid,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.
+time,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+age,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+homo,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+race,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+gender,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+offtrt,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+cd420,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+cd820,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.

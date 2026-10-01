@@ -1,0 +1,315 @@
+{
+  "access_date": "2026-10-01",
+  "official_repository": "UCI Machine Learning Repository",
+  "sample_size": 5000,
+  "sample_seed": "ninr-ai-summer-research-intensive-portfolio-v1",
+  "datasets": [
+    {
+      "uci_id": 296,
+      "slug": "diabetes_readmission",
+      "category": "Clinical outcomes and health services",
+      "fit": "Inpatient diabetes care, utilization, treatment, and 30-day readmission.",
+      "weight_variables": [],
+      "priority_variables": ["encounter_id", "race", "gender", "age", "admission_type_id", "discharge_disposition_id", "admission_source_id", "time_in_hospital", "medical_specialty", "num_lab_procedures", "num_procedures", "num_medications", "number_outpatient", "number_emergency", "number_inpatient", "number_diagnoses", "max_glu_serum", "A1Cresult", "insulin", "change", "diabetesMed", "readmitted"],
+      "sensitive_variables": ["race", "gender", "age"],
+      "post_outcome_variables": ["discharge_disposition_id", "time_in_hospital", "num_lab_procedures", "num_procedures", "num_medications", "max_glu_serum", "A1Cresult", "insulin", "change", "diabetesMed"],
+      "questions": [
+        "How does prior-year health care utilization relate to readmission within 30 days?",
+        "Is inpatient HbA1c testing associated with early readmission after describing case mix and prior utilization?",
+        "How do early-readmission patterns differ across recorded race, gender, and age groups?"
+      ]
+    },
+    {
+      "uci_id": 880,
+      "slug": "support2_serious_illness",
+      "category": "Clinical outcomes and serious illness",
+      "fit": "Prognosis, mortality, physiology, function, and care decisions among seriously ill hospitalized adults.",
+      "weight_variables": [],
+      "priority_variables": ["id", "age", "sex", "race", "edu", "income", "dzgroup", "dzclass", "num.co", "scoma", "meanbp", "wblc", "hrt", "resp", "temp", "pafi", "alb", "bili", "crea", "sod", "ph", "glucose", "bun", "urine", "adlp", "adls", "dnr", "hospdead", "death", "d.time"],
+      "sensitive_variables": ["age", "sex", "race", "income", "edu"],
+      "post_outcome_variables": ["death", "hospdead", "d.time", "surv2m", "surv6m", "dnrday"],
+      "questions": [
+        "Which admission physiology and functional measures are associated with in-hospital mortality?",
+        "How do prognostic estimates compare with observed survival across diagnostic groups?",
+        "How are do-not-resuscitate decisions patterned by illness severity and patient characteristics?"
+      ]
+    },
+    {
+      "uci_id": 579,
+      "slug": "myocardial_infarction_complications",
+      "category": "Clinical outcomes and acute care",
+      "fit": "Pre-admission history, acute measurements, treatment, and complications after myocardial infarction.",
+      "weight_variables": [],
+      "priority_variables": ["ID", "AGE", "SEX", "INF_ANAM", "STENOK_AN", "FK_STENOK", "IBS_POST", "IBS_NASL", "GB", "SIM_GIPERT", "DLIT_AG", "ZSN_A", "S_AD_KBRIG", "D_AD_KBRIG", "K_BLOOD", "NA_BLOOD", "ALT_BLOOD", "AST_BLOOD", "L_BLOOD", "ROE", "TIME_B_S", "ASP_S_n", "FIBR_PREDS", "PREDS_TAH", "FIBR_JELUD", "OTEK_LANC", "RAZRIV", "ZSN", "REC_IM", "LET_IS"],
+      "sensitive_variables": ["AGE", "SEX"],
+      "post_outcome_variables": ["ASP_S_n", "FIBR_PREDS", "PREDS_TAH", "FIBR_JELUD", "OTEK_LANC", "RAZRIV", "ZSN", "REC_IM", "LET_IS"],
+      "questions": [
+        "Which presenting characteristics are associated with life-threatening myocardial infarction complications?",
+        "How do electrolyte and enzyme measurements differ across complication profiles?",
+        "How sensitive are risk models to including treatments delivered after presentation?"
+      ]
+    },
+    {
+      "uci_id": 890,
+      "slug": "aids_clinical_trial_175",
+      "category": "Clinical trials and infectious disease",
+      "fit": "Randomized HIV treatment, immune markers, symptoms, and clinical progression.",
+      "weight_variables": [],
+      "priority_variables": [],
+      "sensitive_variables": ["age", "race", "gender", "homo"],
+      "post_outcome_variables": ["time", "cid", "offtrt", "cd420", "cd820"],
+      "questions": [
+        "How do treatment arms differ in time to AIDS progression or death?",
+        "How do baseline CD4 and CD8 counts relate to subsequent clinical progression?",
+        "Do treatment effects or model errors differ across demographic subgroups?"
+      ]
+    },
+    {
+      "uci_id": 503,
+      "slug": "hepatitis_c_treatment",
+      "category": "Clinical outcomes and infectious disease",
+      "fit": "Symptoms, blood tests, viral RNA over time, and baseline liver histology among patients treated for HCV.",
+      "weight_variables": [],
+      "priority_variables": [],
+      "sensitive_variables": ["Age ", "Gender"],
+      "post_outcome_variables": ["ALT4", "ALT 12", "ALT 24", "ALT 36", "ALT 48", "ALT after 24 w", "RNA 4", "RNA 12", "RNA EOT", "RNA EF"],
+      "questions": [
+        "Which baseline symptoms and laboratory measures are associated with histological stage?",
+        "How do ALT and RNA measurements change across treatment time points?",
+        "Can early RNA measurements identify patients with later end-of-treatment response?"
+      ]
+    },
+    {
+      "uci_id": 193,
+      "slug": "cardiotocography",
+      "category": "Maternal and fetal health",
+      "fit": "Fetal heart-rate and uterine-contraction measurements with expert fetal-state classifications.",
+      "weight_variables": [],
+      "priority_variables": [],
+      "sensitive_variables": [],
+      "post_outcome_variables": ["CLASS", "NSP"],
+      "questions": [
+        "Which cardiotocographic measurements distinguish normal, suspect, and pathologic fetal states?",
+        "How are accelerations, decelerations, and variability related to expert classification?",
+        "Which fetal-state groups are most often confused by classification models?"
+      ]
+    },
+    {
+      "uci_id": 189,
+      "slug": "parkinsons_telemonitoring",
+      "category": "Symptoms and remote monitoring",
+      "fit": "Repeated voice measurements and Parkinson disease symptom-severity scores.",
+      "weight_variables": [],
+      "priority_variables": [],
+      "sensitive_variables": ["age", "sex"],
+      "post_outcome_variables": ["motor_UPDRS", "total_UPDRS"],
+      "questions": [
+        "Which voice features are most strongly associated with motor UPDRS severity?",
+        "How do voice measurements and symptom scores change over study time?",
+        "How should repeated observations from the same participant be handled during model validation?"
+      ]
+    },
+    {
+      "uci_id": 329,
+      "slug": "diabetic_retinopathy",
+      "category": "Screening and diagnostic support",
+      "fit": "Retinal image-derived features for diabetic retinopathy screening.",
+      "weight_variables": [],
+      "priority_variables": [],
+      "sensitive_variables": [],
+      "post_outcome_variables": ["Class"],
+      "questions": [
+        "Which retinal image features are associated with diabetic retinopathy screening classification?",
+        "How does image quality affect classification performance?",
+        "What sensitivity-specificity tradeoff would be appropriate for a screening workflow?"
+      ]
+    },
+    {
+      "uci_id": 925,
+      "slug": "infrared_thermography_temperature",
+      "category": "Screening and measurement science",
+      "fit": "Infrared facial temperatures, oral temperature, environment, and participant characteristics.",
+      "weight_variables": [],
+      "priority_variables": ["SubjectID", "Gender", "Age", "Ethnicity", "T_atm", "Humidity", "Distance", "T_offset1", "Max1R13_1", "Max1L13_1", "aveAllR13_1", "aveAllL13_1", "T_RC1", "T_LC1", "RCC1", "LCC1", "canthiMax1", "canthi4Max1", "T_FHCC1", "T_FHRC1", "T_FHLC1", "T_FHBC1", "T_FHTC1", "T_FH_Max1", "T_FHC_Max1", "T_Max1", "T_OR1", "T_OR_Max1", "aveOralF", "aveOralM"],
+      "sensitive_variables": ["Gender", "Age", "Ethnicity"],
+      "post_outcome_variables": ["aveOralF", "aveOralM", "T_OR1", "T_OR_Max1"],
+      "questions": [
+        "How accurately do facial infrared measurements estimate oral temperature?",
+        "How do ambient temperature, humidity, and measurement distance affect agreement?",
+        "Does measurement error differ across age, gender, or ethnicity groups?"
+      ]
+    },
+    {
+      "uci_id": 264,
+      "slug": "eeg_eye_state",
+      "category": "Neurophysiology and monitoring",
+      "fit": "EEG channel measurements paired with open-versus-closed eye state.",
+      "weight_variables": [],
+      "priority_variables": [],
+      "sensitive_variables": [],
+      "post_outcome_variables": ["eyeDetection"],
+      "questions": [
+        "Which EEG channels best distinguish open from closed eye state?",
+        "How stable is classification across time-ordered segments?",
+        "How do artifacts and extreme channel values affect model performance?"
+      ]
+    },
+    {
+      "uci_id": 544,
+      "slug": "obesity_lifestyle",
+      "category": "Health behavior and chronic disease",
+      "fit": "Eating habits, physical activity, transportation, anthropometrics, and obesity category.",
+      "weight_variables": [],
+      "priority_variables": [],
+      "sensitive_variables": ["Gender", "Age"],
+      "post_outcome_variables": ["Weight", "Height", "NObeyesdad"],
+      "questions": [
+        "How are physical activity, food patterns, and transportation associated with obesity category?",
+        "How does family history modify observed associations between behavior and obesity?",
+        "How much apparent predictive performance comes directly from height and weight?"
+      ]
+    },
+    {
+      "uci_id": 373,
+      "slug": "drug_consumption",
+      "category": "Health behavior and substance use",
+      "fit": "Demographics, personality measures, sensation seeking, and self-reported substance-use categories.",
+      "weight_variables": [],
+      "priority_variables": ["id", "age", "gender", "education", "country", "ethnicity", "nscore", "escore", "oscore", "ascore", "cscore", "impuslive", "ss", "alcohol", "amphet", "benzos", "caff", "cannabis", "coke", "crack", "ecstasy", "heroin", "ketamine", "legalh", "lsd", "meth", "mushrooms", "nicotine", "semer", "vsa"],
+      "sensitive_variables": ["age", "gender", "education", "country", "ethnicity"],
+      "post_outcome_variables": ["alcohol", "amphet", "benzos", "caff", "cannabis", "coke", "crack", "ecstasy", "heroin", "ketamine", "legalh", "lsd", "meth", "mushrooms", "nicotine", "semer", "vsa"],
+      "questions": [
+        "Which personality and sensation-seeking measures are associated with substance-use recency?",
+        "What patterns of polysubstance use appear across the recorded drug categories?",
+        "How do subgroup imbalance and sensitive demographics affect classification performance?"
+      ]
+    },
+    {
+      "uci_id": 445,
+      "slug": "workplace_absenteeism",
+      "category": "Occupational health and workforce",
+      "fit": "Worker characteristics, health behaviors, work context, reasons for absence, and absence duration.",
+      "weight_variables": [],
+      "priority_variables": [],
+      "sensitive_variables": ["Age", "Education", "Son"],
+      "post_outcome_variables": ["Reason for absence", "Absenteeism time in hours"],
+      "questions": [
+        "How are work context, commuting distance, and service time associated with absence duration?",
+        "How do BMI, smoking, and alcohol indicators relate to absenteeism patterns?",
+        "Which reasons for absence account for the greatest number of lost work hours?"
+      ]
+    },
+    {
+      "uci_id": 697,
+      "slug": "student_dropout_sdoh",
+      "category": "Education and social determinants",
+      "fit": "Educational, financial, demographic, and macroeconomic factors associated with dropout and graduation.",
+      "weight_variables": [],
+      "priority_variables": ["Marital Status", "Application mode", "Course", "Daytime/evening attendance", "Previous qualification", "Previous qualification (grade)", "Mother's qualification", "Father's qualification", "Mother's occupation", "Father's occupation", "Admission grade", "Displaced", "Educational special needs", "Debtor", "Tuition fees up to date", "Gender", "Scholarship holder", "Age at enrollment", "International", "Curricular units 1st sem (enrolled)", "Curricular units 1st sem (approved)", "Curricular units 1st sem (grade)", "Curricular units 2nd sem (enrolled)", "Curricular units 2nd sem (approved)", "Curricular units 2nd sem (grade)", "Unemployment rate", "Inflation rate", "GDP", "Target"],
+      "sensitive_variables": ["Marital Status", "Gender", "Age at enrollment", "International", "Displaced", "Educational special needs"],
+      "post_outcome_variables": ["Curricular units 2nd sem (enrolled)", "Curricular units 2nd sem (approved)", "Curricular units 2nd sem (grade)", "Target"],
+      "questions": [
+        "How are tuition status, debt, and scholarship support associated with dropout?",
+        "How much do first-semester versus second-semester measures change predictive performance?",
+        "Do prediction errors differ for displaced, international, older, or special-needs students?"
+      ]
+    },
+    {
+      "uci_id": 2,
+      "slug": "adult_income_sdoh",
+      "category": "Economic social determinants",
+      "fit": "Employment, education, work hours, demographics, and income category as an SDOH teaching dataset.",
+      "additional_missing_symbols": ["?"],
+      "weight_variables": ["fnlwgt"],
+      "priority_variables": [],
+      "sensitive_variables": ["age", "marital-status", "relationship", "race", "sex", "native-country"],
+      "post_outcome_variables": ["income"],
+      "questions": [
+        "How are education, occupation, and weekly work hours associated with income category?",
+        "How do weighted and unweighted descriptions differ when using the provided final weight?",
+        "How do model errors and predicted income differ across race and sex groups?"
+      ]
+    },
+    {
+      "uci_id": 183,
+      "slug": "communities_crime_sdoh",
+      "category": "Community social determinants",
+      "fit": "Community-level demographic, economic, housing, mobility, and public-safety measures.",
+      "additional_missing_symbols": ["?"],
+      "weight_variables": [],
+      "priority_variables": ["state", "county", "community", "communityname", "population", "householdsize", "racepctblack", "racePctWhite", "racePctAsian", "racePctHisp", "agePct65up", "pctUrban", "medIncome", "pctWPubAsst", "perCapInc", "PctPopUnderPov", "PctNotHSGrad", "PctUnemployed", "PctEmploy", "PctFam2Par", "PctNotSpeakEnglWell", "PctPersDenseHous", "PctHousNoPhone", "PctWOFullPlumb", "NumInShelters", "NumStreet", "PctForeignBorn", "PopDens", "PctUsePubTrans", "ViolentCrimesPerPop"],
+      "sensitive_variables": ["racepctblack", "racePctWhite", "racePctAsian", "racePctHisp", "PctForeignBorn"],
+      "post_outcome_variables": ["ViolentCrimesPerPop"],
+      "questions": [
+        "How are poverty, unemployment, and educational attainment associated with community violent-crime rates?",
+        "How do housing conditions, density, and public transportation relate to community outcomes?",
+        "How can ecological fallacy and racial proxy discrimination distort interpretations of community-level models?"
+      ]
+    },
+    {
+      "uci_id": 360,
+      "slug": "air_quality_sensors",
+      "category": "Environmental health",
+      "fit": "Hourly air-pollutant reference measurements, sensor responses, temperature, and humidity.",
+      "additional_missing_symbols": ["-200"],
+      "expected_normalized_rows": 9357,
+      "source_count_note": "The UCI record reports 9,358 instances; the official normalized data.csv contains 9,357 rows.",
+      "weight_variables": [],
+      "priority_variables": [],
+      "sensitive_variables": [],
+      "post_outcome_variables": [],
+      "questions": [
+        "How do pollutant concentrations vary by time, temperature, and humidity?",
+        "How closely do metal-oxide sensor responses track reference pollutant measurements?",
+        "How does the source missing-value code affect daily and seasonal summaries?"
+      ]
+    },
+    {
+      "uci_id": 381,
+      "slug": "beijing_pm25",
+      "category": "Environmental health",
+      "fit": "Hourly PM2.5, weather, wind direction, and precipitation measurements.",
+      "weight_variables": [],
+      "priority_variables": [],
+      "sensitive_variables": [],
+      "post_outcome_variables": ["pm2.5"],
+      "questions": [
+        "How do wind direction, wind speed, temperature, and pressure relate to PM2.5?",
+        "What seasonal and diurnal patterns appear in PM2.5 concentrations?",
+        "How does missing PM2.5 measurement affect trend estimates?"
+      ]
+    },
+    {
+      "uci_id": 864,
+      "slug": "room_occupancy_environment",
+      "category": "Built environment and sensing",
+      "fit": "Indoor temperature, light, sound, CO2, motion, and room occupancy.",
+      "weight_variables": [],
+      "priority_variables": [],
+      "sensitive_variables": [],
+      "post_outcome_variables": ["Room_Occupancy_Count"],
+      "questions": [
+        "Which indoor environmental sensors best distinguish room occupancy levels?",
+        "How quickly does CO2 respond to changes in occupancy?",
+        "Does model performance remain stable across different dates and times?"
+      ]
+    },
+    {
+      "uci_id": 275,
+      "slug": "bike_sharing_environment",
+      "category": "Built environment and physical activity",
+      "fit": "Hourly bike-rental demand with season, weather, workday, and calendar measures.",
+      "expected_normalized_rows": 17379,
+      "source_count_note": "The UCI record reports 17,389 instances; the official normalized data.csv contains 17,379 rows.",
+      "weight_variables": [],
+      "priority_variables": [],
+      "sensitive_variables": [],
+      "post_outcome_variables": ["casual", "registered", "cnt"],
+      "questions": [
+        "How do temperature, humidity, wind, and weather conditions relate to bike demand?",
+        "How do hourly patterns differ between workdays, holidays, and seasons?",
+        "Why would using casual and registered counts to predict total count create leakage?"
+      ]
+    }
+  ]
+}

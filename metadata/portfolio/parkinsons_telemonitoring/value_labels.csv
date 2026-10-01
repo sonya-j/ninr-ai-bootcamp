@@ -1,0 +1,26 @@
+variable,code,official_description,label_status
+age,36,Subject age,Raw category code observed in official source; use the official description/codebook for meaning.
+age,49,Subject age,Raw category code observed in official source; use the official description/codebook for meaning.
+age,55,Subject age,Raw category code observed in official source; use the official description/codebook for meaning.
+age,56,Subject age,Raw category code observed in official source; use the official description/codebook for meaning.
+age,57,Subject age,Raw category code observed in official source; use the official description/codebook for meaning.
+age,58,Subject age,Raw category code observed in official source; use the official description/codebook for meaning.
+age,59,Subject age,Raw category code observed in official source; use the official description/codebook for meaning.
+age,60,Subject age,Raw category code observed in official source; use the official description/codebook for meaning.
+age,61,Subject age,Raw category code observed in official source; use the official description/codebook for meaning.
+age,62,Subject age,Raw category code observed in official source; use the official description/codebook for meaning.
+age,63,Subject age,Raw category code observed in official source; use the official description/codebook for meaning.
+age,65,Subject age,Raw category code observed in official source; use the official description/codebook for meaning.
+age,66,Subject age,Raw category code observed in official source; use the official description/codebook for meaning.
+age,67,Subject age,Raw category code observed in official source; use the official description/codebook for meaning.
+age,68,Subject age,Raw category code observed in official source; use the official description/codebook for meaning.
+age,71,Subject age,Raw category code observed in official source; use the official description/codebook for meaning.
+age,72,Subject age,Raw category code observed in official source; use the official description/codebook for meaning.
+age,73,Subject age,Raw category code observed in official source; use the official description/codebook for meaning.
+age,74,Subject age,Raw category code observed in official source; use the official description/codebook for meaning.
+age,75,Subject age,Raw category code observed in official source; use the official description/codebook for meaning.
+age,76,Subject age,Raw category code observed in official source; use the official description/codebook for meaning.
+age,78,Subject age,Raw category code observed in official source; use the official description/codebook for meaning.
+age,85,Subject age,Raw category code observed in official source; use the official description/codebook for meaning.
+sex,0,"Subject sex '0' - male, '1' - female",Raw category code observed in official source; use the official description/codebook for meaning.
+sex,1,"Subject sex '0' - male, '1' - female",Raw category code observed in official source; use the official description/codebook for meaning.

@@ -1,0 +1,17 @@
+variable,risk_flags,note
+ID,identifier_leakage,Identifier; do not use as a model predictor.
+AGE,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+SEX,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+ASP_S_n,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+FIBR_PREDS,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.
+PREDS_TAH,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.
+JELUD_TAH,outcome|target_leakage,Official target; do not use to predict itself or another directly derived outcome.
+FIBR_JELUD,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.
+A_V_BLOK,outcome|target_leakage,Official target; do not use to predict itself or another directly derived outcome.
+OTEK_LANC,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.
+RAZRIV,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.
+DRESSLER,outcome|target_leakage,Official target; do not use to predict itself or another directly derived outcome.
+ZSN,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.
+REC_IM,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.
+P_IM_STEN,outcome|target_leakage,Official target; do not use to predict itself or another directly derived outcome.
+LET_IS,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.

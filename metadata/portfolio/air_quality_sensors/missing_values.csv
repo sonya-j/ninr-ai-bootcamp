@@ -1,0 +1,14 @@
+variable,raw_missing_symbols,raw_missing_count,participant_representation
+CO(GT),"["""", ""-200""]",1683,blank/NA
+PT08.S1(CO),"["""", ""-200""]",366,blank/NA
+NMHC(GT),"["""", ""-200""]",8443,blank/NA
+C6H6(GT),"["""", ""-200""]",366,blank/NA
+PT08.S2(NMHC),"["""", ""-200""]",366,blank/NA
+NOx(GT),"["""", ""-200""]",1639,blank/NA
+PT08.S3(NOx),"["""", ""-200""]",366,blank/NA
+NO2(GT),"["""", ""-200""]",1642,blank/NA
+PT08.S4(NO2),"["""", ""-200""]",366,blank/NA
+PT08.S5(O3),"["""", ""-200""]",366,blank/NA
+T,"["""", ""-200""]",366,blank/NA
+RH,"["""", ""-200""]",366,blank/NA
+AH,"["""", ""-200""]",366,blank/NA

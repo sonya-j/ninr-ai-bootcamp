@@ -1,0 +1,8 @@
+variable,raw_missing_symbols,raw_missing_count,participant_representation
+race,"["""", ""NaN""]",2273,blank/NA
+weight,"["""", ""NaN""]",98569,blank/NA
+payer_code,"["""", ""NaN""]",40256,blank/NA
+medical_specialty,"["""", ""NaN""]",49949,blank/NA
+diag_1,"["""", ""NaN""]",21,blank/NA
+diag_2,"["""", ""NaN""]",358,blank/NA
+diag_3,"["""", ""NaN""]",1423,blank/NA

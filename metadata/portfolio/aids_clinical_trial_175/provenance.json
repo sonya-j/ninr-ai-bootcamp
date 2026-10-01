@@ -1,0 +1,73 @@
+{
+  "uci_id": 890,
+  "title": "AIDS Clinical Trials Group Study 175",
+  "official_source": "UCI Machine Learning Repository",
+  "repository_url": "https://archive.ics.uci.edu/dataset/890/aids+clinical+trials+group+study+175",
+  "data_url": "https://archive.ics.uci.edu/static/public/890/data.csv",
+  "dataset_doi": "10.24432/C5ZG8F",
+  "dataset_year": 1996,
+  "current_record_version": "UCI record last updated Fri Nov 03 2023",
+  "access_date": "2026-10-01",
+  "license": null,
+  "raw_data_sha256": "cf58638c7687764ccb32d037938142518293d505eec349ccec406d4d42ba9532",
+  "official_metadata_sha256": "45dec83113d590e8a74415fee5e934b7d28ec81861bb20fa3717f70da952a6f5",
+  "raw_rows": 2139,
+  "raw_columns": 25,
+  "participant_rows": 2139,
+  "participant_columns": 26,
+  "participant_sha256": "7027bd7fabba55ff3687faa33a9676a1b13c2ccd2c8fe1f52fe1b400cd50ad11",
+  "selected_variables": [
+    "portfolio_row_id",
+    "pidnum",
+    "age",
+    "homo",
+    "race",
+    "gender",
+    "cid",
+    "time",
+    "trt",
+    "wtkg",
+    "hemo",
+    "drugs",
+    "karnof",
+    "oprior",
+    "z30",
+    "zprior",
+    "preanti",
+    "str2",
+    "strat",
+    "symptom",
+    "treat",
+    "offtrt",
+    "cd40",
+    "cd420",
+    "cd80",
+    "cd820"
+  ],
+  "missing_value_codes": [
+    ""
+  ],
+  "weighting_variables": [],
+  "outcomes": [
+    {
+      "variable": "cid",
+      "description": "censoring indicator (1 = failure, 0 = censoring)",
+      "observed_values": [
+        "0",
+        "1"
+      ]
+    }
+  ],
+  "transformations": [
+    "Downloaded the official UCI normalized CSV and API metadata without modifying the raw files.",
+    "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
+    "Converted documented source missing symbols to blank/NA only in the participant derivative.",
+    "Selected 2139 rows by deterministic SHA-256 rank using the portfolio seed.",
+    "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
+  ],
+  "software": {
+    "python": "3.14.7",
+    "pandas": "2.3.3",
+    "platform": "Windows-11-10.0.26100-SP0"
+  }
+}

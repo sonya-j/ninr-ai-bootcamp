@@ -1,0 +1,289 @@
+{
+  "uci_id": 373,
+  "title": "Drug Consumption (Quantified)",
+  "official_source": "UCI Machine Learning Repository",
+  "repository_url": "https://archive.ics.uci.edu/dataset/373/drug+consumption+quantified",
+  "data_url": "https://archive.ics.uci.edu/static/public/373/data.csv",
+  "dataset_doi": "10.24432/C5TC7S",
+  "dataset_year": 2015,
+  "current_record_version": "UCI record last updated Fri Mar 08 2024",
+  "access_date": "2026-10-01",
+  "license": null,
+  "raw_data_sha256": "145a0af23d90744950c77d3283ba02a44494cfd839d503eb2ae000f6986cd9e5",
+  "official_metadata_sha256": "f969924b97dde9b1c1fe88dcef52c2c210d8a970e8d3c45f8ccf0e27d36dd6b7",
+  "raw_rows": 1885,
+  "raw_columns": 32,
+  "participant_rows": 1885,
+  "participant_columns": 31,
+  "participant_sha256": "5c498a1a9271166f9c13d80f08887802100aa47bbaa83d2e2a8ce78194950915",
+  "selected_variables": [
+    "portfolio_row_id",
+    "id",
+    "age",
+    "gender",
+    "education",
+    "country",
+    "ethnicity",
+    "nscore",
+    "escore",
+    "oscore",
+    "ascore",
+    "cscore",
+    "impuslive",
+    "ss",
+    "alcohol",
+    "amphet",
+    "benzos",
+    "caff",
+    "cannabis",
+    "coke",
+    "crack",
+    "ecstasy",
+    "heroin",
+    "ketamine",
+    "legalh",
+    "lsd",
+    "meth",
+    "mushrooms",
+    "nicotine",
+    "semer",
+    "vsa"
+  ],
+  "missing_value_codes": [
+    ""
+  ],
+  "weighting_variables": [],
+  "outcomes": [
+    {
+      "variable": "alcohol",
+      "description": null,
+      "observed_values": [
+        "CL0",
+        "CL1",
+        "CL2",
+        "CL3",
+        "CL4",
+        "CL5",
+        "CL6"
+      ]
+    },
+    {
+      "variable": "amphet",
+      "description": null,
+      "observed_values": [
+        "CL0",
+        "CL1",
+        "CL2",
+        "CL3",
+        "CL4",
+        "CL5",
+        "CL6"
+      ]
+    },
+    {
+      "variable": "benzos",
+      "description": null,
+      "observed_values": [
+        "CL0",
+        "CL1",
+        "CL2",
+        "CL3",
+        "CL4",
+        "CL5",
+        "CL6"
+      ]
+    },
+    {
+      "variable": "caff",
+      "description": null,
+      "observed_values": [
+        "CL0",
+        "CL1",
+        "CL2",
+        "CL3",
+        "CL4",
+        "CL5",
+        "CL6"
+      ]
+    },
+    {
+      "variable": "cannabis",
+      "description": null,
+      "observed_values": [
+        "CL0",
+        "CL1",
+        "CL2",
+        "CL3",
+        "CL4",
+        "CL5",
+        "CL6"
+      ]
+    },
+    {
+      "variable": "coke",
+      "description": null,
+      "observed_values": [
+        "CL0",
+        "CL1",
+        "CL2",
+        "CL3",
+        "CL4",
+        "CL5",
+        "CL6"
+      ]
+    },
+    {
+      "variable": "crack",
+      "description": null,
+      "observed_values": [
+        "CL0",
+        "CL1",
+        "CL2",
+        "CL3",
+        "CL4",
+        "CL5",
+        "CL6"
+      ]
+    },
+    {
+      "variable": "ecstasy",
+      "description": null,
+      "observed_values": [
+        "CL0",
+        "CL1",
+        "CL2",
+        "CL3",
+        "CL4",
+        "CL5",
+        "CL6"
+      ]
+    },
+    {
+      "variable": "heroin",
+      "description": null,
+      "observed_values": [
+        "CL0",
+        "CL1",
+        "CL2",
+        "CL3",
+        "CL4",
+        "CL5",
+        "CL6"
+      ]
+    },
+    {
+      "variable": "ketamine",
+      "description": null,
+      "observed_values": [
+        "CL0",
+        "CL1",
+        "CL2",
+        "CL3",
+        "CL4",
+        "CL5",
+        "CL6"
+      ]
+    },
+    {
+      "variable": "legalh",
+      "description": null,
+      "observed_values": [
+        "CL0",
+        "CL1",
+        "CL2",
+        "CL3",
+        "CL4",
+        "CL5",
+        "CL6"
+      ]
+    },
+    {
+      "variable": "lsd",
+      "description": null,
+      "observed_values": [
+        "CL0",
+        "CL1",
+        "CL2",
+        "CL3",
+        "CL4",
+        "CL5",
+        "CL6"
+      ]
+    },
+    {
+      "variable": "meth",
+      "description": null,
+      "observed_values": [
+        "CL0",
+        "CL1",
+        "CL2",
+        "CL3",
+        "CL4",
+        "CL5",
+        "CL6"
+      ]
+    },
+    {
+      "variable": "mushrooms",
+      "description": null,
+      "observed_values": [
+        "CL0",
+        "CL1",
+        "CL2",
+        "CL3",
+        "CL4",
+        "CL5",
+        "CL6"
+      ]
+    },
+    {
+      "variable": "nicotine",
+      "description": null,
+      "observed_values": [
+        "CL0",
+        "CL1",
+        "CL2",
+        "CL3",
+        "CL4",
+        "CL5",
+        "CL6"
+      ]
+    },
+    {
+      "variable": "semer",
+      "description": null,
+      "observed_values": [
+        "CL0",
+        "CL1",
+        "CL2",
+        "CL3",
+        "CL4"
+      ]
+    },
+    {
+      "variable": "vsa",
+      "description": null,
+      "observed_values": [
+        "CL0",
+        "CL1",
+        "CL2",
+        "CL3",
+        "CL4",
+        "CL5",
+        "CL6"
+      ]
+    }
+  ],
+  "transformations": [
+    "Downloaded the official UCI normalized CSV and API metadata without modifying the raw files.",
+    "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
+    "Converted documented source missing symbols to blank/NA only in the participant derivative.",
+    "Selected 1885 rows by deterministic SHA-256 rank using the portfolio seed.",
+    "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
+  ],
+  "software": {
+    "python": "3.14.7",
+    "pandas": "2.3.3",
+    "platform": "Windows-11-10.0.26100-SP0"
+  }
+}

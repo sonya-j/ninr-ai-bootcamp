@@ -1,0 +1,80 @@
+{
+  "uci_id": 296,
+  "title": "Diabetes 130-US Hospitals for Years 1999-2008",
+  "official_source": "UCI Machine Learning Repository",
+  "repository_url": "https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999-2008",
+  "data_url": "https://archive.ics.uci.edu/static/public/296/data.csv",
+  "dataset_doi": "10.24432/C5230J",
+  "dataset_year": 2014,
+  "current_record_version": "UCI record last updated Tue Sep 24 2024",
+  "access_date": "2026-10-01",
+  "license": null,
+  "raw_data_sha256": "f792c388d9b470aac4fbf21c39b176534d55a116e7626881c30bbe7ab0341422",
+  "official_metadata_sha256": "6e6e0934d175afe24f54f2199f9895eab21844205fe46be7970c106a104725e9",
+  "raw_rows": 101766,
+  "raw_columns": 50,
+  "participant_rows": 5000,
+  "participant_columns": 31,
+  "participant_sha256": "6ee5a386d34b4ab836bb7897703cb142977866577974d965477e1c79bebde22f",
+  "selected_variables": [
+    "portfolio_row_id",
+    "encounter_id",
+    "race",
+    "gender",
+    "age",
+    "admission_type_id",
+    "discharge_disposition_id",
+    "admission_source_id",
+    "time_in_hospital",
+    "medical_specialty",
+    "num_lab_procedures",
+    "num_procedures",
+    "num_medications",
+    "number_outpatient",
+    "number_emergency",
+    "number_inpatient",
+    "number_diagnoses",
+    "max_glu_serum",
+    "A1Cresult",
+    "insulin",
+    "change",
+    "diabetesMed",
+    "readmitted",
+    "patient_nbr",
+    "weight",
+    "payer_code",
+    "diag_1",
+    "diag_2",
+    "diag_3",
+    "metformin",
+    "repaglinide"
+  ],
+  "missing_value_codes": [
+    "",
+    "NaN"
+  ],
+  "weighting_variables": [],
+  "outcomes": [
+    {
+      "variable": "readmitted",
+      "description": "Days to inpatient readmission. Values: <30 if the patient was readmitted in less than 30 days, >30 if the patient was readmitted in more than 30 days, and No for no record of readmission.",
+      "observed_values": [
+        "<30",
+        ">30",
+        "NO"
+      ]
+    }
+  ],
+  "transformations": [
+    "Downloaded the official UCI normalized CSV and API metadata without modifying the raw files.",
+    "Selected 10-30 source variables using the reviewed manifest, official roles, and source order.",
+    "Converted documented source missing symbols to blank/NA only in the participant derivative.",
+    "Selected 5000 rows by deterministic SHA-256 rank using the portfolio seed.",
+    "Added portfolio_row_id after sampling and wrote UTF-8 CSV with LF line endings."
+  ],
+  "software": {
+    "python": "3.14.7",
+    "pandas": "2.3.3",
+    "platform": "Windows-11-10.0.26100-SP0"
+  }
+}

@@ -1,0 +1,14 @@
+variable,risk_flags,note
+id,identifier_leakage,Identifier; do not use as a model predictor.
+age,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+death,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.
+sex,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+hospdead,outcome|target_leakage|post_outcome_measurement,Official target; do not use to predict itself or another directly derived outcome. Timing may be at or after the prediction point; define the prediction horizon before use.
+d.time,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+edu,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+income,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+race,proxy_discrimination,Sensitive or demographic attribute; audit subgroup representation and errors.
+surv2m,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+surv6m,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+dnrday,post_outcome_measurement,Timing may be at or after the prediction point; define the prediction horizon before use.
+sfdm2,outcome|target_leakage,Official target; do not use to predict itself or another directly derived outcome.
