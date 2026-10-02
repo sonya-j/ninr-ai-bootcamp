@@ -1,0 +1,27 @@
+{
+  "title": "Synthetic multimodal symptom trajectories teaching cohort",
+  "status": "Synthetic teaching data; contains no real participant records",
+  "real_world_destination": "NIH All of Us Research Program Registered Tier CDR v9",
+  "real_world_destination_url": "https://www.researchallofus.org/data-tools/methods/",
+  "data_dictionary_url": "https://support.researchallofus.org/hc/en-us/articles/360033200232-Data-Dictionaries",
+  "access_note": "Individual-level All of Us data must be analyzed inside the secure Researcher Workbench and are not redistributed here.",
+  "generation_seed": 20271002,
+  "participants": 240,
+  "days_generated_per_participant": 35,
+  "participant_day_rows": 8160,
+  "columns": 22,
+  "outcome": "symptom_score_tomorrow",
+  "participant_file_sha256": "905137c3d00d5127bfd4a440f95913fb42e64e8083be1c4bf61926c93e122003",
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1"
+  },
+  "transformations": [
+    "Generated independent participant-level baseline attributes from fixed probability distributions.",
+    "Generated 35-day autocorrelated symptom, wearable, EHR-like, and contextual time series.",
+    "Created the next-day symptom outcome by shifting symptom_score_today within participant.",
+    "Retained days 1-34, yielding 8,160 participant-day observations.",
+    "Introduced 5% patient-reported and 8% wearable predictor missingness with a fixed random seed."
+  ]
+}

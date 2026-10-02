@@ -1,0 +1,9 @@
+variable,missing_count,missing_percent,representation
+pain_today,367,4.5,blank/NA
+fatigue_today,400,4.9,blank/NA
+mood_today,398,4.88,blank/NA
+sleep_quality_today,383,4.69,blank/NA
+steps,641,7.86,blank/NA
+active_minutes,658,8.06,blank/NA
+resting_heart_rate,661,8.1,blank/NA
+sleep_minutes,659,8.08,blank/NA

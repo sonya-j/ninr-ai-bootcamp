@@ -1,0 +1,222 @@
+[
+  {
+    "variable": "participant_id",
+    "modality": "linkage",
+    "description": "Synthetic participant identifier.",
+    "type": "string",
+    "units": "",
+    "timing": "available by end of current day",
+    "risk_flags": "identifier_leakage",
+    "definition_source": "NINR synthetic teaching schema"
+  },
+  {
+    "variable": "day_index",
+    "modality": "time",
+    "description": "Study day, beginning with day 1.",
+    "type": "integer",
+    "units": "day",
+    "timing": "available by end of current day",
+    "risk_flags": "time_trend",
+    "definition_source": "NINR synthetic teaching schema"
+  },
+  {
+    "variable": "age_group",
+    "modality": "context",
+    "description": "Synthetic age band assigned at baseline.",
+    "type": "category",
+    "units": "",
+    "timing": "available by end of current day",
+    "risk_flags": "proxy_discrimination",
+    "definition_source": "NINR synthetic teaching schema"
+  },
+  {
+    "variable": "chronic_condition_count",
+    "modality": "EHR",
+    "description": "Synthetic count of chronic conditions recorded before follow-up.",
+    "type": "integer",
+    "units": "conditions",
+    "timing": "available by end of current day",
+    "risk_flags": "confounding",
+    "definition_source": "NINR synthetic teaching schema"
+  },
+  {
+    "variable": "medication_count",
+    "modality": "EHR",
+    "description": "Synthetic count of active medications at baseline.",
+    "type": "integer",
+    "units": "medications",
+    "timing": "available by end of current day",
+    "risk_flags": "confounding",
+    "definition_source": "NINR synthetic teaching schema"
+  },
+  {
+    "variable": "recent_encounter",
+    "modality": "EHR",
+    "description": "Whether an inpatient, outpatient, or emergency encounter occurred in the prior 7 days.",
+    "type": "binary",
+    "units": "",
+    "timing": "available by end of current day",
+    "risk_flags": "care_seeking|reverse_causation",
+    "definition_source": "NINR synthetic teaching schema"
+  },
+  {
+    "variable": "medication_change",
+    "modality": "EHR",
+    "description": "Whether a medication was started, stopped, or changed in the prior 7 days.",
+    "type": "binary",
+    "units": "",
+    "timing": "available by end of current day",
+    "risk_flags": "confounding_by_indication",
+    "definition_source": "NINR synthetic teaching schema"
+  },
+  {
+    "variable": "care_message",
+    "modality": "EHR",
+    "description": "Whether a patient-clinician portal message was recorded in the prior 7 days.",
+    "type": "binary",
+    "units": "",
+    "timing": "available by end of current day",
+    "risk_flags": "care_seeking",
+    "definition_source": "NINR synthetic teaching schema"
+  },
+  {
+    "variable": "pain_today",
+    "modality": "patient-reported",
+    "description": "Patient-reported pain today on a 0-10 teaching scale.",
+    "type": "continuous",
+    "units": "score",
+    "timing": "available by end of current day",
+    "risk_flags": "same_day_measurement",
+    "definition_source": "NINR synthetic teaching schema"
+  },
+  {
+    "variable": "fatigue_today",
+    "modality": "patient-reported",
+    "description": "Patient-reported fatigue today on a 0-10 teaching scale.",
+    "type": "continuous",
+    "units": "score",
+    "timing": "available by end of current day",
+    "risk_flags": "same_day_measurement",
+    "definition_source": "NINR synthetic teaching schema"
+  },
+  {
+    "variable": "mood_today",
+    "modality": "patient-reported",
+    "description": "Patient-reported mood today on a 0-10 scale; higher is better.",
+    "type": "continuous",
+    "units": "score",
+    "timing": "available by end of current day",
+    "risk_flags": "same_day_measurement",
+    "definition_source": "NINR synthetic teaching schema"
+  },
+  {
+    "variable": "sleep_quality_today",
+    "modality": "patient-reported",
+    "description": "Patient-reported sleep quality today on a 0-10 scale; higher is better.",
+    "type": "continuous",
+    "units": "score",
+    "timing": "available by end of current day",
+    "risk_flags": "same_day_measurement",
+    "definition_source": "NINR synthetic teaching schema"
+  },
+  {
+    "variable": "steps",
+    "modality": "wearable",
+    "description": "Synthetic daily step count.",
+    "type": "integer",
+    "units": "steps/day",
+    "timing": "available by end of current day",
+    "risk_flags": "device_missingness",
+    "definition_source": "NINR synthetic teaching schema"
+  },
+  {
+    "variable": "active_minutes",
+    "modality": "wearable",
+    "description": "Synthetic daily minutes of moderate activity.",
+    "type": "integer",
+    "units": "minutes/day",
+    "timing": "available by end of current day",
+    "risk_flags": "device_missingness",
+    "definition_source": "NINR synthetic teaching schema"
+  },
+  {
+    "variable": "resting_heart_rate",
+    "modality": "wearable",
+    "description": "Synthetic daily resting heart rate.",
+    "type": "continuous",
+    "units": "beats/minute",
+    "timing": "available by end of current day",
+    "risk_flags": "device_missingness",
+    "definition_source": "NINR synthetic teaching schema"
+  },
+  {
+    "variable": "sleep_minutes",
+    "modality": "wearable",
+    "description": "Synthetic sleep duration from the wearable.",
+    "type": "integer",
+    "units": "minutes/day",
+    "timing": "available by end of current day",
+    "risk_flags": "device_missingness",
+    "definition_source": "NINR synthetic teaching schema"
+  },
+  {
+    "variable": "weekend",
+    "modality": "context",
+    "description": "Whether the study day is Saturday or Sunday.",
+    "type": "binary",
+    "units": "",
+    "timing": "available by end of current day",
+    "risk_flags": "calendar_context",
+    "definition_source": "NINR synthetic teaching schema"
+  },
+  {
+    "variable": "temperature_c",
+    "modality": "context",
+    "description": "Synthetic daily ambient temperature linked to the participant-day.",
+    "type": "continuous",
+    "units": "degrees Celsius",
+    "timing": "available by end of current day",
+    "risk_flags": "geographic_proxy",
+    "definition_source": "NINR synthetic teaching schema"
+  },
+  {
+    "variable": "air_quality_index",
+    "modality": "context",
+    "description": "Synthetic daily air quality index linked to the participant-day.",
+    "type": "continuous",
+    "units": "AQI",
+    "timing": "available by end of current day",
+    "risk_flags": "geographic_proxy",
+    "definition_source": "NINR synthetic teaching schema"
+  },
+  {
+    "variable": "social_support",
+    "modality": "context",
+    "description": "Synthetic baseline perceived social-support score from 1-5.",
+    "type": "integer",
+    "units": "score",
+    "timing": "available by end of current day",
+    "risk_flags": "proxy_discrimination",
+    "definition_source": "NINR synthetic teaching schema"
+  },
+  {
+    "variable": "symptom_score_today",
+    "modality": "patient-reported",
+    "description": "Composite symptom severity today from 0-10; higher is worse.",
+    "type": "continuous",
+    "units": "score",
+    "timing": "available by end of current day",
+    "risk_flags": "autoregressive_predictor",
+    "definition_source": "NINR synthetic teaching schema"
+  },
+  {
+    "variable": "symptom_score_tomorrow",
+    "modality": "outcome",
+    "description": "Composite symptom severity on the next study day from 0-10; higher is worse.",
+    "type": "continuous",
+    "units": "score",
+    "timing": "next-day outcome",
+    "risk_flags": "target_leakage",
+    "definition_source": "NINR synthetic teaching schema"
+  }
+]

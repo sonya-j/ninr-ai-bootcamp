@@ -1,0 +1,23 @@
+variable,modality,description,type,units,timing,risk_flags,definition_source
+participant_id,linkage,Synthetic participant identifier.,string,,available by end of current day,identifier_leakage,NINR synthetic teaching schema
+day_index,time,"Study day, beginning with day 1.",integer,day,available by end of current day,time_trend,NINR synthetic teaching schema
+age_group,context,Synthetic age band assigned at baseline.,category,,available by end of current day,proxy_discrimination,NINR synthetic teaching schema
+chronic_condition_count,EHR,Synthetic count of chronic conditions recorded before follow-up.,integer,conditions,available by end of current day,confounding,NINR synthetic teaching schema
+medication_count,EHR,Synthetic count of active medications at baseline.,integer,medications,available by end of current day,confounding,NINR synthetic teaching schema
+recent_encounter,EHR,"Whether an inpatient, outpatient, or emergency encounter occurred in the prior 7 days.",binary,,available by end of current day,care_seeking|reverse_causation,NINR synthetic teaching schema
+medication_change,EHR,"Whether a medication was started, stopped, or changed in the prior 7 days.",binary,,available by end of current day,confounding_by_indication,NINR synthetic teaching schema
+care_message,EHR,Whether a patient-clinician portal message was recorded in the prior 7 days.,binary,,available by end of current day,care_seeking,NINR synthetic teaching schema
+pain_today,patient-reported,Patient-reported pain today on a 0-10 teaching scale.,continuous,score,available by end of current day,same_day_measurement,NINR synthetic teaching schema
+fatigue_today,patient-reported,Patient-reported fatigue today on a 0-10 teaching scale.,continuous,score,available by end of current day,same_day_measurement,NINR synthetic teaching schema
+mood_today,patient-reported,Patient-reported mood today on a 0-10 scale; higher is better.,continuous,score,available by end of current day,same_day_measurement,NINR synthetic teaching schema
+sleep_quality_today,patient-reported,Patient-reported sleep quality today on a 0-10 scale; higher is better.,continuous,score,available by end of current day,same_day_measurement,NINR synthetic teaching schema
+steps,wearable,Synthetic daily step count.,integer,steps/day,available by end of current day,device_missingness,NINR synthetic teaching schema
+active_minutes,wearable,Synthetic daily minutes of moderate activity.,integer,minutes/day,available by end of current day,device_missingness,NINR synthetic teaching schema
+resting_heart_rate,wearable,Synthetic daily resting heart rate.,continuous,beats/minute,available by end of current day,device_missingness,NINR synthetic teaching schema
+sleep_minutes,wearable,Synthetic sleep duration from the wearable.,integer,minutes/day,available by end of current day,device_missingness,NINR synthetic teaching schema
+weekend,context,Whether the study day is Saturday or Sunday.,binary,,available by end of current day,calendar_context,NINR synthetic teaching schema
+temperature_c,context,Synthetic daily ambient temperature linked to the participant-day.,continuous,degrees Celsius,available by end of current day,geographic_proxy,NINR synthetic teaching schema
+air_quality_index,context,Synthetic daily air quality index linked to the participant-day.,continuous,AQI,available by end of current day,geographic_proxy,NINR synthetic teaching schema
+social_support,context,Synthetic baseline perceived social-support score from 1-5.,integer,score,available by end of current day,proxy_discrimination,NINR synthetic teaching schema
+symptom_score_today,patient-reported,Composite symptom severity today from 0-10; higher is worse.,continuous,score,available by end of current day,autoregressive_predictor,NINR synthetic teaching schema
+symptom_score_tomorrow,outcome,Composite symptom severity on the next study day from 0-10; higher is worse.,continuous,score,next-day outcome,target_leakage,NINR synthetic teaching schema

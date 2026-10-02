@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": {
+    "expected shape": true,
+    "expected columns": true,
+    "participant-day unique": true,
+    "outcome complete": true,
+    "outcome range": true,
+    "all four modalities present": true
+  }
+}

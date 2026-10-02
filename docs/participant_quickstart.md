@@ -25,6 +25,16 @@ Use this route if you are ready to compare datasets or begin a team project.
 4. Open its `participant.csv`, `data dictionary`, and `risk flags` together.
 5. Write down the outcome, candidate predictors, unit of observation, prediction time, and one important limitation before analyzing.
 
+### Route C · Try multimodal AI
+
+Use this route after the Day 1 lab to explore repeated symptoms, wearable measures, EHR-like variables, and context.
+
+1. Open [Activity 2: Multimodal Symptom Trajectories](multimodal_symptom_trajectory_activity.md).
+2. Launch the notebook in Google Colab.
+3. Choose a synthetic participant and inspect their trajectory.
+4. Turn modalities on and off and compare prediction error.
+5. Discuss data burden, missingness, subgroup performance, and whether a prediction would support a meaningful nursing action.
+
 ## What each file tells you
 
 | File | Use it to answer… |
