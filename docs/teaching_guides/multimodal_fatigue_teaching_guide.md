@@ -4,7 +4,35 @@
 
 This activity helps beginning learners translate an ambitious multimodal-AI question into a defensible prediction task. It emphasizes longitudinal thinking, modality auditing, baselines, participant-level splitting, missingness, and limits on claims.
 
-The instructional goal is **not** to produce a clinically useful fatigue model. It is to help learners recognize what a dataset can and cannot answer.
+The instructional goal is **not** to produce a clinically useful fatigue model. It is to help learners recognize what a prediction is, how it is evaluated, and what a dataset can and cannot answer.
+
+Assume participants do not know what a feature, target, model, train/test split, baseline, or error metric is. Introduce each idea only when learners need it. The notebook and participant walkthrough use a repeated rhythm:
+
+1. **Learn** one plain-language idea.
+2. **Do** one action.
+3. **Notice** one result.
+4. **Explain** it in the learner's own words.
+
+## Core path and level-up path
+
+The **core path** is appropriate for all participants:
+
+- make a prediction manually;
+- identify inputs and outcome;
+- explore a trajectory and missingness;
+- understand training versus testing;
+- establish the no-ML rule;
+- compare modality groups using ridge regression;
+- interpret MAE and write a calibrated conclusion.
+
+The **level-up path** is optional:
+
+- compare ridge regression with random forest;
+- discuss model flexibility and overfitting;
+- examine participant-level error in more depth;
+- propose time-window, high-fatigue, or person-specific extensions.
+
+Do not let the optional algorithm comparison crowd out the core concepts.
 
 ## Learning objectives
 
@@ -44,18 +72,28 @@ Before the session:
 
 No accounts or credentials are required beyond access to Google Colab. A local Jupyter environment also works after installing the repository requirements.
 
+### Recommended room setup
+
+- Ask participants to work individually for the manual prediction and final evidence statement.
+- Use pairs for the training/test explanation and EHR extension.
+- Keep the participant walkthrough open in a second tab.
+- Tell participants explicitly: “You are not expected to read, edit, or understand the Python code.”
+- Demonstrate how to run a cell, use a dropdown, and recover with **Runtime → Run all**.
+
 ## Suggested 75-minute lesson
 
 | Time | Segment | Instructor action | Learner product |
 |---:|---|---|---|
-| 0–8 min | Frame the north-star question | Ask what “trajectory” and “multimodal” mean | Initial modality list |
-| 8–15 min | Scope the public data | Reveal that EHR is absent; narrow the question | Testable prediction statement |
-| 15–27 min | Explore trajectories | Demonstrate the participant selector | One observation and one caveat |
-| 27–37 min | Missingness and time | Discuss non-wear and consecutive-day outcomes | Missingness hypothesis |
-| 37–48 min | Split and baseline | Contrast participant split with row split | Leakage explanation |
-| 48–60 min | Compare models/modalities | Have groups report MAE and plots | Evidence table |
-| 60–68 min | Error and equity | Inspect participant-level errors | One follow-up check |
-| 68–75 min | EHR extension and debrief | Ask groups to specify timing and actionability | Calibrated conclusion |
+| 0–8 min | Prediction without jargon | Learners make one manual prediction | Prediction and absolute error |
+| 8–17 min | Vocabulary and task | Define input, outcome, model, and trajectory | Precise prediction statement |
+| 17–27 min | Audit modalities | Sort available and absent sources | Completed modality audit |
+| 27–38 min | Explore trajectories | Demonstrate the participant selector | “I notice / I wonder” pair |
+| 38–47 min | Missingness | Separate zero from missing and discuss non-wear | Missingness hypothesis |
+| 47–56 min | Training, testing, baseline | Use practice/exam analogy and no-ML rule | One-sentence leakage explanation |
+| 56–67 min | Compare inputs | Keep ridge regression fixed; change modality groups | MAE comparison table |
+| 67–75 min | Conclude and extend | Write evidence statement; name an EHR extension | Calibrated conclusion |
+
+If you have 90 minutes, add the random-forest level-up and participant-level error discussion.
 
 ## Facilitation script
 
@@ -64,6 +102,16 @@ No accounts or credentials are required beyond access to Google Colab. A local J
 “Imagine a nurse wants an alert before a patient's fatigue worsens tomorrow. What information would be available by the end of today, and what would only become known tomorrow?”
 
 Use responses to establish the prediction cutoff. Information recorded after the cutoff is unavailable at prediction time, even if it exists in the final dataset.
+
+Before defining ML, have learners use the notebook's prediction game. Ask, “What rule did you use?” Then explain that an ML algorithm also develops a rule from earlier examples, although its rule is mathematical and learned systematically.
+
+### Explain AI without anthropomorphism
+
+Suggested wording:
+
+> “The model does not understand fatigue. It estimates a number from patterns in examples. We evaluate the number, not the model's intentions or reasoning.”
+
+Avoid phrases such as “the AI knows,” “the model thinks,” or “the model decides the patient is fatigued.”
 
 ### Modality audit
 
@@ -75,9 +123,57 @@ Ask groups to place each variable into one of five bins: patient report, wearabl
 
 Today's fatigue is a strong baseline because symptoms often persist. If a complex multimodal model cannot improve on that baseline, its extra burden may not be justified. A model should also be compared on unseen people, not only unseen rows.
 
+Make clear that the baseline is a **rule, not ML**: tomorrow equals today. Learners should record its MAE before viewing ML results.
+
+### Explain MAE with a worked example
+
+Write three errors where everyone can see them:
+
+```text
+errors: 1 point, 1 point, 0 points
+MAE = (1 + 1 + 0) / 3 = 0.67 fatigue points
+```
+
+Ask learners to interpret the unit. MAE is expressed in fatigue-scale points, not a percentage.
+
 ### Result discussion
 
 Do not promise a specific winning feature set. Results may change slightly with software versions, and this small dataset has heterogeneous follow-up. Grade the reasoning, not whether learners obtain the lowest MAE.
+
+## Checkpoint answer key
+
+| Checkpoint | Essential idea |
+|---|---|
+| Why can tomorrow's fatigue not be an input? | It is not available at the end-of-today prediction time; using it is future-information leakage. |
+| Does one correct manual prediction prove the rule works? | No. It may be luck; performance must be checked across separate examples. |
+| Is missing steps the same as zero steps? | No. Zero is observed; missing is unavailable and may reflect non-wear or failure. |
+| Why split by participant? | Days from the same person are correlated; a row split would create an easier and potentially misleading test. |
+| Why use a baseline? | It shows whether added complexity and data collection improve on a simple reasonable rule. |
+| Does lower MAE show causation? | No. Predictive association does not establish why fatigue changes. |
+| Can this activity test EHR value? | No. The source contains no EHR data. |
+| Does the best test MAE justify clinical use? | No. Clinical use requires representative validation, workflow fit, actionability, safety, and prospective evaluation. |
+
+## Questions participants may ask
+
+### “Is this really AI?”
+
+Ridge regression and random forests are machine-learning methods commonly placed under the broad AI umbrella. The educational point is the prediction workflow, not whether a method sounds futuristic.
+
+### “Why not use a neural network or generative AI?”
+
+The sample is small, and the learning goal is interpretation. A more complicated method would add cognitive and statistical complexity without guaranteeing better generalization.
+
+### “Why are there only 28 people?”
+
+This was a pilot study. Repeated days provide many rows, but rows are not independent people. The small number of participants is a major limitation.
+
+### “Which input caused fatigue?”
+
+This activity evaluates prediction, not causation. Feature associations may reflect confounding, measurement differences, or chance.
+
+### “Why is EHR missing if the workshop question includes it?”
+
+Open longitudinal datasets containing all four modalities are rare. The absence is part of the lesson: research questions must be narrowed to match available data, and a full linked-data study requires additional access and governance.
 
 ## Key concepts and likely misconceptions
 

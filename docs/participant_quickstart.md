@@ -27,7 +27,7 @@ Use this route if you are ready to compare datasets or begin a team project.
 
 ### Route C · Try multimodal AI
 
-Use this route after the Day 1 lab to explore real repeated fatigue reports, wearable measures, and time context. The activity also shows why EHR data cannot be evaluated when the selected public dataset does not contain them.
+Use this route after the Day 1 lab to explore real repeated fatigue reports, wearable measures, and time context. No AI, ML, statistics, or coding experience is required. The activity also shows why EHR data cannot be evaluated when the selected public dataset does not contain them.
 
 1. Open [Activity 2: Multimodal Fatigue Trajectories](multimodal_symptom_trajectory_activity.md).
 2. Follow the [participant activity walkthrough](activities/multimodal_fatigue_walkthrough.md).

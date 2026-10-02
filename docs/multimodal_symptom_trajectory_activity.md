@@ -12,9 +12,11 @@ No single unrestricted public dataset located for this workshop contained all fo
 
 Electronic health record data are **not** present. The activity treats that absence as a scientific finding, not a gap to disguise. Participants first test the three available modalities, then design an EHR extension and identify what new governance, harmonization, and validation it would require.
 
+No prior AI, machine-learning, statistics, or coding knowledge is assumed. The participant experience begins with a manual prediction, introduces one term at a time, uses a no-ML comparison rule before any algorithm, and provides “do / notice / explain” prompts throughout.
+
 ## Start here
 
-- **Participants:** [follow the step-by-step activity walkthrough](activities/multimodal_fatigue_walkthrough.md)
+- **Participants:** [follow the zero-background, step-by-step activity walkthrough](activities/multimodal_fatigue_walkthrough.md)
 - **Instructors:** [use the teaching guide](teaching_guides/multimodal_fatigue_teaching_guide.md)
 - **Interactive notebook:** [open in Google Colab](https://colab.research.google.com/github/sonya-j/ninr-ai-bootcamp/blob/main/notebooks/02_multimodal_symptom_trajectories.ipynb)
 
