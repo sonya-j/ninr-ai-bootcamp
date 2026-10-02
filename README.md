@@ -8,6 +8,8 @@ This repository supports hands-on learning for nursing scientists at the **NINR 
 
 No prior Python or machine-learning experience is required to begin.
 
+▶ **[Watch the two-minute video tour](media/ninr_ai_bootcamp_walkthrough.mp4)** for a narrated overview of the datasets, learning activities, and teaching materials.
+
 ## Start here
 
 | I want to… | Go to… |
