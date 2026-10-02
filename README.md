@@ -13,7 +13,7 @@ No prior Python or machine-learning experience is required to begin.
 | I want to… | Go to… |
 |---|---|
 | Complete the guided Day 1 activity | [`01_day1_python_and_clinical_data.ipynb`](notebooks/01_day1_python_and_clinical_data.ipynb) |
-| Explore multimodal symptom prediction | [Interactive Activity 2](docs/multimodal_symptom_trajectory_activity.md) |
+| Explore multimodal symptom prediction with real public data | [Interactive Activity 2](docs/multimodal_symptom_trajectory_activity.md) |
 | Choose a dataset for a team or capstone | [Dataset Explorer](docs/dataset_catalog.md) |
 | Learn how the files fit together | [Participant Quick Start](docs/participant_quickstart.md) |
 | See the Day 1 variable definitions | [Day 1 data dictionary](docs/day1_data_dictionary.md) |
@@ -97,10 +97,12 @@ Use `python pipeline.py acquire --force` only when intentionally refreshing the 
 
 ```text
 notebooks/                         guided participant and solution notebooks
-activities/                        reproducible teaching-data generators
+activities/                        reproducible public-data preparation scripts
 docs/dataset_catalog.md            visual dataset explorer and research questions
 docs/participant_quickstart.md     plain-language orientation for participants
-docs/multimodal_symptom_trajectory_activity.md  Activity 2 guide and source rationale
+docs/multimodal_symptom_trajectory_activity.md  Activity 2 overview and source rationale
+docs/activities/                   step-by-step participant walkthroughs
+docs/teaching_guides/              facilitation plans, prompts, and rubrics
 data/processed/portfolio/          20 participant-ready CSV files
 metadata/portfolio/                dictionaries, labels, risks, provenance, validation
 config/portfolio.json              reviewed dataset and variable selections

@@ -1,98 +1,57 @@
-# Multimodal Symptom Trajectory Activity
+# Multimodal Fatigue Trajectory Activity
 
-## Research question
+## The question, made testable
+
+The workshop's broad question is:
 
 > Can multimodal AI predict symptom trajectories using patient-reported, wearable, EHR, and contextual data?
 
-This activity gives beginners a concrete way to explore that question without distributing protected patient records. Participants examine repeated observations, explore one person’s trajectory, turn data modalities on and off, compare models, and discuss whether the result would be useful or responsible in nursing research or practice.
+No single unrestricted public dataset located for this workshop contained all four modalities with repeated symptom outcomes. This activity therefore asks a narrower question that the selected public data can actually answer:
 
-[Open the interactive notebook in Google Colab](https://colab.research.google.com/github/sonya-j/ninr-ai-bootcamp/blob/main/notebooks/02_multimodal_symptom_trajectories.ipynb)
+> **Can today's patient-reported fatigue, wearable signals, and time context predict tomorrow's fatigue rating?**
 
-## Dataset decision
+Electronic health record data are **not** present. The activity treats that absence as a scientific finding, not a gap to disguise. Participants first test the three available modalities, then design an EHR extension and identify what new governance, harmonization, and validation it would require.
 
-### Real-world research destination: NIH All of Us
+## Start here
 
-The **NIH All of Us Research Program** is the best fit for the full research question because its individual-level research tiers include:
+- **Participants:** [follow the step-by-step activity walkthrough](activities/multimodal_fatigue_walkthrough.md)
+- **Instructors:** [use the teaching guide](teaching_guides/multimodal_fatigue_teaching_guide.md)
+- **Interactive notebook:** [open in Google Colab](https://colab.research.google.com/github/sonya-j/ninr-ai-bootcamp/blob/main/notebooks/02_multimodal_symptom_trajectories.ipynb)
 
-- participant-provided survey information;
-- longitudinal EHR conditions, visits, procedures, drugs, and measurements organized with the OMOP Common Data Model;
-- Fitbit activity, sleep, and heart-rate tables;
-- demographic, calendar, survey, and privacy-appropriate geographic context.
+## Public dataset
 
-The activity targets **Registered Tier CDR v9**, release `R2025Q4R6` dated June 26, 2026, with a January 1, 2025 data cutoff. Researchers must register, complete required training, agree to the data-use code, and analyze individual-level records inside the secure Researcher Workbench.
+The activity uses **Continuous multi-sensor wearable data and daily subject-reported fatigue of healthy adults**, version 1, published by the original investigators on Zenodo:
 
-Official references:
+- [Official dataset record and downloads](https://doi.org/10.5281/zenodo.4266157)
+- [Open-access study article](https://pmc.ncbi.nlm.nih.gov/articles/PMC7768149/)
+- License: CC BY 4.0
+- Original release: November 10, 2020
+- Source data: 28 healthy adults and 973 recording days; the authors report 27 participants and 405 days with matched wearable and patient-reported data in their analysis
 
-- [All of Us data types and organization](https://support.researchallofus.org/hc/en-us/articles/4619151535508-Data-Types-and-Organization)
-- [All of Us data methods](https://www.researchallofus.org/data-tools/methods/)
-- [Current curated data dictionaries and releases](https://support.researchallofus.org/hc/en-us/articles/360033200232-Data-Dictionaries)
-- [All of Us data access tiers](https://allofus.nih.gov/protecting-data-and-privacy/research-projects-all-us-data)
+The repository preparation script independently joins daily reports to sensor dates. It produces 450 matched participant-days and 336 rows with a report on the next calendar day. These counts differ from the article's analyzed sample because this teaching pipeline does not reproduce the authors' preprocessing and imputation rules.
 
-### Public workshop dataset: transparent synthetic cohort
+## What is—and is not—in the activity
 
-Individual-level All of Us data cannot be redistributed through GitHub. The hands-on lab therefore uses a deterministic synthetic cohort containing:
+| Modality | Available? | Examples used |
+|---|---:|---|
+| Patient-reported | Yes | Overall fatigue, physical exhaustion, mental exhaustion, change from yesterday, sport today |
+| Wearable | Yes | Activity, energy expenditure, heart rate, HRV, respiration, steps, skin temperature, wear minutes |
+| Time context | Yes | Study day, day of week, weekend |
+| EHR | **No** | No diagnoses, medications, encounters, laboratory results, or clinical notes are supplied |
+| Outcome | Yes | Next-calendar-day 1–10 fatigue rating |
 
-- 240 synthetic participants;
-- 34 prediction days per participant;
-- 8,160 participant-day observations;
-- 22 documented variables;
-- four predictor modalities and a next-day symptom outcome.
+## Reproducibility artifacts
 
-The teaching data are not an All of Us extract, sample, or statistical reconstruction. They contain no real participant records and are not intended to reproduce the distribution of any protected dataset. Their purpose is to make the analytic structure, modeling choices, and responsible-AI issues visible.
+- [Prepared participant-day CSV](../data/processed/multimodal_symptom_trajectories/participant_day.csv)
+- [Machine-readable data dictionary](../metadata/multimodal_symptom_trajectories/data_dictionary.csv)
+- [Missingness report](../metadata/multimodal_symptom_trajectories/missing_values.csv)
+- [Risk flags](../metadata/multimodal_symptom_trajectories/risk_flags.csv)
+- [Provenance record](../metadata/multimodal_symptom_trajectories/provenance.json)
+- [Validation report](../metadata/multimodal_symptom_trajectories/validation_report.json)
+- [Download and preparation script](../activities/multimodal_symptom_trajectories/prepare_public_fatigue_data.py)
 
-Artifacts:
+The unchanged original files are downloaded from Zenodo into a gitignored `data/raw/` directory. Zenodo MD5 checksums are verified before preparation.
 
-- [participant-day CSV](../data/processed/multimodal_symptom_trajectories/participant_day.csv)
-- [machine-readable data dictionary](../metadata/multimodal_symptom_trajectories/data_dictionary.csv)
-- [missingness report](../metadata/multimodal_symptom_trajectories/missing_values.csv)
-- [risk flags](../metadata/multimodal_symptom_trajectories/risk_flags.csv)
-- [provenance](../metadata/multimodal_symptom_trajectories/provenance.json)
-- [validation report](../metadata/multimodal_symptom_trajectories/validation_report.json)
-- [reproducible generator](../activities/multimodal_symptom_trajectories/generate_teaching_data.py)
+## Claims this activity permits
 
-## Modality map
-
-| Modality | Teaching variables | Authorized All of Us analogue |
-|---|---|---|
-| Patient-reported | pain, fatigue, mood, sleep quality, current symptom score | Participant-provided information and selected survey concepts |
-| Wearable | steps, active minutes, resting heart rate, sleep minutes | Fitbit activity, heart-rate, and sleep tables |
-| EHR | chronic-condition count, medication count, recent encounter, medication change, care message | OMOP condition, drug, visit, measurement, and related EHR domains |
-| Context | age group, weekend, temperature, air quality, social support, study day | Survey/demographic context and privacy-permitted temporal or geographic linkage |
-| Outcome | next-day composite symptom score | A prespecified, validated symptom concept selected for the authorized study |
-
-The synthetic composite symptom score is a teaching construct, not a validated patient-reported outcome. An applied project must select an official survey concept or validated clinical outcome and document its scoring.
-
-## Suggested 75-minute facilitation plan
-
-| Time | Activity | Teaching emphasis |
-|---:|---|---|
-| 10 min | Frame the question and inspect the four modalities | Unit of observation, modality, trajectory |
-| 10 min | Explore one synthetic participant | Within-person change and missingness |
-| 10 min | Define the next-day prediction task | Prediction time, outcome, leakage |
-| 20 min | Turn modalities on and off | Baseline comparison and incremental value |
-| 10 min | Compare age-group error | Subgroup evaluation without causal overclaiming |
-| 15 min | Team discussion | Burden, equity, actionability, validation, governance |
-
-## Expected learning pattern
-
-Because the generator intentionally makes tomorrow’s symptom level autocorrelated with today’s symptoms, patient-reported data will often be highly predictive. Wearable, EHR-like, and contextual variables provide smaller complementary signals. Participants should not be graded on obtaining a particular MAE. The learning goal is to explain why performance changes and whether the added data burden is justified.
-
-## Responsible-AI guardrails
-
-- Split by participant, not by row, so one person does not appear in both training and test data.
-- Define exactly when prediction occurs and exclude information recorded after that time.
-- Treat wearable non-wear and missed surveys as potentially informative missingness.
-- Compare performance across relevant groups, but do not interpret subgroup error as a biological difference without evidence.
-- Consider who lacks compatible devices, reliable connectivity, portal access, or time for repeated surveys.
-- Do not treat a lower test error in synthetic data as evidence of clinical benefit.
-- Specify the nursing decision or intervention that a prediction would support before proposing deployment.
-- Keep authorized All of Us data and outputs inside the environments and disclosure rules required by the program.
-
-## Reproduce the teaching data
-
-```bash
-python activities/multimodal_symptom_trajectories/generate_teaching_data.py
-python -m unittest discover -s tests -v
-```
-
-The fixed seed, equations, missingness rates, output hash, and software versions are recorded in the generator and provenance file.
+Participants may report comparative test-set performance within this small teaching sample. They may **not** claim that the model is clinically valid, works in people with illness, demonstrates benefit from EHR data, or should guide care. The sample contains healthy adults, is small, has repeated observations, and includes potentially informative sensor non-wear and missed reports.

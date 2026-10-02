@@ -1,23 +1,27 @@
-variable,risk_flags,note
-participant_id,identifier_leakage,Synthetic participant identifier.
-day_index,time_trend,"Study day, beginning with day 1."
-age_group,proxy_discrimination,Synthetic age band assigned at baseline.
-chronic_condition_count,confounding,Synthetic count of chronic conditions recorded before follow-up.
-medication_count,confounding,Synthetic count of active medications at baseline.
-recent_encounter,care_seeking|reverse_causation,"Whether an inpatient, outpatient, or emergency encounter occurred in the prior 7 days."
-medication_change,confounding_by_indication,"Whether a medication was started, stopped, or changed in the prior 7 days."
-care_message,care_seeking,Whether a patient-clinician portal message was recorded in the prior 7 days.
-pain_today,same_day_measurement,Patient-reported pain today on a 0-10 teaching scale.
-fatigue_today,same_day_measurement,Patient-reported fatigue today on a 0-10 teaching scale.
-mood_today,same_day_measurement,Patient-reported mood today on a 0-10 scale; higher is better.
-sleep_quality_today,same_day_measurement,Patient-reported sleep quality today on a 0-10 scale; higher is better.
-steps,device_missingness,Synthetic daily step count.
-active_minutes,device_missingness,Synthetic daily minutes of moderate activity.
-resting_heart_rate,device_missingness,Synthetic daily resting heart rate.
-sleep_minutes,device_missingness,Synthetic sleep duration from the wearable.
-weekend,calendar_context,Whether the study day is Saturday or Sunday.
-temperature_c,geographic_proxy,Synthetic daily ambient temperature linked to the participant-day.
-air_quality_index,geographic_proxy,Synthetic daily air quality index linked to the participant-day.
-social_support,proxy_discrimination,Synthetic baseline perceived social-support score from 1-5.
-symptom_score_today,autoregressive_predictor,Composite symptom severity today from 0-10; higher is worse.
-symptom_score_tomorrow,target_leakage,Composite symptom severity on the next study day from 0-10; higher is worse.
+variable,risk_flag
+participant_id,identifier
+date,potential identity/time proxy
+study_day,trajectory index
+day_of_week,context
+weekend,context
+fatigue_today,strong autoregressive predictor
+change_vs_yesterday,may overlap conceptually with outcome
+physical_exhaustion,predictor
+mental_exhaustion,predictor
+sport_today,behavior/context
+wear_minutes,missingness/device-use proxy
+activitycounts_mean,predictor; missingness may reflect non-wear
+activitycounts_std,predictor; missingness may reflect non-wear
+energyexpenditure_mean,predictor; missingness may reflect non-wear
+energyexpenditure_std,predictor; missingness may reflect non-wear
+hr_mean,predictor; missingness may reflect non-wear
+hr_std,predictor; missingness may reflect non-wear
+hrv_mean,predictor; missingness may reflect non-wear
+hrv_std,predictor; missingness may reflect non-wear
+resp_mean,predictor; missingness may reflect non-wear
+resp_std,predictor; missingness may reflect non-wear
+steps_mean,predictor; missingness may reflect non-wear
+steps_std,predictor; missingness may reflect non-wear
+skintemperature_mean,predictor; missingness may reflect non-wear
+skintemperature_std,predictor; missingness may reflect non-wear
+fatigue_tomorrow,outcome; never include as a predictor

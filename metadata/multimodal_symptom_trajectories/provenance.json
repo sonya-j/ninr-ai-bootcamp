@@ -1,27 +1,174 @@
 {
-  "title": "Synthetic multimodal symptom trajectories teaching cohort",
-  "status": "Synthetic teaching data; contains no real participant records",
-  "real_world_destination": "NIH All of Us Research Program Registered Tier CDR v9",
-  "real_world_destination_url": "https://www.researchallofus.org/data-tools/methods/",
-  "data_dictionary_url": "https://support.researchallofus.org/hc/en-us/articles/360033200232-Data-Dictionaries",
-  "access_note": "Individual-level All of Us data must be analyzed inside the secure Researcher Workbench and are not redistributed here.",
-  "generation_seed": 20271002,
-  "participants": 240,
-  "days_generated_per_participant": 35,
-  "participant_day_rows": 8160,
-  "columns": 22,
-  "outcome": "symptom_score_tomorrow",
-  "participant_file_sha256": "905137c3d00d5127bfd4a440f95913fb42e64e8083be1c4bf61926c93e122003",
+  "dataset_title": "Continuous multi-sensor wearable data and daily subject-reported fatigue of healthy adults",
+  "official_source": "https://zenodo.org/records/4266157",
+  "doi": "10.5281/zenodo.4266157",
+  "dataset_version": "v1",
+  "publication_date": "2020-11-10",
+  "access_date": "2026-10-02",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "original_files_preserved_under": "data/raw/multimodal_symptom_trajectories/zenodo_4266157",
+  "original_files_tracked_in_git": false,
+  "original_file_manifest": [
+    {
+      "name": "subjectID_26.csv",
+      "size": 14756987,
+      "md5": "73c9c7e99913da58b94f7550a5d3a731"
+    },
+    {
+      "name": "subjectID_16.csv",
+      "size": 1017909,
+      "md5": "9bf2ee6080a881e28b1123518df73403"
+    },
+    {
+      "name": "subjectID_19.csv",
+      "size": 1042278,
+      "md5": "5a746e72fa2976741133356dc39715d4"
+    },
+    {
+      "name": "subjectID_27.csv",
+      "size": 11844530,
+      "md5": "f70229ec0b987e805b1fef44c6d38c59"
+    },
+    {
+      "name": "subjectID_2.csv",
+      "size": 16029,
+      "md5": "4b9e7781e1c27c919ef970936c6d02af"
+    },
+    {
+      "name": "subjectID_25.csv",
+      "size": 3804252,
+      "md5": "791f46a45627aa092bbb4daf6ba74d7a"
+    },
+    {
+      "name": "subjectID_22.csv",
+      "size": 1199538,
+      "md5": "bcde75219a697914df35a4f5097702f7"
+    },
+    {
+      "name": "subjectID_5.csv",
+      "size": 1121885,
+      "md5": "bf4587be5c8d14569058582a393d9152"
+    },
+    {
+      "name": "subjectID_7.csv",
+      "size": 756063,
+      "md5": "5fa45a7f663834257e2da67dbb5be9e6"
+    },
+    {
+      "name": "subjectID_8.csv",
+      "size": 1427037,
+      "md5": "ec9b34a401be85294a87f214b6727b57"
+    },
+    {
+      "name": "subjectID_15.csv",
+      "size": 1224439,
+      "md5": "e27e9df8db7a9bbd7ef332ccb58aaa02"
+    },
+    {
+      "name": "subjectID_9.csv",
+      "size": 977224,
+      "md5": "507ccb7db17a831d16d16345384b14cc"
+    },
+    {
+      "name": "subjectID_28.csv",
+      "size": 1756884,
+      "md5": "adf172739de674e978b28f6b5fbff89d"
+    },
+    {
+      "name": "subjectID_20.csv",
+      "size": 1016537,
+      "md5": "e5d8ae36e1a539839733117b3e9cdb61"
+    },
+    {
+      "name": "subjectID_4.csv",
+      "size": 1176753,
+      "md5": "6e2c2774b55812a8551552fd4f4605e8"
+    },
+    {
+      "name": "subjectID_17.csv",
+      "size": 1232733,
+      "md5": "bdfc800bb6c82e7165d88d4d9071a87e"
+    },
+    {
+      "name": "subjectID_13.csv",
+      "size": 1114718,
+      "md5": "7abfc7c4ec379d1a6869048f6f4b490d"
+    },
+    {
+      "name": "subjectID_21.csv",
+      "size": 966155,
+      "md5": "4ac01207286224842f715f0557d9a97b"
+    },
+    {
+      "name": "subjectID_14.csv",
+      "size": 1129564,
+      "md5": "6b2b5e7bc9f75cce426ee1f9f47168ad"
+    },
+    {
+      "name": "subjectID_24.csv",
+      "size": 20732912,
+      "md5": "cd9a5f25a5b95c37b51dac40e8a9a089"
+    },
+    {
+      "name": "subjectID_3.csv",
+      "size": 1069702,
+      "md5": "b0412841bbcba228e1a0266a8b88e4ea"
+    },
+    {
+      "name": "subjectID_18.csv",
+      "size": 1048777,
+      "md5": "b863c7ad784d562f911c82099715b7d8"
+    },
+    {
+      "name": "subjectID_1.csv",
+      "size": 989741,
+      "md5": "26c0aaf862a34f54c5e019e69483f6d6"
+    },
+    {
+      "name": "subjectID_6.csv",
+      "size": 461527,
+      "md5": "6154a1c6575e2c1406015372c0565fd8"
+    },
+    {
+      "name": "subjectID_23.csv",
+      "size": 9865304,
+      "md5": "60c64c8a12f8f60dcba5d618fc452956"
+    },
+    {
+      "name": "fatiguePROs.csv",
+      "size": 229666,
+      "md5": "c0f930f49f26ded623da7b812247e439"
+    },
+    {
+      "name": "subjectID_11.csv",
+      "size": 907571,
+      "md5": "d36cdda268a273153ebfda21c032cb76"
+    },
+    {
+      "name": "subjectID_12.csv",
+      "size": 934448,
+      "md5": "e9d0afaa6aa816a17b7ad5380d327802"
+    },
+    {
+      "name": "subjectID_10.csv",
+      "size": 1126521,
+      "md5": "ef8043c42caa81856049e4cda87adbc7"
+    }
+  ],
+  "transformations": [
+    "Parsed original participant and timestamp fields without changing source files.",
+    "Pivoted five official daily PRO questions to one participant-day row.",
+    "Aggregated selected 1-minute wearable fields to daily mean and standard deviation.",
+    "Counted available one-minute rows as wear_minutes.",
+    "Derived study_day, day_of_week, and weekend from source timestamps.",
+    "Defined fatigue_tomorrow only when the next within-person report occurred exactly one calendar day later."
+  ],
+  "important_scope_note": "The public source has patient-reported, wearable, and time-context data; it does not contain EHR data.",
+  "processed_sha256": "9bb2d2d67e2d045884b0c399c54c73c73ea11f8193a87f7d94271a69bd7da4fa",
   "software": {
     "python": "3.12.14",
-    "numpy": "2.3.5",
-    "pandas": "3.0.1"
-  },
-  "transformations": [
-    "Generated independent participant-level baseline attributes from fixed probability distributions.",
-    "Generated 35-day autocorrelated symptom, wearable, EHR-like, and contextual time series.",
-    "Created the next-day symptom outcome by shifting symptom_score_today within participant.",
-    "Retained days 1-34, yielding 8,160 participant-day observations.",
-    "Introduced 5% patient-reported and 8% wearable predictor missingness with a fixed random seed."
-  ]
+    "pandas": "3.0.1",
+    "numpy": "2.3.5"
+  }
 }

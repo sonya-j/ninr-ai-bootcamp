@@ -4,6 +4,7 @@ __pycache__/
 .ipynb_checkpoints/
 .pytest_cache/
 data/raw/portfolio/
+data/raw/multimodal_symptom_trajectories/
 uci_catalog.json
 uci_health_catalog.json
 candidate_metadata*.json

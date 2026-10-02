@@ -2,221 +2,209 @@
   {
     "variable": "participant_id",
     "modality": "linkage",
-    "description": "Synthetic participant identifier.",
-    "type": "string",
-    "units": "",
-    "timing": "available by end of current day",
-    "risk_flags": "identifier_leakage",
-    "definition_source": "NINR synthetic teaching schema"
+    "data_type": "integer",
+    "definition": "De-identified subject identifier from the source files.",
+    "value_labels_or_units": "",
+    "risk_flag": "identifier"
   },
   {
-    "variable": "day_index",
-    "modality": "time",
-    "description": "Study day, beginning with day 1.",
-    "type": "integer",
-    "units": "day",
-    "timing": "available by end of current day",
-    "risk_flags": "time_trend",
-    "definition_source": "NINR synthetic teaching schema"
+    "variable": "date",
+    "modality": "time context",
+    "data_type": "date",
+    "definition": "Calendar date derived from the source timestamp (YYYY-MM-DD).",
+    "value_labels_or_units": "",
+    "risk_flag": "potential identity/time proxy"
   },
   {
-    "variable": "age_group",
-    "modality": "context",
-    "description": "Synthetic age band assigned at baseline.",
-    "type": "category",
-    "units": "",
-    "timing": "available by end of current day",
-    "risk_flags": "proxy_discrimination",
-    "definition_source": "NINR synthetic teaching schema"
+    "variable": "study_day",
+    "modality": "time context",
+    "data_type": "integer",
+    "definition": "Days since that participant's first matched date, beginning at 1.",
+    "value_labels_or_units": "",
+    "risk_flag": "trajectory index"
   },
   {
-    "variable": "chronic_condition_count",
-    "modality": "EHR",
-    "description": "Synthetic count of chronic conditions recorded before follow-up.",
-    "type": "integer",
-    "units": "conditions",
-    "timing": "available by end of current day",
-    "risk_flags": "confounding",
-    "definition_source": "NINR synthetic teaching schema"
+    "variable": "day_of_week",
+    "modality": "time context",
+    "data_type": "categorical",
+    "definition": "Day name derived from date.",
+    "value_labels_or_units": "Monday\u2013Sunday",
+    "risk_flag": "context"
   },
   {
-    "variable": "medication_count",
-    "modality": "EHR",
-    "description": "Synthetic count of active medications at baseline.",
-    "type": "integer",
-    "units": "medications",
-    "timing": "available by end of current day",
-    "risk_flags": "confounding",
-    "definition_source": "NINR synthetic teaching schema"
-  },
-  {
-    "variable": "recent_encounter",
-    "modality": "EHR",
-    "description": "Whether an inpatient, outpatient, or emergency encounter occurred in the prior 7 days.",
-    "type": "binary",
-    "units": "",
-    "timing": "available by end of current day",
-    "risk_flags": "care_seeking|reverse_causation",
-    "definition_source": "NINR synthetic teaching schema"
-  },
-  {
-    "variable": "medication_change",
-    "modality": "EHR",
-    "description": "Whether a medication was started, stopped, or changed in the prior 7 days.",
-    "type": "binary",
-    "units": "",
-    "timing": "available by end of current day",
-    "risk_flags": "confounding_by_indication",
-    "definition_source": "NINR synthetic teaching schema"
-  },
-  {
-    "variable": "care_message",
-    "modality": "EHR",
-    "description": "Whether a patient-clinician portal message was recorded in the prior 7 days.",
-    "type": "binary",
-    "units": "",
-    "timing": "available by end of current day",
-    "risk_flags": "care_seeking",
-    "definition_source": "NINR synthetic teaching schema"
-  },
-  {
-    "variable": "pain_today",
-    "modality": "patient-reported",
-    "description": "Patient-reported pain today on a 0-10 teaching scale.",
-    "type": "continuous",
-    "units": "score",
-    "timing": "available by end of current day",
-    "risk_flags": "same_day_measurement",
-    "definition_source": "NINR synthetic teaching schema"
+    "variable": "weekend",
+    "modality": "time context",
+    "data_type": "binary",
+    "definition": "Whether date is Saturday or Sunday.",
+    "value_labels_or_units": "0=no; 1=yes",
+    "risk_flag": "context"
   },
   {
     "variable": "fatigue_today",
     "modality": "patient-reported",
-    "description": "Patient-reported fatigue today on a 0-10 teaching scale.",
-    "type": "continuous",
-    "units": "score",
-    "timing": "available by end of current day",
-    "risk_flags": "same_day_measurement",
-    "definition_source": "NINR synthetic teaching schema"
+    "data_type": "numeric",
+    "definition": "Daily response to the 1\u201310 overall fatigue question.",
+    "value_labels_or_units": "1=not tired at all; 10=worst tiredness imaginable",
+    "risk_flag": "strong autoregressive predictor"
   },
   {
-    "variable": "mood_today",
+    "variable": "change_vs_yesterday",
     "modality": "patient-reported",
-    "description": "Patient-reported mood today on a 0-10 scale; higher is better.",
-    "type": "continuous",
-    "units": "score",
-    "timing": "available by end of current day",
-    "risk_flags": "same_day_measurement",
-    "definition_source": "NINR synthetic teaching schema"
+    "data_type": "categorical",
+    "definition": "Response to whether the participant feels better, worse, or the same as yesterday.",
+    "value_labels_or_units": "Better; Same; Worse",
+    "risk_flag": "may overlap conceptually with outcome"
   },
   {
-    "variable": "sleep_quality_today",
+    "variable": "physical_exhaustion",
     "modality": "patient-reported",
-    "description": "Patient-reported sleep quality today on a 0-10 scale; higher is better.",
-    "type": "continuous",
-    "units": "score",
-    "timing": "available by end of current day",
-    "risk_flags": "same_day_measurement",
-    "definition_source": "NINR synthetic teaching schema"
+    "data_type": "ordinal",
+    "definition": "Daily reported frequency of physical exhaustion.",
+    "value_labels_or_units": "Never; Sometimes; Regularly; Often; Always",
+    "risk_flag": "predictor"
   },
   {
-    "variable": "steps",
-    "modality": "wearable",
-    "description": "Synthetic daily step count.",
-    "type": "integer",
-    "units": "steps/day",
-    "timing": "available by end of current day",
-    "risk_flags": "device_missingness",
-    "definition_source": "NINR synthetic teaching schema"
-  },
-  {
-    "variable": "active_minutes",
-    "modality": "wearable",
-    "description": "Synthetic daily minutes of moderate activity.",
-    "type": "integer",
-    "units": "minutes/day",
-    "timing": "available by end of current day",
-    "risk_flags": "device_missingness",
-    "definition_source": "NINR synthetic teaching schema"
-  },
-  {
-    "variable": "resting_heart_rate",
-    "modality": "wearable",
-    "description": "Synthetic daily resting heart rate.",
-    "type": "continuous",
-    "units": "beats/minute",
-    "timing": "available by end of current day",
-    "risk_flags": "device_missingness",
-    "definition_source": "NINR synthetic teaching schema"
-  },
-  {
-    "variable": "sleep_minutes",
-    "modality": "wearable",
-    "description": "Synthetic sleep duration from the wearable.",
-    "type": "integer",
-    "units": "minutes/day",
-    "timing": "available by end of current day",
-    "risk_flags": "device_missingness",
-    "definition_source": "NINR synthetic teaching schema"
-  },
-  {
-    "variable": "weekend",
-    "modality": "context",
-    "description": "Whether the study day is Saturday or Sunday.",
-    "type": "binary",
-    "units": "",
-    "timing": "available by end of current day",
-    "risk_flags": "calendar_context",
-    "definition_source": "NINR synthetic teaching schema"
-  },
-  {
-    "variable": "temperature_c",
-    "modality": "context",
-    "description": "Synthetic daily ambient temperature linked to the participant-day.",
-    "type": "continuous",
-    "units": "degrees Celsius",
-    "timing": "available by end of current day",
-    "risk_flags": "geographic_proxy",
-    "definition_source": "NINR synthetic teaching schema"
-  },
-  {
-    "variable": "air_quality_index",
-    "modality": "context",
-    "description": "Synthetic daily air quality index linked to the participant-day.",
-    "type": "continuous",
-    "units": "AQI",
-    "timing": "available by end of current day",
-    "risk_flags": "geographic_proxy",
-    "definition_source": "NINR synthetic teaching schema"
-  },
-  {
-    "variable": "social_support",
-    "modality": "context",
-    "description": "Synthetic baseline perceived social-support score from 1-5.",
-    "type": "integer",
-    "units": "score",
-    "timing": "available by end of current day",
-    "risk_flags": "proxy_discrimination",
-    "definition_source": "NINR synthetic teaching schema"
-  },
-  {
-    "variable": "symptom_score_today",
+    "variable": "mental_exhaustion",
     "modality": "patient-reported",
-    "description": "Composite symptom severity today from 0-10; higher is worse.",
-    "type": "continuous",
-    "units": "score",
-    "timing": "available by end of current day",
-    "risk_flags": "autoregressive_predictor",
-    "definition_source": "NINR synthetic teaching schema"
+    "data_type": "ordinal",
+    "definition": "Daily reported frequency of mental exhaustion.",
+    "value_labels_or_units": "Never; Sometimes; Regularly; Often; Always",
+    "risk_flag": "predictor"
   },
   {
-    "variable": "symptom_score_tomorrow",
+    "variable": "sport_today",
+    "modality": "patient-reported",
+    "data_type": "binary categorical",
+    "definition": "Whether the participant reported doing sport that day.",
+    "value_labels_or_units": "No; Yes",
+    "risk_flag": "behavior/context"
+  },
+  {
+    "variable": "wear_minutes",
+    "modality": "wearable",
+    "data_type": "integer",
+    "definition": "Number of one-minute sensor rows available for that participant-date.",
+    "value_labels_or_units": "",
+    "risk_flag": "missingness/device-use proxy"
+  },
+  {
+    "variable": "activitycounts_mean",
+    "modality": "wearable",
+    "data_type": "numeric",
+    "definition": "Daily mean of the source Activity counts sensor field.",
+    "value_labels_or_units": "Source device units; see the official study article.",
+    "risk_flag": "predictor; missingness may reflect non-wear"
+  },
+  {
+    "variable": "activitycounts_std",
+    "modality": "wearable",
+    "data_type": "numeric",
+    "definition": "Daily std of the source Activity counts sensor field.",
+    "value_labels_or_units": "Source device units; see the official study article.",
+    "risk_flag": "predictor; missingness may reflect non-wear"
+  },
+  {
+    "variable": "energyexpenditure_mean",
+    "modality": "wearable",
+    "data_type": "numeric",
+    "definition": "Daily mean of the source Energy expenditure sensor field.",
+    "value_labels_or_units": "Source device units; see the official study article.",
+    "risk_flag": "predictor; missingness may reflect non-wear"
+  },
+  {
+    "variable": "energyexpenditure_std",
+    "modality": "wearable",
+    "data_type": "numeric",
+    "definition": "Daily std of the source Energy expenditure sensor field.",
+    "value_labels_or_units": "Source device units; see the official study article.",
+    "risk_flag": "predictor; missingness may reflect non-wear"
+  },
+  {
+    "variable": "hr_mean",
+    "modality": "wearable",
+    "data_type": "numeric",
+    "definition": "Daily mean of the source Heart rate sensor field.",
+    "value_labels_or_units": "Source device units; see the official study article.",
+    "risk_flag": "predictor; missingness may reflect non-wear"
+  },
+  {
+    "variable": "hr_std",
+    "modality": "wearable",
+    "data_type": "numeric",
+    "definition": "Daily std of the source Heart rate sensor field.",
+    "value_labels_or_units": "Source device units; see the official study article.",
+    "risk_flag": "predictor; missingness may reflect non-wear"
+  },
+  {
+    "variable": "hrv_mean",
+    "modality": "wearable",
+    "data_type": "numeric",
+    "definition": "Daily mean of the source Heart-rate variability sensor field.",
+    "value_labels_or_units": "Source device units; see the official study article.",
+    "risk_flag": "predictor; missingness may reflect non-wear"
+  },
+  {
+    "variable": "hrv_std",
+    "modality": "wearable",
+    "data_type": "numeric",
+    "definition": "Daily std of the source Heart-rate variability sensor field.",
+    "value_labels_or_units": "Source device units; see the official study article.",
+    "risk_flag": "predictor; missingness may reflect non-wear"
+  },
+  {
+    "variable": "resp_mean",
+    "modality": "wearable",
+    "data_type": "numeric",
+    "definition": "Daily mean of the source Respiratory rate sensor field.",
+    "value_labels_or_units": "Source device units; see the official study article.",
+    "risk_flag": "predictor; missingness may reflect non-wear"
+  },
+  {
+    "variable": "resp_std",
+    "modality": "wearable",
+    "data_type": "numeric",
+    "definition": "Daily std of the source Respiratory rate sensor field.",
+    "value_labels_or_units": "Source device units; see the official study article.",
+    "risk_flag": "predictor; missingness may reflect non-wear"
+  },
+  {
+    "variable": "steps_mean",
+    "modality": "wearable",
+    "data_type": "numeric",
+    "definition": "Daily mean of the source Steps sensor field.",
+    "value_labels_or_units": "Source device units; see the official study article.",
+    "risk_flag": "predictor; missingness may reflect non-wear"
+  },
+  {
+    "variable": "steps_std",
+    "modality": "wearable",
+    "data_type": "numeric",
+    "definition": "Daily std of the source Steps sensor field.",
+    "value_labels_or_units": "Source device units; see the official study article.",
+    "risk_flag": "predictor; missingness may reflect non-wear"
+  },
+  {
+    "variable": "skintemperature_mean",
+    "modality": "wearable",
+    "data_type": "numeric",
+    "definition": "Daily mean of the source Skin temperature sensor field.",
+    "value_labels_or_units": "Source device units; see the official study article.",
+    "risk_flag": "predictor; missingness may reflect non-wear"
+  },
+  {
+    "variable": "skintemperature_std",
+    "modality": "wearable",
+    "data_type": "numeric",
+    "definition": "Daily std of the source Skin temperature sensor field.",
+    "value_labels_or_units": "Source device units; see the official study article.",
+    "risk_flag": "predictor; missingness may reflect non-wear"
+  },
+  {
+    "variable": "fatigue_tomorrow",
     "modality": "outcome",
-    "description": "Composite symptom severity on the next study day from 0-10; higher is worse.",
-    "type": "continuous",
-    "units": "score",
-    "timing": "next-day outcome",
-    "risk_flags": "target_leakage",
-    "definition_source": "NINR synthetic teaching schema"
+    "data_type": "numeric",
+    "definition": "The next calendar day's fatigue_today response within the same participant.",
+    "value_labels_or_units": "1=not tired at all; 10=worst tiredness imaginable",
+    "risk_flag": "outcome; never include as a predictor"
   }
 ]

@@ -27,13 +27,13 @@ Use this route if you are ready to compare datasets or begin a team project.
 
 ### Route C · Try multimodal AI
 
-Use this route after the Day 1 lab to explore repeated symptoms, wearable measures, EHR-like variables, and context.
+Use this route after the Day 1 lab to explore real repeated fatigue reports, wearable measures, and time context. The activity also shows why EHR data cannot be evaluated when the selected public dataset does not contain them.
 
-1. Open [Activity 2: Multimodal Symptom Trajectories](multimodal_symptom_trajectory_activity.md).
-2. Launch the notebook in Google Colab.
-3. Choose a synthetic participant and inspect their trajectory.
-4. Turn modalities on and off and compare prediction error.
-5. Discuss data burden, missingness, subgroup performance, and whether a prediction would support a meaningful nursing action.
+1. Open [Activity 2: Multimodal Fatigue Trajectories](multimodal_symptom_trajectory_activity.md).
+2. Follow the [participant activity walkthrough](activities/multimodal_fatigue_walkthrough.md).
+3. Launch the notebook in Google Colab and inspect a real participant trajectory.
+4. Compare today's-fatigue, wearable-only, combined, and context-enhanced models.
+5. Discuss data burden, missingness, participant-level error, and what a responsible EHR extension would require.
 
 ## What each file tells you
 

@@ -1,11 +1,15 @@
 {
   "passed": true,
   "checks": {
-    "expected shape": true,
-    "expected columns": true,
+    "official source files present": true,
     "participant-day unique": true,
-    "outcome complete": true,
-    "outcome range": true,
-    "all four modalities present": true
-  }
+    "all outcomes in official 1-10 range": true,
+    "patient-reported modality present": true,
+    "wearable modality present": true,
+    "time context present": true,
+    "EHR modality correctly marked absent": true
+  },
+  "rows": 450,
+  "participants": 28,
+  "rows_with_next_day_outcome": 336
 }
